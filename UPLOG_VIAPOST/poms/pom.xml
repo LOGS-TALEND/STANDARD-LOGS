@@ -9,6 +9,7 @@
   <name>UPLOG_VIAPOST Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
+    <module>../../UPLOG_PROJETREF/poms</module>
     <module>code/routines</module>
     <module>jobs/process/joba_0.1</module>
   </modules>
@@ -125,7 +126,7 @@
       <plugin>
         <groupId>org.talend.ci</groupId>
         <artifactId>builder-maven-plugin</artifactId>
-        <version>7.3.1</version>
+        <version>7.3.4</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
