@@ -1,10 +1,26 @@
 /,com.oaklandsw.base,version,1
 Databases,com.oaklandsw.base,order,5
 Maps,com.oaklandsw.base,order,1
+Maps/CLOG/INT52_To_CLOG_PIVOT.xml,com.oaklandsw.base,references.0,Structures/CLOG/INT52.xml
+Maps/CLOG/INT52_To_CLOG_PIVOT.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml
+Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml
+Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.1,Structures/CRPCMD/CRPCMD_VIAPOST.xml
 Maps/DESTINATAIRE/DESTINATAIRE_CLIENT_To_DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,references.0,Structures/DEST/DESTINATAIRE_CLIENT.xml
 Maps/DESTINATAIRE/DESTINATAIRE_CLIENT_To_DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_PIVOT.xml
 Maps/DESTINATAIRE/DESTINATAIRE_PIVOT_To_RFDEST.xml,com.oaklandsw.base,references.0,Structures/DEST/RFDEST.xml
 Maps/DESTINATAIRE/DESTINATAIRE_PIVOT_To_RFDEST.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_PIVOT.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_2/xmlout6.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_2.xml,com.oaklandsw.base,references.1,Structures/CRPCMD/CRPCMD_VIAPOST.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/InputWrapper.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/InputWrapper.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/InputWrapper.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8/xmlout5.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml
+Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/xmlout4.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_RPTEDI_VIAPOST.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml
@@ -13,6 +29,10 @@ Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
 Structures,com.oaklandsw.base,order,0
+Structures/CLOG/CLOG_PIVOT.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/CLOG/CLOG_PIVOT.xml,com.oaklandsw.base,references.1,Sample Data/CLOG/CLOG_PIVOT/-RFPR000002.rfx
+Structures/CLOG/INT52.xml,com.oaklandsw.base,references.0,Sample Data/CLOG/INT52/INT52_Fusion.rfx
+Structures/CRPCMD/CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/CREXPED.xml
 Structures/DEST/DESTINATAIRE_CLIENT.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/DEST/DESTINATAIRE_CLIENT.xml,com.oaklandsw.base,references.1,Sample Data/DEST/DESTINATAIRE_CLIENT/DESTINATAIRE202005070747138.xml
 Structures/DEST/DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,references.0,Sample Data/DEST/DESTINATAIRE_PIVOT/pivot_example
@@ -29,4 +49,42 @@ Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklands
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6Record.xml,/root/row6Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_pivot_xml.xml,/root/input_pivot_xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_trace_csv.xml,/root/input_trace_csv
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_pivot_xml.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_pivot_xml.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_trace_csv.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_trace_csvRecord.xml,/root/input_trace_csvRecord
+Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_trace_csv.xml,com.oaklandsw.base,references.1,Sample Data/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/input_trace_csv/TRACE_Fusion.csv
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row8.xml,/root/row8
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row11.xml,/root/row11
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.3,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row10.xml,/root/row10
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row10.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row10Record.xml,/root/row10Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row11.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row11Record.xml,/root/row11Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row8.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_3/row8.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row7.xml,/root/row7
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row6.xml,/root/row6
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row6.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row6.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row7.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_4/row7.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/InputWrapper.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row5.xml,/root/row5
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row12.xml,/root/row12
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/InputWrapper.xml,com.oaklandsw.base,references.3,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row3.xml,/root/row3
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row12.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row12Record.xml,/root/row12Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row3.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row3.xml,com.oaklandsw.base,references.1,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row5.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_6/row5Record.xml,/root/row5Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row15.xml,/root/row15
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row14.xml,/root/row14
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml,com.oaklandsw.base,references.3,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row17.xml,/root/row17
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row14.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row14.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row15.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row15Record.xml,/root/row15Record
+Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row17.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row17Record.xml,/root/row17Record
 Structures/RPTEDI/CODE_DESTINATAIRE_BLOQUANT_CSV.xml,com.oaklandsw.base,references.0,Sample Data/RPTEDI/CODE_DESTINATAIRE_BLOQUANT_CSV/RPTEDI_DEST_BLOQUANT_TEST
