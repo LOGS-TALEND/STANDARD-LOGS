@@ -1,0 +1,160 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class ValideFormat {
+
+    /**
+     * estNumerique: retourne -1 / 1
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("0000ABC123") input: la chaine à contrôler.
+     * 
+     * {example} estNumerique("000ABC123") # -1.
+     * {example} estNumerique("000456123") # 1.
+     */
+	public static boolean estDecimal(String s) {
+		boolean isAlpha = false;
+		if (s == null || s.trim().isEmpty()) {	
+			
+			return false;
+		}
+		else {        
+	        //stockage d'une chaine représentant les numériques à garder =
+			String chars = "0123456789.,";
+			
+			for (int i=0 ; i<s.length() && !isAlpha ; i++) {
+			    
+			    String caractere = s.substring(i, i+1 );
+			    if (chars.contains(caractere) == false){
+			        isAlpha = true;
+			    }
+			}//fin de contrôle des alpha dans la chaine de caractère		
+		}
+		return isAlpha;
+	}
+	
+	
+	public static boolean nestPasInteger(String s) {
+		boolean notNum = true;
+		if (s == null || s.trim().isEmpty()) {	
+			
+			return false;
+		}
+		else {        
+	        //stockage d'une chaine représentant les numériques à garder =
+			String chars = "0123456789";
+			
+			for (int i=0 ; i<s.length() && notNum ; i++) {
+			    
+			    String caractere = s.substring(i, i+1 );
+			    if (chars.contains(caractere) == true){
+			    	notNum = false;
+			    }
+			}//fin de contrôle des alpha dans la chaine de caractère		
+		}
+		return notNum;
+	}
+	
+
+
+    public static String estNumerique(String strEntry) {
+        boolean isAlpha = false;
+        String isNum = "-1";
+        
+        //stockage d'une chaine représentant les numériques à garder =
+		String Numbers = "0123456789";
+		
+		//Parcours de la chaine reçue pour contrôler le contenu
+		//Si un caractere non-numérique est trouvé, isAlpha passe à vrai
+		for (int i=0 ; i<strEntry.length() && !isAlpha ; i++) {
+		    
+		    String caractere = strEntry.substring(i, i+1 );
+		    if (Numbers.contains(caractere) == false){
+		        isAlpha = true;
+		    }
+		}//fin de contrôle des alpha dans la chaine de caractère
+        
+		if (isAlpha) {
+			isNum = "-1";
+		}
+		else {
+			isNum = "1";
+		}
+		
+		
+        return isNum;
+    }
+    
+    public static boolean isDate(String stringDate) {
+		//String stringDate = "2020-08-31T12:28:26";
+		boolean isDate = true;
+		String pattern = "yyyy-MM-ddTHH:mm:ss";
+		String Numbers = "0123456789";
+		
+		//controle si la date est nulle
+		if (stringDate == null) {
+			  isDate = false;
+			 return isDate;
+		} 
+		
+		//contrôle des séparateurs 
+		else {
+			
+			if (stringDate.length() != pattern.length()
+				|| stringDate.charAt(10) != pattern.charAt(10)
+				|| ! ( stringDate.charAt(4) == stringDate.charAt(7) &&  pattern.charAt(4) == stringDate.charAt(4) )
+				|| ! ( stringDate.charAt(13) == stringDate.charAt(16) &&  pattern.charAt(13) == stringDate.charAt(13) )
+				){
+				isDate = false;
+				return isDate;
+			}
+			
+			//Contrôle des numériques
+			if (isDate ){
+				if( !(Numbers.contains(String.valueOf(stringDate.charAt(0))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(1))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(2))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(3))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(5))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(6))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(8))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(9))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(11))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(12))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(14))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(15))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(17))) )
+					|| !(Numbers.contains(String.valueOf(stringDate.charAt(18))) )
+				) {
+					isDate = false;
+					return isDate;
+				}
+
+			}//fin de contrôle des numériques
+
+		}//fin de contrôles des séparateurs 
+		
+		return isDate;
+	}//fin de FormatLong
+}
