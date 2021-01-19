@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="LOCALHOST" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="REC">
     <contextParameter comment="" internalId="_9sn5gFmwEeumfthRC2qqBA" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_9sn5gVmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:aUz4PYA2PLcw6WZUbDylLAtPk31j/nTjgwJfb9oGjduPDKWbVzARKarxheKcU8Z2giOEXfCf7HrzVPu5ICGlathR7G6BW6Dx4Y8uiGJhkg8iYoayv9Nn7Gb4eq63Dfylykf0Lh5YMcv5HD3KtStgyZBcIV4="/>
+    <contextParameter comment="" internalId="_9sn5gVmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:qXrvJjmnN0J0UlG2t8xKHaJAb4G+oqHVHwLpNWSLf4CLiDHArWUWQ2ZIkHGT+4GTxXc5qrduCgxoiIsmddh9L7n15D7HjGrtAGAy1tam5dT+ufIdoAMsDVSMPLiB9lSQvQWf1B+Zt6orRxmatVl6oHZqRFY="/>
     <contextParameter comment="" internalId="_9sn5glmwEeumfthRC2qqBA" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
     <contextParameter comment="" internalId="_9sn5g1mwEeumfthRC2qqBA" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE&quot;"/>
     <contextParameter comment="" internalId="_9sn5hFmwEeumfthRC2qqBA" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
@@ -10,7 +10,7 @@
     <contextParameter comment="" internalId="_9sn5h1mwEeumfthRC2qqBA" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="talend"/>
     <contextParameter comment="" internalId="_9sn5iFmwEeumfthRC2qqBA" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="noDatetimeStringSync=true&amp;serverTimezone=Europe/Paris"/>
     <contextParameter comment="" internalId="_9sn5iVmwEeumfthRC2qqBA" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_9sn5ilmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:vh3ULW1vvsjkpSccYMhP2XNL7uFRxsCA0XpJdNiR/9g0+uc97m4="/>
+    <contextParameter comment="" internalId="_9sn5ilmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:RrLNVfXBoGEtUXvzrFR8EWLIRFko0MKUfus7Hp3nNaVIfyx5FWI="/>
     <contextParameter comment="" internalId="_9sn5i1mwEeumfthRC2qqBA" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srj4FmwEeumfthRC2qqBA" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_9srj4VmwEeumfthRC2qqBA" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
@@ -115,10 +115,24 @@
     <contextParameter comment="" internalId="_9srkRFmwEeumfthRC2qqBA" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srkRVmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srkRlmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="Emplacement clé" internalId="_JjwVwFpEEeuy78gdnvlC6g" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/jobserver/conf/id_rsa_TALEND-SFTP-RECETTE_puttygen.ppk&quot;"/>
+    <contextParameter comment="Mot de passe" internalId="_JjwVwVpEEeuy78gdnvlC6g" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_JjwVwlpEEeuy78gdnvlC6g" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-RECETTE&quot;"/>
+    <contextParameter comment=" Hôte" internalId="_JjwVw1pEEeuy78gdnvlC6g" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;10.204.4.222&quot;"/>
+    <contextParameter comment="Port de connexion" internalId="_JjwVxFpEEeuy78gdnvlC6g" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
+    <contextParameter comment="Phrase de passe" internalId="_JjwVxVpEEeuy78gdnvlC6g" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:ZUWpNTi1YauRt4K5TwvqQipXcS10Q5vPtIFNDq+4XEXWhbM4XxC+yARwlfCnu2p9DSee6A=="/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_JjwVxlpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_JjwVx1pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_JjwVyFpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_JjwVyVpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_JjwVylpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_JjwVy1pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_JjwVzFpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_JjwVzVpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="PRD">
     <contextParameter comment="" internalId="_9srkR1mwEeumfthRC2qqBA" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_9srkSFmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:ezD9fOPo0OSWqkc4HnGIUyacsvPz9CnmXx/8tupsiGYhwyRYHf3wb0iHqtJkfpvPCYeiCmrZl479R0usyA1NyE6/SJFmu7q4v6//RbvNS4A8nSZxiVoj8oc907ZVUN1wJH3T6Szbimfkl2oMVXaZ/TnO13E="/>
+    <contextParameter comment="" internalId="_9srkSFmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:5bGwXU7lMA5wQsBOXk4ZKcXPEOQXOnpOVCK/DPGa6HVrUv6IjwmmN0iNnPmRPe3S9BTlE9+f6bEXFT52n5CagaAiBJposdLCrX3aJqa4fhfWhZFoVSXt+u9jZvfUm/FS+cbfa9xmXlLPdFWndAr0aqynURE="/>
     <contextParameter comment="" internalId="_9srkSVmwEeumfthRC2qqBA" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;clients&quot;"/>
     <contextParameter comment="" internalId="_9srkSlmwEeumfthRC2qqBA" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE&quot;"/>
     <contextParameter comment="" internalId="_9srkS1mwEeumfthRC2qqBA" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/clients&quot;"/>
@@ -232,10 +246,24 @@
     <contextParameter comment="" internalId="_9srkt1mwEeumfthRC2qqBA" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srkuFmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srkuVmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="Emplacement clé" internalId="_JjwVzlpEEeuy78gdnvlC6g" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/jobserver/conf/id_rsa_TALEND-SFTP-RECETTE_puttygen.ppk&quot;"/>
+    <contextParameter comment="Mot de passe" internalId="_JjwVz1pEEeuy78gdnvlC6g" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_JjwV0FpEEeuy78gdnvlC6g" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-PRODUCTION&quot;"/>
+    <contextParameter comment=" Hôte" internalId="_JjwV0VpEEeuy78gdnvlC6g" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Port de connexion" internalId="_JjwV0lpEEeuy78gdnvlC6g" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
+    <contextParameter comment="Phrase de passe" internalId="_JjwV01pEEeuy78gdnvlC6g" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_JjwV1FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_JjwV1VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_JjwV1lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_JjwV11pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_JjwV2FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_JjwV2VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_JjwV2lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_JjwV21pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" internalId="_9srkulmwEeumfthRC2qqBA" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_9srku1mwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:tc0jSnPApS4Y2X32THfsvXSD9w+O/gOCVvypxncEn4amVQhj7e/pAk3d8YjQLCpVJO1Br8g4C6ObA7dD9r0yf0xTwslFhSJmalH+ZARyNEXu12fI7iC/G+Jtn7MbLYsI3lxFPj/vXO5n9HY1daEybuYOszY="/>
+    <contextParameter comment="" internalId="_9srku1mwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:ZFIHZy9KDfoRDbwrdFmU8hofzVDcbHq9yddudUVm/9EprDIl8d8iTzcPpZP1CI8PvFE8plQpmnw8TOup2c3W3He3DHDuZzalwr/5b/DIYgJyjp9P4l9CBUy5DbG/EmBaohHFSd/wvOW94xFxPwORyboNtFs="/>
     <contextParameter comment="" internalId="_9srkvFmwEeumfthRC2qqBA" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
     <contextParameter comment="" internalId="_9srkvVmwEeumfthRC2qqBA" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE&quot;"/>
     <contextParameter comment="" internalId="_9srkvlmwEeumfthRC2qqBA" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
@@ -244,7 +272,7 @@
     <contextParameter comment="" internalId="_9srkwVmwEeumfthRC2qqBA" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="talend"/>
     <contextParameter comment="" internalId="_9srkwlmwEeumfthRC2qqBA" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="noDatetimeStringSync=true&amp;serverTimezone=Europe/Paris"/>
     <contextParameter comment="" internalId="_9srkw1mwEeumfthRC2qqBA" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_9srkxFmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:RgM2itWwDoXnGiewD89OrosWukChgmI0APPm+Y0KT3HlensqyGs="/>
+    <contextParameter comment="" internalId="_9srkxFmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:Y0GpwdmDkOzH8amO4BtD7qGHv0S7Y3tZ1+9mlT3duHWyCugp+mI="/>
     <contextParameter comment="" internalId="_9srkxVmwEeumfthRC2qqBA" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srkxlmwEeumfthRC2qqBA" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_9srkx1mwEeumfthRC2qqBA" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
@@ -349,10 +377,24 @@
     <contextParameter comment="" internalId="_9srlKlmwEeumfthRC2qqBA" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srlK1mwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srlLFmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="Emplacement clé" internalId="_JjwV3FpEEeuy78gdnvlC6g" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/jobserver/conf/id_rsa_TALEND-SFTP-RECETTE_puttygen.ppk&quot;"/>
+    <contextParameter comment="Mot de passe" internalId="_JjwV3VpEEeuy78gdnvlC6g" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_JjwV3lpEEeuy78gdnvlC6g" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-RECETTE&quot;"/>
+    <contextParameter comment=" Hôte" internalId="_JjwV31pEEeuy78gdnvlC6g" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;10.204.4.222&quot;"/>
+    <contextParameter comment="Port de connexion" internalId="_JjwV4FpEEeuy78gdnvlC6g" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
+    <contextParameter comment="Phrase de passe" internalId="_JjwV4VpEEeuy78gdnvlC6g" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:lr6Ql0EBWYAAr39/q9huEGJ17sE1wfc+rcxQztpn50iKLiS0yUWo0DGX35+ZBDhC7OLNXQ=="/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_JjwV4lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_JjwV41pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_JjwV5FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_JjwV5VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_JjwV5lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_JjwV51pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_JjwV6FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_JjwV6VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="LOCALHOST">
     <contextParameter comment="" internalId="_9srlLVmwEeumfthRC2qqBA" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_9srlLlmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:qozW40yVXfTyAwNKa9kzFnM3bOrfo0ItblM2N1PMCAMVS+w11OWEjK2qcaxl+pT74pbILAglkFn8I3EgA6CwcZ7+6LPPwhlfD3l1A0tT5ZgmMcQVJJzcIWBPCofTcRQpyxRJUqUACk9S5vz0odvpze/q1uU="/>
+    <contextParameter comment="" internalId="_9srlLlmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:Ww9+81fi4J4oLhDQpy0rYj/En9ktWup7lzOq6w8xrUWrx71Q0NEY4vnQM9lDjPMYL2QVTt6k+QrqNor4H2FIwr5Ir7XUbhxVo8nNLcXOgQcxPM3d7LP1sKY+ixzF6GeNWtLtksVmiH9cEmLVZMfYdTlDa+o="/>
     <contextParameter comment="" internalId="_9srlL1mwEeumfthRC2qqBA" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
     <contextParameter comment="" internalId="_9srlMFmwEeumfthRC2qqBA" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE&quot;"/>
     <contextParameter comment="" internalId="_9srlMVmwEeumfthRC2qqBA" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
@@ -361,7 +403,7 @@
     <contextParameter comment="" internalId="_9srlNFmwEeumfthRC2qqBA" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="talend"/>
     <contextParameter comment="" internalId="_9srlNVmwEeumfthRC2qqBA" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="noDatetimeStringSync=true&amp;serverTimezone=Europe/Paris"/>
     <contextParameter comment="" internalId="_9srlNlmwEeumfthRC2qqBA" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_9srlN1mwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:Svfi3VotYnNBkx5jiuQMTlFKL6ZQaYTKpDGoXwPIPCin/KTWxcM="/>
+    <contextParameter comment="" internalId="_9srlN1mwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:zJegCr+nQMLiwuB+RAQNJOvhWIXg2Fpq586qKO/YQ+vF2EI0fRI="/>
     <contextParameter comment="" internalId="_9srlOFmwEeumfthRC2qqBA" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srlOVmwEeumfthRC2qqBA" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_9srlOlmwEeumfthRC2qqBA" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
@@ -466,10 +508,24 @@
     <contextParameter comment="" internalId="_9srlnVmwEeumfthRC2qqBA" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srlnlmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srln1mwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="Emplacement clé" internalId="_JjwV6lpEEeuy78gdnvlC6g" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/jobserver/conf/id_rsa_TALEND-SFTP-RECETTE_puttygen.ppk&quot;"/>
+    <contextParameter comment="Mot de passe" internalId="_JjwV61pEEeuy78gdnvlC6g" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_JjwV7FpEEeuy78gdnvlC6g" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-RECETTE&quot;"/>
+    <contextParameter comment=" Hôte" internalId="_JjwV7VpEEeuy78gdnvlC6g" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;10.204.4.222&quot;"/>
+    <contextParameter comment="Port de connexion" internalId="_JjwV7lpEEeuy78gdnvlC6g" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
+    <contextParameter comment="Phrase de passe" internalId="_JjwV71pEEeuy78gdnvlC6g" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:l40MvhlNQSganJwK9HLHzLNMmhGYhco5rmdpqOKacVwa7HjMMLE6luCxTFUvY9IT0zm/5Q=="/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_JjwV8FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_JjwV8VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_JjwV8lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_JjwV81pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_JjwV9FpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_JjwV9VpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;c:/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_JjwV9lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_JjwV91pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_9srloFmwEeumfthRC2qqBA" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_9srloVmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:hsR5k85gByW1JzK0QGvEzVlSgONpYwmjLRuF6CRI4em+1B5zYtO9px9AarNRC/XoY9YiEJ0Ezs34Gr0odm6UbBG+LhPojnX1JTiDBKjiOYMzjUBUjDt9SxLOLCAtT/RcDRFQOJOzC+P7imAPFLpoBj98jn0="/>
+    <contextParameter comment="" internalId="_9srloVmwEeumfthRC2qqBA" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:7YF9TDiGOFPuOBT9q+5Pj/unnq05AbLneqsQPQHAMaUU4W3e+AgeD3eEnOz0LgaOJMjeF2ATxb4cpparXU2ZpSyqgruoEl/jlYKTNF/fmmNfqpehcagJG3Q4PPKapGvpmhu9Zo0mP6Hjg34b5OxChBqMcgE="/>
     <contextParameter comment="" internalId="_9srlolmwEeumfthRC2qqBA" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
     <contextParameter comment="" internalId="_9srlo1mwEeumfthRC2qqBA" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE&quot;"/>
     <contextParameter comment="" internalId="_9srlpFmwEeumfthRC2qqBA" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
@@ -478,7 +534,7 @@
     <contextParameter comment="" internalId="_9srlp1mwEeumfthRC2qqBA" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="talend"/>
     <contextParameter comment="" internalId="_9srlqFmwEeumfthRC2qqBA" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="noDatetimeStringSync=true&amp;serverTimezone=Europe/Paris"/>
     <contextParameter comment="" internalId="_9srlqVmwEeumfthRC2qqBA" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_9srlqlmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:whtMgf8ieuVza0K7Nv9StpyMmKQXxeDxIatSEEh7vExlkhhy2c4="/>
+    <contextParameter comment="" internalId="_9srlqlmwEeumfthRC2qqBA" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:AiGJjpm3vDADRhh+w8Ius8yGISX0C5ZFmuaW0OCFKu8fBKfr1Yo="/>
     <contextParameter comment="" internalId="_9srlq1mwEeumfthRC2qqBA" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srlrFmwEeumfthRC2qqBA" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_9srlrVmwEeumfthRC2qqBA" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
@@ -583,6 +639,20 @@
     <contextParameter comment="" internalId="_9srmEFmwEeumfthRC2qqBA" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srmEVmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
     <contextParameter comment="" internalId="_9srmElmwEeumfthRC2qqBA" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="Emplacement clé" internalId="_JjwV-FpEEeuy78gdnvlC6g" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Mot de passe" internalId="_JjwV-VpEEeuy78gdnvlC6g" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_JjwV-lpEEeuy78gdnvlC6g" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment=" Hôte" internalId="_JjwV-1pEEeuy78gdnvlC6g" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Port de connexion" internalId="_JjwV_FpEEeuy78gdnvlC6g" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value=""/>
+    <contextParameter comment="Phrase de passe" internalId="_JjwV_VpEEeuy78gdnvlC6g" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_JjwV_lpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_JjwV_1pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_JjwWAFpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_JjwWAVpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_JjwWAlpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_JjwWA1pEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_JjwWBFpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_JjwWBVpEEeuy78gdnvlC6g" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Warn"/>
@@ -627,7 +697,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YKWswPG2i3jyUam+8j5ANN7ycGo5125Bx7rtCT6c"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8zYcjHhBV8aYNunqp29ekoEyHw2RXDyxjnshBZ5K"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -662,7 +732,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jGe1Hkus/ZZLC9+Sp1SYaidMTMDo2lWesf16tri+"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nq5I8vIegJJDOsbQp0F+kGL/7cTn/IG1+HuX18C6"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -805,14 +875,14 @@
     <elementParameter field="TEXT" name="PORT" value="context.FTP_Port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USER" value="context.FTP_Utilisateur"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FoMvAQIrOJTnHJ54zGNQMXlFnlDb2lS47T48cWZkFRK/Vpjx0SQfYnpgo3UzEaBM"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XeN+4pqA/y4fyucagH3eRw4vvXjV6QFGU14ymNqd7cICgIN+bmDmPLSBBKetnlOd"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:X698jo7gwBl6ki6CDBFEFk2qTIhD5GQBkc+FSyz+1hFWdzbB"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:N67JduL4WZmeueiwG6LGvmN64xGbMPXai/zR1DRZmsd98C3e"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PUBLICKEY"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="context.FTP_EmplacementCle"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:/lZeJu7Mzh3j4sn3p8MzPLWRsJIncubEnbxGzyESVNGzRB366kTy7eIieDcoy5N4Byc="/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:vV0XulAt+5tcihJfd9jkGOGYblTGJIZX2wD+ePl7zXKzBcViX7s7YL6p/fLRaS+RkRE="/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -822,7 +892,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:eQZOYmO3sL5KXbOUcLYHJYShi99LDu5EIdFO6CS2"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:CZNsvDx6xzkgPvBwhBu+ysECRj0m2d6YBusf39hs"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -847,14 +917,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:VghVa2W75CKZ3jbAUMuP9pyKQZUQ6ApMj80fB/aJjktsIFhG6w2S"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:PAOXCwnpbZxgf1nLdD8JsVpj0EIoJa2dYqR/wztXbSJyVBaQS1jf"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:fHG0kdouOqPEFxX87ECbZUEcnlQqtuPk+c0G6gFzyuFuhl1A"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:NGD4O5nPSTA6ZSlvRRuLxUt8KctiVmnNkJa3NYMTYhn4F40P"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:2co9Ej80T8nP5wZrW/fyHi3CMQjT+QAz/ifXgi3LZ/2zuMWu"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:Y6cDJFvacaeZO18bNVocIjZDVJwG158wYF5+0oUq4KWZqd4t"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
@@ -877,7 +947,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:dHqbeaEOQslwr3LjaJyMXOP3GK3falaMgcSWtYZ4"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Evmm5vv3irFkVJxlgY0Rp+DdLtRPbKCsn3yv1UdB"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
@@ -922,14 +992,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Ox9r2+UOyf76jFoclfD3HLWZq66xqAnNPDO0dZYJzvYLgmH88Ly4"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:uttsG2ddASBtxC/XibCbgO5h2eH5EWDomwRZRqUESyssPp6YhltE"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:p3BzXVeXXGJNVrMJ114SMdHN4yjBbrKeiqFtlIRf/Z1HwgNo"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:qW2eNaHCQHsQO8A9f7xHFcgnhMwkeFZ/db26R/ll0Tm1P4Qq"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:3pJoFKc6l+XzIQkr9UrAjFAAuI4tf9vyfd7vg/Kk6gscM1sl"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:dyen76SHnrTpS94IJ/C7fGUpVqaZC5BpYzql7ziX0PMpOwWb"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
@@ -947,7 +1017,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:A+USPYt5nsZH6vMu8FjQISlK8/6yQWHqiyTQ3yZU"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:rv3xTF2z5uO/tq6BZOMf+iy8T0jW2fdnmapWazFA"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -1092,18 +1162,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Q9kf+5O+RZXHlaI3KHSGlu1VlzIUa95oKnvucIaLwp+Kw8z2dKFH"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:9AwxzSvKWitOozXN7oLIwY2B06WeDmlneBrb3i4P9tjmOYv9spAV"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:T6J4y3hbNGBD02xCpw2W3DxYAW1TDZL0NvBO8sdMmgFfJueQ"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:h8ZJmgNBokN39t4j+YxkE99JfV02K1fRClaunDGIIq4qXVSm"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_Out"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpOut1"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:G+c5npdNaktd+1lXxeTcv2UD4D0PmbmeW5tELfefEjVPXNmK"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:gB4a7XMu1xUM41hMh93DslFW7C3ez7BMPQZ3DHH5OzXM7arz"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -1124,7 +1194,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:qhaczv7vki0ovYiNBs6EX/ofJQl/IzHadelS8WYj"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:g9fMFqrxJHW4ipy2EYQXwcEc6IDnCQRBRYa0L6t6"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -1201,7 +1271,7 @@
     <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
     <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" show="false" value="ENC_METHOD_STANDARD"/>
     <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" show="false" value="AES_STRENGTH_256"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:lNbDNhquCtSoNhZIDVemEwZzO/v0gkBSWGMp/ZnD"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:c2Atpqh9UXiekxQFFi5WL69YxEdLBhn5WN+cZe4H"/>
     <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
     <elementParameter field="CHECK" name="USE_SYNC_FLUSH" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Archivage des fichiers OUT - AZURE"/>
@@ -1321,7 +1391,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QY7tjuQq2ojIEKUFUBY4w6c3Y0jO1DPlhFulnYWzC0BKww78JwYy0qOvk6ARruvJ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cormX93gYiltyazopx3kjYuRJTT8dxybJOYwcBmb0N4FJbeIoWfcU5TkgjmAOYH1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIEW_EXEC_SystemeFichierParInterface&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1877,14 +1947,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:HpK+oGcxT06Q+toy/8FQbTunEb8STdsVw0oi9QEFvzzbKmqyCwsn"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:fsI+rBOdTgZQt57wkxMERqVO1nK9DLg5ZR7f18RCip5ldGDpkAiL"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:mwiXJRWjqcDmo/2Urd9CKzhazXLZwsn7vWXC6s/7lrdg59Uv"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:NJkhDOYBz38b2jX8oplUA/Hr+OleigJ97dPppMkp2wUpEbVC"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:mdqegaNVXaq3Kmhily9OqXbFqiVT5sGkVvYQV0sWEvdFrNif"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:yRToVph97Bx8/TMeXdJLX2w0NGIygKh5arsSxUt0BsQMaR50"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn2"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
@@ -1907,7 +1977,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:KTaclKvf7e1F3LWU5jOx+2zx41jlJWq8cnfF+6pm"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:fWAxk6kW5n5a+vGcLfsb55NIKg7u0WWBA5wEe7uZ"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
@@ -1961,14 +2031,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:IyvEYwON2LpB7yJJmgLLglwlvkJhN8iTuGYIzamBSzD6e9Y54afB"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:xuIk6p0jhHHVSBd0d3AWj4Fk3zWzp+Eo2rpm5mtvppNVMLW2TQfc"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:oiDRxGIyjNDobYt00ERJ1f/1vRUJ9vIpSJvyPcQjk9f2eBbT"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:Jr1gkDKUebrEE1hO0D50Y2OghYLb3LWTPD7rmaKZ1PG2Pu/a"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:ns/ZCD56qo0dieCtlj81XiXIeSbZ/p24un2CjdkTm8FsME5U"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:mfQnjEsOJXVZZ4G6wqwCuXPLtDLy1Ys1HTkkiYHIARiXUSNt"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn2"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
@@ -1986,7 +2056,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:/SDMuld+g5z2gEce5iQ0iYnuIRxJl0mbwg0An9Ud"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:lgAr7fh7PxXqmjL6wo+28Msq87xW8DCZjtTWAR+9"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2113,14 +2183,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:NJQ/20epLnEbC7Cu4456G8NcdQ1dOoWGngxVtiDsU4fXK/+sLGkW"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:0cd6ajSIXB9NQbakgQzitenFgvCnWA/YxMWajkzIcj2iwIFZo5cC"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:3R7xV+2uKYg/c63606YwMX9EkYIVhXUQvdQ+PZFISpHTPj2/"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:u7CcqxxJJTGj+FzWIx0Av8KW5g/E9KqSYP2V2uMtgJOO3ou2"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:/kOSuC/qokaLjCogTAuVY39XiuxRHyd4yNWl52kRjc5re3Ik"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:E2UWRrSQfD7k5hkRauzuOlTDZi6Jvv6JAPXoMrgNj25sYXU8"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpOut1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="always"/>
@@ -2138,7 +2208,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:rpJ6WjDG5U4ykKZFxcJawrvkK/moxlmPeEtBb6ZO"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:j03SXedtN4jmID+Vy68bB3LExW1CbgcbTRMzqKAU"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2189,18 +2259,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:scqdvsdpOYblt0fzph/WvwqyyYMYSFB7OkIHeJDN43ddyoOK2xO0"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:9jVh+82+66EmhPbwH71+uIfOZM96WTcOQMmFXP/I9JAQWbXFwKw+"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:2qWcSJvVjkR1C7YY2HOwRrbAxiooZoxuV9XY77ptjU3xmjGu"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:do3dJtKBNm/LIKFYWL+y2X4mJigYV3j5xzymHUyPUieP8jLy"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_Out"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:j6QBmehqzqEvQPnuZ1+7m2gBDNhyrMwOH0YJpX1WBc12ftvf"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:33yiXT2cyhQ6iXVMzb1AM1GnLUVIEXQ7BBRBFa1xL/nAwUyL"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -2221,7 +2291,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:vOblDOKigwYTDt8iZxUryNgHD2YSNloyAZJcGNRw"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:/8CqmeIUa4aLvn5z6ShOkt3hnhWsghqxPzE8FbfF"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2241,14 +2311,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:uHigW2RBWHUTc2fpLTvcBdsrW4Q69aObK/YHMJ34wsuVCmvRMIG7"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:kMbEUCRl2gSnMIlSzbcrqqG9S258kK2Z+KqKFwbRkc2cqIWic7kv"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:mrYa+xxwM29fzctrw1iCzG1QmLcH5kUZOFHyNMAA2Oph7TxA"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:CaTpj9rQN880SDeMwGwFDxZQoNyRQbfDh0in+lZuQdwFNofo"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:8npCbNLzLJDB/giE+eINVn4iknZ0lRoiXlf71UY8ZesXNyEE"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:VcgnKxHDq1xrUvpBxDPPPK/oPhHRdExhgSiG+vbKFv9KO2eM"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="always"/>
@@ -2266,7 +2336,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:G91Cek+g8d32Sj43qGDIqhmXniMhHNqlGL4GxSsQ"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Pf+uINa3Qg8+ex3C8M9W7px5Tq08/CWYl2tqLL2+"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2342,18 +2412,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:SOL+DEH2XCceixzY3RR0w1NgWlY/kgMS0iX+E4vFhmxttd0kEZwX"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:a1Xja1R9CeUBpn3+JbGWijnDBzX8DeWy53UWqbhLzSx0XHttqNlJ"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:kmi/VeG7xrgVtubQS1bd/gfoQuZFMdTLVtVsXX5cOBhE1NAm"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:rRj5t9uJy4jga3sx+wpcQVRGFbtwFHSuM9lpULYUowzLu/my"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_Out"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn2"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:k+jeiOqzhzzEbwR2A1/lhIYbHKGzSHvHSK2kHxu5QiHF6/0z"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:rCfQXIJyqoC+b20bT6IQTuBz0Yss3lFAL+V241hJeoDh+LK5"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -2374,7 +2444,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:qSEjKG/N7ISHUjzt3QfN7BipG+KwuuVcmZJ5+0ZV"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:KUe+T9pUJmgMzizbwI7D48wVHB8e9Eg9mEGmHxjA"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2394,14 +2464,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:CoDJ3UrYrMi8Ryo+Hi8sJdz9OLCFboQjkwrhDoHfaW/e9zxDChtB"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:6GAcFF9TLdW8X/wp+ai1QsOuQF95UlqGLxucoDzT+KwAOMPiRj/u"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:HwFui3j+T/bKkIfAN9BxLK/ZnuOlsgiBr+zVl8spkmX2pfau"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:Ldbsn1DjczHi+8bgGNV9nRsXBgarkx9EoSy/ZLEztm6IMYv0"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:X+rTIMIku4+XbSiYyLb2masn6OxQ0RWRZn5CxoauE0FeNZqL"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:16P7TliauFxxQzwKlOlVCtum/Vuk7I8y6XTCXCxb4rjsMAzG"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn2"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="always"/>
@@ -2419,7 +2489,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:yjO2OymtH/iZcY2ZpF0IC77Gpivz7zPwtgvSzLZE"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:O+OmvQLZOzMOFzUxegRUA4FxzM1AKo8UP69gLSo4"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -3219,13 +3289,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_322b3aef-c605-462c-a9a6-e8530b47fc18"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nZnUuOrsmPUFeeUPNCVsXLmQJa03kEGAgB6h8yHPftcukPjMW2rMQzYmH//c/Drw42DuuQBEbNYY
-CRekKhQuPg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_51baf1c6-85ce-43ad-88f9-b659bb326a1a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kJe5NkWroiaClWC81H+47qexyC0SQdRZTBjxzv7Asstjeg26POn/Kzl2ax7N8Cws/At972iComeb
-SCWsxE/+7w==</DigestValue></Reference></SignedInfo><SignatureValue>BxwM1DRKnBJHfop3AKrUAOGW7foJPfqb/eCNLzp82WGy6JCmOVQMzvvSwJ9lcyVAFZzBWM0B2kZy
-VmS11Ea+/MfymRjE+QfIvttu4R24Iu3/0QYYQB0Vt/WXpWquNL9CuxrN5eBfmEamFnTNsCAorcnX
-q/fo6XmcZMGsuSDx3QHMKRU1Nu/VSrYrxzmUH+zQ552H6DC083MWBpN500P7EYnvGHs5phmscZbp
-sZ+yuXNEU4sO6rQDUYjnz01W5WsorpnIgu2xWRbH2pGhFBIi1yDHeMgRWkStLzHN/3LZel2Sr7J1
-gkcu1Jngf36Qi4IppzLyG5HGNZrTKnzHl5zcSA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e47aabba-cde2-450d-b5c5-0a96e2c8fc62"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jjGfFUPQ8tsmXsjoB6a7yKijQ3gi1k+SC0T1AxZyuxItWV1uvPeRpw8kG9wPJpIrnZ2ify273MJd
+oNQQjn4bKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_44828afc-ef8b-4a86-9234-4710adadf7ac"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3UsGxJlc/Dcw/wfusPTaUso881U/oau9ZvPgwdVASEX5XXquvxzbucFll1NlkKuTNcJINrnHpHxP
+cBim6eIdZw==</DigestValue></Reference></SignedInfo><SignatureValue>PsN1iu7ER85a5vK1poF5RuBJqWF6zahhYsmctd0Z5AOoJMeB9fzFPyFR4kiXDUEaKml/xhcC4xt2
+xZWUsT+ZVeKjVM1yoQsP5s8O8uu7ypnjoagFjNFiIMYqLT8iCvwp+MLGm4ywRDk3kxzrIV3q9nO+
+0lrov4Q4Cp0fdIGHOw76A6BCceFeTXLwMoynRiym2NxCEXDUjp0BLtUG6sEQScg/V2zboNyxLChS
+MZuKSUVFxy8NLl8wYe9DZcwcT+ETkuvIu/51D9Zn23el6+K7ygk8mucJRUZA45fobRYfhe2lKc0T
+Q8EUoFL61b3GNd5qgcc0c0us4QraDPmJFu4+lg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -3247,4 +3317,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_51baf1c6-85ce-43ad-88f9-b659bb326a1a" Target="#_322b3aef-c605-462c-a9a6-e8530b47fc18"><Timestamp>2021-01-19 10:36:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_44828afc-ef8b-4a86-9234-4710adadf7ac" Target="#_e47aabba-cde2-450d-b5c5-0a96e2c8fc62"><Timestamp>2021-01-19 10:50:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
