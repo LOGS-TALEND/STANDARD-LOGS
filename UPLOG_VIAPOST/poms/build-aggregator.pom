@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.example.uplog_viapost</groupId>
+    <artifactId>code.Master</artifactId>
+    <version>7.3.1</version>
+  </parent>
+  <groupId>org.talend</groupId>
+  <artifactId>build.aggregator</artifactId>
+  <version>7.0.0</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>jobs/process/JOBS_OUTILS/job_outils_alerting_mail_0.1</module>
+    <module>jobs/process/JOBS_OUTILS/job_outils_charge_context_file_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crexped_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crpcmd_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_clog_0.1</module>
+  </modules>
+</project>
