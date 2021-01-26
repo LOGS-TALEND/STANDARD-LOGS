@@ -1,0 +1,47 @@
+package routines;
+
+/*
+ * Nom de classe : Multiplication
+ *
+ * Description   : Transforme les grammes en kilogrammes + retire les 0 non significatifs (metres, centimetres, kilos, grammes)
+ *
+ * Version       : 1.0
+ *
+ * Date          : 2021/01/11
+ * 
+ * Copyright     : Jeoffrey Stéphan (jst)
+ * 
+ * VERSION 1 : Création
+ */
+
+public class Multiplication {
+
+	public static String PoidsGrammesEnKG(String valeurEnEntreeStringGrammes) {
+
+		// remplacement de la virgule par un point pour transfo en double
+		valeurEnEntreeStringGrammes = valeurEnEntreeStringGrammes.replaceAll(",", ".");
+
+		double valeurEnEntreeDoubleGrammes = Double.parseDouble(valeurEnEntreeStringGrammes);
+
+		double grammesEnKG = valeurEnEntreeDoubleGrammes * 1000;
+		
+		// suppression des .0 inutiles
+		String poidsKGString = String.format("%.0f", grammesEnKG);
+		
+		return poidsKGString;
+
+	}
+	
+	public static String MesureMetresEnCM (String valeurEnEntreeStringMetres) {
+		
+		// remplacement de la virgule par un point pour transfo en double
+		valeurEnEntreeStringMetres = valeurEnEntreeStringMetres.replaceAll(",",".");
+
+		double valeurEnEntreeDoubleMetres = Double.parseDouble(valeurEnEntreeStringMetres);
+		
+		// suppression des .0 inutiles, avant et après 010,00 dans cet exemple
+        String mesureMetreEnCM = String.format("%.0f", valeurEnEntreeDoubleMetres);
+		
+		return mesureMetreEnCM;
+	}
+}

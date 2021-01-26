@@ -20,11 +20,24 @@
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_rptedi_cmde_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_rptedi_dest_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_tsq__0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/crrefa_to_viapost_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crexped_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crpcmd_0.1</module>
-    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/stke_to_viapost_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/stkmvt_to_viapost_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/stkmvt_to_viapost_1.0</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_1.0</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_2.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.2</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od07_brm_stke_to_stketa_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_0.3</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od09_brm_rfma_to_crrefa_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od09_brm_rfma_to_crrefa_1.0</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od10_brm_reflex_to_stkmvt_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od10_brm_reflex_to_stkmvt_0.2</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od10_brm_reflex_to_stkmvt_0.3</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od10_brm_reflex_to_stkmvt_1.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od11_brm_reflex_to_crpcmd_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.2</module>
@@ -32,9 +45,15 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_1.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_2.0</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od4_brm_dest_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od4_brm_dest_to_reflex_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/cmde_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/dest_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_clog_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_crrefa_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_stke_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_stkmvt_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_stkmvt_1.0</module>
     <module>jobs/process/JOB_TEST/test_archivage_out_0.1</module>
     <module>jobs/process/JOB_TRAITEMENT_PIVOT/c11_reflex_to_pivot_clog_0.1</module>
   </modules>
@@ -42,8 +61,8 @@
     <signer.version>7.3.1</signer.version>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <encoding>UTF-8</encoding>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
