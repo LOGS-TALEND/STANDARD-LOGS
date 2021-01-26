@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.uplog_viapost</groupId>
+    <groupId>uplog.uplog_viapost</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
     <relativePath>../../../../../../</relativePath>
   </parent>
-  <groupId>org.example.uplog_viapost.job</groupId>
+  <groupId>uplog.uplog_viapost.job</groupId>
   <artifactId>OD08_BRM_LCDE_TO_CRLOG</artifactId>
   <version>0.3.0</version>
   <name>UPLOG_VIAPOST OD08_BRM_LCDE_TO_CRLOG-0.3.0 (0.3,Jobs)</name>
@@ -25,8 +25,8 @@
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <talend.product.version>7.3.1.20201125_1449-patch</talend.product.version>
     <talend.job.finalName>od08_brm_lcde_to_crlog_0_3</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.uplog_viapost.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.uplog_viapost.code</talend.routine.groupid>
+    <talend.pigudf.groupid>uplog.uplog_viapost.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>uplog.uplog_viapost.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx8192M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
@@ -173,27 +173,27 @@
       <version>1.3.3</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.code</groupId>
+      <groupId>uplog.uplog_viapost.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.job</groupId>
+      <groupId>uplog.uplog_viapost.job</groupId>
       <artifactId>BRM_TO_CRLOG_AvecGestionDeLots</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.job</groupId>
+      <groupId>uplog.uplog_viapost.job</groupId>
       <artifactId>JOB_OUTILS_CHARGE_CONTEXT_FILE</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.job</groupId>
+      <groupId>uplog.uplog_viapost.job</groupId>
       <artifactId>BRM_TO_CRLOG_SansGestionDeLots</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.job</groupId>
+      <groupId>uplog.uplog_viapost.job</groupId>
       <artifactId>JOB_OUTILS_ALERTING_MAIL</artifactId>
       <version>0.1.0</version>
     </dependency>

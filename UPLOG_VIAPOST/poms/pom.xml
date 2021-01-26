@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.example.uplog_viapost</groupId>
+  <groupId>uplog.uplog_viapost</groupId>
   <artifactId>code.Master</artifactId>
   <version>7.3.1</version>
   <packaging>pom</packaging>
@@ -13,18 +13,37 @@
     <module>code/routines</module>
     <module>jobs/process/JOBS_OUTILS/job_outils_alerting_mail_0.1</module>
     <module>jobs/process/JOBS_OUTILS/job_outils_charge_context_file_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_cmde_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_crlog_avecgestiondelots_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_crlog_sansgestiondelots_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_dest_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_rptedi_cmde_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_rptedi_dest_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/brm_to_tsq__0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crexped_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/pivot_clog_to_crpcmd_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_0.3</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od11_brm_reflex_to_crpcmd_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.2</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.3</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_1.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od3_brm_cmde_to_reflex_2.0</module>
-    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od4_brm_dest_to_reflex_0.2</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/cmde_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/dest_to_reflex_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/REFLEX/reflex_to_clog_0.1</module>
+    <module>jobs/process/JOB_TEST/test_archivage_out_0.1</module>
+    <module>jobs/process/JOB_TRAITEMENT_PIVOT/c11_reflex_to_pivot_clog_0.1</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
+    <signer.version>7.3.1</signer.version>
     <encoding>UTF-8</encoding>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
