@@ -3,15 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.uplog_viapost</groupId>
+    <groupId>uplog.uplog_viapost</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
     <relativePath>../../../../</relativePath>
   </parent>
-  <groupId>org.example.uplog_viapost.job</groupId>
+  <groupId>uplog.uplog_viapost.job</groupId>
   <artifactId>JOB_OUTILS_ALERTING_MAIL</artifactId>
   <version>0.1.0</version>
-  <name>UPLOG_VIAPOST JOB_OUTILS_ALERTING_MAIL-0.1.0 (0.1,Job Designs)</name>
+  <name>UPLOG_VIAPOST JOB_OUTILS_ALERTING_MAIL-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -25,12 +25,12 @@
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <talend.product.version>7.3.1.20201125_1449-patch</talend.product.version>
     <talend.job.finalName>job_outils_alerting_mail_0_1</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.uplog_viapost.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.uplog_viapost.code</talend.routine.groupid>
+    <talend.pigudf.groupid>uplog.uplog_viapost.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>uplog.uplog_viapost.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.context>LOCALHOST</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>JOB_OUTILS_ALERTING_MAIL</talend.job.name>
@@ -138,7 +138,7 @@
       <version>1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.uplog_viapost.code</groupId>
+      <groupId>uplog.uplog_viapost.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
