@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml' outStruct='Structures/ANAPRO/ANAPRO_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='ANAPRO_VIAPOST' V1='4' name='ANAPRO_VIAPOST_To_ANAPRO_VIAPOST_FILTRE' incarnation='58941'>
+<root t='190' id='1' V190='11' inStruct='Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml' outStruct='Structures/ANAPRO/ANAPRO_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='ANAPRO_VIAPOST' V1='4' name='ANAPRO_VIAPOST_To_ANAPRO_VIAPOST_FILTRE' incarnation='58963'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='13758' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='13213' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/RPTEDI/ANAPRO_FILTRE/row5.xml' V281='13' modifiedFromParent_emit='true' V1='4' name='row5'>
@@ -241,9 +241,7 @@
     </child>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='404' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/RPTEDI/ANAPRO_FILTRE/row7.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row7'>
       <mapNode t='190' idref='1'/>
-      <repRuntime t='698' id='6129' V698='1' V690='1' padOutput='true'>
-      </repRuntime>
-      <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
+      <io>ReadURL({Start Offset},{Length})</io>
       <child t='200' id='294' V200='8' input='true' structElemExists='true' usedCount='264' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/RPTEDI/ANAPRO_FILTRE/row7Record.xml' V281='13' V1='4' name='row7Record'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='300' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ID'>
