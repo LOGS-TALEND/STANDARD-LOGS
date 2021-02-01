@@ -48,30 +48,5 @@ public class Dictionnaires {
 		}
 						
 		return Exist;		
-    }
-    
-    public static String ContainsNoAdd(String chaine) {
-    	String Exist = new String("");
-    	
-    	if (list.contains(chaine)) {			
-			Exist = "True";
-		} else {
-			Exist = "False";
-		}
-						
-		return Exist;		
-    }
-    
-    public static String Add(String chaine) {
-    	String added = new String("");
-    	
-    	if (list.contains(chaine)) {			
-			added = "False";
-		} else {
-			list.add(chaine);
-			added = "True";
-		}
-						
-		return added;		
-    }
+    } 
 }
