@@ -2,19 +2,23 @@
 /,com.oaklandsw.transform,javaClasspath,file:/C:/Users/jstephan/Downloads/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18/mysql-connector-java-8.0.18.jar
 Databases,com.oaklandsw.base,order,5
 Maps,com.oaklandsw.base,order,1
+Maps/ANAPRO/ANAPRO_BRM_TO_RCPT_PIVOT.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/ANAPRO/ANAPRO_VIAPOST_To_RCPT_PIVOT.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/ANAPRO/ANAPRO_VIAPOST_To_RCPT_PIVOT.xml,com.oaklandsw.base,references.1,Structures/ANAPRO/RCPT_PIVOT.xml
+Maps/ANAPRO/RCPT_PIVOT_To_RCPT_REFLEX.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/RCPT_PIVOT.xml
 Maps/CLOG/INT52_To_CLOG_PIVOT.xml,com.oaklandsw.base,references.0,Structures/CLOG/INT52.xml
 Maps/CLOG/INT52_To_CLOG_PIVOT.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml
+Maps/CMDCLI_Client_To_CMDCLI_Pivot.xml,com.oaklandsw.base,needsVal.0,Structures/CMDCLI/CMDCLI_VIAPOST.xml
+Maps/CMDCLI_To_CMDCLITSQ.xml,com.oaklandsw.base,needsVal.0,Structures/CMDCLI/CMDCLI_VIAPOST.xml
 Maps/CRLOG/LCDE_TO_CRLOG_AvGestLot.xml,com.oaklandsw.base,references.0,Structures/LCDE/LCDE.xml
 Maps/CRLOG/LCDE_TO_CRLOG_AvGestLot.xml,com.oaklandsw.base,references.1,Structures/CRLOG/CRLOG.xml
 Maps/CRLOG/LCDE_TO_CRLOG_SsGestLot.xml,com.oaklandsw.base,references.0,Structures/LCDE/LCDE.xml
 Maps/CRLOG/LCDE_TO_CRLOG_SsGestLot.xml,com.oaklandsw.base,references.1,Structures/CRLOG/CRLOG.xml
 Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml
 Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.1,Structures/CRPCMD/CRPCMD_VIAPOST.xml
+Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST.xml,com.oaklandsw.base,needsVal.0,Structures/CRPT/CRAPRO_VIAPOST.xml
 Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_GesLOT.xml,com.oaklandsw.base,references.0,Structures/CRPT/CRAPRO_VIAPOST.xml
 Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_GesLOT.xml,com.oaklandsw.base,references.1,Structures/CRPT/CRPT_PIVOT.xml
-Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT.xml,com.oaklandsw.base,needsVal.0,Structures/CRPT/CRAPRO_VIAPOST.xml
 Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT.xml,com.oaklandsw.base,references.0,Structures/CRPT/CRPT_PIVOT.xml
 Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT.xml,com.oaklandsw.base,references.1,Structures/CRPT/CRAPRO_VIAPOST.xml
 Maps/CRPT/INT53_REFLEX_To_CRPT_PIVOT.xml,com.oaklandsw.base,references.0,Structures/CRPT/CRPT_PIVOT.xml
@@ -35,6 +39,7 @@ Maps/Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_CMDCLI_FILTRE.xml,com.oaklandsw.base,refe
 Maps/Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_CMDCLI_FILTRE.xml,com.oaklandsw.base,references.1,Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/InputWrapper.xml
 Maps/Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_RPTEDI_CMDCLI.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/RPTEDI_CMDCLI.xml
 Maps/Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_RPTEDI_CMDCLI.xml,com.oaklandsw.base,references.1,Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml
+Maps/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2.xml,com.oaklandsw.base,needsVal.0,Structures/CRPT/CRAPRO_VIAPOST.xml
 Maps/Jobs/C13_PIVOT_CLOG_TO_CREXPED/tHMap_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_PIVOT_CLOG_TO_CREXPED/tHMap_2/InputWrapper.xml
 Maps/Jobs/C13_PIVOT_CLOG_TO_CREXPED/tHMap_2.xml,com.oaklandsw.base,references.1,Structures/Jobs/C13_PIVOT_CLOG_TO_CREXPED/tHMap_2/xmlout3.xml
 Maps/Jobs/C13_PIVOT_CLOG_TO_CREXPED/tHMap_5.xml,com.oaklandsw.base,references.0,Structures/CLOG/CLOG_PIVOT.xml
@@ -55,8 +60,11 @@ Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8.xml,com.oaklandsw.base,referen
 Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_8/xmlout5.xml
 Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/InputWrapper.xml
 Maps/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9.xml,com.oaklandsw.base,references.1,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/xmlout4.xml
+Maps/Jobs/Job_Pour_Nico_3/tHMap_1.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml
 Maps/Jobs/Job_Pour_Nico_3/tHMap_1.xml,com.oaklandsw.base,references.0,Structures/CMDCLI/CMDCLI_TSQ.xml
 Maps/Jobs/Job_Pour_Nico_3/tHMap_1.xml,com.oaklandsw.base,references.1,Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml
+Maps/Jobs/RPTDI_ANAPRO/tHMap_1.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/InputWrapper.xml
+Maps/Jobs/RPTEDI_ANAPRO_TEST/ANAPRO_VIAPOST_To_ANAPRO_VIAPOST_FILTRE.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/Jobs/STKMVT_test/tHMap_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/STKMVT_test/tHMap_2/copyOfout1.xml
 Maps/Jobs/STKMVT_test/tHMap_2.xml,com.oaklandsw.base,references.1,Structures/Jobs/STKMVT_test/tHMap_2/xmlout.xml
 Maps/Jobs/STKMVT_test/tHMap_3.xml,com.oaklandsw.base,references.0,Structures/Jobs/STKMVT_test/tHMap_3/InputWrapper.xml
@@ -64,13 +72,19 @@ Maps/Jobs/STKMVT_test/tHMap_3.xml,com.oaklandsw.base,references.1,Structures/STK
 Maps/Jobs/STKMVT_test/tHMap_4.xml,com.oaklandsw.base,references.0,Structures/STKM/STKMVT_VIAPOST.xml
 Maps/Jobs/STKMVT_test/tHMap_4.xml,com.oaklandsw.base,references.1,Structures/Jobs/STKMVT_test/tHMap_4/InputWrapper.xml
 Maps/Jobs/STKMVT_test/tHMap_5.xml,com.oaklandsw.base,references.0,Structures/STKM/STKMVT_VIAPOST.xml
+Maps/PALLADIUM/Copy_of_REFART_PALLADIUM_TO_REFART_PIVOT.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_PIVOT.xml
+Maps/PALLADIUM/RCPT_PALLADIUM_To_RCPT_PIVOT.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/RCPT_PIVOT.xml
+Maps/PALLADIUM/REFART_PALLADIUM_TO_REFART_PIVOT.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_PIVOT.xml
 Maps/PIVOT_LISTE/ARTI_TO_REFLEX.xml,com.oaklandsw.base,references.0,Structures/ARTICLE/ARTICLE_RFX.xml
 Maps/PIVOT_LISTE/ARTI_TO_REFLEX.xml,com.oaklandsw.base,references.1,Structures/ARTICLE/PIVOTLISTE_ARTICLE.xml
 Maps/PIVOT_LISTE/CMDE_TO_REFLEX.xml,com.oaklandsw.base,references.0,Structures/CMDCLI/PIVOTLISTE_CMDE.xml
 Maps/PIVOT_LISTE/CMDE_TO_REFLEX.xml,com.oaklandsw.base,references.1,Structures/CMDCLI/CMDE_REFLEX.xml
 Maps/PIVOT_LISTE/RCPT_TO_REFLEX.xml,com.oaklandsw.base,references.0,Structures/REFLEX/RCPT_PIVOT_LISTE.xml
 Maps/PIVOT_LISTE/RCPT_TO_REFLEX.xml,com.oaklandsw.base,references.1,Structures/REFLEX/RCPT_REFLEX.xml
+Maps/REFART_Pivot_To_REFART_RFX_FLAT.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_PIVOT.xml
+Maps/REFART_To_REFART_Pivot.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_PIVOT.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_INDEX_To_ANAPRO_TRIE.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_index.xml
+Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_ANAPRO_INDEX.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_ANAPRO_INDEX.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_index.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_ANAPRO_INDEX.xml,com.oaklandsw.base,references.1,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_ANAPRO_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml
@@ -98,14 +112,29 @@ Maps/STKM/INT62_To_STKM_PIVOT.xml,com.oaklandsw.base,references.1,Structures/STK
 Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
-Sample Data/LCDE/LCDE/LCDE015759_ShortError_TSH.rfx,com.oaklandsw.transform,repNodeType,173
-Sample Data/RPTEDI/RPTEDI_CMDCLI/RPTEDI_CMDCLI200331063030.XML,com.oaklandsw.transform,repNodeType,172
+Sample Data/CMDCLI/CMDCLI_VIAPOST/CMDCLI200331063030.XML,com.oaklandsw.transform,repNodeType,172
+Sample Data/CRPT/INT53/RFRE000048.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/CRPT/INT53/RFRE079222.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/CRPT/INT53/RFRE578243.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/Jobs/Job_Pour_Nico_3/tHMap_1/row2/CMDCLI20128063023.xml,com.oaklandsw.transform,repNodeType,178
+Sample Data/Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_GesLOT_input/RFRE079222.rfx,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT_input/INT53_PIVOT.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT_input/INT53_TEST.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT_input/INT53_XML.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT_output/INT53_PIVOT.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/CRPT/INT53_REFLEX_To_CRPT_PIVOT_input/RFRE079222.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/Maps/CRPT/INT53_REFLEX_To_CRPT_PIVOT_input/RFRE578243.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/Maps/CRPT/INT53_REFLEX_To_CRPT_PIVOT_output/INT53_PIVOT.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/Maps/Jobs/Job_Pour_Nico_3/tHMap_1_output/BOD2020033106460744_TSQ.xml,com.oaklandsw.transform,repNodeType,172
+Sample Data/PALLADIUM/RCPT_PALLADIUM/KSGB_VLC_ATT_RECEPTION_20191112-093137-TRAILER8-B0905757-DSV.txt,com.oaklandsw.transform,repNodeType,173
 Structures,com.oaklandsw.base,order,0
 Structures/ANAPRO/ANAPRO_VIAPOST.xml,com.oaklandsw.base,references.0,Sample Data/ANAPRO/ANAPRO_small/ANAPRO_small
 Structures/ANAPRO/ANAPRO_VIAPOST.xml,com.oaklandsw.base,references.1,Namespace Containers/ANAPRO.xml
 Structures/ANAPRO/ANAPRO_index.xml,com.oaklandsw.base,references.0,Namespace Containers/ANAPRO.xml
 Structures/ANAPRO/ANAPRO_index.xml,com.oaklandsw.base,references.1,Sample Data/ANAPRO/ANAPRO_small/ANAPRO_small
 Structures/ANAPRO/RCPT_PIVOT.xml,com.oaklandsw.base,references.0,Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
+Structures/ANAPRO/RCPT_PIVOT_ANAPRO_BRM.xml,com.oaklandsw.base,references.0,Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
+Structures/ARTICLE/ARTICLE_RFX.xml,com.oaklandsw.base,references.0,/UPLOG_VIAPOST/Sample Data/REFART/ERFART_RFX_FLAT/RFARTICLE201911180614576-000.rfx
 Structures/ARTICLE/PIVOTLISTE_ARTICLE.xml,com.oaklandsw.base,references.0,Sample Data/REFART/ERFART_RFX_FLAT/RFARTICLE201911180614576-000.rfx
 Structures/CLOG/CLOG_PIVOT.xml,com.oaklandsw.base,references.0,Namespace Containers/CLOG.xml
 Structures/CLOG/CLOG_PIVOT.xml,com.oaklandsw.base,references.1,Sample Data/CLOG/CLOG_PIVOT/-RFPR000002.rfx
@@ -114,12 +143,15 @@ Structures/CMDCLI/CMDCLI_PIVOT.xml,com.oaklandsw.base,references.0,Sample Data/C
 Structures/CMDCLI/CMDCLI_TSQ.xml,com.oaklandsw.base,references.0,Namespace Containers/BOD2020033106460744_TSQ.xml
 Structures/CMDCLI/CMDCLI_VIAPOST.xml,com.oaklandsw.base,references.0,Sample Data/CMDCLI/CMDCLI_VIAPOST/CMDCLI20128064639.XML
 Structures/CMDCLI/CMDCLI_VIAPOST.xml,com.oaklandsw.base,references.1,Namespace Containers/CMDCLI200331063030.xml
+Structures/CMDCLI/Copy_of_CMDCLI_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/CMDCLI200331063030.xml
+Structures/CMDCLI/Copy_of_CMDCLI_VIAPOST.xml,com.oaklandsw.base,references.1,Sample Data/CMDCLI/CMDCLI200331063030.XML
 Structures/CREXPED/CREXPED_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/CREXPED.xml
 Structures/CRLOG/CRLOG.xml,com.oaklandsw.base,references.0,Sample Data/CRLOG/CRLOG/CRLOG200327103417
 Structures/CRLOG/CRLOG.xml,com.oaklandsw.base,references.1,Namespace Containers/CRLOG.xml
 Structures/CRPCMD/CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/CREXPED.xml
+Structures/CRPT/CRAPRO_VIAPOST.xml,com.oaklandsw.base,references.0,Sample Data/CRPT/CRPT_VIAPOST/CRAPRO190618154027
 Structures/CRPT/CRPT_PIVOT.xml,com.oaklandsw.base,references.0,Sample Data/CRPT/CRPT_PIVOT/CRAPRO_generated.xml
-Structures/CRPT/INT53.xml,com.oaklandsw.base,references.0,Sample Data/CRPT/INT53/RFRE000048.rfx
+Structures/CRPT/INT53.xml,com.oaklandsw.base,references.0,Sample Data/CRPT/INT53/RFRE079222.rfx
 Structures/CRREFA/CRREFA_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/CRREFA.xml
 Structures/CRREFA/CRREFA_VIAPOST.xml,com.oaklandsw.base,references.1,Sample Data/CRREFA/CRREFA_VIAPOST/CRREFA200720232657
 Structures/DEST/DESTINATAIRE_CLIENT.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
@@ -157,8 +189,18 @@ Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant.xml,com.oa
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant.xml,com.oaklandsw.base,references.1,Sample Data/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant/RPTEDI_DEST_BLOQUANT_TEST.csv
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
-Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,/root/row5
-Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6.xml,/root/row6
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_2.xml,/root/RPTEDI_2
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_1.xml,/root/RPTEDI_1
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_3.xml,/root/RPTEDI_3
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_1.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_1Record.xml,/root/RPTEDI_1Record
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_2Record.xml,/root/RPTEDI_2Record
+Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_3.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_RCPT/tHMap_2/RPTEDI_3Record.xml,/root/RPTEDI_3Record
+Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/row4.xml,/root/row4
+Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/out_62_sansLot.xml,/root/out_62_sansLot
+Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/out_62_sansLot.xml,com.oaklandsw.base,references.0,Structures/STKM/STKM_PIVOT.xml,/root/STKM
+Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/row4.xml,com.oaklandsw.base,references.0,Structures/Jobs/C12_DI_BRM_TO_REFLEX_CRAPRO_BOD/tHMap_2/row4Record.xml,/root/row4Record
+Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6.xml,/root/row6
+Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,/root/row5
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.2,Namespace Containers/DEST.xml
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
@@ -225,6 +267,45 @@ Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row14.xml,com.oaklandsw.
 Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row14.xml,com.oaklandsw.base,references.1,Structures/CLOG/CLOG_PIVOT.xml,/root/CLOG
 Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row15.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row15Record.xml,/root/row15Record
 Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row17.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CRPCMD_VIAPOST/tHMap_9/row17Record.xml,/root/row17Record
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/DICO.xml,com.oaklandsw.base,references.0,Structures/Jobs/PoC_lookup_thmap/tHMap_1/DICORecord.xml,/root/DICORecord
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/PoC_lookup_thmap/tHMap_1/row1.xml,/root/row1
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/PoC_lookup_thmap/tHMap_1/DICO.xml,/root/DICO
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/PoC_lookup_thmap/tHMap_1/entree.xml,/root/entree
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/entree.xml,com.oaklandsw.base,references.0,Structures/PALLADIUM/CMDCLI_PALLADIUM.xml,/root/ROOT
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/row1.xml,com.oaklandsw.base,references.0,Structures/Jobs/PoC_lookup_thmap/tHMap_1/row1Record.xml,/root/row1Record
+Structures/Jobs/PoC_lookup_thmap/tHMap_1/row2.xml,com.oaklandsw.base,references.0,Structures/Jobs/PoC_lookup_thmap/tHMap_1/row2Record.xml,/root/row2Record
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row1.xml,/root/row1
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row2.xml,/root/row2
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row1.xml,/root/row1
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row1.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row1.xml,com.oaklandsw.base,references.0,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row1.xml,com.oaklandsw.base,references.1,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row2.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico/tHMap_1/row2Record.xml,/root/row2Record
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/fichier_refart_viapost.xml,/root/fichier_refart_viapost
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/db_dictionnaires.xml,/root/db_dictionnaires
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/fichier_refart_viapost.xml,/root/fichier_refart_viapost
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/db_dictionnaires.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/db_dictionnairesRecord.xml,/root/db_dictionnairesRecord
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/fichier_refart_viapost.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/fichier_refart_viapost.xml,com.oaklandsw.base,references.0,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_Pour_Nico2/tHMap_1/fichier_refart_viapost.xml,com.oaklandsw.base,references.1,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row3.xml,/root/row3
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row6.xml,/root/row6
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row3.xml,/root/row3
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row3.xml,com.oaklandsw.base,needsVal.0,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row3.xml,com.oaklandsw.base,references.0,Namespace Containers/REFART19115064504.xml
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row3.xml,com.oaklandsw.base,references.1,Structures/REFART/REFART_VIAPOST.xml,/root/REFART
+Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row6.xml,com.oaklandsw.base,references.0,Structures/Jobs/REFART_VIAPOST_test/tHMap_1/row6Record.xml,/root/row6Record
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_3.xml,/root/RPTEDI_3
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_1.xml,/root/RPTEDI_1
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_2.xml,/root/RPTEDI_2
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_1.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_1Record.xml,/root/RPTEDI_1Record
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_2Record.xml,/root/RPTEDI_2Record
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_3.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/RPTEDI_3Record.xml,/root/RPTEDI_3Record
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/copyOfout.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/copyOfoutRecord.xml,/root/copyOfoutRecord
+Structures/Jobs/RPTDI_ANAPRO/tHMap_1/row1.xml,com.oaklandsw.base,references.0,Structures/Jobs/RPTDI_ANAPRO/tHMap_1/row1Record.xml,/root/row1Record
 Structures/Jobs/STKMVT_test/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/STKMVT_test/tHMap_3/row5.xml,/root/row5
 Structures/Jobs/STKMVT_test/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/STKMVT_test/tHMap_3/row4.xml,/root/row4
 Structures/Jobs/STKMVT_test/tHMap_3/row4.xml,com.oaklandsw.base,references.0,Structures/STKM/STKM_PIVOT.xml,/root/STKM
@@ -241,12 +322,49 @@ Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.2,Str
 Structures/Jobs/TSQ/tHMap_1/row1.xml,com.oaklandsw.base,references.0,Namespace Containers/CMDCLI200331063030.xml
 Structures/Jobs/TSQ/tHMap_1/row1.xml,com.oaklandsw.base,references.1,Structures/CMDCLI/CMDCLI_VIAPOST.xml,/root/CMDCLI
 Structures/Jobs/TSQ/tHMap_1/row2.xml,com.oaklandsw.base,references.0,Structures/Jobs/TSQ/tHMap_1/row2Record.xml,/root/row2Record
+Structures/Jobs/fils/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/fils/tHMap_4/RPTEDI_1.xml,/root/RPTEDI_1
+Structures/Jobs/fils/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/fils/tHMap_4/row1.xml,/root/row1
+Structures/Jobs/fils/tHMap_4/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/fils/tHMap_4/row2.xml,/root/row2
+Structures/Jobs/fils/tHMap_4/RPTEDI_1.xml,com.oaklandsw.base,references.0,Structures/Jobs/fils/tHMap_4/RPTEDI_1Record.xml,/root/RPTEDI_1Record
+Structures/Jobs/fils/tHMap_4/row1.xml,com.oaklandsw.base,references.0,Structures/Jobs/fils/tHMap_4/row1Record.xml,/root/row1Record
+Structures/Jobs/fils/tHMap_4/row2.xml,com.oaklandsw.base,references.0,Structures/Jobs/fils/tHMap_4/row2Record.xml,/root/row2Record
+Structures/Jobs/test_date/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_1/row2.xml,/root/row2
+Structures/Jobs/test_date/tHMap_1/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/test_date/tHMap_1/row1.xml,/root/row1
+Structures/Jobs/test_date/tHMap_1/RPTEDI_3.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_1/RPTEDI_3Record.xml,/root/RPTEDI_3Record
+Structures/Jobs/test_date/tHMap_1/row1.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_1/row1Record.xml,/root/row1Record
+Structures/Jobs/test_date/tHMap_1/row2.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_1/row2Record.xml,/root/row2Record
+Structures/Jobs/test_date/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_2/RPTEDI.xml,/root/RPTEDI
+Structures/Jobs/test_date/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/test_date/tHMap_2/RPTEDI_2.xml,/root/RPTEDI_2
+Structures/Jobs/test_date/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/test_date/tHMap_2/RPTEDI_30.xml,/root/RPTEDI_30
+Structures/Jobs/test_date/tHMap_2/RPTEDI.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_2/RPTEDIRecord.xml,/root/RPTEDIRecord
+Structures/Jobs/test_date/tHMap_2/RPTEDI_2.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_2/RPTEDI_2Record.xml,/root/RPTEDI_2Record
+Structures/Jobs/test_date/tHMap_2/RPTEDI_30.xml,com.oaklandsw.base,references.0,Structures/Jobs/test_date/tHMap_2/RPTEDI_30Record.xml,/root/RPTEDI_30Record
 Structures/LCDE/LCDE.xml,com.oaklandsw.base,references.0,Sample Data/LCDE/LCDE/LCDE015759_ShortError_TSH.rfx
+Structures/MOBIVIA/DESTINATAIRE_PIVOT_MOB.xml,com.oaklandsw.base,references.0,Sample Data/DEST/DESTINATAIRE_PIVOT/pivot_example
+Structures/PALLADIUM/CMDCLI_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/CMDCLI_PALLADIUM/KSGB_VLC_ORDER_20191204-155230-287277_CRLF
+Structures/PALLADIUM/CRPCMD_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/CRPCMD_PALLADIUM/VLC_KSGB_CR_PREPA_CMD_331520_20200609-1026239.txt
+Structures/PALLADIUM/CRPT_CLI_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/CRPT_CLI_PALLADIUM/VLC_KSGB_CR_Reception_CLI_39948_20200609-1013561.txt
+Structures/PALLADIUM/CRPT_FO_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/CRREFO/VLC_KSGB_CR_Reception_FO_TRAILER8-B0905757-DSV_20191120-1108394.txt
+Structures/PALLADIUM/CRPT_MVT_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/CRPT_MVT_PALLADIUM/VLC_KSGB_MVT_STK_20200609-1013563.txt
+Structures/PALLADIUM/RCPT_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/RCPT_PALLADIUM/KSGB_VLC_ATT_RECEPTION_20191112-093137-TRAILER8-B0905757-DSV.txt
+Structures/PALLADIUM/REFART_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/PALLADIUM/REFART_PALLADIUM/PALLADIUM_KSGB_VLC_PRODUITS_20200717-172800.txt
+Structures/REFART/Copy_of_REFART_RFX_FLAT.xml,com.oaklandsw.base,references.0,Sample Data/REFART/ERFART_RFX_FLAT/RFARTICLE201911180614576-000.rfx
 Structures/REFART/PIVOT_ARTI_BRM.xml,com.oaklandsw.base,references.0,Sample Data/REFART/REFART_PIVOT/refart_pivot_example
+Structures/REFART/REFART.xml,com.oaklandsw.base,references.0,Sample Data/REFART/REFART19115064504
+Structures/REFART/REFART.xml,com.oaklandsw.base,references.1,Namespace Containers/REFART19115064504.xml
+Structures/REFART/REFART_PIVOT.xml,com.oaklandsw.base,references.0,Sample Data/REFART/REFART_PIVOT/refart_pivot_example
+Structures/REFART/REFART_PIVOT_old.xml,com.oaklandsw.base,references.0,Sample Data/REFART/REFART_PIVOT/refart_pivot_example
+Structures/REFART/REFART_RFX_FLAT.xml,com.oaklandsw.base,references.0,Sample Data/REFART/ERFART_RFX_FLAT/RFARTICLE201911180614576-000.rfx
+Structures/REFART/REFART_RFX_XML.xml,com.oaklandsw.base,references.0,Sample Data/REFART_RFX_XML/REFART_RFX_XML
+Structures/REFART/REFART_RFX_XML.xml,com.oaklandsw.base,references.1,Namespace Containers/REFART_RFX_XML.xml
 Structures/REFART/REFART_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/REFART19115064504.xml
+Structures/REFLEX/RCPT_PIVOT_LISTE.xml,com.oaklandsw.base,references.0,/UPLOG_VIAPOST/Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
+Structures/REFLEX/RCPT_REFLEX.xml,com.oaklandsw.base,references.0,/UPLOG_VIAPOST/Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
+Structures/RFARTICLE.xml,com.oaklandsw.base,references.0,Sample Data/RFARTICLE201911180614576-000.rfx
+Structures/RFST.xml,com.oaklandsw.base,references.0,Sample Data/RFST/RFST001599.rfx
 Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE/row5.xml,/root/row5
-Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/ANAPRO/ANAPRO_index.xml,/root/row5/ANAPRO
-Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/RPTEDI/ANAPRO_FILTRE/row7.xml,/root/row7
+Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/RPTEDI/ANAPRO_FILTRE/row7.xml,/root/row7
+Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/ANAPRO/ANAPRO_index.xml,/root/row5/ANAPRO
 Structures/RPTEDI/ANAPRO_FILTRE/row5.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_index.xml,/root/root
 Structures/RPTEDI/ANAPRO_FILTRE/row7.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE/row7Record.xml,/root/row7Record
 Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/row10.xml,/root/row10
@@ -256,6 +374,7 @@ Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/InputWrapper.xml,com.oaklandsw.base,refere
 Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/row10.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/row10Record.xml,/root/row10Record
 Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/row8.xml,com.oaklandsw.base,references.0,Namespace Containers/ANAPRO.xml
 Structures/RPTEDI/ANAPRO_FILTRE_LIGNE/row8.xml,com.oaklandsw.base,references.1,Structures/ANAPRO/ANAPRO_index.xml,/root/ANAPRO
+Structures/RPTEDI/ANAPRO_MSG/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml,/root/row11/ANAPRO
 Structures/RPTEDI/ANAPRO_MSG/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_MSG/row12.xml,/root/row12
 Structures/RPTEDI/ANAPRO_MSG/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/RPTEDI/ANAPRO_MSG/row11.xml,/root/row11
 Structures/RPTEDI/ANAPRO_MSG/InputWrapper.xml,com.oaklandsw.base,references.2,Namespace Containers/ANAPRO.xml
@@ -268,7 +387,16 @@ Structures/RPTEDI/CODE_DESTINATAIRE_BLOQUANT_CSV.xml,com.oaklandsw.base,referenc
 Structures/RPTEDI/RPTEDI_CMDCLI.xml,com.oaklandsw.base,references.0,Namespace Containers/RPTEDI.xml
 Structures/RPTEDI/RPTEDI_CMDCLI.xml,com.oaklandsw.base,references.1,Sample Data/RPTEDI/RPTEDI_CMDCLI/RPTEDI_CMDCLI200331063030.XML
 Structures/STKETA/INT55.xml,com.oaklandsw.base,references.0,Sample Data/STKETA/STKETA_RFX_FLAT/RFST001599.rfx
+Structures/STKETA/STKETA.xml,com.oaklandsw.base,references.0,Namespace Containers/STKETA190627230032.xml
+Structures/STKETA/STKETA_RFX_FLAT.xml,com.oaklandsw.base,references.0,Sample Data/STKETA_RFX_FLAT/RFST001599.rfx
+Structures/STKETA/STKETA_RFX_XML.xml,com.oaklandsw.base,references.0,Namespace Containers/STKETA_RFX_XML.xml
+Structures/STKETA/STKETA_RFX_XML_small.xml,com.oaklandsw.base,references.0,Namespace Containers/STKETA_RFX_XML_small.xml
 Structures/STKETA/STKETA_VIAPOST.xml,com.oaklandsw.base,references.0,Namespace Containers/STKETA.xml
 Structures/STKM/INT62.xml,com.oaklandsw.base,references.0,Sample Data/STKM/INT62/RFMO035234.rfx
 Structures/STKM/STKMVT_VIAPOST.xml,com.oaklandsw.base,references.0,Sample Data/STKM/STKMVT_VIAPOST/STKMVT200717193009
 Structures/STKM/STKMVT_VIAPOST.xml,com.oaklandsw.base,references.1,Namespace Containers/STKM.xml
+Structures/STKM/STKM_PALLADIUM.xml,com.oaklandsw.base,references.0,Sample Data/STKM/STKM_PALLADIUM/VLC_KSGB_MVT_STK_20200225-1108400.txt
+Structures/dictionnaires/Single Row Tables/articles.xml,com.oaklandsw.base,references.0,Databases/dictionnaries_data.xml
+Structures/dictionnaires/Tables/articles.xml,com.oaklandsw.base,references.0,Structures/dictionnaires/Single Row Tables/articles.xml,/articles/Row
+Structures/dictionnaires/Tables/articles.xml,com.oaklandsw.base,references.1,Databases/dictionnaries_data.xml
+Structures/structure_presentation.xml,com.oaklandsw.base,references.0,Namespace Containers/RFCOMCLI_RFX_XML.xml
