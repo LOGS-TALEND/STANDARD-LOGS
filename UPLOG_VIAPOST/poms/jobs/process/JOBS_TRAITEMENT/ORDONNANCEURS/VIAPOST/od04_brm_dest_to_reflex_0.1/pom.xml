@@ -9,32 +9,32 @@
     <relativePath>../../../../../../</relativePath>
   </parent>
   <groupId>uplog.uplog_viapost.job</groupId>
-  <artifactId>OD01_BRM_ARTI_TO_REFLEX</artifactId>
-  <version>0.3.0-SNAPSHOT</version>
-  <name>UPLOG_VIAPOST OD01_BRM_ARTI_TO_REFLEX-0.3.0-SNAPSHOT (0.3,Jobs)</name>
+  <artifactId>OD04_BRM_DEST_TO_REFLEX</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>UPLOG_VIAPOST OD04_BRM_DEST_TO_REFLEX-0.1.0-SNAPSHOT (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.version>0.3</talend.job.version>
+    <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>uplog_viapost</talend.project.name.lowercase>
     <talend.job.path>uplog_viapost</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <talend.product.version>7.3.1.20201125_1449-patch</talend.product.version>
-    <talend.job.finalName>od01_brm_arti_to_reflex_0_3</talend.job.finalName>
+    <talend.job.finalName>od04_brm_dest_to_reflex_0_1</talend.job.finalName>
     <talend.pigudf.groupid>uplog.uplog_viapost.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>uplog.uplog_viapost.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx8096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx8192M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>LOCALHOST</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>OD01_BRM_ARTI_TO_REFLEX</talend.job.name>
-    <talend.job.id>_0GQSQC1oEeu9M7Vqcix34w</talend.job.id>
+    <talend.job.name>OD04_BRM_DEST_TO_REFLEX</talend.job.name>
+    <talend.job.id>_r3tyECN5Eeugyu6FMZZFZg</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>jobs_traitement/ordonnanceurs/viapost/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
@@ -66,16 +66,6 @@
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-log4j2</artifactId>
       <version>1.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>checkArchive-1.1-20190917</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-compress</artifactId>
-      <version>1.19</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -163,33 +153,28 @@
       <version>1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talendzip</artifactId>
-      <version>1.0-20190917</version>
-    </dependency>
-    <dependency>
-      <groupId>net.lingala.zip4j</groupId>
-      <artifactId>zip4j</artifactId>
-      <version>1.3.3</version>
-    </dependency>
-    <dependency>
       <groupId>uplog.uplog_viapost.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
     <dependency>
       <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>BRM_TO_ARTI</artifactId>
+      <artifactId>DEST_TO_REFLEX</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>ARTI_TO_REFLEX</artifactId>
+      <artifactId>JOB_OUTILS_CHARGE_CONTEXT_FILE</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>BRM_TO_RPTEDI_ARTI</artifactId>
+      <artifactId>BRM_TO_DEST</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>uplog.uplog_viapost.job</groupId>
+      <artifactId>BRM_TO_RPTEDI_DEST</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
