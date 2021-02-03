@@ -3,6 +3,7 @@ Databases,com.oaklandsw.base,order,5
 Maps,com.oaklandsw.base,order,1
 Maps/ANAPRO/ANAPRO_VIAPOST_To_RCPT_PIVOT.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/ANAPRO/ANAPRO_VIAPOST_To_RCPT_PIVOT.xml,com.oaklandsw.base,references.1,Structures/ANAPRO/RCPT_PIVOT.xml
+Maps/CRLOG/LCDE_TO_CRLOG_AvGestLot.xml,com.oaklandsw.base,needsVal.0,Structures/LCDE/LCDE.xml
 Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.0,Structures/Jobs/DI_PIVOT_CLOG_To_CREXPED_VIAPOST/tHMap_1/InputWrapper.xml
 Maps/CRPCMD/PIVOT_CLOG_To_CRPCMD_VIAPOST.xml,com.oaklandsw.base,references.1,Structures/CRPCMD/CRPCMD_VIAPOST.xml
 Maps/CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_GesLOT.xml,com.oaklandsw.base,references.0,Structures/CRPT/CRAPRO_VIAPOST.xml
@@ -70,8 +71,10 @@ Maps/STKM/INT62_To_STKM_PIVOT.xml,com.oaklandsw.base,references.1,Structures/STK
 Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
+Sample Data/LCDE/LCDE/LCDE000022.rfx,com.oaklandsw.transform,repNodeType,173
 Sample Data/LCDE/LCDE/LCDE000025.rfx,com.oaklandsw.transform,repNodeType,173
 Sample Data/LCDE/LCDE/LCDE000025_UTF8.rfx,com.oaklandsw.transform,repNodeType,173
+Sample Data/LCDE/LCDE/LCDE000025_UTF8BIS.rfx,com.oaklandsw.transform,repNodeType,173
 Sample Data/Maps/CRLOG/LCDE_TO_CRLOG_AvGestLot_input/LCDE000025.rfx,com.oaklandsw.transform,repNodeType,173
 Structures,com.oaklandsw.base,order,0
 Structures/ANAPRO/ANAPRO_VIAPOST.xml,com.oaklandsw.base,references.0,Sample Data/ANAPRO/ANAPRO_small/ANAPRO_small
@@ -94,6 +97,7 @@ Structures/Jobs/STKMVT_test/tHMap_4/InputWrapper.xml,com.oaklandsw.base,referenc
 Structures/Jobs/STKMVT_test/tHMap_4/row6.xml,com.oaklandsw.base,references.0,Structures/STKM/STKM_PIVOT.xml,/root/STKM
 Structures/Jobs/STKMVT_test/tHMap_4/row7.xml,com.oaklandsw.base,references.0,Structures/Jobs/STKMVT_test/tHMap_4/row7Record.xml,/root/row7Record
 Structures/Jobs/STKMVT_test/tHMap_4/row8.xml,com.oaklandsw.base,references.0,Structures/STKM/DicGEI_VIAPOST.xml,/root/ROOT
+Structures/LCDE/LCDE.xml,com.oaklandsw.base,references.0,Sample Data/LCDE/LCDE/LCDE000025_UTF8.rfx
 Structures/REFLEX/RCPT_PIVOT_LISTE.xml,com.oaklandsw.base,references.0,/UPLOG_VIAPOST/Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
 Structures/REFLEX/RCPT_REFLEX.xml,com.oaklandsw.base,references.0,/UPLOG_VIAPOST/Sample Data/ANAPRO/RCPT_PIVOT/ANAPRO_resultat.txt
 Structures/RPTEDI/ANAPRO_FILTRE/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/RPTEDI/ANAPRO_FILTRE/row5.xml,/root/row5
