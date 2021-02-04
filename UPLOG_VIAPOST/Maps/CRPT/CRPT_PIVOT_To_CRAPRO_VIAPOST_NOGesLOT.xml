@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/CRPT/CRPT_PIVOT.xml' outStruct='Structures/CRPT/CRAPRO_VIAPOST.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='CRPT_PIVOT' outputStructUserName='CRAPRO_VIAPOST' V1='4' name='CRPT_PIVOT_To_CRAPRO_VIAPOST' incarnation='98852'>
+<root t='190' id='1' V190='11' inStruct='Structures/CRPT/CRPT_PIVOT.xml' outStruct='Structures/CRPT/CRAPRO_VIAPOST.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='CRPT_PIVOT' outputStructUserName='CRAPRO_VIAPOST' V1='4' name='CRPT_PIVOT_To_CRAPRO_VIAPOST' incarnation='98874'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='5684' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CRPT'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='10' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MetaData'>
@@ -384,10 +384,10 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='4732' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='CRAPRO'>
+  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='4731' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='CRAPRO'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/CRPT,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='94' V200='8' structElemExists='true' usedCount='4614' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Appro'>
+    <child t='200' id='94' V200='8' structElemExists='true' usedCount='4613' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Appro'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/CRPT/RECEPTION,And(Equal(GetMapProperty([property="context.Metadata_Crpt_GestionLot"],),Constant([value="False",dataType="2"],)),Or(Equal(GetMapProperty([property="context.Metadata_Crpt_GestionCraproInt53"],),Constant([value="True",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_Crpt_GestionCraproRetourInt53"],),Constant([value="True",dataType="2"],)))),{Sort Keys},{Contexts})</loop>
       <child t='200' id='95' V200='8' structElemExists='true' usedCount='115' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
@@ -466,7 +466,7 @@
           <value>Concat(in$/CRPT/RECEPTION/COMMENTAIRE/Commentaire,in$/CRPT/RECEPTION/COMMENTAIRE/Commentaire2)</value>
         </child>
       </child>
-      <child t='200' id='111' V200='8' structElemExists='true' usedCount='2384' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' modifiedFromParent_util='true' V1='4' name='Ligne'>
+      <child t='200' id='111' V200='8' structElemExists='true' usedCount='2383' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' modifiedFromParent_util='true' V1='4' name='Ligne'>
         <mapNode t='190' idref='1'/>
         <loop>SimpleLoop(in$/CRPT/RECEPTION/LIGNE,And(Not(Equal(IfThenElse(HasValue(AgConcat(in$/CRPT/RECEPTION/LIGNE/DETAIL/QualiteLigdetail(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,{Filter},{Sort Keys},{Contexts})))),AgConcat(in$/CRPT/RECEPTION/LIGNE/DETAIL/QualiteLigdetail(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,{Filter},{Sort Keys},{Contexts}))),in$/CRPT/RECEPTION/LIGNE/Qualite),Constant([value="STD",dataType="2"],))),Equal(GetMapProperty([property="context.Metadata_Crpt_GestionLot"],),Constant([value="False",dataType="2"],))),{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,Equal(Constant([value="False",dataType="2"],),Java([className="routines.Dictionnaires",methodName="Contains"],Concat(AgConcat(in$/CRPT/RECEPTION/LIGNE/DETAIL/NumLigRefRcpt(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,{Filter},{Sort Keys},{Contexts}))),in$/CRPT/RECEPTION/LIGNE/DETAIL/RefReservationODP,in$/CRPT/RECEPTION/LIGNE/Article,in$/CRPT/RECEPTION/LIGNE/Qualite,in$/CRPT/RECEPTION/LIGNE/Proprietaire))),{Sort Keys},{Contexts})))</loop>
         <child t='200' id='407' V200='8' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Controle'>
@@ -522,10 +522,9 @@
           <mapNode t='190' idref='1'/>
           <value>in$/CRPT/RECEPTION/LIGNE/DETAIL/RefReservationODP</value>
         </child>
-        <child t='200' id='181' V200='8' structElemExists='true' usedCount='605' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' modifiedFromParent_util='true' V1='4' name='DonneeTracabilite'>
+        <child t='200' id='181' V200='8' structElemExists='true' usedCount='604' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' modifiedFromParent_util='true' V1='4' name='DonneeTracabilite'>
           <mapNode t='190' idref='1'/>
-          <loop>SimpleLoop(in$/CRPT/RECEPTION,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,Equal(GetVariable([variableName="StrDT"],),Concat(in$/CRPT/RECEPTION/LIGNE/Proprietaire)),{Sort Keys},{Contexts})))))</loop>
-          <util>SetVariable([variableName="StrDT"],Concat(in$/CRPT/RECEPTION/LIGNE/Proprietaire))</util>
+          <loop>SimpleLoop(in$/CRPT/RECEPTION,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,{Filter},{Sort Keys},{Contexts})))))</loop>
           <child t='200' id='184' V200='8' structElemExists='true' usedCount='95' V283='2' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='Quantite'>
             <mapNode t='190' idref='1'/>
             <value>in$/CRPT/RECEPTION/LIGNE/DETAIL/QteNiv1ValigLig</value>
