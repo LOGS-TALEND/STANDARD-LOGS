@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/CRPT/CRPT_PIVOT.xml' outStruct='Structures/CRPT/CRAPRO_VIAPOST.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='CRPT_PIVOT' outputStructUserName='CRAPRO_VIAPOST' V1='4' name='CRPT_PIVOT_To_CRAPRO_VIAPOST' incarnation='98844'>
+<root t='190' id='1' V190='11' inStruct='Structures/CRPT/CRPT_PIVOT.xml' outStruct='Structures/CRPT/CRAPRO_VIAPOST.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='CRPT_PIVOT' outputStructUserName='CRAPRO_VIAPOST' V1='4' name='CRPT_PIVOT_To_CRAPRO_VIAPOST' incarnation='98852'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='5684' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CRPT'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='10' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MetaData'>
@@ -524,8 +524,8 @@
         </child>
         <child t='200' id='181' V200='8' structElemExists='true' usedCount='605' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' modifiedFromParent_util='true' V1='4' name='DonneeTracabilite'>
           <mapNode t='190' idref='1'/>
-          <loop>SimpleLoop(in$/CRPT/RECEPTION,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,Equal(GetVariable([variableName="StrDT"],),Concat(in$/CRPT/RECEPTION/LIGNE/Article,in$/CRPT/RECEPTION/LIGNE/Qualite,in$/CRPT/RECEPTION/LIGNE/Proprietaire)),{Sort Keys},{Contexts})))))</loop>
-          <util>SetVariable([variableName="StrDT"],Concat(in$/CRPT/RECEPTION/LIGNE/Article,in$/CRPT/RECEPTION/LIGNE/Qualite,in$/CRPT/RECEPTION/LIGNE/Proprietaire))</util>
+          <loop>SimpleLoop(in$/CRPT/RECEPTION,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/CRPT/RECEPTION/LIGNE/DETAIL,Equal(GetVariable([variableName="StrDT"],),Concat(in$/CRPT/RECEPTION/LIGNE/Proprietaire)),{Sort Keys},{Contexts})))))</loop>
+          <util>SetVariable([variableName="StrDT"],Concat(in$/CRPT/RECEPTION/LIGNE/Proprietaire))</util>
           <child t='200' id='184' V200='8' structElemExists='true' usedCount='95' V283='2' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='Quantite'>
             <mapNode t='190' idref='1'/>
             <value>in$/CRPT/RECEPTION/LIGNE/DETAIL/QteNiv1ValigLig</value>
