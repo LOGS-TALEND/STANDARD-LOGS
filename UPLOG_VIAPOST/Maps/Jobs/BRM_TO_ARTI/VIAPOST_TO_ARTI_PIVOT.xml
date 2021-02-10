@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_ARTI/tHMap_1/InputWrapper.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='tHMap_1' incarnation='197386'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_ARTI/tHMap_1/InputWrapper.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='tHMap_1' incarnation='197398'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='6953' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
@@ -1708,7 +1708,7 @@
               </child>
               <child t='200' id='466' V200='8' structElemExists='true' usedCount='109' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='HauteurVL'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(HasValue(AgConcat(in$/root/row6/row6Record/codeArticle(SimpleLoop(in$/root/row6/row6Record,Equal(in$/root/row6/row6Record/codeArticle,in$/root/row3/REFART/Article/CodeArticle),{Sort Keys},{Contexts})))),Constant([value="§",dataType="2"],),Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/REFART/Article/UniteLogistique/Hauteur,Constant([value="000000",dataType="2"],)),Add(StringLength(in$/root/row3/REFART/Article/UniteLogistique/Hauteur),Constant([value="3",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(HasValue(AgConcat(in$/root/row6/row6Record/codeArticle(SimpleLoop(in$/root/row6/row6Record,Equal(in$/root/row6/row6Record/codeArticle,in$/root/row3/REFART/Article/CodeArticle),{Sort Keys},{Contexts})))),Constant([value="§",dataType="2"],),Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/REFART/Article/UniteLogistique/Hauteur,Constant([value="00",dataType="2"],)),Add(StringLength(in$/root/row3/REFART/Article/UniteLogistique/Hauteur),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='467' V200='8' structElemExists='true' usedCount='108' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='LargeurVL'>
                 <mapNode t='190' idref='1'/>
