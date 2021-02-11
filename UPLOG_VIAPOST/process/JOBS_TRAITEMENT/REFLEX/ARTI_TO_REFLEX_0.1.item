@@ -502,7 +502,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NV6qoZWBHc7oFdstXSXy8LuX1d/wIY50iGc2A0Sl"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gA8kP5L9sgJOoWBMewrE7DmTA4BYxTV4YQODLXR3"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -537,7 +537,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:635rylUPJ/oyjSqdRH+gAtTAUuht62wRgf+Kp1Zs"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:X6spIHnkvKZ99uemDmBcOF2UySJ+omoup+yUDjKU"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -690,7 +690,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmmssSS&quot;) + context.MTDT_BDD_ExtensionRFX"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmm&quot;) + &quot;ANSI&quot;+ context.MTDT_BDD_ExtensionRFX"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -710,8 +710,8 @@
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
     <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;Windows-1252&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
@@ -721,7 +721,7 @@
       <column comment="" key="false" length="-1" name="content_xml" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="16" offsetLabelY="-2" posX="128" posY="416">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="16" offsetLabelY="-2" posX="160" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
     <elementParameter field="TEXT" name="MESSAGE" value="context.EXECUTION_LOG_Stop_Libelle +  &quot; - RECEPTION vers Pivot OK&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Stop_Code"/>
@@ -740,6 +740,43 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_2"/>
   </node>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmm&quot;) + &quot;ANSI&quot;+ context.MTDT_BDD_ExtensionRFX"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_2">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmm&quot;) + &quot;ANSI2&quot;+context.MTDT_BDD_ExtensionRFX"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;Windows-1252&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputRaw_2">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tChangeFileEncoding" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChangeFileEncoding_1"/>
+    <elementParameter field="CHECK" name="USE_INENCODING" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="INENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="INENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="FILE" name="INFILE_NAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmm&quot;) + &quot;ANSI&quot;+ context.MTDT_BDD_ExtensionRFX"/>
+    <elementParameter field="FILE" name="OUTFILE_NAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_Out  + context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.MTDT_BDD_PrefixeNomFichier +  TalendDate.getDate(&quot;YYYYMMDDhhmmssSS&quot;) +context.MTDT_BDD_ExtensionRFX"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;Windows-1252&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tWarn_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -751,7 +788,7 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tWarn_3">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputRaw_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileInputRaw_1">
@@ -771,6 +808,13 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="flux_sortie_flat"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputRaw_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_2" target="tFileOutputRaw_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputRaw_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_2" target="tChangeFileEncoding_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <note opaque="true" posX="-288" posY="-224" sizeHeight="225" sizeWidth="993" text="Job mapping ARTICLE:&#13;&#10;1. Partie lecture fichier d'entrée / transformation et mapping ARTICLE&#13;&#10;2. Partie création fichier pivot client ARCITCLE&#13;&#10;&#13;&#10;TO DO : ajouter la partie alerting mail&#13;&#10;&#13;&#10;16/11/2020">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="152;168;191"/>
@@ -810,13 +854,23 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4cb5e72c-d604-4cee-a430-a97c3cd6ca7b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q2b/1ExEjCXxewSIzhTdGDVCok2uTmPWS+tdWjfbDaJusCxXmNcbn1KBHSRLAstBOKkFtiAL7tvB
-GQYz3OXaRg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e300a5df-7d38-4398-bfec-d39482ec8f93"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P1qoOBiasBdC+j6rQv+pr8BNCZE5MJ0GWPy1lTstASoRhoIgep7Ni5BdOmvQmer3IUf/ED5M3zIg
-mEvbF8Ru/Q==</DigestValue></Reference></SignedInfo><SignatureValue>Plt7mioSAXX95iXFJbcecyblTs8lKVLUehBeiPwJ9hVXxhrfBhZXsS5bosqK5/IlwzLEj9T2PpEH
-TeE/0E1B1vvHQClmGEaA5yW9yknV0Z5RC967ay4X+Q0S4bAmJfDPYgoweLKh/O4A1Y2YR5cdNTgH
-BuxuX8wy9GT+E/EGjBDTlIRICS+O0Il0dMBHm9Of4dU0FAhFUvjnEhZwI2TyqzajiCrAqmKGkqVM
-4t9Gpvxp0Ugab/Oc3QK1zu0bMPns/P9G6QWXJDlIny1eF2IALhYm9LppZgI1kLQJiMYjrfIo6+Pn
-UIS32+Oqbprjic7qRPdibAuqq7dVU8srPALNOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tChangeFileEncoding_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ed307a47-3f1c-4127-9e9b-a049b83f34f9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KSu/GLW9Ye9Iy3U1qdulgxGOm/HqKRPukJ8KewUFE9IHAvYoUA5UlHH/4+r+FMLZzd7zDRi2yGYR
+uFd+g5kjQg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0ae4f834-0922-434f-b093-1ba79231756f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KG3DF3W8szhkEO4u7uMMeFpifj2btJTbETDIN8Rbe2iYj2kKSEpkyuEXlfI/ZZ4jFEtFAXE0nF6s
+XwVPoHKyaQ==</DigestValue></Reference></SignedInfo><SignatureValue>bAG/sDepVJSeriJyAXv+qmuH6mC4awo8+vVdswkeIU63TXHpfl7FIl3zlLkyQBEo54f3aX4b5JK3
++ad4z9N4lUGHl36XqKEfZnCPJ0+iSxjm3T6HKL3RI7Q8wEqbxjlxkDaFpHYpTxdrj0nzfFET68Je
+GOWpR8Cj1dSwVzhN/hkE5jxae83IyyBQkAl5rTzPh+dXqU6zclxQV3TIhBtaVGNDQHu4VISU8Ddz
+sJvOP1/VBGBkCHRtGyMFTnu/0lQAYNBkGD7JtLAQAidXdNoIyHjOMgFB8J82EW5+Bq4In5wUI27u
+wXpKWmwH2RWTyC9klrXXlZlkm7X8ma5HI8+IIA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -838,4 +892,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e300a5df-7d38-4398-bfec-d39482ec8f93" Target="#_4cb5e72c-d604-4cee-a430-a97c3cd6ca7b"><Timestamp>2021-02-10 11:03:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0ae4f834-0922-434f-b093-1ba79231756f" Target="#_ed307a47-3f1c-4127-9e9b-a049b83f34f9"><Timestamp>2021-02-11 09:49:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
