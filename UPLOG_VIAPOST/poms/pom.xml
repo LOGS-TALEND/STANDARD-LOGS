@@ -60,6 +60,7 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.20</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.21</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.22</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.23</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.3</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.4</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od02_brm_rcpt_to_reflex_0.5</module>
@@ -90,6 +91,7 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od11_brm_reflex_to_crpcmd_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od11_brm_reflex_to_crpcmd_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od12_brm_reflex_to_crpt_0.1</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od12_brm_reflex_to_crpt_0.10</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od12_brm_reflex_to_crpt_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od12_brm_reflex_to_crpt_0.3</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od12_brm_reflex_to_crpt_0.4</module>
@@ -102,6 +104,8 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.3</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.4</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.5</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od14_brm_reflex_to_crexped_0.6</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/arti_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/cmde_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/REFLEX/dest_to_reflex_0.1</module>
@@ -117,8 +121,8 @@
     <signer.version>7.3.1</signer.version>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <encoding>UTF-8</encoding>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
