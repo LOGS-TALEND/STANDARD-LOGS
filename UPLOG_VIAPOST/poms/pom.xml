@@ -37,6 +37,8 @@
     <module>jobs/process/JOBS_TRAITEMENT/CLIENT/VIAPOST/stkmvt_to_viapost_1.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.10</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.11</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.12</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.3</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od01_brm_arti_to_reflex_0.4</module>
@@ -77,6 +79,7 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_2.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_2.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_2.3</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od03_brm_cmde_to_reflex_2.4</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_1.0</module>
@@ -142,11 +145,11 @@
     <module>jobs/process/TEST/job_outil_connect_ftp_avec_clef_0.1</module>
   </modules>
   <properties>
-    <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <signer.version>7.3.1</signer.version>
+    <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
