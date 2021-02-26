@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="LOCALHOST" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_Eb1vpU9EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vpk9EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vp09EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vqE9EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vqU9EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vqk9EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vq09EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb1vrE9EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb1v0U9EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1gF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1gV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1gl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG1g18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1hF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG1hV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG1hl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG1h18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG1iF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG1iV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG1il8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG1i18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG1jF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1jV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG1jl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG1j18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1kF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG1kV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG1kl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG1k18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG1lF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG1lV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG1ll8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG1l18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1mF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1mV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1ml8dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1m18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1nF8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1nV8dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1nl8dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1n18dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1oF8dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1oV8dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1ol8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1o18dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1pF8dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1pV8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1pl8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1p18dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1qF8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1qV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1ql8dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1q18dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1rF8dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1rV8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1rl8dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1r18dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1sF8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1sV8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1sl8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1s18dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1tF8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1tV8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1tl8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1t18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1uF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1uV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG1ul8dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;TSHTOCMDE&quot;"/>
+    <contextParameter comment="" internalId="_6NG1u18dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1vF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG1vV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG1vl8dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xsHK_Eeumh6nn8cH72A" name="Metadata_Generique_CodeActivite" prompt="Metadata_Generique_CodeActivite?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xsXK_Eeumh6nn8cH72A" name="Metadata_Generique_Date" prompt="Metadata_Generique_Date?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xsnK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat1" prompt="Metadata_Generique_Etat1?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xs3K_Eeumh6nn8cH72A" name="Metadata_Generique_Etat2" prompt="Metadata_Generique_Etat2?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xtHK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat3" prompt="Metadata_Generique_Etat3?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xtXK_Eeumh6nn8cH72A" name="Metadata_Generique_ID" prompt="Metadata_Generique_ID?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xtnK_Eeumh6nn8cH72A" name="Metadata_Generique_NomFichier" prompt="Metadata_Generique_NomFichier?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value="nom_fichier"/>
+    <contextParameter comment="" internalId="_WS-xt3K_Eeumh6nn8cH72A" name="Metadata_NOM_FICHIER_EntreeSansExt" prompt="Metadata_NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_Eb_gr09EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gsE9EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gsU9EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gsk9EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gs09EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gtE9EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gtU9EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_gtk9EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb_g209EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1v18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1wF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
+    <contextParameter comment="" internalId="_6NG1wV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG1wl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1w18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG1xF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG1xV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG1xl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG1x18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG1yF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG1yV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG1yl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG1y18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1zF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG1zV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG1zl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1z18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG10F8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG10V8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG10l8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG1018dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG11F8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG11V8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG11l8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_6NG1118dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG12F8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG12V8dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG12l8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1218dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG13F8dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG13V8dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG13l8dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1318dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG14F8dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG14V8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG14l8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1418dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG15F8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG15V8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG15l8dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1518dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG16F8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG16V8dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG16l8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1618dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG17F8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG17V8dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG17l8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1718dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG18F8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG18V8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG18l8dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1818dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG19F8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG19V8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG19l8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1918dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1-F8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG1-V8dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1-l8dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1-18dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG1_F8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG1_V8dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xuHK_Eeumh6nn8cH72A" name="Metadata_Generique_CodeActivite" prompt="Metadata_Generique_CodeActivite?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xuXK_Eeumh6nn8cH72A" name="Metadata_Generique_Date" prompt="Metadata_Generique_Date?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xunK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat1" prompt="Metadata_Generique_Etat1?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xu3K_Eeumh6nn8cH72A" name="Metadata_Generique_Etat2" prompt="Metadata_Generique_Etat2?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xvHK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat3" prompt="Metadata_Generique_Etat3?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xvXK_Eeumh6nn8cH72A" name="Metadata_Generique_ID" prompt="Metadata_Generique_ID?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xvnK_Eeumh6nn8cH72A" name="Metadata_Generique_NomFichier" prompt="Metadata_Generique_NomFichier?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value="nom_fichier"/>
+  </context>
+  <context confirmationNeeded="false" name="LOCALHOST">
+    <contextParameter comment="" internalId="_Eb_hQk9EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hQ09EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hRE9EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hRU9EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hRk9EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hR09EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hSE9EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_hSU9EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb_hbk9EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG1_l8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG1_18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
+    <contextParameter comment="" internalId="_6NG2AF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG2AV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2Al8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG2A18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG2BF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG2BV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2Bl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2B18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG2CF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG2CV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG2Cl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2C18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG2DF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG2DV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2Dl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG2D18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG2EF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG2EV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG2El8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG2E18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG2FF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;c:/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG2FV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_6NG2Fl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2F18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2GF8dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2GV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Gl8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2G18dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2HF8dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2HV8dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Hl8dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2H18dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2IF8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2IV8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Il8dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2I18dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2JF8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2JV8dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Jl8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2J18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2KF8dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2KV8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Kl8dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2K18dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2LF8dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2LV8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Ll8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2L18dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2MF8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2MV8dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Ml8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2M18dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2NF8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2NV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Nl8dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2N18dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG2OF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;TSHTOCMDE&quot;"/>
+    <contextParameter comment="" internalId="_6NG2OV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Ol8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG2O18dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG2PF8dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xv3K_Eeumh6nn8cH72A" name="Metadata_Generique_CodeActivite" prompt="Metadata_Generique_CodeActivite?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xwHK_Eeumh6nn8cH72A" name="Metadata_Generique_Date" prompt="Metadata_Generique_Date?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xwXK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat1" prompt="Metadata_Generique_Etat1?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xwnK_Eeumh6nn8cH72A" name="Metadata_Generique_Etat2" prompt="Metadata_Generique_Etat2?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xw3K_Eeumh6nn8cH72A" name="Metadata_Generique_Etat3" prompt="Metadata_Generique_Etat3?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xxHK_Eeumh6nn8cH72A" name="Metadata_Generique_ID" prompt="Metadata_Generique_ID?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_WS-xxXK_Eeumh6nn8cH72A" name="Metadata_Generique_NomFichier" prompt="Metadata_Generique_NomFichier?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value="nom_fichier"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_Eb_h1U9EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h1k9EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h109EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h2E9EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h2U9EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h2k9EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h209EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_h3E9EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb_iAU9EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2PV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2Pl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
+    <contextParameter comment="" internalId="_6NG2P18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG2QF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2QV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG2Ql8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG2Q18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG2RF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2RV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2Rl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG2R18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG2SF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG2SV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2Sl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG2S18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG2TF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2TV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG2Tl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG2T18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG2UF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG2UV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG2Ul8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG2U18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG2VF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_6NG2VV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Vl8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2V18dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2WF8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2WV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Wl8dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2W18dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2XF8dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2XV8dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Xl8dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2X18dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2YF8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2YV8dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Yl8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Y18dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2ZF8dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2ZV8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Zl8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2Z18dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2aF8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2aV8dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2al8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2a18dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2bF8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2bV8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2bl8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2b18dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2cF8dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2cV8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2cl8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2c18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2dF8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2dV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2dl8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG2d18dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2eF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2eV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG2el8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG2e18dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="REC">
+    <contextParameter comment="" internalId="_Eb_iaE9EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_iaU9EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb_iak9EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_ia09EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_ibE9EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_ibU9EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_ibk9EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_ib09EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb_ilE9EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2fF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2fV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
+    <contextParameter comment="" internalId="_6NG2fl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG2f18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2gF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG2gV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG2gl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG2g18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2hF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2hV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG2hl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG2h18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG2iF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2iV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG2il8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG2i18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2jF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG2jV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG2jl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG2j18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG2kF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG2kV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG2kl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG2k18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="" internalId="_6NG2lF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2lV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2ll8dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2l18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2mF8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2mV8dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2ml8dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2m18dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2nF8dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2nV8dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2nl8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2n18dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2oF8dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2oV8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2ol8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2o18dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2pF8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2pV8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2pl8dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2p18dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2qF8dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2qV8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2ql8dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2q18dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2rF8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2rV8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2rl8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2r18dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2sF8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2sV8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2sl8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2s18dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2tF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2tV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG2tl8dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2t18dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2uF8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG2uV8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG2ul8dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" internalId="_Eb_i-09EEeupo9jwEzQBPA" name="FILENAME_Articles" prompt="FILENAME_Articles?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;ARTICLES_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_i_E9EEeupo9jwEzQBPA" name="FILENAME_Extension" prompt="FILENAME_Extension?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;.in&quot;"/>
+    <contextParameter comment="" internalId="_Eb_i_U9EEeupo9jwEzQBPA" name="FILENAME_Input_File" prompt="FILENAME_Input_File?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;input_file.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_i_k9EEeupo9jwEzQBPA" name="FILENAME_Logs" prompt="FILENAME_Logs?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_i_09EEeupo9jwEzQBPA" name="FILENAME_Logs_Metriques" prompt="FILENAME_Logs_Metriques?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_metriques.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_jAE9EEeupo9jwEzQBPA" name="FILENAME_Logs_Stat" prompt="FILENAME_Logs_Stat?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;logs_stat.csv&quot;"/>
+    <contextParameter comment="" internalId="_Eb_jAU9EEeupo9jwEzQBPA" name="FILENAME_Reception" prompt="FILENAME_Reception?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_String" value="&quot;RECEPTION_&quot;"/>
+    <contextParameter comment="" internalId="_Eb_jAk9EEeupo9jwEzQBPA" name="FILENAME_Timestamp" prompt="FILENAME_Timestamp?" promptNeeded="false" repositoryContextId="_C5cKIHK_Eeumh6nn8cH72A" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_Eb_jH09EEeupo9jwEzQBPA" name="Metadata_Generique_CodeActivite" prompt="Metadata_Generique_CodeActivite?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jIE9EEeupo9jwEzQBPA" name="Metadata_Generique_Date" prompt="Metadata_Generique_Date?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jIU9EEeupo9jwEzQBPA" name="Metadata_Generique_Etat1" prompt="Metadata_Generique_Etat1?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jIk9EEeupo9jwEzQBPA" name="Metadata_Generique_Etat2" prompt="Metadata_Generique_Etat2?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jI09EEeupo9jwEzQBPA" name="Metadata_Generique_Etat3" prompt="Metadata_Generique_Etat3?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jJE9EEeupo9jwEzQBPA" name="Metadata_Generique_ID" prompt="Metadata_Generique_ID?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jJU9EEeupo9jwEzQBPA" name="Metadata_Generique_NomFichier" prompt="Metadata_Generique_NomFichier?" promptNeeded="false" repositoryContextId="_nE_ZUHKeEeuYuNyWhp9Gww" type="id_String" value="nom_fichier"/>
+    <contextParameter comment="" internalId="_Eb_jJk9EEeupo9jwEzQBPA" name="Metadata_NOM_FICHIER_EntreeSansExt" prompt="Metadata_NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Eb_jJ09EEeupo9jwEzQBPA" name="Metadata_STKM_BlocagePR" prompt="Metadata_STKM_BlocagePR?" promptNeeded="false" repositoryContextId="_YU240O33EeqFTMmlqc2jFg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2u18dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2vF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2vV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6NG2vl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2v18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6NG2wF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6NG2wV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6NG2wl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2w18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6NG2xF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6NG2xV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6NG2xl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6NG2x18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2yF8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6NG2yV8dEeuust4X6HK3Zg" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6NG2yl8dEeuust4X6HK3Zg" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG2y18dEeuust4X6HK3Zg" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6NG2zF8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6NG2zV8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6NG2zl8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6NG2z18dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6NG20F8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6NG20V8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6NG20l8dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2018dEeuust4X6HK3Zg" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG21F8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG21V8dEeuust4X6HK3Zg" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG21l8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2118dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG22F8dEeuust4X6HK3Zg" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG22V8dEeuust4X6HK3Zg" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG22l8dEeuust4X6HK3Zg" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2218dEeuust4X6HK3Zg" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG23F8dEeuust4X6HK3Zg" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG23V8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG23l8dEeuust4X6HK3Zg" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2318dEeuust4X6HK3Zg" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG24F8dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG24V8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG24l8dEeuust4X6HK3Zg" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2418dEeuust4X6HK3Zg" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG25F8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG25V8dEeuust4X6HK3Zg" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG25l8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2518dEeuust4X6HK3Zg" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG26F8dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG26V8dEeuust4X6HK3Zg" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG26l8dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2618dEeuust4X6HK3Zg" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG27F8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG27V8dEeuust4X6HK3Zg" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG27l8dEeuust4X6HK3Zg" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2718dEeuust4X6HK3Zg" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6NG28F8dEeuust4X6HK3Zg" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG28V8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG28l8dEeuust4X6HK3Zg" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2818dEeuust4X6HK3Zg" name="NOM_FICHIER_Interface_Reflex" prompt="NOM_FICHIER_Interface_Reflex?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG29F8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Metriques" prompt="NOM_FICHIER_Logs_Metriques?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_metriques&quot;"/>
+    <contextParameter comment="" internalId="_6NG29V8dEeuust4X6HK3Zg" name="NOM_FICHIER_Client_Interface" prompt="NOM_FICHIER_Client_Interface?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;TSHTOCMDE&quot;"/>
+    <contextParameter comment="" internalId="_6NG29l8dEeuust4X6HK3Zg" name="NOM_FICHIER_Entree" prompt="NOM_FICHIER_Entree?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6NG2918dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs_Stat" prompt="NOM_FICHIER_Logs_Stat?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs_stat&quot;"/>
+    <contextParameter comment="" internalId="_6NG2-F8dEeuust4X6HK3Zg" name="NOM_FICHIER_Logs" prompt="NOM_FICHIER_Logs?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value="&quot;logs&quot;"/>
+    <contextParameter comment="" internalId="_6NG2-V8dEeuust4X6HK3Zg" name="NOM_FICHIER_EntreeSansExt" prompt="NOM_FICHIER_EntreeSansExt?" promptNeeded="false" repositoryContextId="_L3ohIhhSEeuLsNZ--FVjBQ" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="64"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:raf1qXa7Qrz2OqCucKisfqljHTEaxpxyphfCl7J2"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/TALEND/Studio_dev02/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xEJ4W1OS0FyBHV2ucbEjlJSIFMWwQuqaXYTb9QsE"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_oCtX6ayzEequyfeUG4tfqA" name="DQTechnical"/>
+    <routinesParameter id="_oCQsA6yzEequyfeUG4tfqA" name="DataMasking"/>
+    <routinesParameter id="_n_u8ZKyzEequyfeUG4tfqA" name="DataOperation"/>
+    <routinesParameter id="_oCadA6yzEequyfeUG4tfqA" name="DataQualityDependencies"/>
+    <routinesParameter id="_oCac-ayzEequyfeUG4tfqA" name="DataQuality"/>
+    <routinesParameter id="_oCkN-6yzEequyfeUG4tfqA" name="DqStringHandling"/>
+    <routinesParameter id="_oBq2EKyzEequyfeUG4tfqA" name="Mathematical"/>
+    <routinesParameter id="_oB0nEKyzEequyfeUG4tfqA" name="Numeric"/>
+    <routinesParameter id="_oB0nGqyzEequyfeUG4tfqA" name="Relational"/>
+    <routinesParameter id="_oCQr-ayzEequyfeUG4tfqA" name="SQLike"/>
+    <routinesParameter id="_oB0nJKyzEequyfeUG4tfqA" name="StringHandling"/>
+    <routinesParameter id="_oB9xBqyzEequyfeUG4tfqA" name="TalendDataGenerator"/>
+    <routinesParameter id="_oCHiAKyzEequyfeUG4tfqA" name="TalendDate"/>
+    <routinesParameter id="_oCHiFKyzEequyfeUG4tfqA" name="TalendStringUtil"/>
+    <routinesParameter id="_oCHiCqyzEequyfeUG4tfqA" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="1" offsetLabelY="16" posX="128" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Pré lancement"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.EXECUTION_LOG_Start_Libelle  + &quot; - Début de la copie dans le répertoire de travail&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Start_Code"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;DébutSTKMVT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.EXECUTION_LOG_Start_Libelle +&quot; - Préjob - &quot; + jobName"/>
+    <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Start_Code"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Début STKMVT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/* Dans ce composant on va valoriser les metadata clientes + nom du client et celui de l'interface pour les différents chemins */&#10;&#10;/*TEST&#10;System.out.println(&quot;context.GESTION_FICHIER_Dir_Timestamp --&gt;&quot; + context.GESTION_FICHIER_Dir_Timestamp);&#10;*/&#10;System.out.println(context.MTDT_BDD_CodeClient +&quot; &quot;+ context.MTDT_BDD_CodeInterface +&quot; &quot;+context.MTDT_BDD_DateLong1);&#10;//Pour tests unitaires&#10;if (&#9;context.MTDT_BDD_DateLong1 == null || context.MTDT_BDD_DateLong1.length() &lt; 1 || &quot;&quot;.equals(context.MTDT_BDD_DateLong1) ) {&#10;&#10;&#9;context.MTDT_BDD_CodeClient&#9;&#9;&#9;= &quot;BOD&quot;;&#10;&#9;context.MTDT_BDD_CodeInterface&#9;&#9;= &quot;CRPT&quot;;&#10;&#9;context.MTDT_BDD_ExtensionArchive&#9;= &quot;.zip&quot;;&#10;&#10;&#9;context.MTDT_BDD_DateLong1&#9;= &quot;20201231TEST&quot;;&#10;&#9;context.MTDT_BDD_DateCourt1&#9;= StringHandling.LEFT(context.MTDT_BDD_DateLong1, 8);&#10;&#9;context.MTDT_BDD_Annee&#9;&#9;= StringHandling.LEFT(context.MTDT_BDD_DateLong1, 4);&#10;&#9;context.MTDT_BDD_Mois&#9;&#9;= StringHandling.SUBSTR(context.MTDT_BDD_DateLong1, 5, 2);&#10;context.MTDT_BDD_Jour&#9;&#9;= StringHandling.SUBSTR(context.MTDT_BDD_DateLong1, 7, 2);&#10;}//Fin renseignement des valeurs pour test unitaire&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Variables pour tests unitaires"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1">
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GESTION_FICHIER_Dir_Files +context.MTDT_BDD_CodeClient  + &quot;/&quot; +context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;RFMO*.rfx&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Dossier d'entrée"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient +&quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/TALEND/Studio_dev10/workspace&quot;"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient +&quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In + &quot;/&quot;+ context.MTDT_BDD_DateLong1 +&quot;/&quot; "/>
+    <elementParameter field="CHECK" name="RENAME" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" show="false" value="&quot;NewName.temp&quot;"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Copie dans le dossier de travail"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileCopy_1"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.EXECUTION_LOG_Erreur_Libelle +&quot; - Erreur au niveau du mapping&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Erreur_Code"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Erreur lecture fichiers / code java / encodage"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient +&quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In +  &quot;/&quot;+ context.MTDT_BDD_DateLong1 +&quot;/&quot; "/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;RFMO*.rfx&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Dossier d'entrée"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// le nom du fichier lu est placé dans une variable de contexte&#10;context.NOM_FICHIER_Entree = ((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;)) ;&#10;context.NOM_FICHIER_EntreeSansExt = StringHandling.EREPLACE(((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;)), &quot;.&quot; + ((String)globalMap.get(&quot;tFileList_2_CURRENT_FILEEXTENSION&quot;)), &quot;&quot;)  ;&#10;&#10;//le nom du fichier d'interface est le nom du XML en entrée sans l'extention&#10;//context.NOM_FICHIER_Client_Interface = StringHandling.EREPLACE(context.NOM_FICHIER_Entree,((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEEXTENSION&quot;)),&quot;&quot;);&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Nom du fichier en entrée"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2">
+      <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="16" offsetLabelY="-2" posX="384" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.EXECUTION_LOG_Stop_Libelle"/>
+    <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Stop_Code"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;REFLEX TO STKMVT : OK"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3"/>
+  </node>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In + &quot;/&quot;+ context.MTDT_BDD_DateLong1 +&quot;/&quot;  + context.NOM_FICHIER_Entree"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier entrée"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_1">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
+    <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;STKM/INT62_To_STKM_PIVOT&quot;"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_MAP" show="false" value="false"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_MAP" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="RADIO" name="AS_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TDM_STRUCT_INCARNATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="TARGET_TDM_STRUCT_INCARNATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SOURCE_GENERATED_TDM_STRUCT_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="TARGET_GENERATED_TDM_STRUCT_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_OBJECTTYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_STRING" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_BYTEARRAY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_DOCUMENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_INPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_OUTPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_STRING" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_MAP" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_STRING" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_MAP" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_DOCUMENT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="IS_NEW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_BYTES" show="false" value="true"/>
+    <elementParameter field="RADIO" name="INCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="RADIO" name="OUTCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="HMAP_VAR_PATH" value="&quot;&quot;"/>
+    <elementParameter field="HMAP_VAR_USED_MAPS" name="HMAP_VAR_USED_MAPS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;INT62_To_STKM_PIVOT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="output" name="output">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient +&quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_Tmp + &quot;/&quot;+ context.MTDT_BDD_DateLong1 + &quot;/&quot;  + context.NOM_FICHIER_EntreeSansExt +&quot;.xml&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier pivot sortie"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="output" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_2" offsetLabelX="0" offsetLabelY="0" source="tWarn_2" target="tJava_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileCopy_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileList_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tJava_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileInputRaw_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tHMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_583819dd-4d5b-4768-822b-9592b6f5a4ff"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4qE/S7TUpR+IT2KgkgMwKCvHyojjCz+U8UndY57cjSTbeBb11OXCOVGROnI0sn/y0GO9ClLzsuDk
+BHQxSFQl/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_36d5f909-c84b-4b78-b702-fe6c6b66b1ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2IuzNz/f3GPUaiVPVmLuJ03SNhvLzu4xK4oxMscTulU7v4kaYpN1Hq0OiBocJDUzHFuMZ8YEL/ol
+17juay3JkQ==</DigestValue></Reference></SignedInfo><SignatureValue>mKL3oX1RgDvQ4x+wPIjq3cduYGXBb4WxRBBXuy6eF5XnBmgXB/jHDFw+j80T3pn6Q2VWpPKeJdDO
+lwp1wUv0IYfCqes0l4gg5VyUNJ0hggcQvyxCPpPqdm2WY/Sb0f1GkgoaK5lqNUfkDo3TNhuFSYzK
+Gg7r7bNeMlzlppW2WRwOqe3nNJ4g1VyEBKud4ztJw1MkJqcCM9JORszexe0R1Z9jEEdSUfHPf5zY
+yQEYHR7EAEEOtF5Ot0aIDiLuqdLVp/oDPEFy/eJZQMXYiz1/gY/40ra8unwD32paxHWtgIfyH8u5
+exsl9mJr8RG5UFBm7si0jBdz9IysBU/mvdHgHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_36d5f909-c84b-4b78-b702-fe6c6b66b1ea" Target="#_583819dd-4d5b-4768-822b-9592b6f5a4ff"><Timestamp>2021-02-22 09:50:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

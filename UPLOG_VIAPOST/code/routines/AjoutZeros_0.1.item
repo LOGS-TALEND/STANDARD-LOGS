@@ -1,0 +1,101 @@
+package routines;
+
+/*
+ * Nom de classe : AddLeadingZeroes
+ *
+ * Description   : Ajout des zéros significatifs
+ *
+ * Version       : 1.0
+ *
+ * Date          : 15/01/2020
+ * 
+ * Copyright     : Habib Diena (HDIE) - Jeoffrey Stéphan (JST)
+ */
+
+public class AjoutZeros {
+
+	/**
+	 * Add leading zeroes to number
+	 * 
+	 * Add leading zeroes to string
+	 * 
+	 */
+
+	public static String ajoutZeroNombre(int num, String lengthNumber) {
+		String format = "%0" + lengthNumber + "d";
+		String formatted = String.format(format, num);
+		return formatted;
+	}
+
+	public static String ajoutZeroString(String param, int lengthNumber) {
+		String mask = "";
+
+		for (int i = 0; lengthNumber > i; i++) {
+			mask = mask + "0";
+		}
+
+		return (mask + param).substring(param.length());
+	}
+	
+	public static String padZero(String param, int totalLength) {
+		int i = 0;
+		while(param.length()+i < totalLength) {
+			param = "0" + param;
+			i++;
+		}
+		return param;
+	}
+	
+	public static String trimZero(String param) {
+		int i=0;
+		while(i < param.length()) {
+			if(param.startsWith("0")) {
+				param = param.substring(1);
+			} else {
+				break;
+			}
+		}
+		return param;
+	}
+
+	public static String ajoutZeroMano(String param) {
+
+		switch (param.length()) {
+		case (1):
+			return "000000" + param;
+			
+		case (2):
+			return "00000" + param;
+			
+		case (3):
+			return "0000" + param;
+			
+		case (4):
+			return "000" + param;
+			
+		case (5):
+			return "00" + param;
+			
+		case (6):
+			return "0" + param;
+			
+
+		}
+		
+		return "false";
+
+	}
+
+}
+
+/*
+ * String formatted;
+ * 
+ * if (param.length() == 1) { formatted = "000000" + param; return formatted; }
+ * else if (param.length() == 2) { formatted = "00000" + param; return
+ * formatted; } else if (param.length() == 3) { formatted = "0000" + param;
+ * return formatted; } else if (param.length() == 4) { formatted = "000" +
+ * param; return formatted; } else if (param.length() == 5) { formatted = "00" +
+ * param; return formatted; } else if (param.length() == 6) { formatted = "0" +
+ * param; return formatted; }
+ */
