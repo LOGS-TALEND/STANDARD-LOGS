@@ -1,0 +1,58 @@
+package routines;
+
+import java.util.*;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class FiltreString {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+public static String filtreStr(String chaineEntree) {
+		
+	List<String> listcharinterdit = new ArrayList<String>(Arrays.asList("\u00C1","\u00C0","\u00C2","\u00C4","\u00C3","\u00C5","\u00C9","\u00C8","\u00CA","\u00CB","\u00CD","\u00CC","\u00CE","\u00CF","\u00D1","\u00D3","\u00D2","\u00D4","\u00D6","\u00D5","\u00DA","\u00D9","\u00DB","\u00DC","\u00E0","\u00E1","\u00E2","\u00E4","\u00E3","\u00E5","\u00E6","\u00E7","\u00E8","\u00E9","\u00EA","\u00EB","\u00EC","\u00ED","\u00EE","\u00EF","\u0063","\u0063","\u00F9","\u00FA","\u00FB","\u00FC","\u00FD","\u00FF","\u00F2","\u00F3","\u00F4","\u00F5","\u00F6","\u0063","\u0065","\u0065","\u0065","\u0067","\u0068","\u0069","\u006A","\u006E","\u006E","\u006F","\u0072","\u0073","\u0073","\u0073","\u0161","\u0075","\u0075","\u0079","\u0077","\u007A","\u017E","\u0075","\u0072","\u00A4","\u00B0","\u00BA","\u00D8","\u00B5","\u00DF","\u002F","\u00A9","\u003B","\u00AE","\u0009","\n\r","\u0152","\u0153","\u0026","\u005E","\u0060","\u007B","\u007D","\u007E","\u20AC","\u0192","\u201E","\u2026","\u2020","\u2021","\u02C6","\u2030","\u0160","\u2039","\u0027","\u0027","\u2022","\u02DC","\u2122","\u0161","\u203A","\u017E","\u0178","\u00A1","\u00A2","\u00A3","\u00A4","\u00A5","\u00A6","\u00A7","\u00A8","\u00A9","\u00AA","\u00AB","\u00AC","\u00AE","\u00AF","\u00B0","\u00B1","\u00B2","\u00B3","\u00B4","\u00B5","\u00B6","\u00B7","\u00B8","\u00B9","\u00BA","\u00BB","\u00BC","\u00BD","\u00BE","\u00BF","\u00C0","\u00C6","\u00C7","\u00D0","\u00D1","\u00D7","\u00D8","\u00DE","\u00DF","\u00E6","\u00F0","\u00F8","\u00FE"));
+	
+			List<String> listcharautorise = new ArrayList<String>(Arrays.asList("A", "A", "A", "A", "A", "A", "E", "E", "E", "E", "I", "I", "I", "I", "N", "O", "O", "O", "O", "O", "U", "U", "U", "U","a", "a", "a", "a", "a", "a", "ae", "c", "e", "e", "e", "e", "i", "i", "i", "i", "c", "c", "u", "u", "u", "u", "y", "y","o", "o", "o", "o", "o", "c", "e", "e", "e", "g", "h", "i", "j", "n", "n", "o", "r", "s", "s", "s", "s", "u", "u", "y","w", "z", "z", "u", "r", "-", "-", "-", "D", "?", "ss"," ", " ", " ", " ", " ", " ", " ", "o", "o", " ", " "," ", " ", " ", " ", "E", "f", " ", " ", " ", " ", " ", " ", "S", " ", "Z", "'", "'", " ", " ", " ","s", " ", "z", "Y", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "," ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "A", " ", " ", " ", "N", " ", " ", " ", "B", "a", "o"));
+			
+			
+		if (chaineEntree == null || chaineEntree.trim().isEmpty()) {
+		 return "";
+		} else {
+			
+			for (int i=0; i < listcharautorise.size() - 1; i++) {
+				
+				chaineEntree = chaineEntree.replace(listcharinterdit.get(i), listcharautorise.get(i));
+			}
+			
+					
+			return chaineEntree; 
+		}
+
+	}
+}

@@ -1,0 +1,161 @@
+package routines;
+
+/*
+ * Nom de classe : EnleveCarGauche
+ *
+ * Description   : Supprime les zéro non significatifs à gauche dans une chaine de caractères
+ *
+ * Version       : 2.0
+ *
+ * Date          : 2020/11/05
+ * 
+ * Copyright     : Guillaume NOEL (GNOEL)
+ * 
+ * VERSION 2 : Ajout de fonctions supplémentaires
+ * VERSION 1 : Création
+ */
+
+public class EnleveCarGauche{
+	
+	
+	/**
+	* Enleve les zéros non significatifs à gauche 
+	*/
+	public static String enleveZeroString(String strEntry) {
+		
+		// Booléen de test permettant d'arrêter le parcours de la chaine
+		boolean isNotZero = false;
+		
+		
+		
+		
+		String strEntryTruncated = strEntry;
+		// Valeur de test
+		//strEntryTruncated = "0000010000";
+		
+
+		//Parcours de la chaine en contrôlant le premier caractère à gauche
+		// Si un caractère significatif est trouvé, le reste de la chaine est retourné
+		// Sinon, la chaine est tronquée d'un caractère et on continue le parcours
+		// La chaine minimum retournée contient 1 caractère, 0 ou autre
+		while( !isNotZero && strEntryTruncated.length() > 1){
+			
+			char charSubString = strEntryTruncated.charAt(0) ;
+			
+			
+			if (charSubString != '0'){  //si valeur significative trouvée
+				isNotZero = true;
+			} else {                    //Sinon
+				strEntryTruncated = strEntryTruncated.substring(1, strEntryTruncated.length());
+			}
+			
+			// TEST
+			//String strMsg = strEntryTruncated + " - longueur : "+ strEntryTruncated.length() + " ( "+ isNotZero + " ) ";
+			//System.out.println( strMsg );
+
+		} // Fin des parcours de la chaîne
+
+		return (strEntryTruncated ) ;
+	} // Fin enleveZeroString(String strEntry)
+	
+	
+	/**
+	* Enleve les zéros non significatifs à gauche sauf si il y a des caractères non-nulériques dans la séquence
+	*/
+	public static String enleveZeroSaufAlphaString(String strEntry) {
+		 // Booléen de test permettant d'arrêter le parcours de la chaine
+		boolean isNotZero = false;
+		boolean isAlpha = false;
+		
+		
+		
+		// Valeur de test
+	    //String strEntryTruncated = "0000010000";
+		String strEntryTruncated = strEntry;
+		
+		
+		//stockage d'une chaine représentant les numériques à garder =
+		String Numbers = "0123456789";
+		
+		//Parcours de la chaine reçue pour contrôler le contenu
+		//Si un caractere non-numérique est trouvé, isAlpha passe à vrai
+		for (int i=0 ; i<strEntryTruncated.length() && !isAlpha ; i++) {
+		    
+		    String caractere = strEntryTruncated.substring(i, i+1 );
+		    if (Numbers.contains(caractere) == false){
+		        isAlpha = true;
+		    }
+		}//fin de contrôle des alpha dans la chaine de caractère
+		
+		
+		
+		
+		//Parcours de la chaine en contrôlant le premier caractère à gauche
+		// Si un caractère significatif est trouvé, le reste de la chaine est retourné
+		// Sinon, la chaine est tronquée d'un caractère et on continue le parcours
+		// La chaine minimum retournée contient 1 caractère, 0 ou autre
+		// Si la chaine contient un caractère non-numérique ce bloc n'est pas parcouru
+		while( !isAlpha && !isNotZero && strEntryTruncated.length() > 1){
+			
+			char charSubString = strEntryTruncated.charAt(0) ;
+			
+			
+			if (charSubString != '0'){  //si valeur significative trouvée
+				isNotZero = true;
+			} else {                    //Sinon
+				strEntryTruncated = strEntryTruncated.substring(1, strEntryTruncated.length());
+			}
+			
+			// TEST
+			//String strMsg = strEntryTruncated + " - longueur : "+ strEntryTruncated.length() + " ( "+ isNotZero + " ) ";
+			//System.out.println( strMsg );
+
+		} // Fin des parcours de la chaîne pour enlever les '0' de tête
+		
+		return (strEntryTruncated ) ;
+		//TEST
+		//System.out.println(strEntryTruncated);
+	
+	}//FIN enleveZeroSaufAlphaString
+	
+	/**
+	* Enleve les zéros non significatifs à gauche sauf si il y a des caractères non-nulériques dans la séquence
+	*/
+	public static String enleveEspaceString(String strEntry) {
+	
+        // Booléen de test permettant d'arrêter le parcours de la chaine
+		boolean isNotSpace = false;
+		
+		
+		// Valeur de test
+		//String strEntryTruncated = "        Adresse 1";
+		String strEntryTruncated = strEntry;
+		
+		
+		//Parcours de la chaine en contrôlant le premier caractère à gauche
+		// Si un caractère significatif est trouvé, le reste de la chaine est retourné
+		// Sinon, la chaine est tronquée d'un caractère et on continue le parcours
+		// La chaine minimum retournée contient 1 caractère, 0 ou autre
+		while(  !isNotSpace && strEntryTruncated.length() > 0){
+			
+			char charSubString = strEntryTruncated.charAt(0) ;
+			
+			if (charSubString != ' '){  //si valeur significative trouvée
+				isNotSpace = true;
+			} else {                    //Sinon
+				strEntryTruncated = strEntryTruncated.substring(1, strEntryTruncated.length());
+			}
+			
+			// TEST
+			//String strMsg = strEntryTruncated + " - longueur : "+ strEntryTruncated.length() + " ( "+ isNotZero + " ) ";
+			//System.out.println( strMsg );
+
+		} // Fin des parcours de la chaîne
+		
+		return (strEntryTruncated ) ;
+		//TEST
+		//System.out.println(strEntryTruncated);
+	
+	}//Fin enleveEspaceString
+	
+}

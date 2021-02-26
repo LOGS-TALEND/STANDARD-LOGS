@@ -1,0 +1,194 @@
+package routines;
+import java.security.Key;
+import java.util.Base64;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+public class UserRoutine {
+
+    /**
+     * isNullOrBlank: Return true if string is null or Blank
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("world") input: The string need to be tested.
+     * 
+     * {example} isNullOrBlank("world") # false.
+     */
+    public static boolean isNullOrBlank(String s) {
+    	return (s==null || s.trim().equals(""));
+    }
+    /**
+     * isInteger: Return true if string is integer else false
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("1243") input: The string need to be tested.
+     * 
+     * {example} isInteger("1243") # true.
+     */
+    public static boolean isInteger( String input )
+    {
+       try
+       {
+          Integer.parseInt( input );
+          return true;
+       }
+       catch(Exception e)
+       {
+          return false;
+       }
+    }
+    /**
+     * stringFormat: Return string formated with max length
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("test") input: The string need to be tested.
+     * {param} int(2) input: The string length max
+     * 
+     * {example} stringFormat("test",2) # te.
+     */
+    public static String stringFormat( String input, int length )
+    {
+       try
+       {
+    	   return input.substring(0, Math.min(input.length(),length));
+       }
+       catch(Exception e)
+       {
+          return null;
+       }
+    }
+    
+    /**
+     * blankIfNull: Return blank if the input string is null
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("test") input: The string need to be tested.
+     * 
+     * {example} blankIfNull("test") # "test".
+     */
+    public static String blankIfNull(String input)
+    {
+    	if (Relational.ISNULL(input)){
+    		return "";
+    	}else{
+    		return input;
+    	}
+    }
+    
+    /**
+     * getAddress: Return the first line of a multiple lines address
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("line 1\nline 2\nline 3") input: The string need to be tested.
+     * 
+     * {example} getAddress("line 1\nline 2\nline 3") # "line 1".
+     */
+    public static String getAddress(String input)
+    {
+    	return input.split("[\r\n]")[0];
+    }
+    
+    /**
+     * getComplement: Return the concatenated last lines of a multiple lines address
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("line 1\nline 2\nline 3") input: The string need to be tested.
+     * 
+     * {example} getComplement("line 1\nline 2\nline 3") # "line 2 line 3".
+     */		
+    public static String getComplement (String input)
+    {
+    	String lines[] = input.split("[\r\n]");
+    	String strToReturn = "";
+    	
+    	// Loop starts at i = 1 to exclude the first line of the address
+    	for(int i = 1; i < lines.length; i++)
+    	{
+    		strToReturn += lines[i] + " ";
+    	}
+    	return strToReturn;
+    }
+    /**
+     * encryptString: Return the string encrypted
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("MaChaine") text: The string need to be encrypt.
+     * {param} string("REStre232365") key: Key to encrypt.
+     * 
+     * {example} encryptString("MaChaine", 123456789) # String encrypt. 
+     */		
+    public static String encryptString (String text, String key)
+    {
+    	try{
+	    	Key aesKey = new SecretKeySpec(key.getBytes(), "AES");
+	        Cipher cipher = Cipher.getInstance("AES");
+	        // encrypt the text
+	        cipher.init(Cipher.ENCRYPT_MODE, aesKey);
+	        byte[] encrypted = cipher.doFinal(text.getBytes());
+	        
+	        return Base64.getEncoder().encodeToString(encrypted);
+    	}
+    	catch(Exception e) 
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
+    /**
+     * decryptString: Return the string decrypted
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} StringHandling
+     * 
+     * {param} string("MaChaineEncrypted") text: The string need to be decrypt.
+     * {param} string("REStre232365") key: Key to encrypt.
+     * 
+     * {example} encryptString("MaChaineEncrypted", 123456789) # String decrypt. 
+     */		
+    public static String decryptString (String text, String key)
+    {
+    	try{
+	    	SecretKey Secretkey = new javax.crypto.spec.SecretKeySpec(
+					key.getBytes(), "AES");
+
+			Cipher cipher = Cipher.getInstance("AES");
+			cipher.init(Cipher.DECRYPT_MODE,Secretkey);
+			return new String(cipher.doFinal(Base64.getDecoder().decode(text)));
+    	}
+    	catch(Exception e) 
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+}
