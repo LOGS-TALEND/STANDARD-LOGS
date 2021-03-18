@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/LCDE/LCDE.xml' outStruct='Structures/CRLOG/CRLOG.xml' inputRep='173' nextMap='' inputStructUserName='LCDE' outputStructUserName='CRLOG' V1='4' name='CRLOG_TO_LCDE' incarnation='33475'>
+<root t='190' id='1' V190='11' inStruct='Structures/LCDE/LCDE.xml' outStruct='Structures/CRLOG/CRLOG.xml' inputRep='173' nextMap='' inputStructUserName='LCDE' outputStructUserName='CRLOG' V1='4' name='CRLOG_TO_LCDE' incarnation='33502'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='1856' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ROOT'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='340' V200='8' input='true' structElemExists='true' usedCount='1173' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ENTETE'>
@@ -645,7 +645,7 @@
       </child>
       <child t='200' id='271' V200='8' structElemExists='true' usedCount='51' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='EtatPreparation'>
         <mapNode t='190' idref='1'/>
-        <value>IfThenElse(Not(HasValue(in$/ROOT/ENTETE/ENT/EtatPreparation)),IfThenElse(Greater(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="0",dataType="12"],)),Constant([value="10",dataType="2"],),IfThen(Equal(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="0",dataType="12"],)),Constant([value="20",dataType="2"],))),IfThenElse(And(Equal(in$/ROOT/ENTETE/ENT/EtatPreparation,Constant([value="10",dataType="2"],)),Equal(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="0",dataType="12"],))),Constant([value="20",dataType="2"],),in$/ROOT/ENTETE/ENT/EtatPreparation))</value>
+        <value>IfThenElse(Not(HasValue(in$/ROOT/ENTETE/ENT/EtatPreparation)),IfThenElse(Greater(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="000000000",dataType="2"],)),Constant([value="10",dataType="2"],),IfThen(Equal(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="000000000",dataType="2"],)),Constant([value="20",dataType="2"],))),IfThenElse(And(Equal(in$/ROOT/ENTETE/ENT/EtatPreparation,Constant([value="10",dataType="2"],)),Equal(in$/ROOT/ENTETE/ENT/TotVLBaseValide,Constant([value="000000000",dataType="2"],))),Constant([value="20",dataType="2"],),in$/ROOT/ENTETE/ENT/EtatPreparation))</value>
       </child>
       <child t='200' id='284' V200='8' structElemExists='true' usedCount='50' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='RefInterne'>
         <mapNode t='190' idref='1'/>
