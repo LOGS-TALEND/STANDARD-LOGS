@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='249349'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='251505'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='8575' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='8016' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_1/row3.xml' V281='13' V1='4' name='row3'>
@@ -6012,7 +6012,7 @@
             </child>
             <child t='200' id='1510' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneReferenceDo'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+              <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
             </child>
             <child t='200' id='1511' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TopInterception'>
               <mapNode t='190' idref='1'/>
@@ -6128,7 +6128,7 @@
               </child>
               <child t='200' id='1541' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1542' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeFamilleInformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6172,7 +6172,7 @@
               </child>
               <child t='200' id='1553' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1554' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6217,7 +6217,7 @@
               </child>
               <child t='200' id='1565' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1566' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6262,7 +6262,7 @@
               </child>
               <child t='200' id='1577' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1578' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6307,7 +6307,7 @@
               </child>
               <child t='200' id='1589' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1590' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6500,7 +6500,7 @@
               </child>
               <child t='200' id='1649' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneRefDonneurOrdres'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1650' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
@@ -6548,7 +6548,7 @@
               </child>
               <child t='200' id='1662' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneReferenceDo'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1663' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumLigneCommentaire'>
                 <mapNode t='190' idref='1'/>
@@ -6596,7 +6596,7 @@
               </child>
               <child t='200' id='1675' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneReferenceDo'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='1676' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumLigneCommentaire'>
                 <mapNode t='190' idref='1'/>
@@ -6644,7 +6644,7 @@
               </child>
               <child t='200' id='5645' V200='8' structElemExists='true' usedCount='74' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneReferenceDo'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='5646' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneCommentaire'>
                 <mapNode t='190' idref='1'/>
@@ -6692,7 +6692,7 @@
               </child>
               <child t='200' id='5657' V200='8' structElemExists='true' usedCount='74' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneReferenceDo'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(Constant([value="7",dataType="12"],),StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne)),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne,Substring(Concat(Constant([value="0000000",dataType="2"],),in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Add(StringLength(in$/root/row3/CMDCLI/OP/Ligne/NumeroLigne),Constant([value="1",dataType="2"],)),Constant([value="7",dataType="2"],)))</value>
               </child>
               <child t='200' id='5658' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumLigneCommentaire'>
                 <mapNode t='190' idref='1'/>
