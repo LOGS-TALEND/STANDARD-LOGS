@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='244125'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='244203'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='8393' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='7846' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_1/row3.xml' V281='13' V1='4' name='row3'>
@@ -2555,7 +2555,7 @@
           </child>
           <child t='200' id='667' V200='8' structElemExists='true' usedCount='99' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='13' maxSize='13' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeDonneurOrdres'>
             <mapNode t='190' idref='1'/>
-            <value>in$/root/row3/CMDCLI/OP/CodeActivite</value>
+            <value>IfThenElse(Equal(GetMapProperty([property="context.Metadata_Cmdcli_GestionCodeEnseigne"],),Constant([value="True",dataType="2"],)),Concat(in$/root/row3/CMDCLI/OP/CodeActivite,in$/root/row3/CMDCLI/OP/CodeEnseigne),in$/root/row3/CMDCLI/OP/CodeActivite)</value>
           </child>
           <child t='200' id='668' V200='8' structElemExists='true' usedCount='99' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='20' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ReferenceDonneurOrdres'>
             <mapNode t='190' idref='1'/>
