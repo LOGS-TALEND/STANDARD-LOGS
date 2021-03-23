@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='204182'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='6570' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='204236'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='6572' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
-    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='6375' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='6377' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
       <mapNode t='190' idref='1'/>
-      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='6375' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CMDCLI/CMDCLI_VIAPOST.xml' V281='13' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='6377' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CMDCLI/CMDCLI_VIAPOST.xml' V281='13' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
         <mapNode t='190' idref='1'/>
         <repRuntime t='692' id='7460' V692='1' unnamedElemsNamespace='1' V690='1'>
           <namespaceContainers t='220' ref='Namespace Containers/CMDCLI200331063030.xml'/>
         </repRuntime>
         <io>ReadURL([repName="XML"],{Start Offset},{Length})</io>
-        <child t='200' id='331' V200='8' input='true' structElemExists='true' usedCount='6297' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OP'>
+        <child t='200' id='331' V200='8' input='true' structElemExists='true' usedCount='6299' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OP'>
           <mapNode t='190' idref='1'/>
-          <child t='200' id='332' V200='8' input='true' structElemExists='true' usedCount='47' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
+          <child t='200' id='332' V200='8' input='true' structElemExists='true' usedCount='48' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='333' V200='8' input='true' structElemExists='true' usedCount='47' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDepot'>
@@ -530,7 +530,7 @@
     </child>
     <child t='200' id='16' V200='8' structElemExists='true' usedCount='51' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
       <mapNode t='190' idref='1'/>
-      <value>GetMapProperty([property="context.Metadata_Generique_CodeActivite"],)</value>
+      <value>AgConcatFirstPresentValue(in$/root/CMDCLI2/CMDCLI/OP/CodeActivite(SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,{Filter},{Sort Keys},{Contexts})))</value>
     </child>
     <child t='200' id='17' V200='8' structElemExists='true' usedCount='51' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TypeMessage'>
       <mapNode t='190' idref='1'/>
