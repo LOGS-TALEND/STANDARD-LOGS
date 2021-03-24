@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_VIAPOST' V1='4' name='tHMap_1' incarnation='34921'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='12878' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_VIAPOST' V1='4' name='tHMap_1' incarnation='35119'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='12882' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
-    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='12653' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/row3.xml' V281='13' modifiedFromParent_emit='true' modifiedFromParent_io='true' V1='4' name='row3'>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='12657' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/row3.xml' V281='13' modifiedFromParent_emit='true' modifiedFromParent_io='true' V1='4' name='row3'>
       <mapNode t='190' idref='1'/>
-      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='12645' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CMDCLI/CMDCLI_VIAPOST.xml' V281='13' modifiedFromParent_emit='true' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='12649' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CMDCLI/CMDCLI_VIAPOST.xml' V281='13' modifiedFromParent_emit='true' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
         <mapNode t='190' idref='1'/>
         <repRuntime t='692' id='7460' V692='1' unnamedElemsNamespace='1' V690='1'>
           <namespaceContainers t='220' ref='Namespace Containers/CMDCLI200331063030.xml'/>
         </repRuntime>
         <io>ReadURL([repName="XML"],{Start Offset},{Length})</io>
-        <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='12592' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='OP'>
+        <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='12596' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='OP'>
           <mapNode t='190' idref='1'/>
           <validate>ValidateGroup([severity="4",number="1"],{Condition},in$/root/row3/CMDCLI/OP/OrdrePreparation)</validate>
           <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='124' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='CodeActivite'>
@@ -182,11 +182,13 @@
             <mapNode t='190' idref='1'/>
             <validate>And(HasValue(in$/root/row3/CMDCLI/OP/FacturationAdresse1),LesserOrEqual(StringLength(in$/root/row3/CMDCLI/OP/FacturationAdresse1),Constant([value="35",dataType="12"],)))</validate>
           </child>
-          <child t='200' id='64' V200='8' input='true' structElemExists='true' usedCount='61' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationAdresse2'>
+          <child t='200' id='64' V200='8' input='true' structElemExists='true' usedCount='63' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='FacturationAdresse2'>
             <mapNode t='190' idref='1'/>
+            <validate>IfThenElse(HasValue(in$/root/row3/CMDCLI/OP/FacturationAdresse2),LesserOrEqual(StringLength(in$/root/row3/CMDCLI/OP/FacturationAdresse2),Constant([value="35",dataType="12"],)),Constant([value="true",dataType="1"],))</validate>
           </child>
-          <child t='200' id='65' V200='8' input='true' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationAdresse3'>
+          <child t='200' id='65' V200='8' input='true' structElemExists='true' usedCount='63' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='FacturationAdresse3'>
             <mapNode t='190' idref='1'/>
+            <validate>IfThenElse(HasValue(in$/root/row3/CMDCLI/OP/FacturationAdresse3),LesserOrEqual(StringLength(in$/root/row3/CMDCLI/OP/FacturationAdresse3),Constant([value="35",dataType="12"],)),Constant([value="true",dataType="1"],))</validate>
           </child>
           <child t='200' id='66' V200='8' input='true' structElemExists='true' usedCount='124' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='FacturationCodePostal'>
             <mapNode t='190' idref='1'/>
