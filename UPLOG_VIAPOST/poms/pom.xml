@@ -109,6 +109,7 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_0.5</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_0.6</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_3.0</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od08_brm_lcde_to_crlog_3.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od09_brm_rfma_to_crrefa_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od09_brm_rfma_to_crrefa_1.0</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od09_brm_rfma_to_crrefa_1.1</module>
@@ -183,8 +184,8 @@
     <signer.version>7.3.1</signer.version>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
