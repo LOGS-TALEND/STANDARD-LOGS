@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='260866'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='260878'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='8600' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='8357' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
@@ -2446,7 +2446,7 @@
         <loop>SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,And(HasValue(in$/root/CMDCLI2/CMDCLI/OP/FacturationTelephone),Greater(StringLength(in$/root/CMDCLI2/CMDCLI/OP/FacturationTelephone),Constant([value="20",dataType="12"],))),{Sort Keys},{Contexts})</loop>
         <child t='200' id='6686' V200='8' structElemExists='true' usedCount='53' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Bloquant'>
           <mapNode t='190' idref='1'/>
-          <value>Constant([value="0",dataType="2"],)</value>
+          <value>Constant([value="1",dataType="2"],)</value>
         </child>
         <child t='200' id='6687' V200='8' structElemExists='true' usedCount='53' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='OrdrePreparation'>
           <mapNode t='190' idref='1'/>
@@ -2492,7 +2492,7 @@
         <loop>SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,And(HasValue(in$/root/CMDCLI2/CMDCLI/OP/FacturationMobile),Greater(StringLength(in$/root/CMDCLI2/CMDCLI/OP/FacturationMobile),Constant([value="20",dataType="12"],))),{Sort Keys},{Contexts})</loop>
         <child t='200' id='6696' V200='8' structElemExists='true' usedCount='53' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Bloquant'>
           <mapNode t='190' idref='1'/>
-          <value>Constant([value="0",dataType="2"],)</value>
+          <value>Constant([value="1",dataType="2"],)</value>
         </child>
         <child t='200' id='6697' V200='8' structElemExists='true' usedCount='53' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='OrdrePreparation'>
           <mapNode t='190' idref='1'/>
