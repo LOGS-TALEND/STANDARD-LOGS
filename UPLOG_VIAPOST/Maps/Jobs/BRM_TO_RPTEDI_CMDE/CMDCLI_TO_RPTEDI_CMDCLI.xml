@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='279526'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='279556'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='9276' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='9017' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
@@ -526,7 +526,7 @@
     </child>
     <child t='200' id='15' V200='8' structElemExists='true' usedCount='67' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='DateRPT'>
       <mapNode t='190' idref='1'/>
-      <value>GetCurrentDateTime()</value>
+      <value>Left(GetCurrentDateTime(),Constant([value="19",dataType="2"],))</value>
     </child>
     <child t='200' id='16' V200='8' structElemExists='true' usedCount='67' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
       <mapNode t='190' idref='1'/>
