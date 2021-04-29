@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='30548'>
-  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='192' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='REFART'>
+<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='30554'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='193' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='REFART'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/REFART,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
+    <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
       <mapNode t='190' idref='1'/>
       <child t='200' id='4664' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
         <mapNode t='190' idref='1'/>
@@ -98,12 +98,12 @@
           <mapNode t='190' idref='1'/>
         </child>
       </child>
-      <child t='200' id='4691' V200='8' input='true' structElemExists='true' usedCount='102' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UniteLogistique'>
+      <child t='200' id='4691' V200='8' input='true' structElemExists='true' usedCount='103' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UniteLogistique'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='4692' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Statut'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='4693' V200='8' input='true' structElemExists='true' usedCount='9' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
+        <child t='200' id='4693' V200='8' input='true' structElemExists='true' usedCount='10' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
           <mapNode t='190' idref='1'/>
         </child>
         <child t='200' id='4694' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ULGestion'>
@@ -1504,7 +1504,7 @@
           <child t='200' id='5067' V200='8' structElemExists='true' usedCount='60' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_util='true' V1='4' name='Rub110'>
             <mapNode t='190' idref='1'/>
             <loop>SimpleLoop(in$/REFART/Article/UniteLogistique,And(Equal(GetMapProperty([property="context.Metadata_Refart_ParametrageSubstitution"],),Constant([value="False",dataType="2"],)),GreaterOrEqual(in$/REFART/Article/UniteLogistique/Code,Constant([value="30",dataType="2"],))),{Sort Keys},{Contexts})</loop>
-            <util>SetVariable([variableName="Generate07110DEF"],IfThenElse(Equal(GetVariable([variableName="Generate07110DEF"],),Constant([value="True",dataType="2"],)),IfThenElse(And(Equal(GetMapProperty([property="context.Metadata_Refart_ParametrageSubstitution"],),Constant([value="False",dataType="2"],)),GreaterOrEqual(in$/root/row3/REFART/Article/UniteLogistique/Code,Constant([value="30",dataType="2"],))),Constant([value="False",dataType="2"],),Constant([value="True",dataType="2"],)),GetVariable([variableName="Generate07110DEF"],)))</util>
+            <util>SetVariable([variableName="Generate07110DEF"],IfThenElse(Equal(GetVariable([variableName="Generate07110DEF"],),Constant([value="True",dataType="2"],)),IfThenElse(And(Equal(GetMapProperty([property="context.Metadata_Refart_ParametrageSubstitution"],),Constant([value="False",dataType="2"],)),GreaterOrEqual(in$/REFART/Article/UniteLogistique/Code,Constant([value="30",dataType="2"],))),Constant([value="False",dataType="2"],),Constant([value="True",dataType="2"],)),GetVariable([variableName="Generate07110DEF"],)))</util>
             <child t='200' id='5068' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
               <mapNode t='190' idref='1'/>
             </child>
