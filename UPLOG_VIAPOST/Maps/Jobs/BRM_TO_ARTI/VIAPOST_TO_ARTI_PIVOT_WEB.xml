@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='27492'>
+<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='27504'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='190' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REFART'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
@@ -1446,7 +1446,7 @@
             </child>
             <child t='200' id='5053' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='VL'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row3/REFART/Article/UniteLogistique/Code),in$/root/row3/REFART/Article/UniteLogistique/Code,Constant([value="30",dataType="2"],))</value>
+              <value>IfThenElse(HasValue(in$/REFART/Article/UniteLogistique/Code),in$/REFART/Article/UniteLogistique/Code,Constant([value="30",dataType="2"],))</value>
             </child>
             <child t='200' id='5054' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeSubstitution'>
               <mapNode t='190' idref='1'/>
