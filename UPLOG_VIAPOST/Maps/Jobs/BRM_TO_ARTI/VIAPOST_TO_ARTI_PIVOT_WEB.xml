@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='21800'>
-  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='56' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REFART'>
+<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='21816'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='59' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REFART'>
     <mapNode t='190' idref='1'/>
-    <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='50' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
+    <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='53' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
       <mapNode t='190' idref='1'/>
       <child t='200' id='4664' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
         <mapNode t='190' idref='1'/>
@@ -190,26 +190,32 @@
           </child>
         </child>
       </child>
-      <child t='200' id='4714' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='InfoComplementaire'>
+      <child t='200' id='4714' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='InfoComplementaire'>
         <mapNode t='190' idref='1'/>
+        <child t='200' id='5218' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='5219' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Valeur'>
+          <mapNode t='190' idref='1'/>
+        </child>
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='588' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ROOT'>
+  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='592' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ROOT'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/REFART,{Filter},{Sort Keys},{Contexts})</loop>
     <child t='200' id='4715' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Metadata'>
       <mapNode t='190' idref='1'/>
     </child>
-    <child t='200' id='4716' V200='8' structElemExists='true' usedCount='582' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HLARTI'>
+    <child t='200' id='4716' V200='8' structElemExists='true' usedCount='586' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HLARTI'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/REFART/Article,{Filter},{Sort Keys},{Contexts})</loop>
-      <child t='200' id='4717' V200='8' structElemExists='true' usedCount='284' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='HL03'>
+      <child t='200' id='4717' V200='8' structElemExists='true' usedCount='288' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='HL03'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='4718' V200='8' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Unites'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='4719' V200='8' structElemExists='true' usedCount='284' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
+        <child t='200' id='4719' V200='8' structElemExists='true' usedCount='288' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
           <mapNode t='190' idref='1'/>
           <child t='200' id='4720' V200='8' structElemExists='true' usedCount='39' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub110'>
             <mapNode t='190' idref='1'/>
@@ -375,7 +381,7 @@
               <value>IfThenElse(Equal(in$/REFART/Article/Motif,Constant([value="S",dataType="2"],)),Constant([value="1",dataType="2"],),Constant([value="0",dataType="2"],))</value>
             </child>
           </child>
-          <child t='200' id='4765' V200='8' structElemExists='true' usedCount='30' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FamilleInfoComplementaire'>
+          <child t='200' id='4765' V200='8' structElemExists='true' usedCount='34' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FamilleInfoComplementaire'>
             <mapNode t='190' idref='1'/>
             <child t='200' id='4766' V200='8' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub117'>
               <mapNode t='190' idref='1'/>
@@ -487,9 +493,9 @@
             <child t='200' id='4800' V200='8' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub118' description='Valeur complémentaire 24'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='4801' V200='8' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Rub118'>
+            <child t='200' id='4801' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Rub118'>
               <mapNode t='190' idref='1'/>
-              <loop>SimpleLoop(in$/root/row3/REFART/Article/InfoComplementaire,{Filter},{Sort Keys},{Contexts})</loop>
+              <loop>SimpleLoop(in$/REFART/Article/InfoComplementaire,{Filter},{Sort Keys},{Contexts})</loop>
               <child t='200' id='4802' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
                 <mapNode t='190' idref='1'/>
               </child>
@@ -502,18 +508,22 @@
               <child t='200' id='4805' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeRubrique'>
                 <mapNode t='190' idref='1'/>
               </child>
-              <child t='200' id='4806' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
+              <child t='200' id='4806' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
                 <mapNode t='190' idref='1'/>
+                <value>in$/REFART/Article/CodeActivite</value>
               </child>
-              <child t='200' id='4807' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='16' maxSize='16' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeArticle'>
+              <child t='200' id='4807' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='16' maxSize='16' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeArticle'>
                 <mapNode t='190' idref='1'/>
+                <value>in$/REFART/Article/CodeArticle</value>
               </child>
-              <child t='200' id='4808' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
+              <child t='200' id='4808' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='InformationComplementaire'>
                 <mapNode t='190' idref='1'/>
+                <value>in$/REFART/Article/InfoComplementaire/Code</value>
               </child>
-              <child t='200' id='4809' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='40' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ValeurInfoComplementaire'>
+              <child t='200' id='4809' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='40' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ValeurInfoComplementaire'>
                 <mapNode t='190' idref='1'/>
                 <delimTerminator>\n</delimTerminator>
+                <value>in$/REFART/Article/InfoComplementaire/Valeur</value>
               </child>
             </child>
             <child t='200' id='4810' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub119'>
