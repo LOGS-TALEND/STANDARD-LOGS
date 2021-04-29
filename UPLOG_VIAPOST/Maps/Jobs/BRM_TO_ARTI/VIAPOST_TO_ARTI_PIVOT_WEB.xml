@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='27544'>
+<root t='190' id='1' V190='11' inStruct='Structures/REFART/REFART_VIAPOST.xml' outStruct='Structures/REFART/PIVOT_ARTI_BRM.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='REFART_VIAPOST' outputStructUserName='PIVOT_ARTI_BRM' V1='4' name='VIAPOST_TO_ARTI_PIVOT_WEB' incarnation='27632'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='190' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REFART'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='4663' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Article'>
@@ -791,11 +791,11 @@
               </child>
               <child t='200' id='4879' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='VL'>
                 <mapNode t='190' idref='1'/>
-                <value>in$/root/row3/REFART/Article/UniteLogistique/Code</value>
+                <value>in$/REFART/Article/UniteLogistique/Code</value>
               </child>
               <child t='200' id='4880' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='15' maxSize='15' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='MotDirecteur'>
                 <mapNode t='190' idref='1'/>
-                <value>Substring(in$/root/row3/REFART/Article/CodeArticle,Constant([value="1",dataType="2"],),Constant([value="15",dataType="2"],))</value>
+                <value>Substring(in$/REFART/Article/CodeArticle,Constant([value="1",dataType="2"],),Constant([value="15",dataType="2"],))</value>
               </child>
               <child t='200' id='4881' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='16' maxSize='16' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeUsage'>
                 <mapNode t='190' idref='1'/>
@@ -814,7 +814,7 @@
               </child>
               <child t='200' id='4885' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeVLSouscond'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(in$/root/row3/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),IfThenElse(HasValue(in$/root/row3/REFART/Article/UniteLogistique/ULSousCondi),in$/root/row3/REFART/Article/UniteLogistique/ULSousCondi,Constant([value="10",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(in$/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),IfThenElse(HasValue(in$/REFART/Article/UniteLogistique/ULSousCondi),in$/REFART/Article/UniteLogistique/ULSousCondi,Constant([value="10",dataType="2"],)))</value>
               </child>
               <child t='200' id='4886' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='QteVLSouscond'>
                 <mapNode t='190' idref='1'/>
@@ -877,23 +877,23 @@
               </child>
               <child t='200' id='4901' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeFamilleStockage'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(HasValue(in$/root/row3/REFART/Article/UniteLogistique/FamilleStockage),in$/root/row3/REFART/Article/UniteLogistique/FamilleStockage,Constant([value="ETG",dataType="2"],))</value>
+                <value>IfThenElse(HasValue(in$/REFART/Article/UniteLogistique/FamilleStockage),in$/REFART/Article/UniteLogistique/FamilleStockage,Constant([value="ETG",dataType="2"],))</value>
               </child>
               <child t='200' id='4902' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeFamilleStockageMasse'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(in$/root/row3/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),Constant([value="MASSE",dataType="2"],))</value>
+                <value>IfThenElse(Equal(in$/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),Constant([value="MASSE",dataType="2"],))</value>
               </child>
               <child t='200' id='4903' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NbVLScndPourCouche'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Or(Equal(in$/REFART/Article/UniteLogistique/HauteurCouche,Constant([value="0",dataType="2"],)),Not(HasValue(in$/REFART/Article/UniteLogistique/HauteurCouche))),Constant([value="0000000",dataType="2"],),in$/root/row3/REFART/Article/UniteLogistique/NbULSousCondiCouche)</value>
+                <value>IfThenElse(Or(Equal(in$/REFART/Article/UniteLogistique/HauteurCouche,Constant([value="0",dataType="2"],)),Not(HasValue(in$/REFART/Article/UniteLogistique/HauteurCouche))),Constant([value="0000000",dataType="2"],),in$/REFART/Article/UniteLogistique/NbULSousCondiCouche)</value>
               </child>
               <child t='200' id='4904' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='HauteurUneCouche'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Or(Equal(in$/REFART/Article/UniteLogistique/NbULSousCondiCouche,Constant([value="0",dataType="2"],)),Not(HasValue(in$/REFART/Article/UniteLogistique/NbULSousCondiCouche))),Constant([value="0000000",dataType="2"],),in$/root/row3/REFART/Article/UniteLogistique/HauteurCouche)</value>
+                <value>IfThenElse(Or(Equal(in$/REFART/Article/UniteLogistique/NbULSousCondiCouche,Constant([value="0",dataType="2"],)),Not(HasValue(in$/REFART/Article/UniteLogistique/NbULSousCondiCouche))),Constant([value="0000000",dataType="2"],),in$/REFART/Article/UniteLogistique/HauteurCouche)</value>
               </child>
               <child t='200' id='4905' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeFamillePreparation'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(in$/root/row3/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),IfThenElse(HasValue(in$/root/row3/REFART/Article/UniteLogistique/Famille),in$/root/row3/REFART/Article/UniteLogistique/Famille,Constant([value="STD",dataType="2"],)))</value>
+                <value>IfThenElse(Equal(in$/REFART/Article/UniteLogistique/Code,Constant([value="10",dataType="2"],)),Constant([value="",dataType="2"],),IfThenElse(HasValue(in$/REFART/Article/UniteLogistique/Famille),in$/REFART/Article/UniteLogistique/Famille,Constant([value="STD",dataType="2"],)))</value>
               </child>
               <child t='200' id='4906' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='DebutServiceSAMJ'>
                 <mapNode t='190' idref='1'/>
@@ -1037,11 +1037,11 @@
               </child>
               <child t='200' id='4942' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NbVLScndPourCouche'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(AgSum(IfThenElse(LoopCopy(in$/root/row3/REFART/Article/UniteLogistique/NbULSousCondiCouche,{Contexts}),Equal(Constant([value="10",dataType="2"],),in$/REFART/Article/UniteLogistique/NbULSousCondiCouche),Constant([value="1",dataType="2"],),Constant([value="0",dataType="2"],))),Constant([value="0",dataType="2"],)),Constant([value="0000000",dataType="2"],),Constant([value="0000000",dataType="2"],))</value>
+                <value>IfThenElse(Equal(AgSum(IfThenElse(LoopCopy(in$/REFART/Article/UniteLogistique/NbULSousCondiCouche,{Contexts}),Equal(Constant([value="10",dataType="2"],),in$/REFART/Article/UniteLogistique/NbULSousCondiCouche),Constant([value="1",dataType="2"],),Constant([value="0",dataType="2"],))),Constant([value="0",dataType="2"],)),Constant([value="0000000",dataType="2"],),Constant([value="0000000",dataType="2"],))</value>
               </child>
               <child t='200' id='4943' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='HauteurUneCouche'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(Equal(AgSum(IfThenElse(LoopCopy(in$/REFART/Article/UniteLogistique/HauteurCouche,{Contexts}),Equal(Constant([value="10",dataType="2"],),in$/root/row3/REFART/Article/UniteLogistique/HauteurCouche),Constant([value="1",dataType="2"],),Constant([value="0",dataType="2"],))),Constant([value="0",dataType="2"],)),Constant([value="0000000",dataType="2"],),Constant([value="0000000",dataType="2"],))</value>
+                <value>IfThenElse(Equal(AgSum(IfThenElse(LoopCopy(in$/REFART/Article/UniteLogistique/HauteurCouche,{Contexts}),Equal(Constant([value="10",dataType="2"],),in$/REFART/Article/UniteLogistique/HauteurCouche),Constant([value="1",dataType="2"],),Constant([value="0",dataType="2"],))),Constant([value="0",dataType="2"],)),Constant([value="0000000",dataType="2"],),Constant([value="0000000",dataType="2"],))</value>
               </child>
               <child t='200' id='4944' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeFamillePreparation'>
                 <mapNode t='190' idref='1'/>
