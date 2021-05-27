@@ -9,68 +9,43 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>uplog.uplog_viapost.job</groupId>
-  <artifactId>TEST_ARTI</artifactId>
-  <version>3.2.0-SNAPSHOT</version>
-  <name>UPLOG_VIAPOST TEST_ARTI-3.2.0-SNAPSHOT (3.2,Jobs)</name>
+  <artifactId>TEST_NFS</artifactId>
+  <version>0.1.0</version>
+  <name>UPLOG_VIAPOST TEST_NFS-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.version>3.2</talend.job.version>
+    <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>uplog_viapost</talend.project.name.lowercase>
     <talend.job.path>uplog_viapost</talend.job.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <talend.product.version>7.3.1.20201125_1449-patch</talend.product.version>
-    <talend.job.finalName>test_arti_3_2</talend.job.finalName>
+    <talend.job.finalName>test_nfs_0_1</talend.job.finalName>
     <talend.pigudf.groupid>uplog.uplog_viapost.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>uplog.uplog_viapost.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx8096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>LOCALHOST</talend.job.context>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>TEST_ARTI</talend.job.name>
-    <talend.job.id>_Eu1sMKv8Eeuas-19tstK5g</talend.job.id>
+    <talend.job.name>TEST_NFS</talend.job.name>
+    <talend.job.id>_JBrtcKzYEeuxEvWCYWLh9Q</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>test/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
-    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>net.minidev</groupId>
-      <artifactId>accessors-smart</artifactId>
-      <version>1.1</version>
-    </dependency>
-    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>antlr-runtime-3.5.2</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm</artifactId>
-      <version>5.0.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>audit-common</artifactId>
-      <version>1.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>audit-log4j2</artifactId>
-      <version>1.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
@@ -81,26 +56,6 @@
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>2.1.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jakarta-oro-2.0.8</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>job-audit</artifactId>
-      <version>1.4</version>
-    </dependency>
-    <dependency>
-      <groupId>com.jcraft</groupId>
-      <artifactId>jsch</artifactId>
-      <version>0.1.55</version>
-    </dependency>
-    <dependency>
-      <groupId>net.minidev</groupId>
-      <artifactId>json-smart</artifactId>
-      <version>2.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -118,16 +73,6 @@
       <version>2.12.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>logging-event-layout</artifactId>
-      <version>1.16.1</version>
-    </dependency>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.18</version>
-    </dependency>
-    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>7.3.1</version>
@@ -139,11 +84,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.components.lib</groupId>
-      <artifactId>talend-proxy</artifactId>
-      <version>1.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
       <version>1.0</version>
     </dependency>
@@ -151,21 +91,6 @@
       <groupId>uplog.uplog_viapost.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>JOB_OUTILS_CHARGE_CONTEXT_FILE</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>JOB_OUTILS_ALERTING_MAIL</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>uplog.uplog_viapost.job</groupId>
-      <artifactId>BRM_TO_RPTEDI_ARTI</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
