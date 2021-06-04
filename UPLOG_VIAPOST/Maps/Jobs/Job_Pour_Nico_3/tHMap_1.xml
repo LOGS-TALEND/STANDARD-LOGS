@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='76602'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='76728'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='11946' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='9987' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
@@ -550,10 +550,10 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='10880' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
+  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='10881' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='138' V200='8' structElemExists='true' usedCount='10735' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
+    <child t='200' id='138' V200='8' structElemExists='true' usedCount='10736' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/root/row1/CMDCLI/OP,{Filter},{Sort Keys},{Contexts})</loop>
       <child t='200' id='139' V200='8' structElemExists='true' usedCount='4048' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='header'>
@@ -748,7 +748,7 @@
           </child>
         </child>
       </child>
-      <child t='200' id='150' V200='8' structElemExists='true' usedCount='2626' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='footer'>
+      <child t='200' id='150' V200='8' structElemExists='true' usedCount='2627' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='footer'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='197' V200='8' structElemExists='true' usedCount='136' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='total_order'>
           <mapNode t='190' idref='1'/>
@@ -803,9 +803,9 @@
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/MarketPlace</value>
         </child>
-        <child t='200' id='214' V200='8' structElemExists='true' usedCount='135' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='print_invoice'>
+        <child t='200' id='214' V200='8' structElemExists='true' usedCount='136' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='print_invoice'>
           <mapNode t='190' idref='1'/>
-          <value>in$/root/row1/CMDCLI/OP/ImpressionFacture</value>
+          <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/ImpressionFacture),in$/root/row1/CMDCLI/OP/ImpressionFacture,Constant([value="0",dataType="2"],))</value>
         </child>
         <child t='200' id='215' V200='8' structElemExists='true' usedCount='136' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_options'>
           <mapNode t='190' idref='1'/>
