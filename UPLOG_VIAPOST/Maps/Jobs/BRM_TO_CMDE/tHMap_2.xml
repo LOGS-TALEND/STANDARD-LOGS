@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='66159'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='914' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='66636'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='917' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='872' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
       <mapNode t='190' idref='1'/>
@@ -459,14 +459,32 @@
         </child>
       </child>
     </child>
-    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='24' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
       <mapNode t='190' idref='1'/>
       <repRuntime t='698' id='6' V698='1' V690='1' padOutput='true'>
       </repRuntime>
       <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
+      <child t='200' id='7655' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10Record.xml' V281='13' V1='4' name='row10Record'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='7656' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ID'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7657' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Transporteur_id'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7658' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='nom_transporteur'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7659' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='code_crossdesk'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7660' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='code_rdc'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='7' V200='8' structElemExists='true' usedCount='8734' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HLCMDE'>
+  <outputMapElem t='200' id='7' V200='8' structElemExists='true' usedCount='8735' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HLCMDE'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
     <child t='200' id='8' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MetaData'>
@@ -2327,10 +2345,10 @@
         </child>
       </child>
     </child>
-    <child t='200' id='613' V200='8' structElemExists='true' usedCount='8713' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HL16'>
+    <child t='200' id='613' V200='8' structElemExists='true' usedCount='8714' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='HL16'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/root/row9/CMDCLI/OP,{Filter},{Sort Keys},{Contexts})</loop>
-      <child t='200' id='614' V200='8' structElemExists='true' usedCount='8605' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='OrdrePreparation'>
+      <child t='200' id='614' V200='8' structElemExists='true' usedCount='8606' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='OrdrePreparation'>
         <mapNode t='190' idref='1'/>
         <emit>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Annulation),NotEqual(in$/root/row9/CMDCLI/OP/Annulation,Constant([value="1",dataType="2"],)),NotEqual(in$/root/row9/CMDCLI/OP/OrdrePreparation,Constant([value="",dataType="2"],)))</emit>
         <child t='200' id='615' V200='8' structElemExists='true' usedCount='541' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub110'>
@@ -2499,7 +2517,7 @@
             <value>Constant([value="",dataType="2"],)</value>
           </child>
         </child>
-        <child t='200' id='660' V200='8' structElemExists='true' usedCount='271' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub111'>
+        <child t='200' id='660' V200='8' structElemExists='true' usedCount='272' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Rub111'>
           <mapNode t='190' idref='1'/>
           <delimTerminator>\n</delimTerminator>
           <child t='200' id='661' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
@@ -2570,9 +2588,9 @@
             <mapNode t='190' idref='1'/>
             <value>Constant([value="00000000",dataType="2"],)</value>
           </child>
-          <child t='200' id='679' V200='8' structElemExists='true' usedCount='19' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeRegroupementChargement'>
+          <child t='200' id='679' V200='8' structElemExists='true' usedCount='20' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='CodeRegroupementChargement'>
             <mapNode t='190' idref='1'/>
-            <value>Choice(ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),AgConcat(in$/root/row10/row4Record/code_rdc(SimpleLoop(in$/root/row10/row4Record,Equal(in$/root/row10/row4Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts})))),ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(AgConcat(in$/root/row10/row4Record/code_rdc(SimpleLoop(in$/root/row10/row4Record,Equal(in$/root/row10/row4Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts}))),in$/root/row9/CMDCLI/OP/CodeServiceTransport)),ChoiceValue(And(NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],))),in$/root/row9/CMDCLI/OP/CodeTransport),ChoiceValue(And(Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(in$/root/row9/CMDCLI/OP/CodeTransport,in$/root/row9/CMDCLI/OP/CodeServiceTransport)))</value>
+            <value>Choice(ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),AgConcat(in$/root/row10/row10Record/code_rdc(SimpleLoop(in$/root/row10/row10Record,Equal(in$/root/row10/row10Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts})))),ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(AgConcat(in$/root/row10/row10Record/code_rdc(SimpleLoop(in$/root/row10/row10Record,Equal(in$/root/row10/row10Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts}))),in$/root/row9/CMDCLI/OP/CodeServiceTransport)),ChoiceValue(And(NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],))),in$/root/row9/CMDCLI/OP/CodeTransport),ChoiceValue(And(Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(in$/root/row9/CMDCLI/OP/CodeTransport,in$/root/row9/CMDCLI/OP/CodeServiceTransport)))</value>
           </child>
           <child t='200' id='680' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='13' maxSize='13' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeRegroupementExpedition'>
             <mapNode t='190' idref='1'/>
