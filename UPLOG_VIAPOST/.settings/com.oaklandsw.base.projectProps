@@ -25,6 +25,7 @@ Maps/CRREFA/CRREFA_PIVOT_To_CRREFA_VIAPOST.xml,com.oaklandsw.base,references.0,S
 Maps/CRREFA/CRREFA_PIVOT_To_CRREFA_VIAPOST.xml,com.oaklandsw.base,references.1,Structures/CRREFA/CRREFA_PIVOT.xml
 Maps/CRREFA/RFMA_To_CRREFA_PIVOT.xml,com.oaklandsw.base,references.0,Structures/CRREFA/RFMA.xml
 Maps/CRREFA/RFMA_To_CRREFA_PIVOT.xml,com.oaklandsw.base,references.1,Structures/CRREFA/CRREFA_PIVOT.xml
+Maps/DESTINATAIRE/DESTINATAIRE_CLIENT_To_DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,needsVal.0,Structures/DEST/DESTINATAIRE_CLIENT.xml
 Maps/DESTINATAIRE/DESTINATAIRE_CLIENT_To_DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,references.0,Structures/DEST/DESTINATAIRE_CLIENT.xml
 Maps/DESTINATAIRE/DESTINATAIRE_CLIENT_To_DESTINATAIRE_PIVOT.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_PIVOT.xml
 Maps/DESTINATAIRE/DESTINATAIRE_PIVOT_To_RFDEST.xml,com.oaklandsw.base,references.0,Structures/DEST/RFDEST.xml
@@ -96,8 +97,11 @@ Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_RPTEDI_VIAPOST_ETAPE1.xml,com.oaklandsw.bas
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_RPTEDI_VIAPOST_ETAPE1.xml,com.oaklandsw.base,references.1,Structures/RPTEDI/ANAPRO_MSG/InputWrapper.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_RPTEDI_VIAPOST_ETAPE2.xml,com.oaklandsw.base,references.0,Structures/ANAPRO/ANAPRO_VIAPOST.xml
 Maps/RPTEDI_ANAPRO/ANAPRO_VIAPOST_To_RPTEDI_VIAPOST_ETAPE2.xml,com.oaklandsw.base,references.1,Structures/RPTEDI/RPTEDI_ANAPRO.xml
+Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml
+Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,needsVal.1,Structures/DEST/DESTINATAIRE_CLIENT.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_DESTINATAIRE_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml
+Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_RPTEDI_VIAPOST.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_RPTEDI_VIAPOST.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml
 Maps/RPTEDI_DESTINATAIRE/DESTINATAIRE_VIAPOST_To_RPTEDI_VIAPOST.xml,com.oaklandsw.base,references.1,Structures/RPTEDI/RPTEDI_DESTINATAIRE.xml
 Maps/RPTEDI_REFART/REFART_VIAPOST_To_REFART_VIAPOST_FILTRE.xml,com.oaklandsw.base,references.0,Structures/REFART/REFART_VIAPOST.xml
@@ -191,16 +195,20 @@ Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml,com.oaklandsw.base,r
 Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.1,Namespace Containers/CMDCLI200331063030.xml
 Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/row5.xml,/root/row5
 Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/row5.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/row5Record.xml,/root/row5Record
+Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,/root/destinataire_client_in
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,/root/destinataire_client_in
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.2,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant.xml,/root/code_destinataire_bloquant
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant.xml,com.oaklandsw.base,references.0,Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquantRecord.xml,/root/code_destinataire_bloquantRecord
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant.xml,com.oaklandsw.base,references.1,Sample Data/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/code_destinataire_bloquant/RPTEDI_DEST_BLOQUANT_TEST.csv
+Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,com.oaklandsw.base,needsVal.0,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,com.oaklandsw.base,references.0,Namespace Containers/DEST.xml
 Structures/Jobs/BRM_TO_RPTEDI_DEST/tHMap_3/destinataire_client_in.xml,com.oaklandsw.base,references.1,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
+Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,needsVal.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,/root/row5
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,/root/row5
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.1,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6.xml,/root/row6
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/InputWrapper.xml,com.oaklandsw.base,references.2,Namespace Containers/DEST.xml
+Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,needsVal.0,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.0,Structures/DEST/DESTINATAIRE_CLIENT.xml,/root/DESTINATAIRE
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row5.xml,com.oaklandsw.base,references.1,Namespace Containers/DEST.xml
 Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6.xml,com.oaklandsw.base,references.0,Structures/Jobs/C13_DI_RPTEDI_DESTINATAIRE/tHMap_3/row6Record.xml,/root/row6Record
