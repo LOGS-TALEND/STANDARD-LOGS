@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='79062'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='79140'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='12309' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='10290' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
@@ -550,13 +550,13 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='11213' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
+  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='11214' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='138' V200='8' structElemExists='true' usedCount='11064' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
+    <child t='200' id='138' V200='8' structElemExists='true' usedCount='11065' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/root/row1/CMDCLI/OP,{Filter},{Sort Keys},{Contexts})</loop>
-      <child t='200' id='139' V200='8' structElemExists='true' usedCount='4172' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='header'>
+      <child t='200' id='139' V200='8' structElemExists='true' usedCount='4173' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='header'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='141' V200='8' structElemExists='true' usedCount='126' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='client'>
           <mapNode t='190' idref='1'/>
@@ -590,7 +590,7 @@
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(Equal(AgConcat(in$/root/row1/CMDCLI/OP/InfoComplementaire/Code(SimpleLoop(in$/root/row1/CMDCLI/OP/InfoComplementaire,Equal(in$/root/row1/CMDCLI/OP/CodeDestinataire,in$/root/row2/row2Record/CodeDestinataire),{Sort Keys},{Contexts}))),UpperCase(Constant([value="BOLICOFI",dataType="2"],))),AgConcat(in$/root/row1/CMDCLI/OP/InfoComplementaire/Valeur(SimpleLoop(in$/root/row1/CMDCLI/OP/InfoComplementaire,Equal(in$/root/row1/CMDCLI/OP/CodeDestinataire,in$/root/row2/row2Record/CodeDestinataire),{Sort Keys},{Contexts}))),Constant([value="",dataType="2"],))</value>
         </child>
-        <child t='200' id='140' V200='8' structElemExists='true' usedCount='3088' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='customer'>
+        <child t='200' id='140' V200='8' structElemExists='true' usedCount='3089' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='customer'>
           <mapNode t='190' idref='1'/>
           <child t='200' id='288' V200='8' structElemExists='true' usedCount='134' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='corp_name'>
             <mapNode t='190' idref='1'/>
@@ -604,9 +604,9 @@
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_prenom_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonPrenom)</value>
           </child>
-          <child t='200' id='273' V200='8' structElemExists='true' usedCount='135' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num'>
+          <child t='200' id='273' V200='8' structElemExists='true' usedCount='136' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='num'>
             <mapNode t='190' idref='1'/>
-            <value>in$/root/row1/CMDCLI/OP/FacturationNotes2</value>
+            <value>AgConcatFirstPresentValue(in$/root/row1/CMDCLI/OP/FacturationNotes2)</value>
           </child>
           <child t='200' id='274' V200='8' structElemExists='true' usedCount='136' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num_ext'>
             <mapNode t='190' idref='1'/>
