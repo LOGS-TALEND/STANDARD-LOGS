@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='130716'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3518' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='131113'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3522' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='3373' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
       <mapNode t='190' idref='1'/>
@@ -459,13 +459,25 @@
         </child>
       </child>
     </child>
-    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='102' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='106' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
       <mapNode t='190' idref='1'/>
       <repRuntime t='698' id='7673' V698='1' V690='1' padOutput='true'>
       </repRuntime>
       <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
-      <child t='200' id='7655' V200='8' input='true' structElemExists='true' usedCount='59' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10Record.xml' V281='13' V1='4' name='row10Record'>
+      <child t='200' id='7655' V200='8' input='true' structElemExists='true' usedCount='63' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10Record.xml' V281='13' V1='4' name='row10Record'>
         <mapNode t='190' idref='1'/>
+        <child t='200' id='7674' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Client'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7675' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code_Transport'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7676' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code_service_transport'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='7677' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code_regroupement_chargement'>
+          <mapNode t='190' idref='1'/>
+        </child>
       </child>
     </child>
   </inputMapElem>
@@ -2575,7 +2587,7 @@
           </child>
           <child t='200' id='679' V200='8' structElemExists='true' usedCount='42' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='CodeRegroupementChargement'>
             <mapNode t='190' idref='1'/>
-            <value>Choice(ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),AgConcat(in$/root/row10/row10Record/code_rdc(SimpleLoop(in$/root/row10/row10Record,Equal(in$/root/row10/row10Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts})))),ChoiceValue(And(NotEqual(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(AgConcat(in$/root/row10/row10Record/code_rdc(SimpleLoop(in$/root/row10/row10Record,Equal(in$/root/row10/row10Record/code_crossdesk,in$/root/row9/CMDCLI/OP/CodeTransport),{Sort Keys},{Contexts}))),in$/root/row9/CMDCLI/OP/CodeServiceTransport)),ChoiceValue(And(NotEqual(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],))),in$/root/row9/CMDCLI/OP/CodeTransport),ChoiceValue(And(Equal(GetMapProperty([property="context.Metadata_Cmdcli_ConserverCodeTransporteurClient"],),Constant([value="True",dataType="2"],)),Equal(in$/root/row9/CMDCLI/OP/CodeActivite,Constant([value="TSH",dataType="2"],))),Concat(in$/root/row9/CMDCLI/OP/CodeTransport,in$/root/row9/CMDCLI/OP/CodeServiceTransport)))</value>
+            <value>AgConcat(in$/root/row10/row10Record/Code_regroupement_chargement(SimpleLoop(in$/root/row10/row10Record,And(Equal(in$/root/row10/row10Record/Client,in$/root/row9/CMDCLI/OP/CodeActivite),Equal(in$/root/row10/row10Record/Code_Transport,in$/root/row9/CMDCLI/OP/CodeTransport),Equal(in$/root/row10/row10Record/Code_service_transport,in$/root/row9/CMDCLI/OP/CodeServiceTransport)),{Sort Keys},{Contexts})))</value>
           </child>
           <child t='200' id='680' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='13' maxSize='13' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeRegroupementExpedition'>
             <mapNode t='190' idref='1'/>
