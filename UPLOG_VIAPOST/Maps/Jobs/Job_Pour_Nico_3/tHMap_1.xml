@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='95792'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='95862'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='14943' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='12484' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
@@ -606,7 +606,7 @@
           </child>
           <child t='200' id='273' V200='8' structElemExists='true' usedCount='165' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='num'>
             <mapNode t='190' idref='1'/>
-            <value>AgConcat(in$/root/row1/CMDCLI/OP/FacturationNotes2(SimpleLoop(in$/root/row1/CMDCLI/OP/FacturationNotes2,{Filter},{Sort Keys},{Contexts})))</value>
+            <value>AgConcatFirstPresentValue(in$/root/row1/CMDCLI/OP/FacturationNotes2(SimpleLoop(in$/root/row1/CMDCLI/OP/FacturationNotes2,{Filter},{Sort Keys},{Contexts})))</value>
           </child>
           <child t='200' id='274' V200='8' structElemExists='true' usedCount='165' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num_ext'>
             <mapNode t='190' idref='1'/>
