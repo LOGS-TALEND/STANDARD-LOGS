@@ -76,7 +76,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JDPYycZZ3DUnZR5gg9u4jrphlFkntMwo4GxbEtkp"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8WV0GAtwywX5JZp8qd2TnA4o/QvJX87X5G3w06Cn"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2j2b1JhwYZx+rMK6Xz/Hlhug661KF3CYjzeE/ZMs"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gW3FOKEzKCybFT8RXmD84/3rfytNWL0vK/QwKIGo"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -209,7 +209,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CWD8/hJIr+6cjIrFByPu65IyPDekmql7YswCmShfAUJyTUszD0AOOg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:crA7CdDwM6Ob9R8ct/x1+mIgGeRFOz0GSstmA9bIfudAraPEQXVo7A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_CMDCLI_FichierTraites&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -299,7 +299,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Z5+TUC6eA4TpQ+HnUWr6ukq0iJHTZIDeZooxiSCVrZjnJggD42qybQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8yy4cFSmksDrzhnlPOruvS11E+nIsmZhpc51Jaax/jUfC4ikDm2zvg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_CMDCLI_FichierTraites&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -410,7 +410,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="896">
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/FILTRE_CMDCLI20200317T081959_VIAPOST_CMDCLI_VAD_small.xml&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
@@ -425,7 +425,7 @@
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="896">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="row22.content = row11.content.replaceAll(&quot;\\p{C}&quot;, &quot;&quot;).replaceAll(&quot;\r\n&quot;, &quot;&quot;).replaceAll(&quot;\uFEFF&quot;, &quot;&quot;).replaceAll(&quot;  &quot;, &quot;&quot;);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -435,7 +435,7 @@
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="896">
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_2"/>
     <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
     <elementParameter field="TABLE" name="MANUALTABLE">
@@ -455,7 +455,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="800">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -465,7 +465,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1auFRiQlNK9xITmN4eEBPShfVagF85kqZO8Hnbvt/BJcNskyA+MRdg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AqJm8WjNAkBw3jNHkmDzTf2wHaZHzrRtjSTDTwF2vZbsI7acwK5Qcw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_Destinataire&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -525,7 +525,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="768" posY="896">
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="768" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_3"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
@@ -566,11 +566,11 @@
       <column key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="896">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/&quot; +  &quot;TSH&quot; + TalendDate.getDate(&quot;YYYYMMDDhhmmssSS&quot;) + &quot;.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/TSH20210608110919975.xml&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -695,13 +695,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7f3f8c94-d840-442c-8baa-c09f1d97d4a4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FQ4lGH7RQMZq0uRFTxGxXMiRfLvFezfMGBlmUmjhJFpgu/zNwcV5aG2DSE8nvGNhqJYOMQHE6NTs
-mLMK+vyzIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ec8a52d0-9fc0-4d17-92cb-7cf751d1bde1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WIMsqppoC8iqct2IX+wdET7SVC7DTxuMXHqEc+mhke9FtM5mNLQHimyMSEskJhdcpYoA0eVeVbGP
-5cg+9xriwg==</DigestValue></Reference></SignedInfo><SignatureValue>MqtC7Lz7wdVRVTbwFzc1mVOQ9dSPdXGv47gkknV+W7k4pqmIAXki/UDe0rREfzotFyG7yAdRcZyc
-jZ91O7ixKxMw2VHNzJkWyoBqPBvQipZA98QY4PaoUYJiG55WuBWsWGHJ4dmHrkJGqNNX5LG6aB0A
-V3hWT1bMvS8OMjWMJh09SFl/XRbgVRu/20uHG+0/Vwp/XBX/wPy22iYqFbo/N9pByBYDRNjEXhx6
-qMAtiBkO7UYQhqxal7YIQifOEyjpP8gr6qLJUHh6pi9FodXDeQ1vPcsF8bg+xJc1Kr9AaVu9GBqp
-Zu2kctwRI3+oopWFCMoO2UBY6c3eHgkDWOSV4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b2046d60-1b72-4331-9152-becfdc3418fc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/hWTMuOZWnTWC0SDeSBv1/BFF/i59pTjFDCmB69InOm2zwdSmGU4V3ZRW8gVnk6ifc4pTMJSpjDY
++meEip7ybQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f2d0c0b4-60cb-4c4a-bd3d-16c4b29a3322"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1fxk6jm2e//g5i+n1O6C/QjGsUjb4dPCjfUjJzriXRggFdkgUbLdBq1IK1HWV03goG//Rvi12ZaD
+IrzjcZtRlg==</DigestValue></Reference></SignedInfo><SignatureValue>Zgm9gSDNAcCwlAgJOat+3oiEESjfVDL0JcigDBrVHILPXC2J/irwAOG/YAaRQZD3Qyj5uAYB8i1d
+QdbcTmhAx3LB37a59AKMnWWAV6vZg9vU6c6UH9zGvVd4zgEK9hw8cH4bThLq2qQ3Uqc7CjfqkCpz
+KQKUZKHFP+bDWLu2PIr0smtgzPC1ZIalnP/ZPjJSR49DnO+bYxPsuJO5V1sBsI6+AqSbE3T/LTHJ
+shGEkIEXaziuI6Qh1ZdYE9wmdnVtrkbGk7VwYfplPVBfhg9A7koR69imma2aJ/U8oBmgz6KItqgk
+JVRGPAQ8YocMEDUjH5+DuG5r279ZLiTYivo35w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -723,4 +723,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ec8a52d0-9fc0-4d17-92cb-7cf751d1bde1" Target="#_7f3f8c94-d840-442c-8baa-c09f1d97d4a4"><Timestamp>2021-06-08 09:09:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f2d0c0b4-60cb-4c4a-bd3d-16c4b29a3322" Target="#_b2046d60-1b72-4331-9152-becfdc3418fc"><Timestamp>2021-06-08 09:11:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
