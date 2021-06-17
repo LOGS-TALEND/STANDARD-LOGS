@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='335818'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='335824'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='13016' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='12426' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
@@ -4923,7 +4923,7 @@
             </child>
             <child t='200' id='7845' V200='8' structElemExists='true' usedCount='62' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Valeur),{Then},Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Valeur),Constant([value="",dataType="2"],),Constant([value="",dataType="2"],))</value>
             </child>
           </child>
           <child t='200' id='7846' V200='8' structElemExists='true' usedCount='465' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
