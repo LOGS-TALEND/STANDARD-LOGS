@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='103814'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='16078' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='105104'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='16278' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
-    <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='13439' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
+    <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='13609' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
       <mapNode t='190' idref='1'/>
-      <child t='200' id='4' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='13418' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
+      <child t='200' id='4' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='13588' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CMDCLI/CMDCLI_VIAPOST.xml' V281='13' modifiedFromParent_io='true' V1='4' name='CMDCLI'>
         <mapNode t='190' idref='1'/>
+        <repRuntime t='692' id='7505' V692='1' unnamedElemsNamespace='1' V690='1'>
+          <namespaceContainers t='220' ref='Namespace Containers/CMDCLI200331063030.xml'/>
+        </repRuntime>
         <io>ReadURL([repName="XML"],{Start Offset},{Length})</io>
-        <child t='200' id='21' V200='8' input='true' structElemExists='true' usedCount='13263' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OP'>
+        <child t='200' id='21' V200='8' input='true' structElemExists='true' usedCount='13431' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OP'>
           <mapNode t='190' idref='1'/>
           <child t='200' id='22' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
             <mapNode t='190' idref='1'/>
@@ -15,10 +18,10 @@
           <child t='200' id='23' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDepot'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='24' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeEnseigne'>
+          <child t='200' id='24' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeEnseigne'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='25' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OrdrePreparation'>
+          <child t='200' id='25' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OrdrePreparation'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='26' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OrdrePreparation2'>
@@ -30,10 +33,10 @@
           <child t='200' id='28' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeCommande'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='31' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateCommande'>
+          <child t='200' id='31' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateCommande'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='29' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDestinataire'>
+          <child t='200' id='29' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDestinataire'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='30' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDestinataireInt'>
@@ -66,79 +69,79 @@
           <child t='200' id='40' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ExpediteurEmail'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='42' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNom'>
+          <child t='200' id='42' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNom'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='5672' V200='8' input='true' structElemExists='true' usedCount='130' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPrenom'>
+          <child t='200' id='5672' V200='8' input='true' structElemExists='true' usedCount='132' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPrenom'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='41' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonSociete'>
+          <child t='200' id='41' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonSociete'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='44' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse1'>
+          <child t='200' id='44' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse1'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='45' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse2'>
+          <child t='200' id='45' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse2'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='46' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse3'>
+          <child t='200' id='46' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse3'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='47' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePorte'>
+          <child t='200' id='47' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePorte'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='48' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePorte2'>
+          <child t='200' id='48' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePorte2'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='49' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodeInterphone'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='50' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePostal'>
+          <child t='200' id='50' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePostal'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='51' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonVille'>
+          <child t='200' id='51' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonVille'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='52' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonEtat'>
+          <child t='200' id='52' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonEtat'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='53' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPays'>
+          <child t='200' id='53' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPays'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='54' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonTelephone'>
+          <child t='200' id='54' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonTelephone'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='55' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonMobile'>
+          <child t='200' id='55' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonMobile'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='56' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonEmail'>
+          <child t='200' id='56' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonEmail'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='57' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPointLivraison'>
+          <child t='200' id='57' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='58' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPaysPointLivraison'>
+          <child t='200' id='58' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPaysPointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='59' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNomPointLivraison'>
+          <child t='200' id='59' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNomPointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='60' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse1PointLivraison'>
+          <child t='200' id='60' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse1PointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='61' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse2PointLivraison'>
+          <child t='200' id='61' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonAdresse2PointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='62' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePostalPointLivraison'>
+          <child t='200' id='62' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonCodePostalPointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='63' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonVillePointLivraison'>
+          <child t='200' id='63' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonVillePointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='64' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonGroupePointLivraison'>
+          <child t='200' id='64' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonGroupePointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='65' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNavettePointLivraison'>
+          <child t='200' id='65' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonNavettePointLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='66' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LivraisonPlateformePointLivraison'>
@@ -189,31 +192,31 @@
           <child t='200' id='80' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNumero'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='81' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNotes1'>
+          <child t='200' id='81' V200='8' input='true' structElemExists='true' usedCount='178' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNotes1'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='82' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNotes2'>
+          <child t='200' id='82' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNotes2'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='5674' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationNotes3'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='83' V200='8' input='true' structElemExists='true' usedCount='98' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Devise'>
+          <child t='200' id='83' V200='8' input='true' structElemExists='true' usedCount='100' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Devise'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='84' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeTransport'>
+          <child t='200' id='84' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeTransport'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='85' V200='8' input='true' structElemExists='true' usedCount='166' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeServiceTransport'>
+          <child t='200' id='85' V200='8' input='true' structElemExists='true' usedCount='168' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeServiceTransport'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='5675' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='QualiteTransport'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='86' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportOptions'>
+          <child t='200' id='86' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportOptions'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='87' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportInconterm'>
+          <child t='200' id='87' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportInconterm'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='88' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportCRBT'>
@@ -222,13 +225,13 @@
           <child t='200' id='89' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Assurance'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='90' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportInstructionsLivraison'>
+          <child t='200' id='90' V200='8' input='true' structElemExists='true' usedCount='177' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TransportInstructionsLivraison'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='91' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeEnvoi'>
+          <child t='200' id='91' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeEnvoi'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='92' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LangueBL'>
+          <child t='200' id='92' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LangueBL'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='93' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ImageBLEntete'>
@@ -243,7 +246,7 @@
           <child t='200' id='96' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ImageBLFond'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='97' V200='8' input='true' structElemExists='true' usedCount='166' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PreparationInstructions'>
+          <child t='200' id='97' V200='8' input='true' structElemExists='true' usedCount='168' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PreparationInstructions'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='98' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NomAcheteurCadeau'>
@@ -252,7 +255,7 @@
           <child t='200' id='99' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EmballageCadeau'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='100' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTotalCommande'>
+          <child t='200' id='100' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTotalCommande'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='101' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTotalCommandeHT'>
@@ -264,7 +267,7 @@
           <child t='200' id='103' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PourcentageCommandeTVA'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='104' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTransport'>
+          <child t='200' id='104' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTransport'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='105' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixTotalTransportHT'>
@@ -282,16 +285,16 @@
           <child t='200' id='109' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PourcentageRemise'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='110' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateLivraisonSouhaitee'>
+          <child t='200' id='110' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateLivraisonSouhaitee'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='111' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DatePreparationSouhaitee'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='112' V200='8' input='true' structElemExists='true' usedCount='153' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MarketPlace'>
+          <child t='200' id='112' V200='8' input='true' structElemExists='true' usedCount='155' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MarketPlace'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='113' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ImpressionFacture'>
+          <child t='200' id='113' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ImpressionFacture'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='114' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeOP'>
@@ -300,10 +303,10 @@
           <child t='200' id='115' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NiveauPriorite'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='116' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Annulation'>
+          <child t='200' id='116' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Annulation'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='117' V200='8' input='true' structElemExists='true' usedCount='166' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PersoTxt1'>
+          <child t='200' id='117' V200='8' input='true' structElemExists='true' usedCount='168' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PersoTxt1'>
             <mapNode t='190' idref='1'/>
           </child>
           <child t='200' id='118' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PersoTxt2'>
@@ -321,12 +324,12 @@
           <child t='200' id='122' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PersoTxt6'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='123' V200='8' input='true' structElemExists='true' usedCount='540' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='InfoComplementaire'>
+          <child t='200' id='123' V200='8' input='true' structElemExists='true' usedCount='546' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='InfoComplementaire'>
             <mapNode t='190' idref='1'/>
-            <child t='200' id='124' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
+            <child t='200' id='124' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='125' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Valeur'>
+            <child t='200' id='125' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Valeur'>
               <mapNode t='190' idref='1'/>
             </child>
           </child>
@@ -336,15 +339,15 @@
           <child t='200' id='127' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MessageLong'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='128' V200='8' input='true' structElemExists='true' usedCount='3221' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Service'>
+          <child t='200' id='128' V200='8' input='true' structElemExists='true' usedCount='3257' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Service'>
             <mapNode t='190' idref='1'/>
-            <child t='200' id='152' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
+            <child t='200' id='152' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Code'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='153' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Type'>
+            <child t='200' id='153' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Type'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='154' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumeroService'>
+            <child t='200' id='154' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumeroService'>
               <mapNode t='190' idref='1'/>
             </child>
             <child t='200' id='155' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumeroLigne'>
@@ -353,91 +356,91 @@
             <child t='200' id='156' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='QuantiteLigne'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='157' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference'>
+            <child t='200' id='157' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='158' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference2'>
+            <child t='200' id='158' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference2'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='159' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Valeur'>
+            <child t='200' id='159' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Valeur'>
               <mapNode t='190' idref='1'/>
             </child>
             <child t='200' id='160' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Designation'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='161' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Message'>
+            <child t='200' id='161' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Message'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='162' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Acheteur'>
+            <child t='200' id='162' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Acheteur'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='163' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Beneficiaire'>
+            <child t='200' id='163' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Beneficiaire'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='243' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference3'>
+            <child t='200' id='243' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference3'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='244' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference4'>
+            <child t='200' id='244' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference4'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='245' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference5'>
+            <child t='200' id='245' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference5'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='246' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference6'>
+            <child t='200' id='246' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference6'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='247' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference7'>
+            <child t='200' id='247' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference7'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='248' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference8'>
+            <child t='200' id='248' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference8'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='249' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference9'>
+            <child t='200' id='249' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference9'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='250' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference10'>
+            <child t='200' id='250' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Reference10'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='251' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateService'>
+            <child t='200' id='251' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateService'>
               <mapNode t='190' idref='1'/>
             </child>
           </child>
           <child t='200' id='129' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CommentairesBL'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='130' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EtiquetteColisPerso'>
+          <child t='200' id='130' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='131' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeEtiquetteColisPerso'>
+          <child t='200' id='131' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeEtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='132' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire1EtiquetteColisPerso'>
+          <child t='200' id='132' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire1EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='133' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire2EtiquetteColisPerso'>
+          <child t='200' id='133' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire2EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='134' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire3EtiquetteColisPerso'>
+          <child t='200' id='134' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire3EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='135' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire4EtiquetteColisPerso'>
+          <child t='200' id='135' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire4EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='136' V200='8' input='true' structElemExists='true' usedCount='179' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire5EtiquetteColisPerso'>
+          <child t='200' id='136' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Commentaire5EtiquetteColisPerso'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='137' V200='8' input='true' structElemExists='true' usedCount='1440' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Ligne'>
+          <child t='200' id='137' V200='8' input='true' structElemExists='true' usedCount='1456' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Ligne'>
             <mapNode t='190' idref='1'/>
             <child t='200' id='164' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumeroLigne'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='165' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeArticle'>
+            <child t='200' id='165' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeArticle'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='166' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DesignationLangue1'>
+            <child t='200' id='166' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DesignationLangue1'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='167' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Quantite'>
+            <child t='200' id='167' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Quantite'>
               <mapNode t='190' idref='1'/>
             </child>
             <child t='200' id='168' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Lot'>
@@ -452,7 +455,7 @@
             <child t='200' id='170' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Proprietaire'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='171' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixLigne'>
+            <child t='200' id='171' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixLigne'>
               <mapNode t='190' idref='1'/>
             </child>
             <child t='200' id='172' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PrixLigneHT'>
@@ -470,13 +473,13 @@
             <child t='200' id='176' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PourcentageRemiseLigne'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='177' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDouanier'>
+            <child t='200' id='177' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDouanier'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='178' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PaysProvenance'>
+            <child t='200' id='178' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PaysProvenance'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='179' V200='8' input='true' structElemExists='true' usedCount='180' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeArticleEN'>
+            <child t='200' id='179' V200='8' input='true' structElemExists='true' usedCount='182' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeArticleEN'>
               <mapNode t='190' idref='1'/>
             </child>
             <child t='200' id='180' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RefReservation'>
@@ -495,287 +498,287 @@
               <mapNode t='190' idref='1'/>
             </child>
           </child>
-          <child t='200' id='252' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ValeurAssuree'>
+          <child t='200' id='252' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ValeurAssuree'>
             <mapNode t='190' idref='1'/>
           </child>
         </child>
       </child>
     </child>
-    <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='2447' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row2.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row2'>
+    <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='2475' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row2.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row2'>
       <mapNode t='190' idref='1'/>
-      <repRuntime t='698' id='7526' V698='1' V690='1' padOutput='true'>
+      <repRuntime t='698' id='7543' V698='1' V690='1' padOutput='true'>
       </repRuntime>
       <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
-      <child t='200' id='275' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='2261' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row2Record.xml' V281='13' V1='4' name='row2Record'>
+      <child t='200' id='275' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='2287' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row2Record.xml' V281='13' V1='4' name='row2Record'>
         <mapNode t='190' idref='1'/>
-        <child t='200' id='276' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDestinataire'>
+        <child t='200' id='276' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeDestinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='277' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Raison_sociale'>
+        <child t='200' id='277' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Raison_sociale'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='278' V200='8' input='true' structElemExists='true' usedCount='173' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_nom_destinataire'>
+        <child t='200' id='278' V200='8' input='true' structElemExists='true' usedCount='175' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_nom_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='279' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_prenom_destinataire'>
+        <child t='200' id='279' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_prenom_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='280' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse1_destinataire'>
+        <child t='200' id='280' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse1_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='281' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse2_destinataire'>
+        <child t='200' id='281' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse2_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='282' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_adresse3_destinataire'>
+        <child t='200' id='282' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_adresse3_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='283' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse3_destinataire'>
+        <child t='200' id='283' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse3_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='284' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse4_destinataire'>
+        <child t='200' id='284' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='adresse4_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='285' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_pays_destinataire'>
+        <child t='200' id='285' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_pays_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='286' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='telephone_destinataire'>
+        <child t='200' id='286' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='telephone_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='287' V200='8' input='true' structElemExists='true' usedCount='174' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_mobile_destinataire'>
+        <child t='200' id='287' V200='8' input='true' structElemExists='true' usedCount='176' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='real_mobile_destinataire'>
           <mapNode t='190' idref='1'/>
         </child>
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='14671' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
+  <outputMapElem t='200' id='8' V200='8' structElemExists='true' usedCount='14855' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='orders'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='138' V200='8' structElemExists='true' usedCount='14481' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
+    <child t='200' id='138' V200='8' structElemExists='true' usedCount='14663' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='order'>
       <mapNode t='190' idref='1'/>
       <loop>SimpleLoop(in$/root/row1/CMDCLI/OP,{Filter},{Sort Keys},{Contexts})</loop>
-      <child t='200' id='139' V200='8' structElemExists='true' usedCount='5498' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='header'>
+      <child t='200' id='139' V200='8' structElemExists='true' usedCount='5578' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='header'>
         <mapNode t='190' idref='1'/>
-        <child t='200' id='141' V200='8' structElemExists='true' usedCount='167' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='client'>
+        <child t='200' id='141' V200='8' structElemExists='true' usedCount='169' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='client'>
           <mapNode t='190' idref='1'/>
           <value>GetMapProperty([property="context.Metadata_TSQ_CodePartenaire"],)</value>
         </child>
-        <child t='200' id='142' V200='8' structElemExists='true' usedCount='168' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='operator'>
+        <child t='200' id='142' V200='8' structElemExists='true' usedCount='170' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='operator'>
           <mapNode t='190' idref='1'/>
           <value>GetMapProperty([property="context.Metadata_TSQ_CodePartenaire"],)</value>
         </child>
-        <child t='200' id='144' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num'>
+        <child t='200' id='144' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/OrdrePreparation</value>
         </child>
-        <child t='200' id='145' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='date'>
+        <child t='200' id='145' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='date'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/DateCommande</value>
         </child>
-        <child t='200' id='147' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='invoice_num'>
+        <child t='200' id='147' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='invoice_num'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/OrdrePreparation</value>
         </child>
-        <child t='200' id='143' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='sign'>
+        <child t='200' id='143' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='sign'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/CodeEnseigne</value>
         </child>
-        <child t='200' id='146' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_date'>
+        <child t='200' id='146' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_date'>
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/DateLivraisonSouhaitee),Concat(Substring(in$/root/row1/CMDCLI/OP/DateLivraisonSouhaitee,Constant([value="9",dataType="2"],),Constant([value="2",dataType="2"],)),Constant([value="/",dataType="2"],),Substring(in$/root/row1/CMDCLI/OP/DateLivraisonSouhaitee,Constant([value="6",dataType="2"],),Constant([value="2",dataType="2"],)),Constant([value="/",dataType="2"],),Substring(in$/root/row1/CMDCLI/OP/DateLivraisonSouhaitee,Constant([value="0",dataType="2"],),Constant([value="5",dataType="2"],)),Constant([value=" ",dataType="2"],),Substring(in$/root/row1/CMDCLI/OP/DateLivraisonSouhaitee,Constant([value="12",dataType="2"],),Constant([value="8",dataType="2"],))),Constant([value="",dataType="2"],))</value>
         </child>
-        <child t='200' id='148' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='ref_destinataire'>
+        <child t='200' id='148' V200='8' structElemExists='true' usedCount='184' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='ref_destinataire'>
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(Equal(AgConcat(in$/root/row1/CMDCLI/OP/InfoComplementaire/Code(SimpleLoop(in$/root/row1/CMDCLI/OP/InfoComplementaire,Equal(in$/root/row1/CMDCLI/OP/CodeDestinataire,in$/root/row2/row2Record/CodeDestinataire),{Sort Keys},{Contexts}))),UpperCase(Constant([value="BOLICOFI",dataType="2"],))),AgConcat(in$/root/row1/CMDCLI/OP/InfoComplementaire/Valeur(SimpleLoop(in$/root/row1/CMDCLI/OP/InfoComplementaire,Equal(in$/root/row1/CMDCLI/OP/CodeDestinataire,in$/root/row2/row2Record/CodeDestinataire),{Sort Keys},{Contexts}))),Constant([value="",dataType="2"],))</value>
         </child>
-        <child t='200' id='140' V200='8' structElemExists='true' usedCount='4086' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='customer'>
+        <child t='200' id='140' V200='8' structElemExists='true' usedCount='4150' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='customer'>
           <mapNode t='190' idref='1'/>
-          <child t='200' id='288' V200='8' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='corp_name'>
+          <child t='200' id='288' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='corp_name'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/Raison_sociale(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonSociete)</value>
           </child>
-          <child t='200' id='271' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='name'>
+          <child t='200' id='271' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='name'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_nom_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonNom)</value>
           </child>
-          <child t='200' id='272' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='firstname'>
+          <child t='200' id='272' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='firstname'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_prenom_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonPrenom)</value>
           </child>
-          <child t='200' id='273' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='num'>
+          <child t='200' id='273' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='num'>
             <mapNode t='190' idref='1'/>
             <value>AgConcatFirstPresentValue(in$/root/row1/CMDCLI/OP/FacturationNotes2(SimpleLoop(in$/root/row1/CMDCLI/OP/FacturationNotes2,{Filter},{Sort Keys},{Contexts})))</value>
           </child>
-          <child t='200' id='274' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num_ext'>
+          <child t='200' id='274' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='num_ext'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/FacturationNotes1</value>
           </child>
           <child t='200' id='270' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='drop_adress'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='253' V200='8' structElemExists='true' usedCount='3149' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='shipping_adress'>
+          <child t='200' id='253' V200='8' structElemExists='true' usedCount='3185' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='shipping_adress'>
             <mapNode t='190' idref='1'/>
-            <child t='200' id='289' V200='8' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='corp_name'>
+            <child t='200' id='289' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='corp_name'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/Raison_sociale(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonSociete)</value>
             </child>
-            <child t='200' id='254' V200='8' structElemExists='true' usedCount='175' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='name'>
+            <child t='200' id='254' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='name'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_nom_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonNom)</value>
             </child>
-            <child t='200' id='255' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='firstname'>
+            <child t='200' id='255' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='firstname'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_prenom_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonPrenom)</value>
             </child>
-            <child t='200' id='256' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='adr1'>
+            <child t='200' id='256' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='adr1'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/adresse1_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonAdresse1)</value>
             </child>
-            <child t='200' id='257' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr2'>
+            <child t='200' id='257' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr2'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/adresse2_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonAdresse2)</value>
             </child>
-            <child t='200' id='258' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr3'>
+            <child t='200' id='258' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr3'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/adresse3_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonAdresse3)</value>
             </child>
-            <child t='200' id='259' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
+            <child t='200' id='259' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_adresse3_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonCodePostal)</value>
             </child>
-            <child t='200' id='260' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
+            <child t='200' id='260' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/adresse4_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonVille)</value>
             </child>
-            <child t='200' id='261' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
+            <child t='200' id='261' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_pays_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonPays)</value>
             </child>
-            <child t='200' id='263' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='phone'>
+            <child t='200' id='263' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='phone'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/telephone_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonTelephone)</value>
             </child>
-            <child t='200' id='264' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='mobile'>
+            <child t='200' id='264' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='mobile'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/CodeDestinataire),AgConcat(in$/root/row2/row2Record/real_mobile_destinataire(SimpleLoop(in$/root/row2/row2Record,Equal(in$/root/row2/row2Record/CodeDestinataire,in$/root/row1/CMDCLI/OP/CodeDestinataire),{Sort Keys},{Contexts}))),in$/root/row1/CMDCLI/OP/LivraisonMobile)</value>
             </child>
-            <child t='200' id='265' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='email'>
+            <child t='200' id='265' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='email'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/LivraisonEmail</value>
             </child>
-            <child t='200' id='262' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='state'>
+            <child t='200' id='262' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='state'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/LivraisonEtat</value>
             </child>
-            <child t='200' id='266' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction1'>
+            <child t='200' id='266' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction1'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/TransportInstructionsLivraison</value>
             </child>
             <child t='200' id='290' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='instruction2'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='291' V200='8' structElemExists='true' usedCount='167' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction3'>
+            <child t='200' id='291' V200='8' structElemExists='true' usedCount='169' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction3'>
               <mapNode t='190' idref='1'/>
               <value>IfThenElse(And(Equal(in$/root/row1/CMDCLI/OP/CodeTransport,Constant([value="237",dataType="2"],)),Equal(in$/root/row1/CMDCLI/OP/CodeServiceTransport,Constant([value="BRT",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_TSQ_CodePartenaire"],),Constant([value="INT",dataType="2"],))),Constant([value="BRT",dataType="2"],),in$/root/row1/CMDCLI/OP/PreparationInstructions)</value>
             </child>
-            <child t='200' id='292' V200='8' structElemExists='true' usedCount='167' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction4'>
+            <child t='200' id='292' V200='8' structElemExists='true' usedCount='169' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='instruction4'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(Equal(GetMapProperty([property="context.Metadata_TSQ_CodePartenaire"],),Constant([value="INT",dataType="2"],)),in$/root/row1/CMDCLI/OP/PersoTxt1)</value>
             </child>
-            <child t='200' id='267' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='door_code'>
+            <child t='200' id='267' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='door_code'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/LivraisonCodePorte</value>
             </child>
-            <child t='200' id='268' V200='8' structElemExists='true' usedCount='176' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='door_code2'>
+            <child t='200' id='268' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='door_code2'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/LivraisonCodePorte2</value>
             </child>
           </child>
-          <child t='200' id='269' V200='8' structElemExists='true' usedCount='54' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='relay_info'>
+          <child t='200' id='269' V200='8' structElemExists='true' usedCount='72' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='relay_info'>
             <mapNode t='190' idref='1'/>
-            <child t='200' id='7540' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='name'>
+            <child t='200' id='7540' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='name'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonNomPointLivraison)</value>
             </child>
-            <child t='200' id='7528' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr1'>
+            <child t='200' id='7528' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr1'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonAdresse1PointLivraison)</value>
             </child>
-            <child t='200' id='7529' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr2'>
+            <child t='200' id='7529' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='adr2'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonAdresse2PointLivraison)</value>
             </child>
-            <child t='200' id='7530' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
+            <child t='200' id='7530' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonCodePostalPointLivraison)</value>
             </child>
-            <child t='200' id='7531' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
+            <child t='200' id='7531' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonVillePointLivraison)</value>
             </child>
-            <child t='200' id='7532' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
+            <child t='200' id='7532' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPaysPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonPaysPointLivraison,in$/root/row1/CMDCLI/OP/LivraisonPays))</value>
             </child>
-            <child t='200' id='7533' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='id'>
+            <child t='200' id='7533' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='id'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonPointLivraison)</value>
             </child>
-            <child t='200' id='7534' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='inf1'>
+            <child t='200' id='7534' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='inf1'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonGroupePointLivraison)</value>
             </child>
             <child t='200' id='7535' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='inf2'>
               <mapNode t='190' idref='1'/>
             </child>
-            <child t='200' id='7536' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='inf3'>
+            <child t='200' id='7536' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='inf3'>
               <mapNode t='190' idref='1'/>
               <value>IfThen(HasValue(in$/root/row1/CMDCLI/OP/LivraisonPointLivraison),in$/root/row1/CMDCLI/OP/LivraisonNavettePointLivraison)</value>
             </child>
           </child>
         </child>
       </child>
-      <child t='200' id='149' V200='8' structElemExists='true' usedCount='1991' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='articles'>
+      <child t='200' id='149' V200='8' structElemExists='true' usedCount='2013' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='articles'>
         <mapNode t='190' idref='1'/>
-        <child t='200' id='185' V200='8' structElemExists='true' usedCount='1991' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='line'>
+        <child t='200' id='185' V200='8' structElemExists='true' usedCount='2013' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='line'>
           <mapNode t='190' idref='1'/>
           <loop>SimpleLoop(in$/root/row1/CMDCLI/OP/Ligne,{Filter},{Sort Keys},{Contexts})</loop>
-          <child t='200' id='186' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='type'>
+          <child t='200' id='186' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='type'>
             <mapNode t='190' idref='1'/>
             <value>Constant([value="P",dataType="2"],)</value>
           </child>
-          <child t='200' id='187' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ref'>
+          <child t='200' id='187' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ref'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Ligne/CodeArticle</value>
           </child>
-          <child t='200' id='188' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ean13'>
+          <child t='200' id='188' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ean13'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Ligne/CodeArticle</value>
           </child>
-          <child t='200' id='189' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='initial_qty'>
+          <child t='200' id='189' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='initial_qty'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Ligne/Quantite</value>
           </child>
-          <child t='200' id='190' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='current_qty'>
+          <child t='200' id='190' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='current_qty'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Ligne/Quantite</value>
           </child>
-          <child t='200' id='191' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='lib'>
+          <child t='200' id='191' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='lib'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Ligne/DesignationLangue1),in$/root/row1/CMDCLI/OP/Ligne/DesignationLangue1,Constant([value="",dataType="2"],))</value>
           </child>
-          <child t='200' id='192' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='price'>
+          <child t='200' id='192' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='price'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Ligne/PrixLigne),Translate(in$/root/row1/CMDCLI/OP/Ligne/PrixLigne,Constant([value=".",dataType="2"],),Constant([value=",",dataType="2"],)),Constant([value="",dataType="2"],))</value>
           </child>
-          <child t='200' id='193' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='custom_number'>
+          <child t='200' id='193' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='custom_number'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Ligne/CodeDouanier),in$/root/row1/CMDCLI/OP/Ligne/CodeDouanier,Constant([value="",dataType="2"],))</value>
           </child>
-          <child t='200' id='194' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='article_country'>
+          <child t='200' id='194' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='article_country'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Ligne/PaysProvenance),UpperCase(in$/root/row1/CMDCLI/OP/Ligne/PaysProvenance),Constant([value="",dataType="2"],))</value>
           </child>
-          <child t='200' id='195' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='article_type'>
+          <child t='200' id='195' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='article_type'>
             <mapNode t='190' idref='1'/>
             <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Ligne/TypeArticleEN),in$/root/row1/CMDCLI/OP/Ligne/TypeArticleEN,Constant([value="",dataType="2"],))</value>
           </child>
@@ -784,45 +787,45 @@
           </child>
         </child>
       </child>
-      <child t='200' id='150' V200='8' structElemExists='true' usedCount='3572' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='footer'>
+      <child t='200' id='150' V200='8' structElemExists='true' usedCount='3614' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='footer'>
         <mapNode t='190' idref='1'/>
-        <child t='200' id='197' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='total_order'>
+        <child t='200' id='197' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='total_order'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/PrixTotalCommande</value>
         </child>
-        <child t='200' id='198' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_mode'>
+        <child t='200' id='198' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_mode'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/CodeTransport</value>
         </child>
-        <child t='200' id='199' V200='8' structElemExists='true' usedCount='152' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_service'>
+        <child t='200' id='199' V200='8' structElemExists='true' usedCount='154' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_service'>
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(And(Equal(in$/root/row1/CMDCLI/OP/CodeTransport,Constant([value="237",dataType="2"],)),Equal(in$/root/row1/CMDCLI/OP/CodeServiceTransport,Constant([value="BRT",dataType="2"],)),Equal(GetMapProperty([property="context.Metadata_TSQ_CodePartenaire"],),Constant([value="INT",dataType="2"],))),Constant([value="MES",dataType="2"],),in$/root/row1/CMDCLI/OP/CodeServiceTransport)</value>
         </child>
-        <child t='200' id='200' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_price'>
+        <child t='200' id='200' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_price'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/PrixTransport</value>
         </child>
-        <child t='200' id='211' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='sending_category'>
+        <child t='200' id='211' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='sending_category'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/TypeEnvoi</value>
         </child>
-        <child t='200' id='207' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='language'>
+        <child t='200' id='207' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='language'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/LangueBL</value>
         </child>
-        <child t='200' id='208' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='cancel'>
+        <child t='200' id='208' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='cancel'>
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Annulation),in$/root/row1/CMDCLI/OP/Annulation,Constant([value="0",dataType="2"],))</value>
         </child>
-        <child t='200' id='204' V200='8' structElemExists='true' usedCount='99' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='currency'>
+        <child t='200' id='204' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='currency'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/Devise</value>
         </child>
-        <child t='200' id='205' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='incoterm'>
+        <child t='200' id='205' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='incoterm'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/TransportInconterm</value>
         </child>
-        <child t='200' id='206' V200='8' structElemExists='true' usedCount='177' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='insurance'>
+        <child t='200' id='206' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='insurance'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/ValeurAssuree</value>
         </child>
@@ -835,15 +838,15 @@
         <child t='200' id='212' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='service_message'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='213' V200='8' structElemExists='true' usedCount='154' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Market_place'>
+        <child t='200' id='213' V200='8' structElemExists='true' usedCount='156' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Market_place'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/MarketPlace</value>
         </child>
-        <child t='200' id='214' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='print_invoice'>
+        <child t='200' id='214' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='print_invoice'>
           <mapNode t='190' idref='1'/>
           <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/ImpressionFacture),in$/root/row1/CMDCLI/OP/ImpressionFacture,Constant([value="0",dataType="2"],))</value>
         </child>
-        <child t='200' id='215' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_options'>
+        <child t='200' id='215' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='shipping_options'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/TransportOptions</value>
         </child>
@@ -853,114 +856,114 @@
         <child t='200' id='203' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='invoice_method'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='201' V200='8' structElemExists='true' usedCount='99' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='tax_id'>
+        <child t='200' id='201' V200='8' structElemExists='true' usedCount='101' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='tax_id'>
           <mapNode t='190' idref='1'/>
           <value>Constant([value="0",dataType="2"],)</value>
         </child>
-        <child t='200' id='216' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabel'>
+        <child t='200' id='216' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabel'>
           <mapNode t='190' idref='1'/>
           <value>in$/root/row1/CMDCLI/OP/EtiquetteColisPerso</value>
         </child>
-        <child t='200' id='217' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabeltype'>
+        <child t='200' id='217' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabeltype'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/TypeEtiquetteColisPerso)</value>
         </child>
-        <child t='200' id='218' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment1'>
+        <child t='200' id='218' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment1'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/Commentaire1EtiquetteColisPerso)</value>
         </child>
-        <child t='200' id='219' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment2'>
+        <child t='200' id='219' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment2'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/Commentaire2EtiquetteColisPerso)</value>
         </child>
-        <child t='200' id='220' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment3'>
+        <child t='200' id='220' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment3'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/Commentaire3EtiquetteColisPerso)</value>
         </child>
-        <child t='200' id='221' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment4'>
+        <child t='200' id='221' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment4'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/Commentaire4EtiquetteColisPerso)</value>
         </child>
-        <child t='200' id='222' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment5'>
+        <child t='200' id='222' V200='8' structElemExists='true' usedCount='182' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='extralabelcomment5'>
           <mapNode t='190' idref='1'/>
           <value>IfThen(Equal(in$/root/row1/CMDCLI/OP/EtiquetteColisPerso,Constant([value="1",dataType="2"],)),in$/root/row1/CMDCLI/OP/Commentaire5EtiquetteColisPerso)</value>
         </child>
       </child>
-      <child t='200' id='151' V200='8' structElemExists='true' usedCount='3239' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='services'>
+      <child t='200' id='151' V200='8' structElemExists='true' usedCount='3275' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='services'>
         <mapNode t='190' idref='1'/>
-        <child t='200' id='223' V200='8' structElemExists='true' usedCount='3239' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='service'>
+        <child t='200' id='223' V200='8' structElemExists='true' usedCount='3275' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='service'>
           <mapNode t='190' idref='1'/>
-          <child t='200' id='224' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_code'>
+          <child t='200' id='224' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_code'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Code</value>
           </child>
-          <child t='200' id='225' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_type'>
+          <child t='200' id='225' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_type'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Type</value>
           </child>
-          <child t='200' id='226' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_id'>
+          <child t='200' id='226' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_id'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/NumeroService</value>
           </child>
-          <child t='200' id='227' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_message'>
+          <child t='200' id='227' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_message'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Message</value>
           </child>
-          <child t='200' id='228' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref'>
+          <child t='200' id='228' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference</value>
           </child>
-          <child t='200' id='229' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref2'>
+          <child t='200' id='229' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref2'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference2</value>
           </child>
-          <child t='200' id='230' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref3'>
+          <child t='200' id='230' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref3'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference3</value>
           </child>
-          <child t='200' id='231' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref4'>
+          <child t='200' id='231' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref4'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference4</value>
           </child>
-          <child t='200' id='232' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref5'>
+          <child t='200' id='232' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref5'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference5</value>
           </child>
-          <child t='200' id='233' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref6'>
+          <child t='200' id='233' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref6'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference6</value>
           </child>
-          <child t='200' id='234' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref7'>
+          <child t='200' id='234' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref7'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference7</value>
           </child>
-          <child t='200' id='235' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref8'>
+          <child t='200' id='235' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref8'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference8</value>
           </child>
-          <child t='200' id='236' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref9'>
+          <child t='200' id='236' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref9'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference9</value>
           </child>
-          <child t='200' id='237' V200='8' structElemExists='true' usedCount='179' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref10'>
+          <child t='200' id='237' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='service_ref10'>
             <mapNode t='190' idref='1'/>
             <value>in$/root/row1/CMDCLI/OP/Service/Reference10</value>
           </child>
-          <child t='200' id='238' V200='8' structElemExists='true' usedCount='721' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='card_gift'>
+          <child t='200' id='238' V200='8' structElemExists='true' usedCount='729' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='card_gift'>
             <mapNode t='190' idref='1'/>
-            <child t='200' id='240' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_buyer'>
+            <child t='200' id='240' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_buyer'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/Service/Acheteur</value>
             </child>
-            <child t='200' id='241' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_recipient'>
+            <child t='200' id='241' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_recipient'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/Service/Beneficiaire</value>
             </child>
-            <child t='200' id='242' V200='8' structElemExists='true' usedCount='178' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_date'>
+            <child t='200' id='242' V200='8' structElemExists='true' usedCount='180' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_date'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/Service/DateService</value>
             </child>
-            <child t='200' id='239' V200='8' structElemExists='true' usedCount='181' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_value'>
+            <child t='200' id='239' V200='8' structElemExists='true' usedCount='183' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='card_value'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CMDCLI/OP/Service/Valeur</value>
             </child>
@@ -969,22 +972,25 @@
       </child>
     </child>
   </outputMapElem>
-  <inputRepRuntime t='698' id='7527' V698='1' V690='1' padOutput='true' rowElemPath='/root'>
+  <inputRepRuntime t='698' id='7544' V698='1' V690='1' padOutput='true' rowElemPath='/root'>
   </inputRepRuntime>
-  <outputRepRuntime t='692' id='7541' V692='1' unnamedElemsNamespace='1' V690='1'>
+  <outputRepRuntime t='692' id='7545' V692='1' unnamedElemsNamespace='1' V690='1'>
     <namespaceContainers t='220' ref='Namespace Containers/BOD2020033106460744_TSQ.xml'/>
   </outputRepRuntime>
   <valueSets></valueSets>
-  <inputXmlRepRuntime t='692' id='7542' V692='1' V690='1' rowElemPath='/root'>
+  <inputXmlRepRuntime t='692' id='7546' V692='1' V690='1' rowElemPath='/root'>
     <namespaceContainers t='220' ref='Namespace Containers/CMDCLI200331063030.xml'/>
   </inputXmlRepRuntime>
-  <outputXmlRepRuntime t='692' idref='7541'/>
+  <outputXmlRepRuntime t='692' idref='7545'/>
   <child t='165' id='10' V1='4' name='Document Bindings'>
     <child t='166' id='13' V166='5' docType='2' docReposPath='/UPLOG_VIAPOST/Sample Data/Maps/Jobs/Job_Pour_Nico_3/tHMap_1_output/BOD2020033106460744_TSQ.xml' V1='4' name='out$/orders'>
       <elemNode t='200' idref='8'/>
     </child>
     <child t='166' id='5680' V166='5' docType='1' V1='4' name='in$/root/row2'>
       <elemNode t='200' idref='6'/>
+    </child>
+    <child t='166' id='7547' V166='5' docType='1' docReposPath='/UPLOG_VIAPOST/Sample Data/CMDCLI/CMDCLI_VIAPOST/CMDCLI20128064639.XML' V1='4' name='in$/root/row1/CMDCLI'>
+      <elemNode t='200' idref='4'/>
     </child>
   </child>
   <child t='201' id='14' V1='4' name='Inherits From'>
