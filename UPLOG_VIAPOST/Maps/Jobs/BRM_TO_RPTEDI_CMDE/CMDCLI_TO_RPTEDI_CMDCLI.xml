@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='503267'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='503298'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='17430' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='16971' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
@@ -1502,7 +1502,7 @@
         </child>
         <child t='200' id='466' V200='8' structElemExists='true' usedCount='113' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='255' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Libelle'>
           <mapNode t='190' idref='1'/>
-          <value>Concat(Constant([value="MHEUUU-46",dataType="2"],))</value>
+          <value>Concat(Constant([value="BLOQUANT : Au moins une des balises LivraisonTelephone, LivraisonMobile doit être renseignée pour MondialRelais et l&apos;ordre de préparation ",dataType="2"],),in$/root/CMDCLI2/CMDCLI/OP/OrdrePreparation)</value>
         </child>
       </child>
       <child t='200' id='256' V200='8' structElemExists='true' usedCount='535' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Message'>
@@ -1594,7 +1594,7 @@
         </child>
         <child t='200' id='6499' V200='8' structElemExists='true' usedCount='107' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='255' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Libelle'>
           <mapNode t='190' idref='1'/>
-          <value>Concat(Constant([value="MHEUUU-45",dataType="2"],))</value>
+          <value>Concat(Constant([value="BLOQUANT : Au moins une des balises LivraisonTelephone, LivraisonMobile, LivraisonEmail doit être renseignée pour l&apos;ordre de préparation  ",dataType="2"],),in$/root/CMDCLI2/CMDCLI/OP/OrdrePreparation)</value>
         </child>
       </child>
       <child t='200' id='260' V200='8' structElemExists='true' usedCount='535' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Message'>
