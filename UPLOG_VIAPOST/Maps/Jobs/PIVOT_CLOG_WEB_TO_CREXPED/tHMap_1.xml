@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/InputWrapper.xml' outStruct='Structures/CREXPED/CREXPED_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CREXPED_VIAPOST' V1='4' name='tHMap_1' incarnation='8475'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/InputWrapper.xml' outStruct='Structures/CREXPED/CREXPED_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CREXPED_VIAPOST' V1='4' name='tHMap_1' incarnation='8535'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='304' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='275' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/row1.xml' V281='13' V1='4' name='row1'>
@@ -511,7 +511,7 @@
       </child>
       <child t='200' id='173' V200='8' structElemExists='true' usedCount='10' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NbColis'>
         <mapNode t='190' idref='1'/>
-        <value>AgCount(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS,{Filter},{Sort Keys},{Contexts})))</value>
+        <value>AgCount(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS,Equal(Constant([value="False",dataType="2"],),Java([className="routines.Dictionnaires",methodName="Contains"],Concat(Constant([value="COLIS_COUNT_",dataType="2"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis,in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre))),{Sort Keys},{Contexts})))</value>
       </child>
       <child t='200' id='174' V200='8' structElemExists='true' usedCount='10' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='PersoTxt1'>
         <mapNode t='190' idref='1'/>
