@@ -64,7 +64,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:5NpSHkK8RG6Ui1kophI6QHsZEQeDtC66dS7zsTGF"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:C48RQ6iTA67Hq6f0Qt+OioaL8ngnhhtd1bGhCDJE"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -99,7 +99,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gS1ipNB1oRnb+Kh7oDbdU8kX4ULw+FgHrrF26Il6"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iQFhC5VUVxN6dG+l9MMIYeLyLRMnscMIDygxcvqa"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -234,7 +234,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N7RR1bFKq7RtcX/YV4yatDnMSTZRuvEznuDaTwfZaSgc7sZCUmz2XA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0hah80ctY4oYfopwa1L1zblZpN3mZ1tkm+ThwNypp8dJG9OtuVg0NA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;RGPT_CHGT&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -269,38 +269,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileProperties_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CREXPED 4.0/CLOG_PIVOT_WEB.xml&quot;"/>
-    <elementParameter field="CHECK" name="MD5" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileProperties_1">
-      <column key="false" length="255" name="abs_path" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column key="false" length="255" name="dirname" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column key="false" length="255" name="basename" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column key="false" length="10" name="mode_string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="size" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="20" name="mtime" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
-      <column key="false" length="20" name="mtime_string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.Metadata_Generique_DateCreaFile = row3.mtime_string;&#10;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaRow_1"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Metadata_Generique_DateCreaFile : &quot; + context.Metadata_Generique_DateCreaFile);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
@@ -318,37 +286,18 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tJava_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
-  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileProperties_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7bc5f158-6937-414f-b454-2e51d992c467"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tm+EjEkDA6EqeUUaEiPKYfIsj69zg28YEoYyZ9/YVMbF5RR1MpLUCsIipU9a9pOvANvLQqubDQg1
-63VylvW+SQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_105d230a-2607-4323-abe1-2cea8234b52b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/4EF0o4UleBHhBN5/fDckjXKVRfb24sTNmnWQySmlw477jUPjHJdFM1Ue1x29Trhr+VLTZ/YdqzQ
-KEDCMRXpMw==</DigestValue></Reference></SignedInfo><SignatureValue>fNca4D5QQKhieWbdQS1dawQWX8LmRLDihzzl7Wdg5uJbLaH0vxwAOdrtUD5sUtjJ/gxNwFLC1LGH
-Nq9K2zzv54IDP4JvtHAoV9Nbs3F73ESggMeCLtzlyJC0617UQdB6wd6CkiwquX+tiemIPkXn0CK7
-z6eUOnxU/TxwtK5XXJqgFlSblHZkCRBzf/DYikNFZj/Xu5gfVXw8rsBNW0I2A/Ef5eFUHSVHZgMo
-+hAiQXX4pU3fHPCW5UYmK/pUVSnTaHDTBqWWFfXEempP9CIvJ8zunI3B0wAwGO+8Fz+pzxaKfXNE
-i0HzqRjXprNvStzs60dog1sjce+0PJ9Lm4OvQQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_38999089-b3a6-4847-8077-dfeedb83e473"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qncRiP77bAO/hZwOFYpUBlaY2OOZQB++YKw556yJp4ZOFVQjHX4ju6bulYk+gYTg+H/+AIyui0pT
+yUft1g/GLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a0cd0b51-2d8f-4e2a-8487-aae85acc68d8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kZbl4IT9itQh+10TKgIUKWW1xscyigLnsk6rktG4vSfXMxkQEh0TD0U9w2p2ea1mjQc2Ha8pIF+7
+fphFLnCoug==</DigestValue></Reference></SignedInfo><SignatureValue>kRyMCzrcziy1weNHplRxNr1q60FtlYOYGFV4e8KVUNJHDva8DrdpJ1sr/dcAUzYBQ3M8fgZE9Gh/
+PN4AvNVoJJ8eVjk055HNWdFlz4r5NL/cuBWDnKNxDXo3iAPUhSTymaH6a1NamQbuIatZjUzPm2YM
+ZIhIlK9BMZfCEWRsCvuO4asHcLfU7e3BLaXsCQX6o3IQ1cITWssT9bXgWN54WEFgnvzTlFtyN5Gu
+OXBv9lTbk02avahIiS+9pdCd9LF5zNBwF9lxAwmXykG1psfARKSdxl2M4MoxXvDEKnAV6VPJI5R4
+qZAu+Vo64Sgif3psZueH/eFWEqQgh270dyYs2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -370,4 +319,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_105d230a-2607-4323-abe1-2cea8234b52b" Target="#_7bc5f158-6937-414f-b454-2e51d992c467"><Timestamp>2021-07-08 13:06:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a0cd0b51-2d8f-4e2a-8487-aae85acc68d8" Target="#_38999089-b3a6-4847-8077-dfeedb83e473"><Timestamp>2021-07-08 13:45:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
