@@ -71,7 +71,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pKQ/VdIBEivZu4ldMZnYHI+m0YA8AT2pjjQt3/70"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:scF7KrKVm+/okZDKWNpDwn4d3kYm0K899AysKGQM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -106,7 +106,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SbQNwFQ2R3/wXUmnEu2x1sVRW30TdLiICaqWLmZ+"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:N9ipCMFQIBKdeSTpZBJQsAvRrfPnA14DuewAdLxA"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -143,6 +143,7 @@
   </parameters>
   <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/nonreg/RFRE079300_multilot.rfx&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
@@ -158,6 +159,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -193,6 +195,7 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;CRPT/INT53_REFLEX_To_CRPT_PIVOT&quot;"/>
@@ -234,6 +237,7 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/REFLEX_TO_CRAPRO/tHMap_3&quot;"/>
@@ -274,6 +278,7 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/PIVOT_Fusion.xml&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -286,8 +291,7 @@
   </node>
   <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/PIVOT_RFRE088147.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/PIVOT_Fusion.xml&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
     <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
@@ -302,7 +306,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -337,7 +340,6 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="672" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_NOGesLOT&quot;"/>
@@ -379,7 +381,6 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="672" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_4"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;CRPT/CRPT_PIVOT_To_CRAPRO_VIAPOST_GesLOT&quot;"/>
@@ -421,7 +422,6 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/CRAPRO_RFRE088147.xml&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -434,7 +434,6 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CRAPRO/CRAPRO_RFRE580337.xml&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -447,7 +446,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.Metadata_Crpt_GestionLot = &quot;True&quot;;&#10;context.Metadata_Crpt_GestionDonneesTrac = &quot;True&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -542,6 +540,7 @@
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tJava_1">
@@ -550,6 +549,7 @@
   </connection>
   <connection connectorName="FLOW" label="out53" lineStyle="0" metaname="out53" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out53"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tHMap_2">
@@ -559,39 +559,35 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tHMap_2" target="tFileOutputRaw_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputRaw_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="INT53_GestionLOT_False" lineStyle="0" metaname="INT53_GestionLOT_False" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tHMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INT53_GestionLOT_False"/>
   </connection>
   <connection connectorName="FLOW" label="INT53_GestionLot_True" lineStyle="0" metaname="INT53_GestionLot_True" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tHMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INT53_GestionLot_True"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfout" lineStyle="0" metaname="copyOfout" offsetLabelX="0" offsetLabelY="0" source="tHMap_3" target="tFileOutputRaw_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfout"/>
   </connection>
   <connection connectorName="FLOW" label="out_Ges" lineStyle="0" metaname="out_Ges" offsetLabelX="0" offsetLabelY="0" source="tHMap_4" target="tFileOutputRaw_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_Ges"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputRaw_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_2">
@@ -635,13 +631,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b8cbd27f-d775-425f-905f-2b3b87c95a82"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ScShkuORXzzORP3KPQQW03bqWChLhG7E+Q4fyMnN2Ju4LWs14cJPwxMJIWxdC64i6QHzHFkNPLdx
-brrotg4X7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a045656e-262c-4878-8bdb-46e8b5f7f30a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zSEFZCsE1PwX/p/xKdmMk+k9zjSo7hv5cY0rnT/SsrPkM/35EJe1It0zKkdbUIl/dDSH3R5rDGu0
-d/JSfOI1eA==</DigestValue></Reference></SignedInfo><SignatureValue>fGavfWI1dt9aQY+wkUMa5iN201I9hux1SZTUpT1DhwuPiZlSAd514QnRnVSCluhXaG0LGBIQJrGW
-6wOwullaSMHM0FRFZLF3BP7iDV6wnctnKjDv3N6Vu2fVMF5Y3RBGV+bM0oWNGAnA6os3dB0F5+ed
-0Y84/5NDdcw2Jvbmfj3gzXS55wocE0NNzEJbOE5sDrD8KyyxAtEyUJpuFFe8tldlPMEAgE+XwyKv
-0t0VvwQ15tepQisufK04EagZssVwUGc2vMU+C77mOYoE8nOBZtzF6qC36lSBkPycOuVdyqXEKLKh
-vPsKEmRg3Kk5UCrvGe6RhGojy5VMFpFvLsmP0Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_79ceeb62-8c88-4174-9ce0-79efbbe1df8d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+jlF40ERYnKF3clobGQ/k0u/9sZHK8SS2VbSzzLPoEWkecmnXPrM6BNUkIpDdZYkMeMjELy5aqtp
+6D0cdIeTkQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b48a9d37-c8db-4ac7-9251-5171ac30955d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>13t0nMqcbSWLIKEKckxkGWb1JnxW+jFKduzEpeumZPZghNOZliuUXSjdOFwJL3EOvJ6vqt+cwgf6
+nQs91WyC1w==</DigestValue></Reference></SignedInfo><SignatureValue>ZZeND/75AO4Vy3MCxD/PgX1b0zDPaEMEj195pwVazcMEiRw3ZhT7hsd7iR/j1jz5v8Q8HVZOF3PK
+4fE58DymXZ216AOWKawmUYQad2grukhaYusFnpHcngfQDyvqoa3dDp8Jig07dwEakvnLGhdqz7ow
+k2NU1K8Y3ja0kEmBWZfkVy0sJ9NtylEucAOJ0KCBEV1v68QHBAkoPibs2jIiRswT7IsYGaVPcr8A
+trte3id1xb3vOoea01Ckv5/MxIowLiV9mnHbIUxFUoYLGe81nwjZhRrGg/71Sj9W7P1ZjWteEwvg
+dRxg6SfUIQmlXda4khKAxvw0C9esL5XLLwiQag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -663,4 +659,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a045656e-262c-4878-8bdb-46e8b5f7f30a" Target="#_b8cbd27f-d775-425f-905f-2b3b87c95a82"><Timestamp>2021-07-08 08:44:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b48a9d37-c8db-4ac7-9251-5171ac30955d" Target="#_79ceeb62-8c88-4174-9ce0-79efbbe1df8d"><Timestamp>2021-07-08 09:18:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
