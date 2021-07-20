@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='540205'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='RPTEDI_CMDCLI' V1='4' name='tHMap_2' incarnation='540583'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='18761' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='18274' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_2/CMDCLI2.xml' V281='13' V1='4' name='CMDCLI2'>
@@ -517,7 +517,7 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='7' V200='8' structElemExists='true' usedCount='129829' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RPTEDI_CMDCLI'>
+  <outputMapElem t='200' id='7' V200='8' structElemExists='true' usedCount='129826' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RPTEDI_CMDCLI'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
     <child t='200' id='14' V200='8' structElemExists='true' usedCount='124' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NomFichier'>
@@ -536,7 +536,7 @@
       <mapNode t='190' idref='1'/>
       <value>Constant([value="CMDCLI",dataType="2"],)</value>
     </child>
-    <child t='200' id='18' V200='8' structElemExists='true' usedCount='129207' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='Listing'>
+    <child t='200' id='18' V200='8' structElemExists='true' usedCount='129204' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='Listing'>
       <mapNode t='190' idref='1'/>
       <emit>IsPresent(in$/root/CMDCLI2/CMDCLI)</emit>
       <child t='200' id='19' V200='8' structElemExists='true' usedCount='570' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Message'>
@@ -5263,10 +5263,9 @@
           <value>Concat(Constant([value="L&apos;Assurance de l&apos;ordre de préparation ",dataType="2"],),in$/root/CMDCLI2/CMDCLI/OP/OrdrePreparation,Constant([value=" doit être numérique",dataType="2"],))</value>
         </child>
       </child>
-      <child t='200' id='5821' V200='8' structElemExists='true' usedCount='648' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
+      <child t='200' id='5821' V200='8' structElemExists='true' usedCount='647' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
         <mapNode t='190' idref='1'/>
         <loop>SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,IfThenElse(HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="true",dataType="1"],)),Constant([value="false",dataType="1"],)),{Sort Keys},{Contexts})</loop>
-        <validate>And(IfThen(HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="false",dataType="1"],))),HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Greater(StringLength(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="1",dataType="12"],)))</validate>
         <child t='200' id='7357' V200='8' structElemExists='true' usedCount='108' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Bloquant'>
           <mapNode t='190' idref='1'/>
           <value>Constant([value="0",dataType="2"],)</value>
@@ -5287,10 +5286,9 @@
           <value>Concat(Constant([value="Le TransportCRBT de l&apos;ordre de préparation ",dataType="2"],),in$/root/CMDCLI2/CMDCLI/OP/OrdrePreparation,Constant([value=" doit être numérique",dataType="2"],))</value>
         </child>
       </child>
-      <child t='200' id='5822' V200='8' structElemExists='true' usedCount='577' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
+      <child t='200' id='5822' V200='8' structElemExists='true' usedCount='576' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
         <mapNode t='190' idref='1'/>
         <loop>SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,IfThenElse(HasValue(in$/root/CMDCLI2/CMDCLI/OP/EtiquetteColisPerso),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/EtiquetteColisPerso),Constant([value="true",dataType="1"],)),Constant([value="false",dataType="1"],)),{Sort Keys},{Contexts})</loop>
-        <validate>And(IfThen(HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="false",dataType="1"],))),HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Greater(StringLength(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="1",dataType="12"],)))</validate>
         <child t='200' id='7362' V200='8' structElemExists='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Message'>
           <mapNode t='190' idref='1'/>
         </child>
@@ -5314,10 +5312,9 @@
           <value>Concat(Constant([value="Le EtiquetteColisPerso de l&apos;ordre de préparation ",dataType="2"],),in$/root/CMDCLI2/CMDCLI/OP/OrdrePreparation,Constant([value=" doit être numérique",dataType="2"],))</value>
         </child>
       </child>
-      <child t='200' id='7330' V200='8' structElemExists='true' usedCount='576' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
+      <child t='200' id='7330' V200='8' structElemExists='true' usedCount='575' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_validate='true' V1='4' name='Message'>
         <mapNode t='190' idref='1'/>
         <loop>SimpleLoop(in$/root/CMDCLI2/CMDCLI/OP,IfThenElse(HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEtiquetteColisPerso),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/TypeEtiquetteColisPerso),Constant([value="true",dataType="1"],)),Constant([value="false",dataType="1"],)),{Sort Keys},{Contexts})</loop>
-        <validate>And(IfThen(HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Equal(Java([className="routines.ValideFormat",methodName="estDecimal"],in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="false",dataType="1"],))),HasValue(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Greater(StringLength(in$/root/CMDCLI2/CMDCLI/OP/TypeEnvoi),Constant([value="1",dataType="12"],)))</validate>
         <child t='200' id='7368' V200='8' structElemExists='true' usedCount='96' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Bloquant'>
           <mapNode t='190' idref='1'/>
           <value>Constant([value="0",dataType="2"],)</value>
