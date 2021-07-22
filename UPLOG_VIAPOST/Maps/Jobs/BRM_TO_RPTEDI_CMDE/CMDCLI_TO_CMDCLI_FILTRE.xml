@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_VIAPOST' V1='4' name='tHMap_1' incarnation='74622'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_VIAPOST' V1='4' name='tHMap_1' incarnation='74733'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='29545' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='29004' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_RPTEDI_CMDE/tHMap_1/row3.xml' V281='13' modifiedFromParent_emit='true' modifiedFromParent_io='true' V1='4' name='row3'>
@@ -170,7 +170,7 @@
           </child>
           <child t='200' id='60' V200='8' input='true' structElemExists='true' usedCount='282' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='FacturationPrenom'>
             <mapNode t='190' idref='1'/>
-            <validate>And(HasValue(in$/root/row3/CMDCLI/OP/FacturationPrenom),LesserOrEqual(StringLength(in$/root/row3/CMDCLI/OP/FacturationPrenom),Constant([value="35",dataType="12"],)))</validate>
+            <validate>And(IfThenElse(HasValue(in$/root/row3/CMDCLI/OP/FacturationPrenom),LesserOrEqual(StringLength(in$/root/row3/CMDCLI/OP/FacturationPrenom),Constant([value="35",dataType="12"],)),Constant([value="true",dataType="1"],)))</validate>
           </child>
           <child t='200' id='61' V200='8' input='true' structElemExists='true' usedCount='140' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FacturationSociete'>
             <mapNode t='190' idref='1'/>
