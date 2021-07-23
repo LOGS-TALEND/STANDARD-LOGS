@@ -76,7 +76,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ZgH+vriFpr2YOIS6noiSGNz/KeGafZKxLoRTxZbo"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7ib+b555Q30Q+7Ue28xIM38573wVvs6sLcQIts4G"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fEqF9dM2Ir8U1B16UFR7J/jL2KYaFES/8g9GmG+e"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ysQqWLVcUn5/3VwWa5lvWGC7Y2IRl3eOyC3vQJqo"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -148,8 +148,7 @@
   </parameters>
   <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/CMDCLI20200317T081959_VIAPOST_CMDCLI_VAD_small.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CMDE/CMDCLI202101140352001_VIAPOST_CMDCLI_VAD_20210114_043827_Moh_2.xml&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
     <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
@@ -164,7 +163,6 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="row21.content = row12.content.replaceAll(&quot;\\p{C}&quot;, &quot;&quot;).replaceAll(&quot;\r\n&quot;, &quot;&quot;).replaceAll(&quot;\uFEFF&quot;, &quot;&quot;).replaceAll(&quot;  &quot;, &quot;&quot;);&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Replace CRLF &amp; carac spéciaux"/>
@@ -175,7 +173,6 @@
   </node>
   <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
     <elementParameter field="TABLE" name="MANUALTABLE">
       <elementValue elementRef="INPUT_COLUMN" value="content"/>
@@ -196,7 +193,6 @@
   </node>
   <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplicate_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt; Replica"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_1">
@@ -205,7 +201,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
@@ -214,7 +209,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ENZaZRjLZYvFNphPn/vbWrWQqGBN9hzmVd9XieE3rilpZOTMa461bg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+gUnYBIgxQDGo57kTzfNmxOsUO4ilvTCholkyEsoP7KYP+FWdBsudQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_CMDCLI_FichierTraites&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -255,7 +250,6 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="928" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_CMDCLI_FILTRE&quot;"/>
@@ -297,7 +291,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
@@ -306,7 +299,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TH+ShJ+1nWrbJfNNKoS2/Bo23EMfvLwonTHfsI/hxzDTLQ7VTQp1vg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n+9qN+JLYCrA2aZ7SNeL5alOKStSM0GgiPypQQRoZkTGnyURwPNpPA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_CMDCLI_FichierTraites&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -347,7 +340,6 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="928" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/BRM_TO_RPTEDI_CMDE/CMDCLI_TO_RPTEDI_CMDCLI&quot;"/>
@@ -389,8 +381,7 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/FILTRE_CMDCLI20200317T081959_VIAPOST_CMDCLI_VAD_small.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CMDE/CMDCLI202101140352001_VIAPOST_CMDCLI_VAD_20210114_043827_Moh_2_filtre.xml&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -402,8 +393,7 @@
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputRaw_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/RPTEDI_CMDCLI20200317T081959_VIAPOST_CMDCLI_VAD_small.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/amils/Desktop/CMDE/RPTEDI_CMDCLI202101140352001_VIAPOST_CMDCLI_VAD_20210114_043827_Moh_2.xml&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -423,6 +413,7 @@
   </node>
   <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/FILTRE_CMDCLI20200317T081959_VIAPOST_CMDCLI_VAD_small.xml&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
     <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
@@ -438,6 +429,7 @@
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="768" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
     <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/Job_Pour_Nico_3/tHMap_1&quot;"/>
@@ -479,6 +471,7 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
@@ -487,7 +480,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;TELESHOPPING&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+lbvjPXNg1eYO1mSEAgr73JWsShn2RV6mW2tA39MTaJZXc3jhRXYgQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LSyUWvKp9J7phBlLF2sju2U0sKKePeLP6dMEWkdRa/1deanxMSNnLg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_Destinataire&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -549,6 +542,7 @@
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/TALEND/DATA/Jeux de données/CMDCLI/TSH20210608110919975.xml&quot;"/>
@@ -584,7 +578,6 @@
   </node>
   <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tFileInputRaw_2">
@@ -598,37 +591,30 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row21"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tReplicate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
-  <connection connectorName="FLOW" label="CMDCLI2" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tHMap_2">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CMDCLI2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tHMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="CMDCLI2" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tHMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CMDCLI2"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <connection connectorName="FLOW" label="CMDCLI_FILTRE" lineStyle="0" metaname="CMDCLI_FILTRE" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tFileOutputRaw_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CMDCLI_FILTRE"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tHMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="RPTEDI_CMDCLI" lineStyle="0" metaname="RPTEDI_CMDCLI" offsetLabelX="0" offsetLabelY="0" source="tHMap_2" target="tFileOutputRaw_2">
@@ -638,7 +624,6 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="RPTEDI_CMDCLI"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputRaw_1">
@@ -647,14 +632,17 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_2" target="tHMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="sortie" lineStyle="0" metaname="sortie" offsetLabelX="0" offsetLabelY="0" source="tHMap_3" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sortie"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tHMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
@@ -674,13 +662,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_56dc1b71-b8a7-4dbb-9fe7-d2f99e884f67"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3pqnFMlm4jS8wQHmI21L2Qgh9RAXJ+pnbFP6UpK9YLgjJvUEE6i1iCn0XR5S3JsFa+WcdQvHiRAG
-2XR4FznHnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fa31c467-4330-4693-9fd9-d5e5d2951fab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uPOCwfpMrG4S5JqbLxHbaVxJn2g6IQddF+wr9GZvAWUholzvoTe0cWU7acEKRK3xHIDmHH/8QJNB
-GxgWKrDy5A==</DigestValue></Reference></SignedInfo><SignatureValue>L7Xe7Ed6W1sFPp51L2tbM+QYXjWPX1hknXtkK8x6r0TwE6zWVuZMTm72fSAM8jtOUeaFHBSMA/4t
-tsBQ+yTj3LWSlpIRMnRhDh3LzObXRech4XcNvLTK1FmGqH5TmHzeAhz4DjELSiu2eV3kMEoKAj1g
-VWKbbWBrHBiaySxz11yV9dX6fCZd/WsjSOytun4CcHi8paB55WhR7q1NJzI8pH1apY6peC6ccdXr
-Q1ScDPxGb34AFqULYcxit0hMyoZ3IEwDOknzFBz+bzm/LvS4NER9wonN6/fsAPuweyDeLqFuoA54
-s88YvXtpH3V+Ogu6sYZBiJCU2wXjICVwqGMBaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_de6b2607-7c22-4b06-ac08-9559946df290"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0hA+L80pwO2AcqNsJEQuj5Bw1Y792LI/hd66VEJ+BnbLMLJpsj5x+r5L1x2CRycl+E04uO91q1Q1
+XYJ0yjMKYw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3c4fc176-b990-4cb0-9110-d9090e28dd4d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>scKtTZVVmi7x9ZcBwIVtmaa8LTAsraS0MS1qMs6t3qMbAy6MJSE/OVV/MMqlW458aS2AzXAHiAn/
+yEk9chqa4A==</DigestValue></Reference></SignedInfo><SignatureValue>Krm1ijuC8MlWp4XVcfR60BxHg26Kz6N++KOmKT2ZRJmna4/TkYuhbCTASBo1nwh3br5JQ99bvLAv
+T7PItR/2zid5RaMP9vkhNDxOJZmScDvzmrZhyJcqFZj7c1G7HEdifQGlUs/Q2mB94OKkoP+XiUkr
+myarUzUziTcr1xTPtsyJMv3nwXUJn5/SULoiqOEIeAvCmAZq6aYhlFbi4gZRWFgM6CmNSz7j1/hz
+alyexvlHQcToE6ZfSkHJNERUhMgt0QM+Ku+XXeidjYziNVBtJPnWco+tYjRUixJeEw42a22/oPz4
+CggkXvh4tx5Bgne+FAD1RLphk7wjbACPhRJ5eA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -702,4 +690,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fa31c467-4330-4693-9fd9-d5e5d2951fab" Target="#_56dc1b71-b8a7-4dbb-9fe7-d2f99e884f67"><Timestamp>2021-06-08 12:26:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3c4fc176-b990-4cb0-9110-d9090e28dd4d" Target="#_de6b2607-7c22-4b06-ac08-9559946df290"><Timestamp>2021-07-23 14:32:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
