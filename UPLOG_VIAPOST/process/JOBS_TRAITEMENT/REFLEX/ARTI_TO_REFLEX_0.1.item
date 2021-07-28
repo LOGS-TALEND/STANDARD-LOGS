@@ -504,7 +504,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:51AuUPACHdfUOcMF2w8Ctr4gd6XpeGDmg/yOjar/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:qjaEKXg3cQ6bfR6T6IOSlm5jjxzSLiySJc/dL6iQ"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -539,7 +539,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:C+sIq3Eg06Hayci4ybKVV8RuMxUOhZ3K0oJ2Dqie"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+4daAK5fKDrCl2JTUu8aRZx5NpLTo/wvkjqm1olr"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -577,7 +577,6 @@
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="1" offsetLabelY="16" posX="-64" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Pré lancement"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
@@ -586,7 +585,6 @@
     <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Start_Code"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Début ARTI_TO_REFLEX"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
@@ -596,7 +594,6 @@
     <elementParameter field="MEMO_JAVA" name="CODE" value="/* Dans ce composant on va valoriser les metadata clientes + nom du client et celui de l'interface pour les différents chemins */&#10;&#10;/*TEST&#10;System.out.println(&quot;context.GESTION_FICHIER_Dir_Timestamp --&gt;&quot; + context.GESTION_FICHIER_Dir_Timestamp);&#10;*/&#10;&#10;//Pour tests unitaires&#10;if (&#9;context.METADATA_BDD_DateLong1 == null || context.METADATA_BDD_DateLong1.length() &lt; 1 || &quot;&quot;.equals(context.METADATA_BDD_DateLong1) ) {&#10;&#10;&#9;context.METADATA_BDD_CodeClient&#9;&#9;&#9;= &quot;MOB/&quot;;&#10;&#9;context.METADATA_BDD_CodeInterface&#9;&#9;= &quot;ARTI/&quot;;&#10;&#9;context.METADATA_BDD_BaseNomFichier&#9;&#9;= &quot;BASE_&quot;;&#10;&#9;context.METADATA_BDD_ExtensionArchive&#9;= &quot;.zip&quot;;&#10;&#9;context.METADATA_BDD_ExtensionRFX&#9;&#9;= &quot;.in&quot;;&#10;&#10;&#9;context.METADATA_BDD_DateLong1&#9;= &quot;20201231TEST&quot;;&#10;&#9;context.METADATA_BDD_DateCourt1&#9;= StringHandling.LEFT(context.METADATA_BDD_DateLong1, 8);&#10;&#9;context.METADATA_BDD_Annee&#9;&#9;= StringHandling.LEFT(context.METADATA_BDD_DateLong1, 4);&#10;&#9;context.METADATA_BDD_Mois&#9;&#9;= StringHandling.SUBSTR(context.METADATA_BDD_DateLong1, 5, 2);&#10;context.METADATA_BDD_Jour&#9;&#9;= StringHandling.SUBSTR(context.METADATA_BDD_DateLong1, 7, 2);&#10;}//Fin renseignement des valeurs pour test unitaire"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Variables pour tests unitaires"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1">
       <additionalProperties key="Comment" value=""/>
@@ -623,7 +620,6 @@
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Dossier d'entrée"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="256">
@@ -631,7 +627,6 @@
     <elementParameter field="MEMO_JAVA" name="CODE" value="// le nom du fichier lu est placé dans une variable de contexte&#10;context.NOM_FICHIER_Entree = ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) ;&#10;context.NOM_FICHIER_EntreeSansExt = StringHandling.EREPLACE(((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)), &quot;.&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEEXTENSION&quot;)), &quot;&quot;)  ;&#10;&#10;&#10;//TEST&#10;//System.out.println( System.getProperty(&quot;NOM_FICHIER_Entree&quot;) );&#10;&#10;//le nom du fichier d'interface est le nom du XML en entrée sans l'extention&#10;//context.NOM_FICHIER_Client_Interface = StringHandling.EREPLACE(context.NOM_FICHIER_Entree,((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEEXTENSION&quot;)),&quot;&quot;);&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Nom du fichier en entrée"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2">
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -647,7 +642,6 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier Client XML"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputRaw_1">
       <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
@@ -689,7 +683,6 @@
     <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
     <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="4"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;ARTI_TO_REFLEX"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output_refart_pivot_xml" name="flux_sortie_flat">
       <column comment="" key="false" length="-1" name="content_xml" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -725,7 +718,6 @@
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier demi flux REFLEX"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output_refart_pivot_xml" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="-1" name="content_xml" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -737,7 +729,6 @@
     <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Stop_Code"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;ARTI PIVOT to Reflex OK"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_3"/>
   </node>
@@ -748,7 +739,6 @@
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Erreur lecture fichiers / code java / encodage"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_2"/>
   </node>
@@ -792,7 +782,7 @@
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -822,13 +812,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_568f1996-abf8-4035-9101-0183003ccaba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CdMdrBB5N/t+h2+GOUArn7k2eYsx3qOZqL1ScwDqNfXpOfFljFQpkKYky+N51bF5T8kPJlwtiMid
-8nsvfLE/LQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_601f458d-aa6b-4ab3-be6a-7d1bdc4dc2da"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QGG0XJYMPWnWsBwYFvb+okNTLaK5foUXrf7C2YYg/dKpKh0E29wIGt1A92xsFCts85PlDfT51x6S
-Co979J0/rg==</DigestValue></Reference></SignedInfo><SignatureValue>ImYVAOjKZp3j5CCdwhuiC/R/mS1BcdXZf7W9IxqFwZEQpJWD8RrRFoGO7oM0q/MJw1BAzo6wzqzX
-21Y036Wq37ZkbEQN8rdses5Hfp0b5cUpY8Mt96OAao5AHzZaQtnrPfsuYYFXJHZlyBujhlG+abGB
-FIsaWcwwkzOn+exACehxNJZLL6UGQcwyt6btxx7Pyy/ySMRjj67cLxkPIIWuWsiCePYBzOYNj9hx
-c20lJgs8heXjcTirNEgj/s+L9gkVPaxG93Cj43RGNBUAY1OBUi5uD/B1zZaK0GmOme3oeXphVytz
-3Ysfke4/s2YnsPtoV2JYGy3ydwpZu93IvyUXlw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4ac2c89f-acc2-49f2-92a1-79e25d700aba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B9rbinpPg/vWbb+wklHV139JdABg3Qo+PJCiIyUZJbRDcwRxMdpnJfjtHWPmyEyf3wnqHh81GltQ
+aNs/UBgeVg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_173ac628-b4f1-49ab-a226-3fac1a18b22d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SPKDTD0l4AXBvH/+WPGnsdq8lVeuJu8OgIT0W80bZ2SMVFv5nu+Q4hlWUJUXEEnHzEQneVXYd6++
+SjCwBQtx3w==</DigestValue></Reference></SignedInfo><SignatureValue>fbTQfcH3pLsmMXxeExVUE7gAAFjXDnY7tih5BRWFt/uZAn6GsCrlZsr5+UDoKXBy0z0kF+sHM4C9
+DF6qXhdBCwd+a1EUbv3MfRgYlcS0jgQ2fTFbq8Za0wMtAPJLHCDu7JWmrjOeozg650IVzJ3uKE+D
+5HtKZJ3AgjHsdpZRWyGeG8f7ppdnn3sMxqfla/Fh1OVX79HW5mASWPn0nWpVwO9KaGLB/+KuP1S1
+cc4HUGunx2J63QXhLfTH08TgOFzQUIqJokdOLR3RuARaaZ5kOTPuLU04RBfpGVd8XtKazR+JaY79
+akOcR/ZQnsiZMh4KnYrI74i7kLUxhFZskDqpMg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -850,4 +840,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_601f458d-aa6b-4ab3-be6a-7d1bdc4dc2da" Target="#_568f1996-abf8-4035-9101-0183003ccaba"><Timestamp>2021-04-20 15:46:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_173ac628-b4f1-49ab-a226-3fac1a18b22d" Target="#_4ac2c89f-acc2-49f2-92a1-79e25d700aba"><Timestamp>2021-07-27 14:54:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
