@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='130880'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/TSQ/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_TSQ.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_TSQ' V1='4' name='tHMap_1' incarnation='131014'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='20524' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='17155' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TSQ/tHMap_1/row1.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row1'>
@@ -775,7 +775,7 @@
         </child>
         <child t='200' id='208' V200='8' structElemExists='true' usedCount='230' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='cancel'>
           <mapNode t='190' idref='1'/>
-          <value>in$/root/row1/CMDCLI/OP/Annulation</value>
+          <value>IfThenElse(HasValue(in$/root/row1/CMDCLI/OP/Annulation),in$/root/row1/CMDCLI/OP/Annulation,Constant([value="0",dataType="2"],))</value>
         </child>
         <child t='200' id='204' V200='8' structElemExists='true' usedCount='148' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='currency'>
           <mapNode t='190' idref='1'/>
