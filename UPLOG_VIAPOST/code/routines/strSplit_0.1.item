@@ -35,6 +35,9 @@ public class strSplit {
      * {example} helloExemple("world") # hello world !.
      */
     public static String strgSplit(String message) {
+    	if (message == null || message.trim().isEmpty()) {
+   		 return "";
+    	} 
         StringBuilder myStr = new StringBuilder(); 
     	int starInd=0;
     	int endInd=starInd+70;
