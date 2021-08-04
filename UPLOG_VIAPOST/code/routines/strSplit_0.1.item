@@ -43,9 +43,16 @@ public class strSplit {
     	int endInd=starInd+70;
     	while(endInd < message.length())  {
     		String subStr =message.substring(starInd, endInd);
-    		myStr.append(subStr+"&#13;&#10;");
+    		myStr.append(subStr+"\n\r");
     		starInd=endInd;
-    		endInd=starInd+70;
+    		if(starInd+70 >= message.length()) {
+    			subStr=message.substring(starInd, message.length()-1);
+    			myStr.append(subStr+"\n\r");
+    			return myStr.toString();
+    		}
+    		else {
+    			endInd=starInd+70;
+    		}
     	}
     	return myStr.toString();
     }
