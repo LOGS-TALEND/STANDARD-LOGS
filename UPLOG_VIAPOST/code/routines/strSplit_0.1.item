@@ -65,4 +65,19 @@ public class strSplit {
        
     	return lineNo;
     }    
+    
+    public static String addLineNo(String message,String lineNo) {
+    	if (message == null || message.trim().isEmpty()) {
+   		 return "";
+    	} 
+    	StringBuilder strUpdated=new StringBuilder();
+        String[] divStr=message.split("\\n\\r");
+        int Count=Integer.parseInt(lineNo);
+        strUpdated.append(divStr[0]);
+        for(int i=1;i<divStr.length;i++)  {
+        	Count++;
+        	strUpdated.append(divStr[0]+String.valueOf(Count));
+        }
+    	return strUpdated.toString();
+    }    
 }
