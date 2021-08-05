@@ -43,11 +43,11 @@ public class strSplit {
     	int endInd=starInd+70;
     	while(endInd < message.length())  {
     		String subStr =message.substring(starInd, endInd);
-    		myStr.append(subStr+"\n\r");
+    		myStr.append(subStr+"\n");
     		starInd=endInd;
     		if(starInd+70 >= message.length()) {
     			subStr=message.substring(starInd, message.length()-1);
-    			myStr.append(subStr+"\n\r");
+    			myStr.append(subStr+"\n");
     			return myStr.toString();
     		}
     		else {
@@ -72,8 +72,8 @@ public class strSplit {
     	} 
     	StringBuilder strUpdated=new StringBuilder();
         String[] divStr=message.split("\\r?\\n");
-        int Count=Integer.parseInt(lineNo);
-        strUpdated.append(String.valueOf(Count)+divStr[0]+"\r\n");
+        int Count=divStr.length;//Integer.parseInt(lineNo);
+        strUpdated.append(String.valueOf(Count)+divStr[0]);
         for(int i=1;i<divStr.length;i++)  {
         	Count++;
         	strUpdated.append(String.valueOf(Count)+divStr[i]+"\r\n");
