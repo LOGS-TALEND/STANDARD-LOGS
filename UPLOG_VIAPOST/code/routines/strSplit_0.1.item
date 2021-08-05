@@ -73,10 +73,10 @@ public class strSplit {
     	StringBuilder strUpdated=new StringBuilder();
         String[] divStr=message.split("\\n\\r");
         int Count=Integer.parseInt(lineNo);
-        strUpdated.append(divStr[0]);
+        strUpdated.append(String.valueOf(Count)+divStr[0]+"\n\r");
         for(int i=1;i<divStr.length;i++)  {
         	Count++;
-        	strUpdated.append(divStr[0]+String.valueOf(Count));
+        	strUpdated.append(String.valueOf(Count)+divStr[0]+"\n\r");
         }
     	return strUpdated.toString();
     }    
