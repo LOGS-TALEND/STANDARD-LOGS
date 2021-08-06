@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='807147'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='807895'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='33316' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='31987' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
@@ -5246,7 +5246,7 @@
           <child t='200' id='8200' V200='8' structElemExists='true' usedCount='17' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Rub119' description='Services'>
             <mapNode t='190' idref='1'/>
             <delimTerminator>\n</delimTerminator>
-            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(GreaterOrEqual(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="71",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
+            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="140",dataType="2"],)),GreaterOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="70",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
             <child t='200' id='8203' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
               <mapNode t='190' idref='1'/>
             </child>
@@ -5281,17 +5281,17 @@
             </child>
             <child t='200' id='8212' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='FamilleCommentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
+              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[53]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
             </child>
             <child t='200' id='8213' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="70",dataType="2"],),Constant([value="140",dataType="2"],))</value>
+              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="70",dataType="2"],),Subtract(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='8201' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Rub119' description='Services'>
             <mapNode t='190' idref='1'/>
             <delimTerminator>\n</delimTerminator>
-            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(GreaterOrEqual(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="140",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
+            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="210",dataType="2"],)),GreaterOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="140",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
             <child t='200' id='8214' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
               <mapNode t='190' idref='1'/>
             </child>
@@ -5325,17 +5325,17 @@
             </child>
             <child t='200' id='8223' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='FamilleCommentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
+              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[54]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
             </child>
             <child t='200' id='8224' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="140",dataType="2"],),Constant([value="210",dataType="2"],))</value>
+              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="141",dataType="2"],),Subtract(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="140",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='8202' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Rub119' description='Services'>
             <mapNode t='190' idref='1'/>
             <delimTerminator>\n</delimTerminator>
-            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(GreaterOrEqual(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="210",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
+            <loop>SimpleLoop(in$/root/row9/CMDCLI/OP/Service,And(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="280",dataType="2"],)),GreaterOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="210",dataType="2"],)),HasValue(in$/root/row9/CMDCLI/OP/Service/Reference)),{Sort Keys},{Contexts})</loop>
             <child t='200' id='8225' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumSequence'>
               <mapNode t='190' idref='1'/>
             </child>
@@ -5369,11 +5369,11 @@
             </child>
             <child t='200' id='8234' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='FamilleCommentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
+              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[55]),Constant([value="1",dataType="12"],)),Concat(Constant([value="R0",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[35]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
             </child>
             <child t='200' id='8235' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="210",dataType="2"],),Constant([value="280",dataType="2"],))</value>
+              <value>Substring(in$/root/row9/CMDCLI/OP/Service/Reference,Constant([value="210",dataType="2"],),Subtract(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference),Constant([value="210",dataType="2"],)))</value>
             </child>
           </child>
         </child>
