@@ -79,5 +79,16 @@ public class strSplit {
         	strUpdated.append("\n"+"0"+String.valueOf(Count)+divStr[i]);
         }
     	return strUpdated.toString();
+    } 
+    
+    public static int strToInt(String lineNo) {
+    	if (lineNo == null || lineNo.trim().isEmpty()) {
+   		 return 0;
+    	} 
+    	return Integer.parseInt(lineNo);
+    }    
+    public static String IntTostr(int lineNo) {
+    
+    	return String.valueOf(lineNo);
     }    
 }
