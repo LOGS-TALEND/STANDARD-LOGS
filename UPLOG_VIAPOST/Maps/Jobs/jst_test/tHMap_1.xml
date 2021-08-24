@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/jst_test/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='48486'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='20' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/jst_test/tHMap_1/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_1' incarnation='48519'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='24' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row3.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row3'>
       <mapNode t='190' idref='1'/>
@@ -18,11 +18,16 @@
       </repRuntime>
       <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
     </child>
-    <child t='200' id='2248' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row9.xml' V281='13' V1='4' name='row9'>
+    <child t='200' id='2248' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row9.xml' V281='13' V1='4' name='row9'>
       <mapNode t='190' idref='1'/>
+      <child t='200' id='2255' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
+        <mapNode t='190' idref='1'/>
+        <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
+      </child>
     </child>
-    <child t='200' id='2249' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row10.xml' V281='13' V1='4' name='row10'>
+    <child t='200' id='2249' V200='8' input='true' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
       <mapNode t='190' idref='1'/>
+      <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
       <child t='200' id='2250' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/jst_test/tHMap_1/row10Record.xml' V281='13' V1='4' name='row10Record'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='2251' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Client'>
@@ -7845,6 +7850,12 @@
     </child>
     <child t='166' id='2247' V166='5' docType='1' V1='4' name='in$/root/row3'>
       <elemNode t='200' idref='3'/>
+    </child>
+    <child t='166' id='2256' V166='5' docType='1' docReposPath='/UPLOG_VIAPOST/Sample Data/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper/CMDCLI21068091745-BOD.XML' V1='4' name='in$/root/row9/root'>
+      <elemNode t='200' idref='2255'/>
+    </child>
+    <child t='166' id='2257' V166='5' docType='1' V1='4' name='in$/root/row10'>
+      <elemNode t='200' idref='2249'/>
     </child>
   </child>
   <child t='201' id='2246' V1='4' name='Inherits From'>
