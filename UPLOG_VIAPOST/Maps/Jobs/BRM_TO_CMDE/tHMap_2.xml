@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='937062'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='937507'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='37591' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='36118' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
@@ -6002,7 +6002,7 @@
               </child>
               <child t='200' id='1238' V200='8' structElemExists='true' usedCount='246' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='40' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='Valeur'>
                 <mapNode t='190' idref='1'/>
-                <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Devise),Java([className="routines.FiltreString",methodName="filtreStr"],in$/root/row9/CMDCLI/OP/Devise),Constant([value="",dataType="2"],))</value>
+                <value>Java([className="routines.FiltreString",methodName="filtreStr"],IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Devise),in$/root/row9/CMDCLI/OP/Devise,Constant([value="",dataType="2"],)))</value>
               </child>
             </child>
             <child t='200' id='1239' V200='8' structElemExists='true' usedCount='1709' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='Rub118' description='9'>
