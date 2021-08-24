@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_3' incarnation='49201'>
-  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='181' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='173' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_3' incarnation='49217'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='183' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='8326' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='172' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
       <mapNode t='190' idref='1'/>
@@ -518,8 +518,9 @@
         </child>
       </child>
     </child>
-    <child t='200' id='8498' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' V1='4' name='row10'>
+    <child t='200' id='8498' V200='8' input='true' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row10'>
       <mapNode t='190' idref='1'/>
+      <io>ReadURL({Start Offset},{Length})</io>
       <child t='200' id='8499' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row10Record.xml' V281='13' V1='4' name='row10Record'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='8500' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Client'>
@@ -8331,11 +8332,11 @@
   <outputXmlRepRuntime t='692' id='8325' V692='1' V690='1'>
   </outputXmlRepRuntime>
   <child t='165' id='2237' V1='4' name='Document Bindings'>
-    <child t='166' id='2238' V166='5' docType='1' docReposPath='/UPLOG_VIAPOST/Sample Data/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper/CMDCLI21068091745-BOD.XML' V1='4' name='in$/root'>
-      <elemNode t='200' idref='2'/>
-    </child>
     <child t='166' id='2239' V166='5' docType='2' V1='4' name='out$/HLCMDE'>
       <elemNode t='200' idref='3'/>
+    </child>
+    <child t='166' id='8504' V166='5' docType='1' docReposPath='/UPLOG_VIAPOST/Sample Data/Jobs/BRM_TO_CMDE/tHMap_2/row10/CMDCLI20128064639.XML' V1='4' name='in$/root/row10'>
+      <elemNode t='200' idref='8498'/>
     </child>
   </child>
   <child t='201' id='2240' V1='4' name='Inherits From'>
