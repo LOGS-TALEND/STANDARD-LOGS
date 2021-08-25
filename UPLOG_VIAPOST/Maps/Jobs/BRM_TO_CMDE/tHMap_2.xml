@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='1104299'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='1105631'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='43681' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='42004' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
@@ -4511,7 +4511,7 @@
             </child>
             <child t='200' id='7737' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference2),in$/root/row9/CMDCLI/OP/Service/Reference2,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference2),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference2,Substring(in$/root/row9/CMDCLI/OP/Service/Reference2,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7738' V200='8' structElemExists='true' usedCount='1868' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4557,7 +4557,7 @@
             </child>
             <child t='200' id='7749' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference3),in$/root/row9/CMDCLI/OP/Service/Reference3,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference3),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference3,Substring(in$/root/row9/CMDCLI/OP/Service/Reference3,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7750' V200='8' structElemExists='true' usedCount='1861' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4603,7 +4603,7 @@
             </child>
             <child t='200' id='7761' V200='8' structElemExists='true' usedCount='236' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference4),in$/root/row9/CMDCLI/OP/Service/Reference4,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference4),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference4,Substring(in$/root/row9/CMDCLI/OP/Service/Reference4,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7762' V200='8' structElemExists='true' usedCount='1857' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4649,7 +4649,7 @@
             </child>
             <child t='200' id='7773' V200='8' structElemExists='true' usedCount='236' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference5),in$/root/row9/CMDCLI/OP/Service/Reference5,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference5),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference5,Substring(in$/root/row9/CMDCLI/OP/Service/Reference5,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7774' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4695,7 +4695,7 @@
             </child>
             <child t='200' id='7785' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference6),in$/root/row9/CMDCLI/OP/Service/Reference6,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference6),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference6,Substring(in$/root/row9/CMDCLI/OP/Service/Reference6,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7786' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4741,7 +4741,7 @@
             </child>
             <child t='200' id='7797' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference7),in$/root/row9/CMDCLI/OP/Service/Reference7,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference7),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference7,Substring(in$/root/row9/CMDCLI/OP/Service/Reference7,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7798' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4787,7 +4787,7 @@
             </child>
             <child t='200' id='7809' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference8),in$/root/row9/CMDCLI/OP/Service/Reference8,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference8),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference8,Substring(in$/root/row9/CMDCLI/OP/Service/Reference8,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7810' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4833,7 +4833,7 @@
             </child>
             <child t='200' id='7821' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference9),in$/root/row9/CMDCLI/OP/Service/Reference9,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference9),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference9,Substring(in$/root/row9/CMDCLI/OP/Service/Reference9,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7822' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
@@ -4879,7 +4879,7 @@
             </child>
             <child t='200' id='7833' V200='8' structElemExists='true' usedCount='237' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/root/row9/CMDCLI/OP/Service/Reference10),in$/root/row9/CMDCLI/OP/Service/Reference10,Constant([value="",dataType="2"],))</value>
+              <value>IfThenElse(LesserOrEqual(StringLength(in$/root/row9/CMDCLI/OP/Service/Reference10),Constant([value="70",dataType="12"],)),in$/root/row9/CMDCLI/OP/Service/Reference10,Substring(in$/root/row9/CMDCLI/OP/Service/Reference10,Constant([value="1",dataType="2"],),Constant([value="70",dataType="2"],)))</value>
             </child>
           </child>
           <child t='200' id='7834' V200='8' structElemExists='true' usedCount='1865' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_emit='true' modifiedFromParent_util='true' V1='4' name='Rub119' description='Services'>
