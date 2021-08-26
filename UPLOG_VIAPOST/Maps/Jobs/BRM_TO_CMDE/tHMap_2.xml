@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='1117545'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml' outStruct='Structures/CMDCLI/CMDCLI_PIVOT.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CMDCLI_PIVOT' V1='4' name='tHMap_2' incarnation='1117561'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='44040' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='42351' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/BRM_TO_CMDE/tHMap_2/row9.xml' V281='13' V1='4' name='row9'>
@@ -4967,7 +4967,7 @@
             </child>
             <child t='200' id='7856' V200='8' structElemExists='true' usedCount='239' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='FamilleCommentaire'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[56]),Constant([value="1",dataType="12"],)),Concat(Constant([value="SM",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[56]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
+              <value>IfThenElse(GreaterOrEqual(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[46]),Constant([value="1",dataType="12"],)),Concat(Constant([value="SM",dataType="2"],),Subtract(LoopIndex([loopingElem="/root/row9/CMDCLI/OP/Service"],out$/HLCMDE/HL16/OrdrePreparation/Commentaire/Rub119[46]),Constant([value="1",dataType="12"],))),Constant([value=" ",dataType="2"],))</value>
             </child>
             <child t='200' id='7857' V200='8' structElemExists='true' usedCount='240' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='70' maxSize='70' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='Commentaire'>
               <mapNode t='190' idref='1'/>
