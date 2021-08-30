@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="LOCALHOST" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="__96GwHK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
-    <contextParameter comment="" internalId="__96GwXK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:Ajui4JV1sSrn41U8jpoRpfUobL8KRu7bYYuu4oy3Cu1x+aZlGI9MQTtS3SCERKhk14mf1eDNhsymOuJo3rjNe9jXk6QOJUmkx6aeRrAhjEbLCZV/WE5BrqnMCaOXBcIpPhFBWdz2kj7yenOIa3srRU/jvFs="/>
+    <contextParameter comment="" internalId="__96GwXK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:2bIdoUg1sP46ruihJJcEHXVm9QzAdQfx59zvaiZzTGNw/dhoF7TAJzh7p2VbvMQept7wiZc4aCHuk0lpPwUyorfuI5lAMP8BMBcFA15XHWOLdhzssYg89mRwcQ9sm/IHY/lRyF9eA55o0yLvFO7mKZKS7fU="/>
     <contextParameter comment="" internalId="__96GwnK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="__96Gw3K2Eeumh6nn8cH72A" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="__96GxHK2Eeumh6nn8cH72A" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
@@ -10,7 +10,7 @@
     <contextParameter comment="" internalId="_u1CkgnK6Eeumh6nn8cH72A" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
     <contextParameter comment="" internalId="_u1Ckg3K6Eeumh6nn8cH72A" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_u1CkhHK6Eeumh6nn8cH72A" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_u1CkhXK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:T7K9YndTbVTEz1DPdPrxJIeqL8FxF+znh2ozPf+xUEfss9Yb2tM="/>
+    <contextParameter comment="" internalId="_u1CkhXK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:A6bNNidBAT3NGSFOx7wnkUyKkJVgOBdEK1pbMk7xwnkZNzoWUH0="/>
     <contextParameter comment="" internalId="_u1CkhnK6Eeumh6nn8cH72A" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1Ckh3K6Eeumh6nn8cH72A" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_u1CkiHK6Eeumh6nn8cH72A" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
@@ -134,10 +134,11 @@
     <contextParameter comment=" Hôte" internalId="_51ifRKaIEeuJ7YCm7fngOQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="Port de connexion" internalId="_51ifRaaIEeuJ7YCm7fngOQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value=""/>
     <contextParameter comment="Phrase de passe" internalId="_51ifRqaIEeuJ7YCm7fngOQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_TClNgMkaEeuWhZjIelskdQ" name="VERSION_REFLEX" prompt="VERSION_REFLEX?" promptNeeded="false" repositoryContextId="_yRtqYMkXEeuWhZjIelskdQ" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="LOCALHOST">
     <contextParameter comment="" internalId="__96GxXK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
-    <contextParameter comment="" internalId="__96GxnK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:F4/2Ycf3YHqzME4Ia47HRB+jaAI1Q5mPbvSkbaRqucEana83QEBJwaec7UCX86NsUO/6nFK7s5i5d/xJxxEu7I2DN40Jcv2sL7fdoE8aRldG5F3/Qjo37pDKFk1P0CsdsWDYM7oSNHjAV3RcZL18GKkIsdE="/>
+    <contextParameter comment="" internalId="__96GxnK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:bcQybzpIUAWQ6QfJHnOiaVS3jfmo1BKQ0W8xDZHtpJG/QBKpVwdyikyO8yVNHe8h5mTE+YpiSIb9iKKrzW/QHHza/jT0pzfN6hVHD/xpKqc3i5fvncZamaS2TMM94+cjVnNyGagJqY+VWqKsXd2fTq+Egpo="/>
     <contextParameter comment="" internalId="__96Gx3K2Eeumh6nn8cH72A" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="__96GyHK2Eeumh6nn8cH72A" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="__96GyXK2Eeumh6nn8cH72A" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
@@ -146,7 +147,7 @@
     <contextParameter comment="" internalId="_u1G2VHK6Eeumh6nn8cH72A" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
     <contextParameter comment="" internalId="_u1G2VXK6Eeumh6nn8cH72A" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_u1G2VnK6Eeumh6nn8cH72A" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_u1G2V3K6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:FvCFNN57fEpXLg0WqmcuBu/YrvIA4AZNcosLgDKasDJ2DX1UOo0="/>
+    <contextParameter comment="" internalId="_u1G2V3K6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:mktr30ald5p5Di21YY/kqZ/WGI8umbfMwhIOwZMEgT+CuXT13Pw="/>
     <contextParameter comment="" internalId="_u1G2WHK6Eeumh6nn8cH72A" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G2WXK6Eeumh6nn8cH72A" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_u1G2WnK6Eeumh6nn8cH72A" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
@@ -264,16 +265,17 @@
     <contextParameter comment="" internalId="_u1G2ynK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G2y3K6Eeumh6nn8cH72A" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="Emplacement clé" internalId="_51ifR6aIEeuJ7YCm7fngOQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_51ifSKaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:W9o6nQYgQSr8n8gpH3/fMTwIRSmuRAagBzksEsPM0x7bNkM68GrEzzr4JwKUVOWfI0gK3vg="/>
+    <contextParameter comment="Mot de passe" internalId="_51ifSKaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:YPV6j3/Z1Gnm7+RDNnmg/B/u3oPHfpNs1UTi1jMqdWcIdqDxIvB4pcsyJ+79RDmnHMm918I="/>
     <contextParameter comment="Taille du fichier lu" internalId="_51ifSaaIEeuJ7YCm7fngOQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_51ifSqaIEeuJ7YCm7fngOQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-DV&quot;"/>
     <contextParameter comment=" Hôte" internalId="_51ifS6aIEeuJ7YCm7fngOQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
     <contextParameter comment="Port de connexion" internalId="_51ifTKaIEeuJ7YCm7fngOQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Phrase de passe" internalId="_51ifTaaIEeuJ7YCm7fngOQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_TClNgckaEeuWhZjIelskdQ" name="VERSION_REFLEX" prompt="VERSION_REFLEX?" promptNeeded="false" repositoryContextId="_yRtqYMkXEeuWhZjIelskdQ" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="REC">
     <contextParameter comment="" internalId="__96GynK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
-    <contextParameter comment="" internalId="__96Gy3K2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:IDld/TaAHM8olZbHqzMnyg8t8yJjewrTAWHtvTMUuNQaOO81meRPHVHphIrDKFVSz8xN3Dmvth6ptiCtr9uUOKf+DgBERT+CKt2pxz1cSaaLgbe11wcCZh7g3i5wZmLGX4XhMm2YRBBqcf15r82w0ut9qg8="/>
+    <contextParameter comment="" internalId="__96Gy3K2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:6S90NES3QBLjYhItsMSQMJGb9nPV6Bw19XhEqIStVpmVpwE+DPAFU70qH1j+99Mkakf6AiCnMHTjC6x1kCqkI8JsR0LKPsiN6jWv0CGLlMEI7/PYa64ySHHfuX88i11ntBDaMszFwoZPl1jtDmDhRjS6uXo="/>
     <contextParameter comment="" internalId="__96GzHK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="__96GzXK2Eeumh6nn8cH72A" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="__96GznK2Eeumh6nn8cH72A" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
@@ -282,7 +284,7 @@
     <contextParameter comment="" internalId="_u1G2znK6Eeumh6nn8cH72A" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
     <contextParameter comment="" internalId="_u1G2z3K6Eeumh6nn8cH72A" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_u1G20HK6Eeumh6nn8cH72A" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_u1G20XK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:9wea1hvtmjgSJybYzrXlLjkpr63TxeCh8jQS1TOOqkmSzelfmAE="/>
+    <contextParameter comment="" internalId="_u1G20XK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:M7NdurEknesmH3hHeDIJKZQqRvTX6TMSjsK9FkgqWWP20jEP7Ro="/>
     <contextParameter comment="" internalId="_u1G20nK6Eeumh6nn8cH72A" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G203K6Eeumh6nn8cH72A" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_u1G21HK6Eeumh6nn8cH72A" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
@@ -400,16 +402,17 @@
     <contextParameter comment="" internalId="_u1G3RHK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G3RXK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="Emplacement clé" internalId="_51ifTqaIEeuJ7YCm7fngOQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_51ifT6aIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:g9++96FdwLHuCzrtnNAtVomsyvsA4+jqGqe0Tt0NqajU4MN+14JoXKgvH6g8S1pAlUL1+l8="/>
+    <contextParameter comment="Mot de passe" internalId="_51ifT6aIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:LD/jkqkSY+sJyjqgxeYQAX0xiJwDK1TNT6jvqBSFg/3KGDu/Qdnc7u+Y1yHhngpV2DonI/A="/>
     <contextParameter comment="Taille du fichier lu" internalId="_51ifUKaIEeuJ7YCm7fngOQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_51ifUaaIEeuJ7YCm7fngOQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-RCT&quot;"/>
     <contextParameter comment=" Hôte" internalId="_51ifUqaIEeuJ7YCm7fngOQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
     <contextParameter comment="Port de connexion" internalId="_51ifU6aIEeuJ7YCm7fngOQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Phrase de passe" internalId="_51ifVKaIEeuJ7YCm7fngOQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_TClNgskaEeuWhZjIelskdQ" name="VERSION_REFLEX" prompt="VERSION_REFLEX?" promptNeeded="false" repositoryContextId="_yRtqYMkXEeuWhZjIelskdQ" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="PRD">
     <contextParameter comment="" internalId="__96Gz3K2Eeumh6nn8cH72A" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/clients&quot;"/>
-    <contextParameter comment="" internalId="__96G0HK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:2zzkVtFaciU+rB/v4jsy3216BVvhCuOUiRJjQNJap32WHxv2cjFzdU0q7O18EURt+VSNYTBQ/xPBgd3VZa9sGlG66PeREZaWgi/QNTINNXTyk8iBSCHjD1UXTFKS5q05w8XyaKWgNC1gH51QcUiZFJkr/gc="/>
+    <contextParameter comment="" internalId="__96G0HK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:2aLqXhuHLTlPoanaR1L330WQxWbL9bS8G8aVeZU1/JismBQxnDgKYJfVdAhBjmA8Zl37FdWRQ45DUWgzIObHQ5tCSK+NWS0sdIGaWBZ+tqTzpC1I6xduzIasmNi69lJIks2mlIoircBpKNGrYb6J1hlHbjI="/>
     <contextParameter comment="" internalId="__96G0XK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="__96G0nK2Eeumh6nn8cH72A" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="__96G03K2Eeumh6nn8cH72A" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;clients&quot;"/>
@@ -418,7 +421,7 @@
     <contextParameter comment="" internalId="_u1G3SHK6Eeumh6nn8cH72A" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
     <contextParameter comment="" internalId="_u1G3SXK6Eeumh6nn8cH72A" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_u1G3SnK6Eeumh6nn8cH72A" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_u1G3S3K6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:iR7F/YbyZtCAbiu983jyJC0jmZf8Tg/rJY0kZcP4mVYJBFt8eYk="/>
+    <contextParameter comment="" internalId="_u1G3S3K6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:G2MkoMkbx11OsiALQ5hM4EZnUXLcad+5zS2ofG0vnCOQLqLo9nw="/>
     <contextParameter comment="" internalId="_u1G3THK6Eeumh6nn8cH72A" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G3TXK6Eeumh6nn8cH72A" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_u1G3TnK6Eeumh6nn8cH72A" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
@@ -536,16 +539,17 @@
     <contextParameter comment="" internalId="_u1G3vnK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G3v3K6Eeumh6nn8cH72A" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="Emplacement clé" internalId="_51ifVaaIEeuJ7YCm7fngOQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_51ifVqaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:976JTAc241aRYKYjgbroYDY4/MrM9hiKJPxAL/5u2gNmoXZp7v09lCWxpY807lPEyr9QvMs="/>
+    <contextParameter comment="Mot de passe" internalId="_51ifVqaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:CE9y5ij33t0PsFhaprXWv3xpcnHdfBNgYxer4GW1p/3kKvunZ+lncn92lqH8VREO08gvuxk="/>
     <contextParameter comment="Taille du fichier lu" internalId="_51ifV6aIEeuJ7YCm7fngOQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_51ifWKaIEeuJ7YCm7fngOQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;talend-sftp-prod&quot;"/>
     <contextParameter comment=" Hôte" internalId="_51ifWaaIEeuJ7YCm7fngOQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.247"/>
     <contextParameter comment="Port de connexion" internalId="_51ifWqaIEeuJ7YCm7fngOQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Phrase de passe" internalId="_51ifW6aIEeuJ7YCm7fngOQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_TClNg8kaEeuWhZjIelskdQ" name="VERSION_REFLEX" prompt="VERSION_REFLEX?" promptNeeded="false" repositoryContextId="_yRtqYMkXEeuWhZjIelskdQ" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" internalId="__96G1HK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
-    <contextParameter comment="" internalId="__96G1XK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:6FylggWLfDCoz7nC52Z9/cO5h2htdQzjFgGdJQmD2qyzwroYQhqXDE/HOssUzjqXfx6UM/dWASYc7aNbiagDXj96xn6M8cZhDeVVRmUAeRg9osnkM/hyhHHy/DWCo2ls8lG+ZIV2s0htt+zfwMVvHr/554M="/>
+    <contextParameter comment="" internalId="__96G1XK2Eeumh6nn8cH72A" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:D43sGHVmDZI3+Gvvz5wtQgHRnaB89n/PeZDh+3sURsWR2ykcBaO/iL3oD9U/wuRJfWlvPbEfGcTfYXFLIBAOpf+/UrN4hkEzSHbc//RyO92ITd9MaxifnsajXDR4mnikWKRWAKYWLdjLI6HMPSGsjX/kWGU="/>
     <contextParameter comment="" internalId="__96G1nK2Eeumh6nn8cH72A" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="__96G13K2Eeumh6nn8cH72A" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="__96G2HK2Eeumh6nn8cH72A" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
@@ -554,7 +558,7 @@
     <contextParameter comment="" internalId="_u1G3wnK6Eeumh6nn8cH72A" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
     <contextParameter comment="" internalId="_u1G3w3K6Eeumh6nn8cH72A" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_u1G3xHK6Eeumh6nn8cH72A" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_u1G3xXK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:eJz43WKod3i7w/E3h9tJBfhJ61wHQVIaxYkK8kwq/FhfUJcXFS4="/>
+    <contextParameter comment="" internalId="_u1G3xXK6Eeumh6nn8cH72A" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:WZt3LTfwMIWmYd2i16x3t/V5TWXkEkWMtkehG42U3HN9UTEznzM="/>
     <contextParameter comment="" internalId="_u1G3xnK6Eeumh6nn8cH72A" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G3x3K6Eeumh6nn8cH72A" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_u1G3yHK6Eeumh6nn8cH72A" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
@@ -672,12 +676,13 @@
     <contextParameter comment="" internalId="_u1G4OHK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_u1G4OXK6Eeumh6nn8cH72A" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="Emplacement clé" internalId="_51ifXKaIEeuJ7YCm7fngOQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_51ifXaaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:uOgY3cykkXq10iPBAG1lzWDk/fbYSsVqIMj6SxlJTR10tt3H4QpQMU3LTpgAnq6MScT/mbw="/>
+    <contextParameter comment="Mot de passe" internalId="_51ifXaaIEeuJ7YCm7fngOQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:qelii+CUgKXgLcWuxDG98wXlO550tehpUfgAyNdzavfweFO++JV7rzySzn2FUbfMIaFnOQA="/>
     <contextParameter comment="Taille du fichier lu" internalId="_51ifXqaIEeuJ7YCm7fngOQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_51ifX6aIEeuJ7YCm7fngOQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-DV&quot;"/>
     <contextParameter comment=" Hôte" internalId="_51ifYKaIEeuJ7YCm7fngOQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
     <contextParameter comment="Port de connexion" internalId="_51ifYaaIEeuJ7YCm7fngOQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Phrase de passe" internalId="_51ifYqaIEeuJ7YCm7fngOQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_TClNhMkaEeuWhZjIelskdQ" name="VERSION_REFLEX" prompt="VERSION_REFLEX?" promptNeeded="false" repositoryContextId="_yRtqYMkXEeuWhZjIelskdQ" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -724,7 +729,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mbgKcrnPqi2Ps2JCOSu8YQFKCcy0YnSaqQhW667P"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OtP1DdQESoymV2cG6zLYpuM48sV3HzvknC2EV+Od"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -759,7 +764,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qYW0qFZ80ajhZXmXDrvB1tzkGZA5Wc1Ho+eNGzIl"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FjuCcoycRlTeL/w+PCS9KwnD2yVe0r3o2tzSqkcb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -800,7 +805,6 @@
     <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Start_Code"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Début BRM To Pivot CMDE"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
@@ -825,7 +829,6 @@
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Liste Fichier Client"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="896">
@@ -833,7 +836,6 @@
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="CHECK" name="MD5" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Lecture taille fichier lu"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileProperties_1">
       <column key="false" length="255" name="abs_path" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -850,7 +852,6 @@
     <elementParameter field="MEMO_JAVA" name="CODE" value="// taille du fichier dans un contexte&#10;context.FTP_Taille_Fichier = row7.size;&#10;&#10;//nom du fichier courant&#10;context.MTDT_COMMUNE_Nom_Fichier = ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Transfo"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3">
       <column key="false" length="255" name="abs_path" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -869,7 +870,6 @@
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Erreur"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_3"/>
   </node>
@@ -879,13 +879,12 @@
     <elementParameter field="TEXT" name="CODE" value="context.EXECUTION_LOG_Start_Code"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;xml_viapost vers pivot OK"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_5"/>
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_6"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot;  + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_In + &quot;Traitement/&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot;  + context.MTDT_BDD_CodeInterface + &quot;/&quot;  + context.GESTION_FICHIER_Dir_Files_In "/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -904,12 +903,11 @@
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Dossier d'entrée"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In + &quot;Traitement/&quot; + ((String)globalMap.get(&quot;tFileList_6_CURRENT_FILE&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In + ((String)globalMap.get(&quot;tFileList_6_CURRENT_FILE&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/TALEND/Studio_dev10/workspace&quot;"/>
     <elementParameter field="DIRECTORY" name="DESTINATION" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In + context.MTDT_BDD_DateLong1"/>
@@ -920,13 +918,11 @@
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Copie dans le dossier de travail"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_1"/>
   </node>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
@@ -939,15 +935,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PtiPzv8MzGplJCoGFwU/RTwP9N9Ji9jtZdKQaTrBExegQw5FG/iov9CeHc38d+J0"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Mw9e8Bz2EeuoluGFcgNOtQ - VIAPOST_Partenaires"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HbCMdNv7btuKTWms6p5z6PYREIIUOOkHf7AVhk/D2EYjWkAWaAYTYMyRXXRtDbva"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_Partenaires&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;  `VIAPOST_Partenaires`.`ID_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_TYPE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_PARTENAIRE_PERE`, &#13;&#10;  `VIAPOST_Partenaires`.`NOM_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_MAG_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_APPRO_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_CLI_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_ARTI_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ABREGE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`IS_ACTIVE`, &#13;&#10;  `VIAPOST_Partenaires`.`LOGIN_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PWD_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SITE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`ROLE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`IMAGE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`LAST_CMDE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`NUM_BASE_MAGELLAN`, &#13;&#10;  `VIAPOST_Partenaires`.`TEXTE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_IN_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_OUT_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SQL_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT_ENTETE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT_LIGNE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SEPARATEUR_CHAMPS_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`TEST_FTP_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_NOM_CONFIGURATION`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_CHR_SEPARATEUR`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_NUM_DEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_TEST_NB_CDE_LIGNES`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_TEST_APPARIEMENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_LIGNE_ENTETE_FICHIER`, &#13;&#10;  `VIAPOST_Partenaires`.`ERR_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_TEST_FTP`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_CLIENT_LOJSTIK`, &#13;&#10;  `VIAPOST_Partenaires`.`TOKEN_WS_OXATIS`, &#13;&#10;  `VIAPOST_Partenaires`.`APPLICATION_ID_WS_OXATIS`, &#13;&#10;  `VIAPOST_Partenaires`.`EST_FORMAT_OUVERT`, &#13;&#10;  `VIAPOST_Partenaires`.`WS_ACTIF`, &#13;&#10;  `VIAPOST_Partenaires`.`CLOTURE_AUTO`, &#13;&#10;  `VIAPOST_Partenaires`.`ART_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`CMD_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`APPRO_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_IMPORT_TRANSETIQ`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_RETOUR_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_REGROUPEMENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_AFF_MARCHANDISE`, &#13;&#10;  `VIAPOST_Partenaires`.`TRIGRAMME`, &#13;&#10;  `VIAPOST_Partenaires`.`MULTISITE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_PRIO_CROSS_DOCK`, &#13;&#10;  `VIAPOST_Partenaires`.`PICKUP`, &#13;&#10;  `VIAPOST_Partenaires`.`QTE_LOT_MONO`, &#13;&#10;  `VIAPOST_Partenaires`.`QTE_LOT_MULTI`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIE_ARTICLE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIE_CMD_FOUR_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`TYPE_CLIENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CATEGORIE_COLIS`, &#13;&#10;  `VIAPOST_Partenaires`.`SAV`, &#13;&#10;  `VIAPOST_Partenaires`.`MailSAV_Client`, &#13;&#10;  `VIAPOST_Partenaires`.`MailSAV_ML`, &#13;&#10;  `VIAPOST_Partenaires`.`ForceAM`, &#13;&#10;  `VIAPOST_Partenaires`.`ISMULTICOLIS`, &#13;&#10;  `VIAPOST_Partenaires`.`ISMULTIDEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`NUMDEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`DEPOT_PHYSIQUE`, &#13;&#10;  `VIAPOST_Partenaires`.`forceLotA1`, &#13;&#10;  `VIAPOST_Partenaires`.`topVLgestion`, &#13;&#10;  `VIAPOST_Partenaires`.`RegrouperCommandes`, &#13;&#10;  `VIAPOST_Partenaires`.`PrefixCommandesRegroupees`, &#13;&#10;  `VIAPOST_Partenaires`.`CompteurRegroupementCommandes`, &#13;&#10;  `VIAPOST_Partenaires`.`topRecep`, &#13;&#10;  `VIAPOST_Partenaires`.`cheminBLHardis`, &#13;&#10;  `VIAPOST_Partenaires`.`LivraisonGlobalise`, &#13;&#10;  `VIAPOST_Partenaires`.`IS_SLOTTING_ACTIF`, &#13;&#10;  `VIAPOST_Partenaires`.`LibelleClient`, &#13;&#10;  `VIAPOST_Partenaires`.`compress`, &#13;&#10;  `VIAPOST_Partenaires`.`Prefixe_Palette`, &#13;&#10;  `VIAPOST_Partenaires`.`EtiquetteUnique`, &#13;&#10;  `VIAPOST_Partenaires`.`LotGrouponGL`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocagePR`, &#13;&#10;  `VIAPOST_Partenaires`.`reflex`, &#13;&#10;  `VIAPOST_Partenaires`.`DestinataireIntermediaire`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_CDE_NON_TRAITE_SLOTTING`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrefixeArt`, &#13;&#10;  `VIAPOST_Partenaires`.`Gestion37GRfx`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionAppartenanceStockCodeEnseigne`, &#13;&#10;  `VIAPOST_Partenaires`.`GarderGenCodCli`, &#13;&#10;  `VIAPOST_Partenaires`.`GarderPrioriteOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrefixeFamille`, &#13;&#10;  `VIAPOST_Partenaires`.`Slotting_Prefixe_Carton`, &#13;&#10;  `VIAPOST_Partenaires`.`Slotting_Prefixe_Palette`, &#13;&#10;  `VIAPOST_Partenaires`.`Version_37B`, &#13;&#10;  `VIAPOST_Partenaires`.`TSQ_Only`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_Client_Transetiq`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocageCMDCLI`, &#13;&#10;  `VIAPOST_Partenaires`.`ForceTopArticleNouveau`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Reception`, &#13;&#10;  `VIAPOST_Partenaires`.`RDV_Fournisseur`, &#13;&#10;  `VIAPOST_Partenaires`.`SAV_Transport`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionCraproInt53`, &#13;&#10;  `VIAPOST_Partenaires`.`TestUniciteCAB`, &#13;&#10;  `VIAPOST_Partenaires`.`DeconcatRCT`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocageAnaproRefExistante`, &#13;&#10;  `VIAPOST_Partenaires`.`UrlSiteEtiquettesRetour`, &#13;&#10;  `VIAPOST_Partenaires`.`GererFamillePicking`, &#13;&#10;  `VIAPOST_Partenaires`.`CalculFamilleArticle`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrix`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionNiveauxVL`, &#13;&#10;  `VIAPOST_Partenaires`.`Client_Textile`, &#13;&#10;  `VIAPOST_Partenaires`.`RemplacementAppro`, &#13;&#10;  `VIAPOST_Partenaires`.`Sequence_emplacement_mad`, &#13;&#10;  `VIAPOST_Partenaires`.`Zone_emplacement_mad`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionDonneesTrac`, &#13;&#10;  `VIAPOST_Partenaires`.`CodeDepot`, &#13;&#10;  `VIAPOST_Partenaires`.`ReferenceAnaproOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`CodeFournisseurAnaproOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`Provenance`, &#13;&#10;  `VIAPOST_Partenaires`.`MajCommande`, &#13;&#10;  `VIAPOST_Partenaires`.`VERSION_BASE`, &#13;&#10;  `VIAPOST_Partenaires`.`ACCUEIL`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIES_CMDS`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIES_RT_CLI`, &#13;&#10;  `VIAPOST_Partenaires`.`RECLAMATION_LISTE`, &#13;&#10;  `VIAPOST_Partenaires`.`RECLAMATION_STATS`, &#13;&#10;  `VIAPOST_Partenaires`.`ALERTES_SCENARII`, &#13;&#10;  `VIAPOST_Partenaires`.`ALERTES_ETAT_ENVOIS`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_SCENARII`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_TPLS_MAIL`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_TPLS_SMS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_IMPORT_ARTS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_VISU_LOGS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_BASE_DOCU`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_ZONING`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_CAL`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_USERS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_GROUPS`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_TRACK`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_ENQ`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_NOTIFS`, &#13;&#10;  `VIAPOST_Partenaires`.`AIDE`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks_BTN_Modifier`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_CanalVente`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_CodePays`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_Col_Ref`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_ERR_PRECOLISEUR`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_STOCK_NON_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Reception_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparation_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Reclamation`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtSize`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtLength`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtWidth`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtHeight`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtWeight`, &#13;&#10;  `VIAPOST_Partenaires`.`ScindageNbChars`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_AdresseMail`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_TelFixe`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_TelMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_AddMailOrTelFixeOrMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`EnvoiAdresseLivraison3`, &#13;&#10;  `VIAPOST_Partenaires`.`RejetReceptionSiLigneEnErreur`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionDesLots`, &#13;&#10;  `VIAPOST_Partenaires`.`REFARTClientAvecHistoriqueModification`, &#13;&#10;  `VIAPOST_Partenaires`.`STKETAReflex`, &#13;&#10;  `VIAPOST_Partenaires`.`Statistique`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionCraproRetourInt53`, &#13;&#10;  `VIAPOST_Partenaires`.`ConserverCodeTransporteurClient`, &#13;&#10;  `VIAPOST_Partenaires`.`AdresseFacturationNonObligatoire`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuAdresseMail`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuTelFixe`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuTelMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuAddMailOrTelFixeOrMobile`&#13;&#10;FROM `VIAPOST_Partenaires`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;  `VIAPOST_Partenaires`.`ID_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_TYPE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_PARTENAIRE_PERE`, &#13;&#10;  `VIAPOST_Partenaires`.`NOM_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_MAG_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_APPRO_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_CLI_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_ARTI_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`ABREGE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`IS_ACTIVE`, &#13;&#10;  `VIAPOST_Partenaires`.`LOGIN_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`PWD_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SITE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`ROLE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`IMAGE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`LAST_CMDE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`NUM_BASE_MAGELLAN`, &#13;&#10;  `VIAPOST_Partenaires`.`TEXTE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_IN_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_OUT_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SQL_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT_ENTETE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT_LIGNE_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`SEPARATEUR_CHAMPS_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`TEST_FTP_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_NOM_CONFIGURATION`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_CHR_SEPARATEUR`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_NUM_DEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_TEST_NB_CDE_LIGNES`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_TEST_APPARIEMENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CG_LIGNE_ENTETE_FICHIER`, &#13;&#10;  `VIAPOST_Partenaires`.`ERR_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_TEST_FTP`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_CLIENT_LOJSTIK`, &#13;&#10;  `VIAPOST_Partenaires`.`TOKEN_WS_OXATIS`, &#13;&#10;  `VIAPOST_Partenaires`.`APPLICATION_ID_WS_OXATIS`, &#13;&#10;  `VIAPOST_Partenaires`.`EST_FORMAT_OUVERT`, &#13;&#10;  `VIAPOST_Partenaires`.`WS_ACTIF`, &#13;&#10;  `VIAPOST_Partenaires`.`CLOTURE_AUTO`, &#13;&#10;  `VIAPOST_Partenaires`.`ART_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`CMD_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`APPRO_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`REP_IMPORT_TRANSETIQ`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_RETOUR_PARTENAIRE`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_REGROUPEMENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_AFF_MARCHANDISE`, &#13;&#10;  `VIAPOST_Partenaires`.`TRIGRAMME`, &#13;&#10;  `VIAPOST_Partenaires`.`MULTISITE`, &#13;&#10;  `VIAPOST_Partenaires`.`FORMAT`, &#13;&#10;  `VIAPOST_Partenaires`.`CODE_PRIO_CROSS_DOCK`, &#13;&#10;  `VIAPOST_Partenaires`.`PICKUP`, &#13;&#10;  `VIAPOST_Partenaires`.`QTE_LOT_MONO`, &#13;&#10;  `VIAPOST_Partenaires`.`QTE_LOT_MULTI`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIE_ARTICLE_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIE_CMD_FOUR_EXTRANET`, &#13;&#10;  `VIAPOST_Partenaires`.`TYPE_CLIENT`, &#13;&#10;  `VIAPOST_Partenaires`.`CATEGORIE_COLIS`, &#13;&#10;  `VIAPOST_Partenaires`.`SAV`, &#13;&#10;  `VIAPOST_Partenaires`.`MailSAV_Client`, &#13;&#10;  `VIAPOST_Partenaires`.`MailSAV_ML`, &#13;&#10;  `VIAPOST_Partenaires`.`ForceAM`, &#13;&#10;  `VIAPOST_Partenaires`.`ISMULTICOLIS`, &#13;&#10;  `VIAPOST_Partenaires`.`ISMULTIDEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`NUMDEPOT`, &#13;&#10;  `VIAPOST_Partenaires`.`DEPOT_PHYSIQUE`, &#13;&#10;  `VIAPOST_Partenaires`.`forceLotA1`, &#13;&#10;  `VIAPOST_Partenaires`.`topVLgestion`, &#13;&#10;  `VIAPOST_Partenaires`.`RegrouperCommandes`, &#13;&#10;  `VIAPOST_Partenaires`.`PrefixCommandesRegroupees`, &#13;&#10;  `VIAPOST_Partenaires`.`CompteurRegroupementCommandes`, &#13;&#10;  `VIAPOST_Partenaires`.`topRecep`, &#13;&#10;  `VIAPOST_Partenaires`.`cheminBLHardis`, &#13;&#10;  `VIAPOST_Partenaires`.`LivraisonGlobalise`, &#13;&#10;  `VIAPOST_Partenaires`.`IS_SLOTTING_ACTIF`, &#13;&#10;  `VIAPOST_Partenaires`.`LibelleClient`, &#13;&#10;  `VIAPOST_Partenaires`.`compress`, &#13;&#10;  `VIAPOST_Partenaires`.`Prefixe_Palette`, &#13;&#10;  `VIAPOST_Partenaires`.`EtiquetteUnique`, &#13;&#10;  `VIAPOST_Partenaires`.`LotGrouponGL`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocagePR`, &#13;&#10;  `VIAPOST_Partenaires`.`reflex`, &#13;&#10;  `VIAPOST_Partenaires`.`DestinataireIntermediaire`, &#13;&#10;  `VIAPOST_Partenaires`.`PREFIXE_CDE_NON_TRAITE_SLOTTING`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrefixeArt`, &#13;&#10;  `VIAPOST_Partenaires`.`Gestion37GRfx`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionAppartenanceStockCodeEnseigne`, &#13;&#10;  `VIAPOST_Partenaires`.`GarderGenCodCli`, &#13;&#10;  `VIAPOST_Partenaires`.`GarderPrioriteOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrefixeFamille`, &#13;&#10;  `VIAPOST_Partenaires`.`Slotting_Prefixe_Carton`, &#13;&#10;  `VIAPOST_Partenaires`.`Slotting_Prefixe_Palette`, &#13;&#10;  `VIAPOST_Partenaires`.`Version_37B`, &#13;&#10;  `VIAPOST_Partenaires`.`TSQ_Only`, &#13;&#10;  `VIAPOST_Partenaires`.`ID_Client_Transetiq`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocageCMDCLI`, &#13;&#10;  `VIAPOST_Partenaires`.`ForceTopArticleNouveau`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Reception`, &#13;&#10;  `VIAPOST_Partenaires`.`RDV_Fournisseur`, &#13;&#10;  `VIAPOST_Partenaires`.`SAV_Transport`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionCraproInt53`, &#13;&#10;  `VIAPOST_Partenaires`.`TestUniciteCAB`, &#13;&#10;  `VIAPOST_Partenaires`.`DeconcatRCT`, &#13;&#10;  `VIAPOST_Partenaires`.`BlocageAnaproRefExistante`, &#13;&#10;  `VIAPOST_Partenaires`.`UrlSiteEtiquettesRetour`, &#13;&#10;  `VIAPOST_Partenaires`.`GererFamillePicking`, &#13;&#10;  `VIAPOST_Partenaires`.`CalculFamilleArticle`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionPrix`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionNiveauxVL`, &#13;&#10;  `VIAPOST_Partenaires`.`Client_Textile`, &#13;&#10;  `VIAPOST_Partenaires`.`RemplacementAppro`, &#13;&#10;  `VIAPOST_Partenaires`.`Sequence_emplacement_mad`, &#13;&#10;  `VIAPOST_Partenaires`.`Zone_emplacement_mad`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionDonneesTrac`, &#13;&#10;  `VIAPOST_Partenaires`.`CodeDepot`, &#13;&#10;  `VIAPOST_Partenaires`.`ReferenceAnaproOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`CodeFournisseurAnaproOrigine`, &#13;&#10;  `VIAPOST_Partenaires`.`Provenance`, &#13;&#10;  `VIAPOST_Partenaires`.`MajCommande`, &#13;&#10;  `VIAPOST_Partenaires`.`VERSION_BASE`, &#13;&#10;  `VIAPOST_Partenaires`.`ACCUEIL`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIES_CMDS`, &#13;&#10;  `VIAPOST_Partenaires`.`SAISIES_RT_CLI`, &#13;&#10;  `VIAPOST_Partenaires`.`RECLAMATION_LISTE`, &#13;&#10;  `VIAPOST_Partenaires`.`RECLAMATION_STATS`, &#13;&#10;  `VIAPOST_Partenaires`.`ALERTES_SCENARII`, &#13;&#10;  `VIAPOST_Partenaires`.`ALERTES_ETAT_ENVOIS`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_SCENARII`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_TPLS_MAIL`, &#13;&#10;  `VIAPOST_Partenaires`.`NOTIFIS_TPLS_SMS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_IMPORT_ARTS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_VISU_LOGS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_BASE_DOCU`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_ZONING`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_CAL`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_USERS`, &#13;&#10;  `VIAPOST_Partenaires`.`ADMIN_PARAM_GROUPS`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_TRACK`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_ENQ`, &#13;&#10;  `VIAPOST_Partenaires`.`MAESTRO_NOTIFS`, &#13;&#10;  `VIAPOST_Partenaires`.`AIDE`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks_BTN_Modifier`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_CanalVente`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_CodePays`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparations_Col_Ref`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_ERR_PRECOLISEUR`, &#13;&#10;  `VIAPOST_Partenaires`.`MAIL_STOCK_NON_CONFORME`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Stocks_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Reception_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Etat_Preparation_Proprietaire`, &#13;&#10;  `VIAPOST_Partenaires`.`Reclamation`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtSize`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtLength`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtWidth`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtHeight`, &#13;&#10;  `VIAPOST_Partenaires`.`DefaultArtWeight`, &#13;&#10;  `VIAPOST_Partenaires`.`ScindageNbChars`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_AdresseMail`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_TelFixe`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_TelMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_AddMailOrTelFixeOrMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`EnvoiAdresseLivraison3`, &#13;&#10;  `VIAPOST_Partenaires`.`RejetReceptionSiLigneEnErreur`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionDesLots`, &#13;&#10;  `VIAPOST_Partenaires`.`REFARTClientAvecHistoriqueModification`, &#13;&#10;  `VIAPOST_Partenaires`.`STKETAReflex`, &#13;&#10;  `VIAPOST_Partenaires`.`Statistique`, &#13;&#10;  `VIAPOST_Partenaires`.`GestionCraproRetourInt53`, &#13;&#10;  `VIAPOST_Partenaires`.`ConserverCodeTransporteurClient`, &#13;&#10;  `VIAPOST_Partenaires`.`AdresseFacturationNonObligatoire`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuAdresseMail`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuTelFixe`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuTelMobile`, &#13;&#10;  `VIAPOST_Partenaires`.`CMDCLI_FactuAddMailOrTelFixeOrMobile`,&#13;&#10;  `VIAPOST_Partenaires`.`Version_Reflex`&#13;&#10;FROM `VIAPOST_Partenaires`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1314,560 +1308,205 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CMDCLI_FactuAddMailOrTelFixeOrMobile"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version_Reflex"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="VIAPOST_Partenaires" name="tDBInput_2">
-      <column comment="" key="true" length="11" name="ID_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="ID_TYPE_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="ID_PARTENAIRE_PERE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="NOM_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="CODE_MAG_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="PREFIXE_APPRO_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="PREFIXE_CLI_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="PREFIXE_ARTI_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="ABREGE_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="IS_ACTIVE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="LOGIN_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="PWD_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="SITE_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="CODE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="ROLE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="IMAGE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDE_EXTRANET" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="LAST_CMDE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="NUM_BASE_MAGELLAN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3000" name="TEXTE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="REP_IN_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="REP_OUT_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="SQL_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="FORMAT_ENTETE_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="FORMAT_LIGNE_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="SEPARATEUR_CHAMPS_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="TEST_FTP_PARTENAIRE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="256" name="MAIL_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="CG_NOM_CONFIGURATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="CG_CHR_SEPARATEUR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="CG_NUM_DEPOT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CG_TEST_NB_CDE_LIGNES" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CG_TEST_APPARIEMENT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CG_LIGNE_ENTETE_FICHIER" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="ERR_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="256" name="MAIL_TEST_FTP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="20" name="ID_CLIENT_LOJSTIK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="TOKEN_WS_OXATIS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="APPLICATION_ID_WS_OXATIS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="EST_FORMAT_OUVERT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="WS_ACTIF" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CLOTURE_AUTO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="ART_CONFORME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="CMD_CONFORME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="APPRO_CONFORME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1000" name="REP_IMPORT_TRANSETIQ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="PREFIXE_RETOUR_PARTENAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="CODE_REGROUPEMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="CODE_AFF_MARCHANDISE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="TRIGRAMME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="MULTISITE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="FORMAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="CODE_PRIO_CROSS_DOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="PICKUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="QTE_LOT_MONO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="QTE_LOT_MULTI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAISIE_ARTICLE_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAISIE_CMD_FOUR_EXTRANET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="TYPE_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CATEGORIE_COLIS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAV" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MailSAV_Client" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MailSAV_ML" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2" name="ForceAM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISMULTICOLIS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ISMULTIDEPOT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="NUMDEPOT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="DEPOT_PHYSIQUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="forceLotA1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="topVLgestion" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RegrouperCommandes" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2" name="PrefixCommandesRegroupees" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="CompteurRegroupementCommandes" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="topRecep" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="cheminBLHardis" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="LivraisonGlobalise" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="IS_SLOTTING_ACTIF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="LibelleClient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="compress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="Prefixe_Palette" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="EtiquetteUnique" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="LotGrouponGL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="BlocagePR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="reflex" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="DestinataireIntermediaire" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="32" name="PREFIXE_CDE_NON_TRAITE_SLOTTING" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionPrefixeArt" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Gestion37GRfx" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionAppartenanceStockCodeEnseigne" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GarderGenCodCli" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GarderPrioriteOrigine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionPrefixeFamille" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Slotting_Prefixe_Carton" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Slotting_Prefixe_Palette" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="Version_37B" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="TSQ_Only" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="ID_Client_Transetiq" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="BlocageCMDCLI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="11" name="ForceTopArticleNouveau" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Stocks" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Preparations" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Reception" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RDV_Fournisseur" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAV_Transport" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionCraproInt53" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="TestUniciteCAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="DeconcatRCT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="BlocageAnaproRefExistante" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="UrlSiteEtiquettesRetour" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GererFamillePicking" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CalculFamilleArticle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionPrix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionNiveauxVL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Client_Textile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RemplacementAppro" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="Sequence_emplacement_mad" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="6" name="Zone_emplacement_mad" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionDonneesTrac" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="5" name="CodeDepot" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ReferenceAnaproOrigine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="CodeFournisseurAnaproOrigine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="Provenance" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="MajCommande" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="3" name="VERSION_BASE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ACCUEIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAISIES_CMDS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="SAISIES_RT_CLI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RECLAMATION_LISTE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RECLAMATION_STATS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ALERTES_SCENARII" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ALERTES_ETAT_ENVOIS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="NOTIFIS_SCENARII" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="NOTIFIS_TPLS_MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="NOTIFIS_TPLS_SMS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_IMPORT_ARTS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_VISU_LOGS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_BASE_DOCU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_PARAM_ZONING" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_PARAM_CAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_PARAM_USERS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ADMIN_PARAM_GROUPS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="MAESTRO_TRACK" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="MAESTRO_ENQ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="MAESTRO_NOTIFS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="AIDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Stocks_BTN_Modifier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Preparations_CanalVente" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Preparations_CodePays" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Preparations_Col_Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MAIL_ERR_PRECOLISEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="255" name="MAIL_STOCK_NON_CONFORME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Stocks_Proprietaire" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Reception_Proprietaire" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Etat_Preparation_Proprietaire" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Reclamation" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="DefaultArtSize" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="DefaultArtLength" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="DefaultArtWidth" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="DefaultArtHeight" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="DefaultArtWeight" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="12" name="ScindageNbChars" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_AdresseMail" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_TelFixe" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_TelMobile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_AddMailOrTelFixeOrMobile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="EnvoiAdresseLivraison3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="RejetReceptionSiLigneEnErreur" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionDesLots" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="REFARTClientAvecHistoriqueModification" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="STKETAReflex" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="Statistique" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="GestionCraproRetourInt53" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="ConserverCodeTransporteurClient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="AdresseFacturationNonObligatoire" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_FactuAdresseMail" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_FactuTelFixe" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_FactuTelMobile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="1" name="CMDCLI_FactuAddMailOrTelFixeOrMobile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="11" name="ID_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="ID_TYPE_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="ID_PARTENAIRE_PERE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NOM_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CODE_MAG_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PREFIXE_APPRO_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PREFIXE_CLI_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="PREFIXE_ARTI_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="ABREGE_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="IS_ACTIVE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="LOGIN_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="PWD_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1000" name="SITE_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CODE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ROLE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="IMAGE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDE_EXTRANET" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="LAST_CMDE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="NUM_BASE_MAGELLAN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3000" name="TEXTE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="REP_IN_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="REP_OUT_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1000" name="SQL_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="FORMAT_ENTETE_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="FORMAT_LIGNE_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="SEPARATEUR_CHAMPS_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TEST_FTP_PARTENAIRE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="MAIL_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="CG_NOM_CONFIGURATION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="CG_CHR_SEPARATEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="CG_NUM_DEPOT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CG_TEST_NB_CDE_LIGNES" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CG_TEST_APPARIEMENT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CG_LIGNE_ENTETE_FICHIER" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1000" name="ERR_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="MAIL_TEST_FTP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="ID_CLIENT_LOJSTIK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1000" name="TOKEN_WS_OXATIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="APPLICATION_ID_WS_OXATIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="EST_FORMAT_OUVERT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="WS_ACTIF" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CLOTURE_AUTO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="ART_CONFORME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="CMD_CONFORME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="APPRO_CONFORME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1000" name="REP_IMPORT_TRANSETIQ" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="PREFIXE_RETOUR_PARTENAIRE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="CODE_REGROUPEMENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="CODE_AFF_MARCHANDISE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="TRIGRAMME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MULTISITE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FORMAT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="CODE_PRIO_CROSS_DOCK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PICKUP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="QTE_LOT_MONO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="QTE_LOT_MULTI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SAISIE_ARTICLE_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SAISIE_CMD_FOUR_EXTRANET" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TYPE_CLIENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CATEGORIE_COLIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="SAV" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="MailSAV_Client" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="MailSAV_ML" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="ForceAM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ISMULTICOLIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ISMULTIDEPOT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="NUMDEPOT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="DEPOT_PHYSIQUE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="forceLotA1" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="topVLgestion" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RegrouperCommandes" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PrefixCommandesRegroupees" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="CompteurRegroupementCommandes" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="topRecep" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="cheminBLHardis" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="LivraisonGlobalise" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="IS_SLOTTING_ACTIF" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="LibelleClient" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="compress" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Prefixe_Palette" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="EtiquetteUnique" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="LotGrouponGL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="BlocagePR" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="reflex" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="DestinataireIntermediaire" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="32" name="PREFIXE_CDE_NON_TRAITE_SLOTTING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionPrefixeArt" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Gestion37GRfx" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionAppartenanceStockCodeEnseigne" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GarderGenCodCli" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GarderPrioriteOrigine" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionPrefixeFamille" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Slotting_Prefixe_Carton" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Slotting_Prefixe_Palette" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Version_37B" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TSQ_Only" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="ID_Client_Transetiq" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="BlocageCMDCLI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="ForceTopArticleNouveau" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Stocks" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Preparations" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Reception" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RDV_Fournisseur" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="SAV_Transport" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionCraproInt53" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="TestUniciteCAB" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="DeconcatRCT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="BlocageAnaproRefExistante" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="UrlSiteEtiquettesRetour" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GererFamillePicking" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CalculFamilleArticle" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionPrix" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionNiveauxVL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Client_Textile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RemplacementAppro" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sequence_emplacement_mad" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Zone_emplacement_mad" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionDonneesTrac" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="CodeDepot" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ReferenceAnaproOrigine" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="CodeFournisseurAnaproOrigine" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Provenance" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MajCommande" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="VERSION_BASE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACCUEIL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SAISIES_CMDS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SAISIES_RT_CLI" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RECLAMATION_LISTE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RECLAMATION_STATS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ALERTES_SCENARII" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ALERTES_ETAT_ENVOIS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NOTIFIS_SCENARII" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NOTIFIS_TPLS_MAIL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="NOTIFIS_TPLS_SMS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_IMPORT_ARTS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_VISU_LOGS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_BASE_DOCU" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_PARAM_ZONING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_PARAM_CAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_PARAM_USERS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="ADMIN_PARAM_GROUPS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="MAESTRO_TRACK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="MAESTRO_ENQ" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="MAESTRO_NOTIFS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="AIDE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Stocks_BTN_Modifier" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Preparations_CanalVente" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Preparations_CodePays" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Etat_Preparations_Col_Ref" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MAIL_ERR_PRECOLISEUR" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MAIL_STOCK_NON_CONFORME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Etat_Stocks_Proprietaire" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Etat_Reception_Proprietaire" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Etat_Preparation_Proprietaire" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Reclamation" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DefaultArtSize" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DefaultArtLength" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DefaultArtWidth" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DefaultArtHeight" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DefaultArtWeight" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ScindageNbChars" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDCLI_AdresseMail" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CMDCLI_TelFixe" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CMDCLI_TelMobile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CMDCLI_AddMailOrTelFixeOrMobile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="EnvoiAdresseLivraison3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="RejetReceptionSiLigneEnErreur" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="GestionDesLots" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REFARTClientAvecHistoriqueModification" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STKETAReflex" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Statistique" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="GestionCraproRetourInt53" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ConserverCodeTransporteurClient" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AdresseFacturationNonObligatoire" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDCLI_FactuAdresseMail" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDCLI_FactuTelFixe" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDCLI_FactuTelMobile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CMDCLI_FactuAddMailOrTelFixeOrMobile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Version_Reflex" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code généré selon les schémas d'entrée et de sortie&#10;context.Metadata_Cmdcli_CodeDepot = row5.CodeDepot;&#10;context.Metadata_Cmdcli_ForceAM = row5.ForceAM;&#10;context.Metadata_Cmdcli_LivraisonGlobalisee = row5.LivraisonGlobalise;&#10;if (row5.GestionAppartenanceStockCodeEnseigne.equals(&quot;1&quot;)){context.Metadata_Cmdcli_GestionCodeEnseigne = &quot;True&quot;;}else {context.Metadata_Cmdcli_GestionCodeEnseigne = &quot;False&quot;;}&#10;if (row5.GestionPrix.equals(&quot;1&quot;)){context.Metadata_Cmdcli_GestionPrix = &quot;True&quot;;}else {context.Metadata_Cmdcli_GestionPrix = &quot;False&quot;;}&#10;if (row5.MajCommande.equals(&quot;1&quot;)){context.Metadata_Cmdcli_MajCommande = &quot;True&quot;;}else {context.Metadata_Cmdcli_MajCommande = &quot;False&quot;;}&#10;if (row5.ConserverCodeTransporteurClient.equals(&quot;1&quot;)){context.Metadata_Cmdcli_ConserverCodeTransporteurClient = &quot;True&quot;;}else {context.Metadata_Cmdcli_ConserverCodeTransporteurClient = &quot;False&quot;;}&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code généré selon les schémas d'entrée et de sortie&#10;context.Metadata_Cmdcli_CodeDepot = row5.CodeDepot;&#10;context.Metadata_Cmdcli_ForceAM = row5.ForceAM;&#10;context.Metadata_Cmdcli_LivraisonGlobalisee = row5.LivraisonGlobalise;&#10;if (row5.GestionAppartenanceStockCodeEnseigne.equals(&quot;1&quot;)){context.Metadata_Cmdcli_GestionCodeEnseigne = &quot;True&quot;;}else {context.Metadata_Cmdcli_GestionCodeEnseigne = &quot;False&quot;;}&#10;if (row5.GestionPrix.equals(&quot;1&quot;)){context.Metadata_Cmdcli_GestionPrix = &quot;True&quot;;}else {context.Metadata_Cmdcli_GestionPrix = &quot;False&quot;;}&#10;if (row5.MajCommande.equals(&quot;1&quot;)){context.Metadata_Cmdcli_MajCommande = &quot;True&quot;;}else {context.Metadata_Cmdcli_MajCommande = &quot;False&quot;;}&#10;if (row5.ConserverCodeTransporteurClient.equals(&quot;1&quot;)){context.Metadata_Cmdcli_ConserverCodeTransporteurClient = &quot;True&quot;;}else {context.Metadata_Cmdcli_ConserverCodeTransporteurClient = &quot;False&quot;;}&#10;&#10;context.VERSION_REFLEX = row5.Version_Reflex;&#10;&#10;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt; Chargement Metadata"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="1056">
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot;+ context.GESTION_FICHIER_Dir_Files_In + context.MTDT_BDD_DateLong1"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
@@ -1888,10 +1527,9 @@
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Liste CMDCLI"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1056">
+  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tIterateToFlow_1"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="NomFichier"/>
@@ -1900,7 +1538,6 @@
       <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;dd/MM/yyyy HH:mm:ss&quot;,new Date())"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Itération"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="VIAPOST_CMDCLI_FichierTraites" name="tIterateToFlow_1">
       <column comment="" key="false" length="256" name="NomFichier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1915,7 +1552,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1056">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -1925,7 +1562,7 @@
     <elementParameter field="TEXT" name="PORT" value="context.BDD_Port"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
     <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GtXK0iCz1wUk4jlSMn9z4feEAgHzayAOsU/fLt6ooOxT1+NAZLp8jH7IzyaiNk5P"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:riSN/egV0LOXRXLNLenp20T1umutvn1JiWmHroGyP8jBRG/q/P09EG8nX+fHEdPW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_CMDCLI_FichierTraites&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1964,7 +1601,6 @@
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="VIAPOST_CMDCLI_FichierTraites" name="tDBOutput_1">
       <column comment="" key="false" length="256" name="NomFichier" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1993,7 +1629,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="896">
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_1"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
@@ -2003,24 +1639,22 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier Client"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputRaw_1">
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="896">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="row2.content = row1.content.replaceAll(&quot;\\p{C}&quot;, &quot;&quot;).replaceAll(&quot;\r\n&quot;, &quot;&quot;).replaceAll(&quot;\uFEFF&quot;, &quot;&quot;).replaceAll(&quot;  &quot;, &quot;&quot;);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Replace CRLF &amp; carac spéciaux"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="896">
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
     <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
     <elementParameter field="TABLE" name="MANUALTABLE">
@@ -2030,7 +1664,6 @@
     <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
     <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tConvertType_1">
       <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
@@ -2041,7 +1674,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="896">
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_1"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
@@ -2076,14 +1709,13 @@
     <elementParameter field="HMAP_VAR_USED_MAPS" name="HMAP_VAR_USED_MAPS" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
     <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
-    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;BRM_TO_CMDE_PIVOT"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;BRM_TO_CMDE_PIVOT_CS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="output">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="800">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -2093,7 +1725,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k1poWs1UpWLPVNFJU94Up0QirwII+MJ/XaGIfD/IHlzXVZnVJt+QVWsHLJ9eP1C5"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:17WI19nSRiN5pcRSj0xisIG/NhwTzQaQYmuCS8ZSqkMCCZx56HwJeqhoE42oFdp1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIAPOST_Livreur&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2122,7 +1754,6 @@
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__TABLE__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="VIAPOST_Livreur" name="tDBInput_1">
       <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -2143,7 +1774,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="896">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -2173,9 +1804,175 @@
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier Pivot"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier Client"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_2">
+      <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="row8.content = row6.content.replaceAll(&quot;\\p{C}&quot;, &quot;&quot;).replaceAll(&quot;\r\n&quot;, &quot;&quot;).replaceAll(&quot;\uFEFF&quot;, &quot;&quot;).replaceAll(&quot;  &quot;, &quot;&quot;);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Replace CRLF &amp; carac spéciaux"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_4">
+      <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_2"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
+    <elementParameter field="TABLE" name="MANUALTABLE">
+      <elementValue elementRef="INPUT_COLUMN" value="content"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="content"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_2">
+      <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="content" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHMap_2"/>
+    <elementParameter field="LABEL" name="MAPPATH_HELP" value=""/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;Jobs/BRM_TO_CMDE/tHMap_2&quot;"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_MAP" value="true"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_STRING" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_MAP" show="false" value="false"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="RADIO" name="AS_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TDM_STRUCT_INCARNATION" show="false" value="24"/>
+    <elementParameter field="TEXT" name="TARGET_TDM_STRUCT_INCARNATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SOURCE_GENERATED_TDM_STRUCT_PATH" show="false" value="Structures/Jobs/BRM_TO_CMDE/tHMap_2/InputWrapper.xml"/>
+    <elementParameter field="TEXT" name="TARGET_GENERATED_TDM_STRUCT_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_OBJECTTYPE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_STRING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_BYTEARRAY" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_DOCUMENT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_INPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HIDE_OUTPUT_SET" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_STRING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_MAP" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_STRING" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_MAP" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_DOCUMENT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="IS_NEW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_BYTES" show="false" value="true"/>
+    <elementParameter field="RADIO" name="INCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="RADIO" name="OUTCONNECTIONS_SYNCED" show="false" value="true"/>
+    <elementParameter field="TEXT" name="HMAP_VAR_PATH" value="&quot;&quot;"/>
+    <elementParameter field="HMAP_VAR_USED_MAPS" name="HMAP_VAR_USED_MAPS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;BRM_TO_CMDE_PIVOT_WEB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.BDD_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BDD_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6pftf6RyvsiwIHdfnpvqbN/e2ozX8YBbxztQaGZ5p18fJ5etXSfVheaCZB1d5QSt"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;RGPT_CHGT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `RGPT_CHGT`.`Client`, &#10;  `RGPT_CHGT`.`Code_Transport`, &#10;  `RGPT_CHGT`.`Code_service_transport`, &#10;  `RGPT_CHGT`.`Code_regroupement_chargement`&#10;FROM `RGPT_CHGT`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.BDD_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Client"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Transport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_service_transport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_regroupement_chargement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" key="false" length="-1" name="Client" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_Transport" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_service_transport" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_regroupement_chargement" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient+ &quot;/&quot; + context.MTDT_BDD_CodeInterface +&quot;/&quot; + context.GESTION_FICHIER_Dir_Files_Tmp + context.MTDT_BDD_DateLong1 + &quot;/PIVOT_CMDCLI_&quot;+ TalendDate.getDate(&quot;YYYYMMDDhhmmssSS&quot;) + &quot;.xml&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Fichier Pivot"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -2194,9 +1991,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tFileInputRaw_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.FTP_Taille_Fichier &gt; 0"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  <connection connectorName="RUN_IF" label="Reflex_WEB" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="-29" offsetLabelY="-50" outputId="1" source="tJavaRow_3" target="tFileInputRaw_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.FTP_Taille_Fichier &gt; 0 &amp;&amp; context.VERSION_REFLEX.equals(&quot;1&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Reflex_WEB"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="Reflex_CS" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="-39" offsetLabelY="-28" outputId="2" source="tJavaRow_3" target="tFileInputRaw_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.FTP_Taille_Fichier &gt; 0 &amp;&amp; context.VERSION_REFLEX.equals(&quot;0&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Reflex_CS"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tWarn_5" offsetLabelX="0" offsetLabelY="0" source="tWarn_5" target="tFileList_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
@@ -2257,6 +2058,31 @@
   <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFileInputRaw_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_2" target="tJavaRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tJavaRow_4" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_4" target="tConvertType_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="content"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tConvertType_2" offsetLabelX="0" offsetLabelY="0" source="tConvertType_2" target="tHMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tHMap_2" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tHMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
   </connection>
   <note opaque="true" posX="32" posY="32" sizeHeight="193" sizeWidth="993" text="Job mapping COMMANDES:&#13;&#10;1. Partie de chargement des variables de contextes du fichier properties dans le job&#13;&#10;2. Partie lecture fichier d'entrée / transformation et mapping CMDE&#13;&#10;3. Partie création fichier pivot article depuis  XML_VIAPOST&#13;&#10;&#13;&#10;08/12/2020">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="152;168;191"/>
@@ -2319,13 +2145,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b52353fc-275c-44dc-82a8-8712958e0322"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wWHKA2s6PcXtRXWpawnXTHQMtgQ0l/l2pDYFiARRpcCjBXus7blOkMZrkHxU08gViNvOBsAwVFni
-p5byrERgFg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f3ab779f-85e3-4b1e-b987-64eda5abed54"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+8XXyMXD0SyO2zA2RgPDzg7pGWvLy4AgE59e2ECyVhnQfjQeXqeF6NSdZFO9Kb3+gN4eRujkbKUF
-DlnLcRJwag==</DigestValue></Reference></SignedInfo><SignatureValue>Bd8fAb8Ub6GBkCn03ZZiGZSlZQz1qXL9NwRQI+p4BB+4EHFnt7zhQBeV/A0MO2xrBPCZHfLyVWM5
-Zo2vSbVQ06+AUmGlgZvJG1AoLz9WQdA9etiuVuko7rnnz6QbeF3i0AXg6pIuFXyvXD8ZDcR0dmAc
-BtjZgEGr0BGGB+/f/Qlna/7Pn69y7pWxCwACeoRO8RkbSCdAnzt48jhl7kzGYuq4miulVxen3BI/
-Uof7l30jmAtf/GGUyZpw5TtSabO7WvR+hfBIsaVy8id9w3k9mCN0eCeR/pxBrnqLfEkogNPldcoE
-fnl647Z7lvjs5qKjB4eactITiz7v6ZQvJ7J5hA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputRaw_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18197978-0095-4d58-995e-bc94702718eb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dyGWjv/SLH6FDVmQy1+6Mafv4dMe6YqZi6VOgmeOcEXEU7J7OjLf6ejZqCIK6itDT/wnRN9BF6wg
+K1fBzB9U+Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_012844d2-23f6-4a28-a88d-549763a9a832"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KSbIZPRToe4IusEZPRKHQBlCdcMoqwbEuuYf8+95N45owNY/PR7VL9gJm68VCKPPIa6xG49xToIy
+bbQaJUxu9g==</DigestValue></Reference></SignedInfo><SignatureValue>AteCbjw6bHh1ZTyeF65d0aCydYtUDGCD3iGTEHv9JfZ5oSVaraFGsABkdLRlzQW1fV/aqqKGiN7c
+Q/et5j/OwWJN+ZwuhtgFKdmjjkFrDBR88wY+fwx6W/R9VtpJEj9+9LQIdUm2huCTrT2PInbR8W69
+UDed49kUd64sHFsE8Glrnuds30f8Kchfm9vufYvhouNzym5mUOOmEmRJPyycPxCLXigQr1WNQFWd
+yoK4LRXip7aNa9suupBma56wA148iO2Jehp/quHZ7rGECMHul/6qyXMn4mn6Tpxf8QmrNlpIuQl2
+qIivvOutfpvzXjgOiLM+Lpc4O86vIfOV9yE8fQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -2347,4 +2178,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f3ab779f-85e3-4b1e-b987-64eda5abed54" Target="#_b52353fc-275c-44dc-82a8-8712958e0322"><Timestamp>2021-05-26 13:57:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_012844d2-23f6-4a28-a88d-549763a9a832" Target="#_18197978-0095-4d58-995e-bc94702718eb"><Timestamp>2021-08-27 14:50:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
