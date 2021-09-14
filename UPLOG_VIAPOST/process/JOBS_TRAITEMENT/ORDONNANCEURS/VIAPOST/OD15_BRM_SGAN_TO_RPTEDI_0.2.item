@@ -1,14 +1,172 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="LOCALHOST" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="LOCALHOST">
+    <contextParameter comment="" internalId="_6iRiwPt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
+    <contextParameter comment="" internalId="_6iRiwft1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
+    <contextParameter comment="" internalId="_6iRiwvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:0lZQfhrMgGv5K+4O6vigxfFQrwzC+HtaHv5BGTXUY07B+uRlwbODOcrN5s+F3r8wr0lzmpnd8gx6LGT3tZAopno/ki19C3pCMADOa+q+rNuAMBQzAmvDjVtZGMJ+BdCIGc9NOD0A8IcYIC9m+/N1maKPuZQ="/>
+    <contextParameter comment="" internalId="_6iRiw_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE/&quot;"/>
+    <contextParameter comment="" internalId="_6iRixPt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
+    <contextParameter comment="" internalId="_6iRixft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
+    <contextParameter comment="" internalId="_6iRixvt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRix_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
+    <contextParameter comment="" internalId="_6iRiyPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:/k63wHLblti3v11qd/OnStw3B72Kqciao43AJVyTglsHuXv5hJI="/>
+    <contextParameter comment="" internalId="_6iRiyft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
+    <contextParameter comment="" internalId="_6iRiyvt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="UPLVNXBDD01DLV"/>
+    <contextParameter comment="" internalId="_6iRiy_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRizPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
+    <contextParameter comment="" internalId="_6iRizft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
+    <contextParameter comment="" internalId="_6iRizvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
+    <contextParameter comment="" internalId="_6iRiz_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
+    <contextParameter comment="" internalId="_6iRi0Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_6iRi0ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
+    <contextParameter comment="" internalId="_6iRi0vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
+    <contextParameter comment="" internalId="_6iRi0_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
+    <contextParameter comment="" internalId="_6iRi1Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRi1ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRi1vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRi1_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
+    <contextParameter comment="" internalId="_6iRi2Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
+    <contextParameter comment="" internalId="_6iRi2ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRi2vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
+    <contextParameter comment="" internalId="_6iRi2_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_6iRi3Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
+    <contextParameter comment="" internalId="_6iRi3ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Read_KO" prompt="EXECUTION_LOG_100_Code_Context_Read_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="102"/>
+    <contextParameter comment="Code retour" internalId="_6iRi3vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Read_OK" prompt="EXECUTION_LOG_100_Code_Context_Read_OK?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="100"/>
+    <contextParameter comment="" internalId="_6iRi3_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Write_KO" prompt="EXECUTION_LOG_100_Code_Context_Write_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="101"/>
+    <contextParameter comment="" internalId="_6iRi4Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Read_KO" prompt="EXECUTION_LOG_100_Lib_Context_Read_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read context&quot;"/>
+    <contextParameter comment="Lecture des contextes OK" internalId="_6iRi4ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Read_OK" prompt="EXECUTION_LOG_100_Lib_Context_Read_OK?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Contexts loaded successfully&quot;"/>
+    <contextParameter comment="" internalId="_6iRi4vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Write_KO" prompt="EXECUTION_LOG_100_Lib_Context_Write_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write context&quot;"/>
+    <contextParameter comment="" internalId="_6iRi4_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Close_KO" prompt="EXECUTION_LOG_200_Code_BDD_Close_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="205"/>
+    <contextParameter comment="" internalId="_6iRi5Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Close_OK" prompt="EXECUTION_LOG_200_Code_BDD_Close_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="206"/>
+    <contextParameter comment="" internalId="_6iRi5ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Commit_KO" prompt="EXECUTION_LOG_200_Code_BDD_Commit_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="204"/>
+    <contextParameter comment="" internalId="_6iRi5vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Connexion_KO" prompt="EXECUTION_LOG_200_Code_BDD_Connexion_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="201"/>
+    <contextParameter comment="" internalId="_6iRi5_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Connexion_OK" prompt="EXECUTION_LOG_200_Code_BDD_Connexion_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="200"/>
+    <contextParameter comment="" internalId="_6iRi6Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Read_KO" prompt="EXECUTION_LOG_200_Code_BDD_Read_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="202"/>
+    <contextParameter comment="" internalId="_6iRi6ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Write_KO" prompt="EXECUTION_LOG_200_Code_BDD_Write_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="203"/>
+    <contextParameter comment="" internalId="_6iRi6vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Close_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Close_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to close DB Connection&quot;"/>
+    <contextParameter comment="" internalId="_6iRi6_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Close_OK" prompt="EXECUTION_LOG_200_Lib_BDD_Close_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Close connection to DB successfull&quot;"/>
+    <contextParameter comment="" internalId="_6iRi7Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Commit_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Commit_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to commit transaction into DB&quot;"/>
+    <contextParameter comment="" internalId="_6iRi7ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Connexion_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Connexion_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to open DB Connection&quot;"/>
+    <contextParameter comment="" internalId="_6iRi7vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Connexion_OK" prompt="EXECUTION_LOG_200_Lib_BDD_Connexion_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Connection to DB successfull&quot;"/>
+    <contextParameter comment="" internalId="_6iRi7_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Read_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Read_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read data from DB&quot;"/>
+    <contextParameter comment="" internalId="_6iRi8Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Write_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Write_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write data into DB&quot;"/>
+    <contextParameter comment="" internalId="_6iRi8ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Close_KO" prompt="EXECUTION_LOG_300_Code_FTP_Close_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="305"/>
+    <contextParameter comment="" internalId="_6iRi8vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Close_OK" prompt="EXECUTION_LOG_300_Code_FTP_Close_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="306"/>
+    <contextParameter comment="" internalId="_6iRi8_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Connexion_KO" prompt="EXECUTION_LOG_300_Code_FTP_Connexion_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="301"/>
+    <contextParameter comment="" internalId="_6iRi9Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Connexion_OK" prompt="EXECUTION_LOG_300_Code_FTP_Connexion_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="300"/>
+    <contextParameter comment="" internalId="_6iRi9ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Delete_KO" prompt="EXECUTION_LOG_300_Code_FTP_Delete_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="304"/>
+    <contextParameter comment="" internalId="_6iRi9vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Delete_OK" prompt="EXECUTION_LOG_300_Code_FTP_Delete_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="308"/>
+    <contextParameter comment="" internalId="_6iRi9_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Get_KO" prompt="EXECUTION_LOG_300_Code_FTP_Get_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="302"/>
+    <contextParameter comment="" internalId="_6iRi-Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Get_OK" prompt="EXECUTION_LOG_300_Code_FTP_Get_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="307"/>
+    <contextParameter comment="" internalId="_6iRi-ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Put_KO" prompt="EXECUTION_LOG_300_Code_FTP_Put_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="303"/>
+    <contextParameter comment="" internalId="_6iRi-vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Put_OK" prompt="EXECUTION_LOG_300_Code_FTP_Put_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="309"/>
+    <contextParameter comment="" internalId="_6iRi-_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Close_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Close_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to close FTP connection&quot;"/>
+    <contextParameter comment="" internalId="_6iRi_Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Close_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Close_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Close connection to FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRi_ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Connexion_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Connexion_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to open FTP connection&quot;"/>
+    <contextParameter comment="" internalId="_6iRi_vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Connexion_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Connexion_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Connection to FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRi__t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Delete_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Delete_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to delete files on FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjAPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Delete_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Delete_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Deleting files on FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjAft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Get_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Get_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to get files from FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjAvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Get_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Get_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Getting files from FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjA_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Put_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Put_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to put files into FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjBPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Put_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Put_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Putting files on FTP&quot;"/>
+    <contextParameter comment="" internalId="_6iRjBft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Empty_KO" prompt="EXECUTION_LOG_400_Code_File_Empty_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="403"/>
+    <contextParameter comment="" internalId="_6iRjBvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Read_KO" prompt="EXECUTION_LOG_400_Code_File_Read_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="401"/>
+    <contextParameter comment="" internalId="_6iRjB_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Write_KO" prompt="EXECUTION_LOG_400_Code_File_Write_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="402"/>
+    <contextParameter comment="" internalId="_6iRjCPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Empty_KO" prompt="EXECUTION_LOG_400_Lib_File_Empty_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: file is empty&quot;"/>
+    <contextParameter comment="" internalId="_6iRjCft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Read_KO" prompt="EXECUTION_LOG_400_Lib_File_Read_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read data from file&quot;"/>
+    <contextParameter comment="" internalId="_6iRjCvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Write_KO" prompt="EXECUTION_LOG_400_Lib_File_Write_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write data to file&quot;"/>
+    <contextParameter comment="" internalId="_6iRjC_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_Batch_Insert_KO" prompt="EXECUTION_LOG_500_Code_Batch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="503"/>
+    <contextParameter comment="" internalId="_6iRjDPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_CreateOrUpdateAccount_NbRetry_KO" prompt="EXECUTION_LOG_500_Code_CreateOrUpdateAccount_NbRetry_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="505"/>
+    <contextParameter comment="" internalId="_6iRjDft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_End_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_End_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="502"/>
+    <contextParameter comment="" internalId="_6iRjDvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_Init_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_Init_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="501"/>
+    <contextParameter comment="" internalId="_6iRjD_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_Insert_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="504"/>
+    <contextParameter comment="" internalId="_6iRjEPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_Batch_Insert_KO" prompt="EXECUTION_LOG_500_Lib_Batch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to insert Batch&quot;"/>
+    <contextParameter comment="" internalId="_6iRjEft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_CreateOrUpdateAccount_NbRetry_KO" prompt="EXECUTION_LOG_500_Lib_CreateOrUpdateAccount_NbRetry_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: NbRetry exceeded&quot;"/>
+    <contextParameter comment="" internalId="_6iRjEvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_End_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_End_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to close ManageBatch&quot;"/>
+    <contextParameter comment="" internalId="_6iRjE_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_Init_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_Init_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to init ManageBatch&quot;"/>
+    <contextParameter comment="" internalId="_6iRjFPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_Insert_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to insert ManageBatch&quot;"/>
+    <contextParameter comment="Emplacement clé" internalId="_6iRjFft1EeuSBfiFPRDvJQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment=" Hôte" internalId="_6iRjFvt1EeuSBfiFPRDvJQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
+    <contextParameter comment="Phrase de passe" internalId="_6iRjF_t1EeuSBfiFPRDvJQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
+    <contextParameter comment="Mot de passe" internalId="_6iRjGPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:p0xfwKVqcqZgo9khVDy7QSDfCyeUJNV6yA3o/OlzeHJVG2/i3qC5e+DaJNKVxjGRHRtNiJU="/>
+    <contextParameter comment="Port de connexion" internalId="_6iRjGft1EeuSBfiFPRDvJQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
+    <contextParameter comment="Taille du fichier lu" internalId="_6iRjGvt1EeuSBfiFPRDvJQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
+    <contextParameter comment="Utilisateur" internalId="_6iRjG_t1EeuSBfiFPRDvJQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-DV&quot;"/>
+    <contextParameter comment="Corps du mail à envoyer" internalId="_6iRjHPt1EeuSBfiFPRDvJQ" name="GENERAL_BodyMail" prompt="GENERAL_BodyMail?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
+    <contextParameter comment="Compteur pour l'alerting" internalId="_6iRjHft1EeuSBfiFPRDvJQ" name="GENERAL_Compteur" prompt="GENERAL_Compteur?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_Integer" value="0"/>
+    <contextParameter comment="Priorité de l'erreur" internalId="_6iRjHvt1EeuSBfiFPRDvJQ" name="GENERAL_ErrAlerte" prompt="GENERAL_ErrAlerte?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_Integer" value="0"/>
+    <contextParameter comment="Message d'erreur envoyé par mail" internalId="_6iRjH_t1EeuSBfiFPRDvJQ" name="GENERAL_ErrMessage" prompt="GENERAL_ErrMessage?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
+    <contextParameter comment="Nom du job qui est en erreur" internalId="_6iRjIPt1EeuSBfiFPRDvJQ" name="GENERAL_ErrNomJob" prompt="GENERAL_ErrNomJob?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjIft1EeuSBfiFPRDvJQ" name="BOOLEAN_Connexion_FTP_1" prompt="BOOLEAN_Connexion_FTP_1?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="" internalId="_6iRjIvt1EeuSBfiFPRDvJQ" name="BOOLEAN_Connexion_FTP_3" prompt="BOOLEAN_Connexion_FTP_3?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter comment="Répertoire d'archives local" internalId="_6iRjI_t1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
+    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6iRjJPt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;c:/opt/talend/data/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6iRjJft1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
+    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6iRjJvt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
+    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6iRjJ_t1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
+    <contextParameter comment="Répertoire de paramétrage" internalId="_6iRjKPt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
+    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6iRjKft1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
+    <contextParameter comment="" internalId="_6iRjKvt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjK_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjLPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjLft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjLvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjL_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjMPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjMft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjMvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjM_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjNPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjNft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjNvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRjN_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_6iRjOPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjOft1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjOvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjO_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjPPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjPft1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjPvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjP_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjQPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjQft1EeuSBfiFPRDvJQ" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjQvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjQ_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjRPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjRft1EeuSBfiFPRDvJQ" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjRvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjR_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value="&quot;jeoffrey.stephan@hardis-group.com&quot;"/>
+    <contextParameter comment="" internalId="_6iRjSPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjSft1EeuSBfiFPRDvJQ" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjSvt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjS_t1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjTPt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat1" prompt="MTDT_COMMUNE_Etat1?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjTft1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat2" prompt="MTDT_COMMUNE_Etat2?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjTvt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat3" prompt="MTDT_COMMUNE_Etat3?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjT_t1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Id" prompt="MTDT_COMMUNE_Id?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjUPt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Nom_Fichier" prompt="MTDT_COMMUNE_Nom_Fichier?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjUft1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Version_Reflex" prompt="MTDT_COMMUNE_Version_Reflex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjUvt1EeuSBfiFPRDvJQ" name="SMTP_Bcc" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_6iRjU_t1EeuSBfiFPRDvJQ" name="SMTP_Cc" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_6iRjVPt1EeuSBfiFPRDvJQ" name="SMTP_Destinataire" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_6iRjVft1EeuSBfiFPRDvJQ" name="SMTP_Expediteur" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;SMTP@log.fr&quot;"/>
+    <contextParameter comment="" internalId="_6iRjVvt1EeuSBfiFPRDvJQ" name="SMTP_Hote" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;smtp.relay.log.fr&quot;"/>
+    <contextParameter comment="" internalId="_6iRjV_t1EeuSBfiFPRDvJQ" name="SMTP_Login" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjWPt1EeuSBfiFPRDvJQ" name="SMTP_Message_Mail" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;Bonjour,\n\nVoici le rapport de l'exécution du job.\n&quot;"/>
+    <contextParameter comment="" internalId="_6iRjWft1EeuSBfiFPRDvJQ" name="SMTP_Objet_Mail" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;[UPLOG TALEND] Rapport d'exécution du job&quot;"/>
+    <contextParameter comment="" internalId="_6iRjWvt1EeuSBfiFPRDvJQ" name="SMTP_Password" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_6iRjW_t1EeuSBfiFPRDvJQ" name="SMTP_Port" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="25"/>
+  </context>
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_6iRgUPt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="_6iRgUft1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
-    <contextParameter comment="" internalId="_6iRgUvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:YWHgKkCWSLVzinsWXJrAT8RFpyJtkumQlFQehM/bUhBooEWxXuA3W/nFvr1GsE5dD/obHRwR548POTUJdDtd1AW1BBU2kqZH1GqKjsFxZK+6vQ/WgIaI+AJeQ3Xhz4JAl0o/PnN5MqyxJd3Y6gC65ZlFspw="/>
+    <contextParameter comment="" internalId="_6iRgUvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:r5mfBviMCuDeWLD4noLUITpm/6xsRXHcNSCiYxET/KaTHyUmlz1WkJOOHF6goaBNx9M/Lg1yAJop4qs9cTH3KyIRB+ZUsncRzYIBEWKOfUSWyQa9pC2UKZTuELNYdjpwz7PlHsqJRQ58gZ4fIG2MGLzZNHE="/>
     <contextParameter comment="" internalId="_6iRgU_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="_6iRgVPt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
     <contextParameter comment="" internalId="_6iRgVft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_6iRgVvt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_6iRgV_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
-    <contextParameter comment="" internalId="_6iRgWPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:arLRN3qjqGMHX/ylP3xcnywAna0UqJ5+s7PXcRYyRt/elXX6h4U="/>
+    <contextParameter comment="" internalId="_6iRgWPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:/dE9Atz1SXqr+9OCV7pHUPwNJs+0eGq02XQoSHkROaiCbQB9/JY="/>
     <contextParameter comment="" internalId="_6iRgWft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
     <contextParameter comment="" internalId="_6iRgWvt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;127.0.0.1&quot;"/>
     <contextParameter comment="" internalId="_6iRgW_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
@@ -160,13 +318,13 @@
   <context confirmationNeeded="false" name="REC">
     <contextParameter comment="" internalId="_6iRg7Pt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="_6iRg7ft1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
-    <contextParameter comment="" internalId="_6iRg7vt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:mekhxYsLVXE9BiEjXST2aKIewLwhiH+RrfQV43yRqoCMOjpGnIy7AK3D5/6eotUIlk6uyM3Mk3INeatF9np05lv/yHiFZG9w4Q7xWKi7sySxu7tGNVwowTuR03pbT1yIxCCXGU26+kvMfVZSwipg/14y7mU="/>
+    <contextParameter comment="" internalId="_6iRg7vt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:t5g1Twl0mSBJ/mvPlImaGh1Y6Vb/GFMCmZrq4gPt+DlNCcMBGU2tand6rrEIdqSjKNHYXCMOkb+B96c2ZW3C8AEG0PRiRdzUKd0iMqRGip4gPmxTeU6+0j5uP7BcDSosJEPFYT4jz8C4Qn2HEyThbyjj98c="/>
     <contextParameter comment="" internalId="_6iRg7_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="_6iRg8Pt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
     <contextParameter comment="" internalId="_6iRg8ft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_6iRg8vt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_6iRg8_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
-    <contextParameter comment="" internalId="_6iRg9Pt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:2OaQ+vqQ+lY9XGObxQQ88GZnlOhFYm5MlBcaREKse2M9oocAXek="/>
+    <contextParameter comment="" internalId="_6iRg9Pt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:hzUceLnpDYQdcSIfcxoh8LgKznxMolFPohL4rn6asMFTzX5FtYw="/>
     <contextParameter comment="" internalId="_6iRg9ft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
     <contextParameter comment="" internalId="_6iRg9vt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;127.0.0.1&quot;"/>
     <contextParameter comment="" internalId="_6iRg9_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
@@ -246,7 +404,7 @@
     <contextParameter comment="Emplacement clé" internalId="_6iRhQft1EeuSBfiFPRDvJQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment=" Hôte" internalId="_6iRhQvt1EeuSBfiFPRDvJQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
     <contextParameter comment="Phrase de passe" internalId="_6iRhQ_t1EeuSBfiFPRDvJQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_6iRhRPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:BO9viycCsRa2gGjBsegUdDcr/hKnplN9ANs4l1lVGV0hY5hTuPv2VGji2assg5tQWwTZtv8="/>
+    <contextParameter comment="Mot de passe" internalId="_6iRhRPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:DhMcJC8zUti2XmYYZnEEJoMtjHcFOd6/g2wC9tGdILbeWhOSBkaSAJfqTqPmSgGmQJkg9dc="/>
     <contextParameter comment="Port de connexion" internalId="_6iRhRft1EeuSBfiFPRDvJQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Taille du fichier lu" internalId="_6iRhRvt1EeuSBfiFPRDvJQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_6iRhR_t1EeuSBfiFPRDvJQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-RCT&quot;"/>
@@ -318,13 +476,13 @@
   <context confirmationNeeded="false" name="PRD">
     <contextParameter comment="" internalId="_6iRhiPt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="_6iRhift1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;clients&quot;"/>
-    <contextParameter comment="" internalId="_6iRhivt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:TiEzfRiLViG0Hoj+DD06xaMnQIHYwOjLdR9wiHSqlaIuBo+o216XRSvSfdc1k7a0am6rBrBxR39k/yX+ANTlgKPGGqGa/qQwxXMHZQG7z5LDBQXTL0nsHNAtjfPB/v5ZgP5LPXIsccnQjTfYN3LX/zRkXao="/>
+    <contextParameter comment="" internalId="_6iRhivt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:HZavqFOzYRZCP/18++xmXbGgxq7KhhgLJHMf3JeukHtbSKizTfawcjXWzciebaeWpalpZbYzkUt0Sqk1GPqaZk74T6YYCUNbDpaG3LTDKEGCYsfgQLdEmRas2nCLTBhYicoQO9rFY8ihyiL2Oc6O8wZGbn8="/>
     <contextParameter comment="" internalId="_6iRhi_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="_6iRhjPt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/clients&quot;"/>
     <contextParameter comment="" internalId="_6iRhjft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_6iRhjvt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_6iRhj_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
-    <contextParameter comment="" internalId="_6iRhkPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:qMOrzBDum7wfFof+MMV76vx/KZuyjrKLZMj7hUOz+ZEFCliqm4g="/>
+    <contextParameter comment="" internalId="_6iRhkPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:WAuO5wHFfOQA0AYZaVPX6lDN2QDJsT44VWVHXC4Z6rKi2Wx886k="/>
     <contextParameter comment="" internalId="_6iRhkft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
     <contextParameter comment="" internalId="_6iRhkvt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;127.0.0.1&quot;"/>
     <contextParameter comment="" internalId="_6iRhk_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
@@ -404,7 +562,7 @@
     <contextParameter comment="Emplacement clé" internalId="_6iRh3ft1EeuSBfiFPRDvJQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment=" Hôte" internalId="_6iRh3vt1EeuSBfiFPRDvJQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.247"/>
     <contextParameter comment="Phrase de passe" internalId="_6iRh3_t1EeuSBfiFPRDvJQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_6iRh4Pt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:MPM2KBlFZhQ7UTiSob0F/EA+hz+wTo6sbBmu43QaEe0kBhOj6j3pSqeG9KtoXp5SCuBuipI="/>
+    <contextParameter comment="Mot de passe" internalId="_6iRh4Pt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:DHnqJQlzmMAUi0sev+2tq/V9Qqg8lZ2EjCLqY2iVaq04Hv5U5u4cclJenBq+DJzCYOvmFmA="/>
     <contextParameter comment="Port de connexion" internalId="_6iRh4ft1EeuSBfiFPRDvJQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Taille du fichier lu" internalId="_6iRh4vt1EeuSBfiFPRDvJQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_6iRh4_t1EeuSBfiFPRDvJQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;talend-sftp-prod&quot;"/>
@@ -476,13 +634,13 @@
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" internalId="_6iRiJPt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
     <contextParameter comment="" internalId="_6iRiJft1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
-    <contextParameter comment="" internalId="_6iRiJvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:y1aRNp0yK9tvUEpd1MYnXhKbI8wlF+70Bf263JDPNWzMxw29Xwj/aApaXpTSKJ9dY2i11IQi/+r+qNot1d6qk+Bg9oPF8xqFxRBa3BUvAK5mLwdYGdhIhVRi7+lmdwvFKzjQviIKYG9zwhb5GZqJbPToefE="/>
+    <contextParameter comment="" internalId="_6iRiJvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:bandHUHcyX3uWgJfYB/dGV8UYKXJEFhxqUPHU8+YeLf1fOfj+UEq1rQ60jjjnHP6mvzYHTLwYRJK0FcQ2V6kxz9ZM/INeDecrkoPYmPVvMrPePJHNaHBkUsheHlEOzXU2ondZ8udoua3Tpyg4Md41K2Je8I="/>
     <contextParameter comment="" internalId="_6iRiJ_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;/opt/talend/data/ARCHIVE/&quot;"/>
     <contextParameter comment="" internalId="_6iRiKPt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
     <contextParameter comment="" internalId="_6iRiKft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
     <contextParameter comment="" internalId="_6iRiKvt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_6iRiK_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
-    <contextParameter comment="" internalId="_6iRiLPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:MWQHOt4zVtvdenM423uzi/mNJ9QdVf9iprURucth1R2Y7FYJMjw="/>
+    <contextParameter comment="" internalId="_6iRiLPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:HZHyBcRdo1byZ1GvGMmQjnwdmKQ4s0YeN7npmWTmOk9uG+rqqb0="/>
     <contextParameter comment="" internalId="_6iRiLft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
     <contextParameter comment="" internalId="_6iRiLvt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="UPLVNXBDD01DLV"/>
     <contextParameter comment="" internalId="_6iRiL_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
@@ -562,7 +720,7 @@
     <contextParameter comment="Emplacement clé" internalId="_6iRieft1EeuSBfiFPRDvJQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment=" Hôte" internalId="_6iRievt1EeuSBfiFPRDvJQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
     <contextParameter comment="Phrase de passe" internalId="_6iRie_t1EeuSBfiFPRDvJQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_6iRifPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:O4579hp4s9r4bc018PCKywulTH3E6b9w83dbRlHL3WxDTGIdrDhE0fMsddxlQQMz9MjEh9E="/>
+    <contextParameter comment="Mot de passe" internalId="_6iRifPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:/U8mPisMcqH56IVHje6ifvLYniNO7ojtVgpicDqA1o+Pu8HyT6wUbJNkX4MJ+qtF+BBZcGU="/>
     <contextParameter comment="Port de connexion" internalId="_6iRifft1EeuSBfiFPRDvJQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
     <contextParameter comment="Taille du fichier lu" internalId="_6iRifvt1EeuSBfiFPRDvJQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
     <contextParameter comment="Utilisateur" internalId="_6iRif_t1EeuSBfiFPRDvJQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-DV&quot;"/>
@@ -631,164 +789,6 @@
     <contextParameter comment="" internalId="_6iRivvt1EeuSBfiFPRDvJQ" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_6iRiv_t1EeuSBfiFPRDvJQ" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="25"/>
   </context>
-  <context confirmationNeeded="false" name="LOCALHOST">
-    <contextParameter comment="" internalId="_6iRiwPt1EeuSBfiFPRDvJQ" name="AZURE_Nom_Compte" prompt="AZURE_Nom_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="uplogstorageaccount"/>
-    <contextParameter comment="" internalId="_6iRiwft1EeuSBfiFPRDvJQ" name="AZURE_Nom_Container" prompt="AZURE_Nom_Container?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;tests&quot;"/>
-    <contextParameter comment="" internalId="_6iRiwvt1EeuSBfiFPRDvJQ" name="AZURE_Password_Compte" prompt="AZURE_Password_Compte?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:K/KKkCHbmidMOtMACgY3Op6prqOPuFoiHYYjDgDRCGOsHvAAOMG+sNplBLsjj7Ia9ezao1n6sR7DLp/nAXnsa4VcqNojouv6J/3oVNPW0hd6k/PU+qFzuoPPAMQIyuLxgk8vNy3GuztPBxzXPTkctyK0s3c="/>
-    <contextParameter comment="" internalId="_6iRiw_t1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Local" prompt="AZURE_Repertoire_Local?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;C:/opt/talend/data/ARCHIVE/&quot;"/>
-    <contextParameter comment="" internalId="_6iRixPt1EeuSBfiFPRDvJQ" name="AZURE_Repertoire_Stockage" prompt="AZURE_Repertoire_Stockage?" promptNeeded="false" repositoryContextId="_COSKUDsGEeuNvfbGJBW4xg" type="id_String" value="&quot;https://uplogstorageaccount.blob.core.windows.net/tests&quot;"/>
-    <contextParameter comment="" internalId="_6iRixft1EeuSBfiFPRDvJQ" name="BDD_AdditionalParams" prompt="BDD_AdditionalParams?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;serverTimezone=Europe/Paris&amp;connectTimeout=15000&amp;socketTimeout=15000&amp;autoReconnect=true&amp;useSSL=false&quot;"/>
-    <contextParameter comment="" internalId="_6iRixvt1EeuSBfiFPRDvJQ" name="BDD_Database" prompt="BDD_Database?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRix_t1EeuSBfiFPRDvJQ" name="BDD_Login" prompt="BDD_Login?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;talend&quot;"/>
-    <contextParameter comment="" internalId="_6iRiyPt1EeuSBfiFPRDvJQ" name="BDD_Password" prompt="BDD_Password?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:mu1gdOwmjWJ8XKmqifQqzy8ls6LQ8lDigPDFeC+bU7pCjx4p2Ow="/>
-    <contextParameter comment="" internalId="_6iRiyft1EeuSBfiFPRDvJQ" name="BDD_Port" prompt="BDD_Port?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;3306&quot;"/>
-    <contextParameter comment="" internalId="_6iRiyvt1EeuSBfiFPRDvJQ" name="BDD_Server" prompt="BDD_Server?" promptNeeded="false" repositoryContextId="_IMhVQDsEEeuNvfbGJBW4xg" type="id_String" value="UPLVNXBDD01DLV"/>
-    <contextParameter comment="" internalId="_6iRiy_t1EeuSBfiFPRDvJQ" name="BRM_CHOIX_CLIENT_Nom" prompt="BRM_CHOIX_CLIENT_Nom?" promptNeeded="false" repositoryContextId="_r47uYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRizPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_Close_Libelle" prompt="EXECUTION_LOG_Cnx_Close_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Closing connexion&quot;"/>
-    <contextParameter comment="" internalId="_6iRizft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_KO_Code" prompt="EXECUTION_LOG_Cnx_KO_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="5"/>
-    <contextParameter comment="" internalId="_6iRizvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_OK_Code" prompt="EXECUTION_LOG_Cnx_OK_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="4"/>
-    <contextParameter comment="" internalId="_6iRiz_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Cnx_Open_Libelle" prompt="EXECUTION_LOG_Cnx_Open_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting connexion&quot;"/>
-    <contextParameter comment="" internalId="_6iRi0Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Context_Code" prompt="EXECUTION_LOG_Context_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="2"/>
-    <contextParameter comment="" internalId="_6iRi0ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Erreur_Code" prompt="EXECUTION_LOG_Erreur_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="99"/>
-    <contextParameter comment="" internalId="_6iRi0vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Erreur_Libelle" prompt="EXECUTION_LOG_Erreur_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job ended with error&quot;"/>
-    <contextParameter comment="" internalId="_6iRi0_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Log_Code" prompt="EXECUTION_LOG_Log_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="3"/>
-    <contextParameter comment="" internalId="_6iRi1Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecInput" prompt="EXECUTION_LOG_NbRecInput?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRi1ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecLoaded" prompt="EXECUTION_LOG_NbRecLoaded?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRi1vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_NbRecRejected" prompt="EXECUTION_LOG_NbRecRejected?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRi1_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Set_Contexts_Code" prompt="EXECUTION_LOG_Set_Contexts_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="6"/>
-    <contextParameter comment="" internalId="_6iRi2Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Set_Contexts_Libelle" prompt="EXECUTION_LOG_Set_Contexts_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Setting contexts&quot;"/>
-    <contextParameter comment="" internalId="_6iRi2ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Start_Code" prompt="EXECUTION_LOG_Start_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRi2vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Start_Libelle" prompt="EXECUTION_LOG_Start_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job started&quot;"/>
-    <contextParameter comment="" internalId="_6iRi2_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Stop_Code" prompt="EXECUTION_LOG_Stop_Code?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_Integer" value="1"/>
-    <contextParameter comment="" internalId="_6iRi3Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_Stop_Libelle" prompt="EXECUTION_LOG_Stop_Libelle?" promptNeeded="false" repositoryContextId="_zHEKMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Job successfully ended&quot;"/>
-    <contextParameter comment="" internalId="_6iRi3ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Read_KO" prompt="EXECUTION_LOG_100_Code_Context_Read_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="102"/>
-    <contextParameter comment="Code retour" internalId="_6iRi3vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Read_OK" prompt="EXECUTION_LOG_100_Code_Context_Read_OK?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="100"/>
-    <contextParameter comment="" internalId="_6iRi3_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Code_Context_Write_KO" prompt="EXECUTION_LOG_100_Code_Context_Write_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_Integer" value="101"/>
-    <contextParameter comment="" internalId="_6iRi4Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Read_KO" prompt="EXECUTION_LOG_100_Lib_Context_Read_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read context&quot;"/>
-    <contextParameter comment="Lecture des contextes OK" internalId="_6iRi4ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Read_OK" prompt="EXECUTION_LOG_100_Lib_Context_Read_OK?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Contexts loaded successfully&quot;"/>
-    <contextParameter comment="" internalId="_6iRi4vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_100_Lib_Context_Write_KO" prompt="EXECUTION_LOG_100_Lib_Context_Write_KO?" promptNeeded="false" repositoryContextId="_xh5jMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write context&quot;"/>
-    <contextParameter comment="" internalId="_6iRi4_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Close_KO" prompt="EXECUTION_LOG_200_Code_BDD_Close_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="205"/>
-    <contextParameter comment="" internalId="_6iRi5Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Close_OK" prompt="EXECUTION_LOG_200_Code_BDD_Close_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="206"/>
-    <contextParameter comment="" internalId="_6iRi5ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Commit_KO" prompt="EXECUTION_LOG_200_Code_BDD_Commit_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="204"/>
-    <contextParameter comment="" internalId="_6iRi5vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Connexion_KO" prompt="EXECUTION_LOG_200_Code_BDD_Connexion_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="201"/>
-    <contextParameter comment="" internalId="_6iRi5_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Connexion_OK" prompt="EXECUTION_LOG_200_Code_BDD_Connexion_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="200"/>
-    <contextParameter comment="" internalId="_6iRi6Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Read_KO" prompt="EXECUTION_LOG_200_Code_BDD_Read_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="202"/>
-    <contextParameter comment="" internalId="_6iRi6ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Code_BDD_Write_KO" prompt="EXECUTION_LOG_200_Code_BDD_Write_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_Integer" value="203"/>
-    <contextParameter comment="" internalId="_6iRi6vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Close_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Close_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to close DB Connection&quot;"/>
-    <contextParameter comment="" internalId="_6iRi6_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Close_OK" prompt="EXECUTION_LOG_200_Lib_BDD_Close_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Close connection to DB successfull&quot;"/>
-    <contextParameter comment="" internalId="_6iRi7Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Commit_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Commit_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to commit transaction into DB&quot;"/>
-    <contextParameter comment="" internalId="_6iRi7ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Connexion_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Connexion_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to open DB Connection&quot;"/>
-    <contextParameter comment="" internalId="_6iRi7vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Connexion_OK" prompt="EXECUTION_LOG_200_Lib_BDD_Connexion_OK?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Connection to DB successfull&quot;"/>
-    <contextParameter comment="" internalId="_6iRi7_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Read_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Read_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read data from DB&quot;"/>
-    <contextParameter comment="" internalId="_6iRi8Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_200_Lib_BDD_Write_KO" prompt="EXECUTION_LOG_200_Lib_BDD_Write_KO?" promptNeeded="false" repositoryContextId="_x8sBwDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write data into DB&quot;"/>
-    <contextParameter comment="" internalId="_6iRi8ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Close_KO" prompt="EXECUTION_LOG_300_Code_FTP_Close_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="305"/>
-    <contextParameter comment="" internalId="_6iRi8vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Close_OK" prompt="EXECUTION_LOG_300_Code_FTP_Close_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="306"/>
-    <contextParameter comment="" internalId="_6iRi8_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Connexion_KO" prompt="EXECUTION_LOG_300_Code_FTP_Connexion_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="301"/>
-    <contextParameter comment="" internalId="_6iRi9Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Connexion_OK" prompt="EXECUTION_LOG_300_Code_FTP_Connexion_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="300"/>
-    <contextParameter comment="" internalId="_6iRi9ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Delete_KO" prompt="EXECUTION_LOG_300_Code_FTP_Delete_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="304"/>
-    <contextParameter comment="" internalId="_6iRi9vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Delete_OK" prompt="EXECUTION_LOG_300_Code_FTP_Delete_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="308"/>
-    <contextParameter comment="" internalId="_6iRi9_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Get_KO" prompt="EXECUTION_LOG_300_Code_FTP_Get_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="302"/>
-    <contextParameter comment="" internalId="_6iRi-Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Get_OK" prompt="EXECUTION_LOG_300_Code_FTP_Get_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="307"/>
-    <contextParameter comment="" internalId="_6iRi-ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Put_KO" prompt="EXECUTION_LOG_300_Code_FTP_Put_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="303"/>
-    <contextParameter comment="" internalId="_6iRi-vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Code_FTP_Put_OK" prompt="EXECUTION_LOG_300_Code_FTP_Put_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_Integer" value="309"/>
-    <contextParameter comment="" internalId="_6iRi-_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Close_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Close_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to close FTP connection&quot;"/>
-    <contextParameter comment="" internalId="_6iRi_Pt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Close_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Close_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Close connection to FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRi_ft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Connexion_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Connexion_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to open FTP connection&quot;"/>
-    <contextParameter comment="" internalId="_6iRi_vt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Connexion_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Connexion_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Connection to FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRi__t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Delete_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Delete_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to delete files on FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjAPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Delete_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Delete_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Deleting files on FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjAft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Get_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Get_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to get files from FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjAvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Get_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Get_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Getting files from FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjA_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Put_KO" prompt="EXECUTION_LOG_300_Lib_FTP_Put_KO?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to put files into FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjBPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_300_Lib_FTP_Put_OK" prompt="EXECUTION_LOG_300_Lib_FTP_Put_OK?" promptNeeded="false" repositoryContextId="_x_MjMDitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Success: Putting files on FTP&quot;"/>
-    <contextParameter comment="" internalId="_6iRjBft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Empty_KO" prompt="EXECUTION_LOG_400_Code_File_Empty_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="403"/>
-    <contextParameter comment="" internalId="_6iRjBvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Read_KO" prompt="EXECUTION_LOG_400_Code_File_Read_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="401"/>
-    <contextParameter comment="" internalId="_6iRjB_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Code_File_Write_KO" prompt="EXECUTION_LOG_400_Code_File_Write_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_Integer" value="402"/>
-    <contextParameter comment="" internalId="_6iRjCPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Empty_KO" prompt="EXECUTION_LOG_400_Lib_File_Empty_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: file is empty&quot;"/>
-    <contextParameter comment="" internalId="_6iRjCft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Read_KO" prompt="EXECUTION_LOG_400_Lib_File_Read_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to read data from file&quot;"/>
-    <contextParameter comment="" internalId="_6iRjCvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_400_Lib_File_Write_KO" prompt="EXECUTION_LOG_400_Lib_File_Write_KO?" promptNeeded="false" repositoryContextId="_yaVAADitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: unable to write data to file&quot;"/>
-    <contextParameter comment="" internalId="_6iRjC_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_Batch_Insert_KO" prompt="EXECUTION_LOG_500_Code_Batch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="503"/>
-    <contextParameter comment="" internalId="_6iRjDPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_CreateOrUpdateAccount_NbRetry_KO" prompt="EXECUTION_LOG_500_Code_CreateOrUpdateAccount_NbRetry_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="505"/>
-    <contextParameter comment="" internalId="_6iRjDft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_End_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_End_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="502"/>
-    <contextParameter comment="" internalId="_6iRjDvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_Init_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_Init_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="501"/>
-    <contextParameter comment="" internalId="_6iRjD_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Code_ManageBatch_Insert_KO" prompt="EXECUTION_LOG_500_Code_ManageBatch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_Integer" value="504"/>
-    <contextParameter comment="" internalId="_6iRjEPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_Batch_Insert_KO" prompt="EXECUTION_LOG_500_Lib_Batch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to insert Batch&quot;"/>
-    <contextParameter comment="" internalId="_6iRjEft1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_CreateOrUpdateAccount_NbRetry_KO" prompt="EXECUTION_LOG_500_Lib_CreateOrUpdateAccount_NbRetry_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: NbRetry exceeded&quot;"/>
-    <contextParameter comment="" internalId="_6iRjEvt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_End_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_End_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to close ManageBatch&quot;"/>
-    <contextParameter comment="" internalId="_6iRjE_t1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_Init_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_Init_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to init ManageBatch&quot;"/>
-    <contextParameter comment="" internalId="_6iRjFPt1EeuSBfiFPRDvJQ" name="EXECUTION_LOG_500_Lib_ManageBatch_Insert_KO" prompt="EXECUTION_LOG_500_Lib_ManageBatch_Insert_KO?" promptNeeded="false" repositoryContextId="_yv940DitEeu3qvFB6Or2fQ" type="id_String" value="&quot;Error: Unable to insert ManageBatch&quot;"/>
-    <contextParameter comment="Emplacement clé" internalId="_6iRjFft1EeuSBfiFPRDvJQ" name="FTP_EmplacementCle" prompt="FTP_EmplacementCle?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment=" Hôte" internalId="_6iRjFvt1EeuSBfiFPRDvJQ" name="FTP_Hote" prompt="FTP_Hote?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="10.204.4.222"/>
-    <contextParameter comment="Phrase de passe" internalId="_6iRjF_t1EeuSBfiFPRDvJQ" name="FTP_Passphrase" prompt="FTP_Passphrase?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value=""/>
-    <contextParameter comment="Mot de passe" internalId="_6iRjGPt1EeuSBfiFPRDvJQ" name="FTP_Password" prompt="FTP_Password?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Password" value="enc:system.encryption.key.v1:RICgmfVj5XV4z3o5/GkwzurNrOFQfXZMMC9w6UcganZ8tS8rg7+3QkLFstTWWcrnvMH9W1A="/>
-    <contextParameter comment="Port de connexion" internalId="_6iRjGft1EeuSBfiFPRDvJQ" name="FTP_Port" prompt="FTP_Port?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Integer" value="22222"/>
-    <contextParameter comment="Taille du fichier lu" internalId="_6iRjGvt1EeuSBfiFPRDvJQ" name="FTP_Taille_Fichier" prompt="FTP_Taille_Fichier?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_Long" value=""/>
-    <contextParameter comment="Utilisateur" internalId="_6iRjG_t1EeuSBfiFPRDvJQ" name="FTP_Utilisateur" prompt="FTP_Utilisateur?" promptNeeded="false" repositoryContextId="_Mvf7wDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TALEND-SFTP-DV&quot;"/>
-    <contextParameter comment="Corps du mail à envoyer" internalId="_6iRjHPt1EeuSBfiFPRDvJQ" name="GENERAL_BodyMail" prompt="GENERAL_BodyMail?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
-    <contextParameter comment="Compteur pour l'alerting" internalId="_6iRjHft1EeuSBfiFPRDvJQ" name="GENERAL_Compteur" prompt="GENERAL_Compteur?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_Integer" value="0"/>
-    <contextParameter comment="Priorité de l'erreur" internalId="_6iRjHvt1EeuSBfiFPRDvJQ" name="GENERAL_ErrAlerte" prompt="GENERAL_ErrAlerte?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_Integer" value="0"/>
-    <contextParameter comment="Message d'erreur envoyé par mail" internalId="_6iRjH_t1EeuSBfiFPRDvJQ" name="GENERAL_ErrMessage" prompt="GENERAL_ErrMessage?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
-    <contextParameter comment="Nom du job qui est en erreur" internalId="_6iRjIPt1EeuSBfiFPRDvJQ" name="GENERAL_ErrNomJob" prompt="GENERAL_ErrNomJob?" promptNeeded="false" repositoryContextId="_pEEQYD7xEeu4Xd7ifSXfpw" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjIft1EeuSBfiFPRDvJQ" name="BOOLEAN_Connexion_FTP_1" prompt="BOOLEAN_Connexion_FTP_1?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
-    <contextParameter comment="" internalId="_6iRjIvt1EeuSBfiFPRDvJQ" name="BOOLEAN_Connexion_FTP_3" prompt="BOOLEAN_Connexion_FTP_3?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
-    <contextParameter comment="Répertoire d'archives local" internalId="_6iRjI_t1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Archives" prompt="GESTION_FICHIER_Archives?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;ARCHIVE/&quot;"/>
-    <contextParameter comment="Répertoire racine de stockage des data" internalId="_6iRjJPt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files" prompt="GESTION_FICHIER_Dir_Files?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;c:/opt/talend/data/&quot;"/>
-    <contextParameter comment="Répertoire des fichiers de backup" internalId="_6iRjJft1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Backup" prompt="GESTION_FICHIER_Dir_Files_Backup?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;BACKUP/&quot;"/>
-    <contextParameter comment="Répertoire d'entrée des fichiers" internalId="_6iRjJvt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_In" prompt="GESTION_FICHIER_Dir_Files_In?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;IN/&quot;"/>
-    <contextParameter comment="Répertoire de sortie des fichiers" internalId="_6iRjJ_t1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Out" prompt="GESTION_FICHIER_Dir_Files_Out?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;OUT/&quot;"/>
-    <contextParameter comment="Répertoire de paramétrage" internalId="_6iRjKPt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Param" prompt="GESTION_FICHIER_Dir_Files_Param?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;PARAM/&quot;"/>
-    <contextParameter comment="Répertoire des fichiers temporaires" internalId="_6iRjKft1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Files_Tmp" prompt="GESTION_FICHIER_Dir_Files_Tmp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value="&quot;TMP/&quot;"/>
-    <contextParameter comment="" internalId="_6iRjKvt1EeuSBfiFPRDvJQ" name="GESTION_FICHIER_Dir_Timestamp" prompt="GESTION_FICHIER_Dir_Timestamp?" promptNeeded="false" repositoryContextId="_FUsXEDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjK_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Annee" prompt="MTDT_BDD_Annee?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjLPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_BaseNomFichier" prompt="MTDT_BDD_BaseNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjLft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn1" prompt="MTDT_BDD_CheminFtpIn1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjLvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn2" prompt="MTDT_BDD_CheminFtpIn2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjL_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpIn3" prompt="MTDT_BDD_CheminFtpIn3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjMPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut1" prompt="MTDT_BDD_CheminFtpOut1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjMft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut2" prompt="MTDT_BDD_CheminFtpOut2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjMvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CheminFtpOut3" prompt="MTDT_BDD_CheminFtpOut3?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjM_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Cible" prompt="MTDT_BDD_Cible?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjNPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_CodeClient" prompt="MTDT_BDD_CodeClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjNft1EeuSBfiFPRDvJQ" name="MTDT_BDD_CodeInterface" prompt="MTDT_BDD_CodeInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjNvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_Compteur1" prompt="MTDT_BDD_Compteur1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRjN_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Compteur2" prompt="MTDT_BDD_Compteur2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_6iRjOPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateCourt1" prompt="MTDT_BDD_DateCourt1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjOft1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateCourt2" prompt="MTDT_BDD_DateCourt2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjOvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateLong1" prompt="MTDT_BDD_DateLong1?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjO_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_DateLong2" prompt="MTDT_BDD_DateLong2?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjPPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionArchive" prompt="MTDT_BDD_ExtensionArchive?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjPft1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionClient" prompt="MTDT_BDD_ExtensionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjPvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_ExtensionRFX" prompt="MTDT_BDD_ExtensionRFX?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjP_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_Jour" prompt="MTDT_BDD_Jour?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjQPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_LibelleInterface" prompt="MTDT_BDD_LibelleInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjQft1EeuSBfiFPRDvJQ" name="MTDT_BDD_Mois" prompt="MTDT_BDD_Mois?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjQvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_NomClient" prompt="MTDT_BDD_NomClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjQ_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_NumInterface" prompt="MTDT_BDD_NumInterface?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjRPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_PrefixeNomFichier" prompt="MTDT_BDD_PrefixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjRft1EeuSBfiFPRDvJQ" name="MTDT_BDD_Sens" prompt="MTDT_BDD_Sens?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjRvt1EeuSBfiFPRDvJQ" name="MTDT_BDD_SMTPListeDiffusionClient" prompt="MTDT_BDD_SMTPListeDiffusionClient?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjR_t1EeuSBfiFPRDvJQ" name="MTDT_BDD_SMTPListeDiffusionUplog" prompt="MTDT_BDD_SMTPListeDiffusionUplog?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value="&quot;jeoffrey.stephan@hardis-group.com&quot;"/>
-    <contextParameter comment="" internalId="_6iRjSPt1EeuSBfiFPRDvJQ" name="MTDT_BDD_Source" prompt="MTDT_BDD_Source?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjSft1EeuSBfiFPRDvJQ" name="MTDT_BDD_SuffixeNomFichier" prompt="MTDT_BDD_SuffixeNomFichier?" promptNeeded="false" repositoryContextId="_2jg7EFmrEeumfthRC2qqBA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjSvt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_CodeActivite" prompt="MTDT_COMMUNE_CodeActivite?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjS_t1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Date" prompt="MTDT_COMMUNE_Date?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjTPt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat1" prompt="MTDT_COMMUNE_Etat1?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjTft1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat2" prompt="MTDT_COMMUNE_Etat2?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjTvt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Etat3" prompt="MTDT_COMMUNE_Etat3?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjT_t1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Id" prompt="MTDT_COMMUNE_Id?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjUPt1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Nom_Fichier" prompt="MTDT_COMMUNE_Nom_Fichier?" promptNeeded="false" repositoryContextId="_fcjQwDsFEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjUft1EeuSBfiFPRDvJQ" name="MTDT_COMMUNE_Version_Reflex" prompt="MTDT_COMMUNE_Version_Reflex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjUvt1EeuSBfiFPRDvJQ" name="SMTP_Bcc" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
-    <contextParameter comment="" internalId="_6iRjU_t1EeuSBfiFPRDvJQ" name="SMTP_Cc" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
-    <contextParameter comment="" internalId="_6iRjVPt1EeuSBfiFPRDvJQ" name="SMTP_Destinataire" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;&quot;"/>
-    <contextParameter comment="" internalId="_6iRjVft1EeuSBfiFPRDvJQ" name="SMTP_Expediteur" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;SMTP@log.fr&quot;"/>
-    <contextParameter comment="" internalId="_6iRjVvt1EeuSBfiFPRDvJQ" name="SMTP_Hote" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;smtp.relay.log.fr&quot;"/>
-    <contextParameter comment="" internalId="_6iRjV_t1EeuSBfiFPRDvJQ" name="SMTP_Login" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjWPt1EeuSBfiFPRDvJQ" name="SMTP_Message_Mail" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;Bonjour,\n\nVoici le rapport de l'exécution du job.\n&quot;"/>
-    <contextParameter comment="" internalId="_6iRjWft1EeuSBfiFPRDvJQ" name="SMTP_Objet_Mail" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="&quot;[UPLOG TALEND] Rapport d'exécution du job&quot;"/>
-    <contextParameter comment="" internalId="_6iRjWvt1EeuSBfiFPRDvJQ" name="SMTP_Password" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_6iRjW_t1EeuSBfiFPRDvJQ" name="SMTP_Port" prompt="" promptNeeded="false" repositoryContextId="_7xKyYDsEEeuNvfbGJBW4xg" type="id_String" value="25"/>
-  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="416"/>
@@ -832,7 +832,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:GKrsV6OEAF8UcOK3GO5HrNDQZa76cqz+AiWC5EGc"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Ok6HJib7g3tToG+zL0LMJaaHIh+3y/Vv+LbRi/rQ"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -867,7 +867,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YnYfDbyOtqf7nYuI4IG0gCABGMZt1FU/71WfEmOI"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BE6nruSdQ2C759LSMnFHbCLfjgydTNDBM2k7CZIv"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -1028,7 +1028,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.BRM_CHOIX_CLIENT_Nom"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.BDD_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:K1iWV69831/nClT5pOlum8zAY/jC+qAICtYfzfbjZY4YKXKtCKvRU7uK4h7mCoZh"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FR4FI4uyxSxbMUIyIejcd6gIHxtriBvm/77GN3uXcEN/dDTEA7p0nTP5ta1AeHiF"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VIEW_EXEC_SystemeFichierParInterface&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1416,14 +1416,14 @@
     <elementParameter field="TEXT" name="PORT" value="context.FTP_Port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USER" value="context.FTP_Utilisateur"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3hHYha0OkWOz4hHvjmfPslOmLV10Fb27MDM2rmGoVudOJ9CSgnW2sJuGkWpR1nMX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HEv+3lbUyCeEWvf+NKR0Ko9QQdJkEsMarSxzrdZEAST3tjP5qfHxZVBZoyrcK8v7"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:/OSz8XCuI+NkjJMtmOoiVHD7Zj0Z0+yXBVSft9j079l5Hww3"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:L4a0p1qoqZcgLZ6rhsicWps4KgaCGEHKG0fKR9fKPR9DmJUV"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="context.FTP_EmplacementCle"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:sHyDontH+3ZISj8mNndNsfN4nLNvNuajRdUzw146B+rnTr7D/o9XAtiMW1494bLYCI0="/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:WG7iX9HldAABCAnlt8arhYcl+J5ITexUI6zFAM2vtQmR3DgD6FADwXU97PLJiwrALkU="/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -1433,7 +1433,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:KNdDZZeMO72LKVEltXsi7RdsZytaviReGz7SS75J"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:XFy7LVRin2AgZ4wIXgQFnx/qjiclQTu5CeJdePfm"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -1530,14 +1530,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:dDw7PMvOPoFZYTMg4kHm0SiRabK36Ok8K9lE2GJaHbfVeQzyKoEF"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:MMApLxipyhwZR2NrQXmC1zmzqNriJjoWIR2Z9MQh6CJ37/d/4K0V"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:rzc1mwrKMTFXsm9BdCwvgT/PaXFJUFgF1gRg7f0ZgAA//zrW"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:PBwz3R2OG9qtWtXEOfs1IcnFbk0YWA6iUweBSyj6fPhYnE2R"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:ylr4xO8iUe+M8WgB7s8dv/UjuPYwEUaFMznRRFmAD03cutJC"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:GZPvVri+XfVcVz7qjIiukouW1Reo6a4DPhZ0JXRSP8N8LZ9f"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
@@ -1559,7 +1559,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:6DbmW7wSVjDcFOXQyIvGlQX6ldUN+W2AHw6ihxPI"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:4nzL40vuWUeu6EENU/M01KtraVacn/S4ZI5LLTIL"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
@@ -1631,14 +1631,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:s52/wR48qQY32h3tBfcqIcJiUCtZlyX77i5H69InzQPIgrkFQKVs"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:B4df6N5lP+IzyCQzg8MCFzo0AU899XCuclsqMbl1CSgy3gZk2J4S"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:H8HaBJAr2/HNrSbQsOZsuL0emzej1KVjO2g7quwBo/xg3bYV"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:gGY1ooZtOvSKfmkST3StYBqRBjRGU1MRYOxLpK9QrDgizJkP"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:xT01MGskq/alcK3/lhHENOOauMYsBVTl6ze/Ke+HZKRvxFqF"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:IR9KC6N6Tvra/Q3aGrrCqFezZ8yijwqGGuMA8ICojCxWADZl"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1+ &quot;/&quot; +&quot;RPTEDI&quot;"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
@@ -1663,7 +1663,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:JKr+E19GXGqk/v2kLynhe32u5LkXDyx1ZR0RFxtL"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:VeqHwLtxvEqHauMg4YoTunjRxg3BsDzqaNsp4tzp"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
@@ -1950,18 +1950,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:IZzrMh2+e/Ey2cedWu5EzmmeCwZzlTMX7W3HGBlPh2+Wg63cs04q"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:EJSZv0y7P3HbBBWqdYpVXcryXPKHnKk/FXdRoR7TSHVHrbabEtkg"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:ZLQNMo0LYDgCPgKmTIB4dxQGjP8+vYCP1nzWtxSKlYSyT5fM"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:Mu4WBrdX5qZEHVUDRLR0jyuiBKak91B94sWNJxqG83GKi+G3"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.GESTION_FICHIER_Dir_Files + context.MTDT_BDD_CodeClient + &quot;/&quot; + context.MTDT_BDD_CodeInterface + &quot;/&quot; + context.GESTION_FICHIER_Dir_Files_In"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpOut1"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:T/KM0QsF2YUa9mtqBi428ASH0KQUckzJwTa0V2eR9e0Q7bai"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:wIgglomzIaZhLj8qDxlPbl54Dx78bOnKdHRv17fRvijVRhxk"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -1982,7 +1982,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:WFWil06cxncuMluNklKI+QRlybyODIkKRQEnNbAJ"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:4aafSyDHb5BERbRgMjrsM6zQ4UIYZeIRbxTKZzyY"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2035,14 +2035,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:qwDXudiQeBRSsQ5jL6mPuOJWk23FSCt6eQRLDEbNcNPXtC+TqWvg"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:LQfxSxF5F37yyO1WG+cAUrqI/h9oI0jWEo9pqgWxDsgRAnlW+pR4"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:5ddcg929YSZ5Qw+g9DecerzW38NUkK0yGuZNB945qKWT1Ivf"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:qks4GMGSKYS+OT86w/gB09luxDrSBP4Sy5op0ek2ZMUVVMXW"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:p/F+AGEmc/VK/wVN+ifmivhOZRoCZXimc704FEGWk83XeD2N"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:qL7/oa75GYCifcJX4d1rpULNMO6FSHpfDCHgT+wZgstVmJY5"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpOut1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="always"/>
@@ -2060,7 +2060,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:d7BcUumRgUQNzimaCR7k05sartZ/BwnB91XLQe6Z"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:CRqUhORsnmBubnBoH4cu3Mzu6o462HvL6oOJKD8i"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2311,7 +2311,7 @@
     <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
     <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" show="false" value="ENC_METHOD_STANDARD"/>
     <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" show="false" value="AES_STRENGTH_256"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Qj0GEF3sk0Ixh++7RAFc0/k9h9eJsqyNWLbdguMb"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:jz8w7YtZr06VVnoitOXs0E+kdYan2/O3qlHAqeqe"/>
     <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
     <elementParameter field="CHECK" name="USE_SYNC_FLUSH" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Archivage des fichiers - Dossier IN"/>
@@ -2425,14 +2425,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:7sebELxnRn10lnb0dLTdhFV5rUbmIkZ1UdgyBu7dy4qyu1RTuvEo"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:QWs4BJZjURaHpjmBVQyTbtc66uymRE5PtIlDVW+TxBwpHQki/TGm"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:TDvvsPbP6wVq/RW1Q3ChE6Y66eyK++pXKJDSt1iTS4mRgWKw"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:tUEZ434PSyCbVK4lJ3jvoQcIQKdfUBFCjK+oSLE8FiwSFH+L"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:kEkZ75F81viCLUoRdAuO+FJ+tSpuI7bQFqF4r5Qp3qaXSffm"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:2E7UvrSIm+wR3eOgUmjfsxPGLDaR7KS5E0bdPDsiWA5cCD3G"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
@@ -2450,7 +2450,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:7QUeRzdbPkhDW4tkWKmQFpACtKB/yla3BGShxVRm"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:fOD1npuDuWPCprhA66oKsRuAEm2bqL7kwnK5iG1+"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -2501,14 +2501,14 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:T1KIuwORm5tyA0pZ2lypCDKf5slEmAWtkbKC083jiMoFlyS+70nF"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:/nbUeKkbGkqoPnG8Qbed6ytcooMRm7AmPQ6jeDANcqYxT+GTKyAn"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:d0qJIpjN1dB0OsXWH4L3FlpYmzbdX7M/IqjREgC4/nlk9lC+"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:56jd3pIeOos7JE5PB/uVYFmIXIaQAPah7sn5bnOyQBYN6EcU"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:3GnR1SY1OXP4kLpHJe9McMFpy0ixR4Yv7q0MG6MZCrvP4lXD"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:yBDKcoW8cha59miw/mA0njnjt48eFj75ctB2Pxa1xRCJQM/k"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.MTDT_BDD_CheminFtpIn1+ &quot;/&quot; +&quot;RPTEDI&quot;"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
@@ -2526,7 +2526,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:FBB50satga71CCQpuBQ0pLlHXeuX6K2ZPEFGGaXP"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:KW8yAVMrblqLll3VX6jpynTkbu2e0GuJ9WxTQkNM"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -3510,13 +3510,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50290c11-7af6-4a5b-a3c2-008d4a35f5d0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YVdW8I9jJXFikxK4V1M6GQUZBplKvSnaxbIOF9jZcg1aXrONBC+h4ZyD+PtOMlYa1TAC6gSBw3/G
-/zQXC5BmLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_32acc0ad-9b0a-4610-b07a-ed85203d9929"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qx8JtqcuUN3N/QojoEQXHC1KsHRBVtgR5mPoPaPd0A+z5x+7sprllkB62sTt+DbQsthoYVDXABkX
-FD8pTUYcRw==</DigestValue></Reference></SignedInfo><SignatureValue>nIsf13Ne29IAgd+mPV9u15MKw6EctFjGp7uWT0cxbpD2Ii/brJ03+zMn1Dp+KlCxnM7YOmY6jX1s
-mO2v7ES246XHPjefbCeXTxQHHORcH4LlXCv8d2BD0StImDU2Wb7gypki5zzTkJGJZXAMb64E/eon
-tj1dgrmewQXyPGzMJyPU4CI6xBdltBHLKdv87zLwWN4cY+Ovt2Ydyv+3kb0FSJJY82OPqZWfUIaa
-pzl2dm+0aWPdC7kMwFrtdaqLllJNeLgwlPe20DOw3tr6c4c6Nklkf5MDD+1/AOsBIlY+MALWfghm
-4B0dnyBDv8GGGgpJsW82loWn0yxSFX00XuQJBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c0abb0d-0c99-4f87-8865-563d7fcafd86"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fdeXCP9njc075yhV3sc3icZgHrV9LTUEqTO3G46si5h8VUeD4MVCXM4kMREo/UNBMuXLedXCeaw1
+VzFa/zm4XQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5f7500d1-e202-4021-b309-17d5a6d077b7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FgMmaN5j4sSBIcC2ClD1DE9Mw5N84n6MeZ7oVdL4arY3AmD8ri4YUUCM7UiwLs7Z0Gm6SAeUSYqC
+Kku9xbrgRg==</DigestValue></Reference></SignedInfo><SignatureValue>gx415EhDINey6+c8NuBiv/Zv+5xxRep50ZJXYhjsPKpIf9/TKeeMz2y/+1eOwF2PdL4DLTl+V/Do
+gmgHF/0od0se4jl9yF7OEbgQFhh6MmVgq5ouhY3bVAdG+ExBKidaaxfYo9BiwqAaRFEHBiv706NM
+Ag2FVAc1WWouzREIq12hPmkxURkzL3xhy4VtvwhIih1mXfUy5jxZscQNt/6N7pxLpxDEqBZHu7dN
+7RsjN/b0aNxUfyEexUc3BrnjBQJNXyaNJGok2xDOHLk/dYvFKcOmgd65YQWdrspT+xOc4T5st/vz
+9pDWcCjGr83aK42SmRE+XwdnFHigDTrrcdlHSw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -3538,4 +3538,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_32acc0ad-9b0a-4610-b07a-ed85203d9929" Target="#_50290c11-7af6-4a5b-a3c2-008d4a35f5d0"><Timestamp>2021-09-14 09:41:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5f7500d1-e202-4021-b309-17d5a6d077b7" Target="#_8c0abb0d-0c99-4f87-8865-563d7fcafd86"><Timestamp>2021-09-14 10:11:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
