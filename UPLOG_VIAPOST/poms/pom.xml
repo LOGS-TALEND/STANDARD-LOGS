@@ -125,6 +125,7 @@
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_3.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_3.3</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_3.4</module>
+    <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od04_brm_dest_to_reflex_3.5</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od07_brm_stke_to_stketa_0.1</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od07_brm_stke_to_stketa_0.2</module>
     <module>jobs/process/JOBS_TRAITEMENT/ORDONNANCEURS/VIAPOST/od07_brm_stke_to_stketa_0.3</module>
@@ -257,8 +258,8 @@
     <signer.version>7.3.1</signer.version>
     <talend.project.name>UPLOG_VIAPOST</talend.project.name>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
