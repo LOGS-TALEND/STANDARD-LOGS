@@ -52,7 +52,7 @@ public class FiltreStringXml {
 				"\u00A9", "\u00AA", "\u00AB", "\u00AC", "\u00AE", "\u00AF", "\u00B0", "\u00B1", "\u00B2", "\u00B3",
 				"\u00B4", "\u00B5", "\u00B6", "\u00B7", "\u00B8", "\u00B9", "\u00BA", "\u00BB", "\u00BC", "\u00BD",
 				"\u00BE", "\u00BF", "\u00C0", "\u00C6", "\u00C7", "\u00D0", "\u00D1", "\u00D7", "\u00D8", "\u00DE",
-				"\u00DF", "\u00E6", "\u00F0", "\u00F8", "\u00FE"));
+				"\u00DF", "\u00E6", "\u00F0", "\u00F8", "\u00FE","\uFFFD"));
 
 		List<String> listcharautorise = new ArrayList<String>(Arrays.asList("A", "A", "A", "A", "A", "A", "E", "E", "E",
 				"E", "I", "I", "I", "I", "N", "O", "O", "O", "O", "O", "U", "U", "U", "U", "a", "a", "a", "a", "a", "a",
@@ -62,7 +62,7 @@ public class FiltreStringXml {
 				"o", " ", " ", " ", " ", " ", " ", "E", "f", " ", " ", " ", " ", " ", " ", "S", " ", "Z", "'", "'", " ",
 				" ", " ", "s", " ", "z", "Y", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ",
 				" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "A", " ", " ", " ", "N", " ",
-				" ", " ", "B", "a", "o"));
+				" ", " ", "B", "a", "o"," "));
 
 		if (chaineEntree == null || chaineEntree.trim().isEmpty()) {
 			return "";
