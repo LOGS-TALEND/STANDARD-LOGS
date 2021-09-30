@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/RPTEDI/RPTEDI_CMDCLI_Alone.xml' outStruct='Structures/RPTEDI/RPTEDI_CMDCLI_Alone.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='RPTEDI_CMDCLI_Alone' outputStructUserName='RPTEDI_CMDCLI_Alone' V1='4' name='RPTEDI_To_RPTEDI_sansNonBloq' incarnation='40244'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RPTEDI_CMDCLI'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='20' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NomFichier'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='21' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DateRPT'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='22' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CodeActivite'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='23' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TypeMessage'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='24' V200='8' input='true' structElemExists='true' usedCount='24' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Listing'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='25' V200='8' input='true' structElemExists='true' usedCount='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Message'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='26' V200='8' input='true' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Bloquant'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='27' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='OrdrePreparation'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='28' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NumeroLigne'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='29' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='IdentifiantMessage'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='30' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='255' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Libelle'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='1405' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RPTEDI_CMDCLI'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/RPTEDI_CMDCLI,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='6' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NomFichier'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/RPTEDI_CMDCLI/NomFichier</value>
+    </child>
+    <child t='200' id='7' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='DateRPT'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/RPTEDI_CMDCLI/DateRPT</value>
+    </child>
+    <child t='200' id='8' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CodeActivite'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/RPTEDI_CMDCLI/CodeActivite</value>
+    </child>
+    <child t='200' id='9' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TypeMessage'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/RPTEDI_CMDCLI/TypeMessage</value>
+    </child>
+    <child t='200' id='10' V200='8' structElemExists='true' usedCount='1384' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' V1='4' name='Listing'>
+      <mapNode t='190' idref='1'/>
+      <emit>IsPresent(in$/RPTEDI_CMDCLI/Listing)</emit>
+      <child t='200' id='11' V200='8' structElemExists='true' usedCount='24' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Message'>
+        <mapNode t='190' idref='1'/>
+        <loop>SimpleLoop(in$/RPTEDI_CMDCLI/Listing/Message,Equal(in$/RPTEDI_CMDCLI/Listing/Message/Bloquant,Constant([value="1",dataType="2"],)),{Sort Keys},{Contexts})</loop>
+        <child t='200' id='12' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Bloquant'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/RPTEDI_CMDCLI/Listing/Message/Bloquant</value>
+        </child>
+        <child t='200' id='13' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='OrdrePreparation'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/RPTEDI_CMDCLI/Listing/Message/OrdrePreparation</value>
+        </child>
+        <child t='200' id='14' V200='8' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='NumeroLigne'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/RPTEDI_CMDCLI/Listing/Message/NumeroLigne</value>
+        </child>
+        <child t='200' id='15' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='IdentifiantMessage'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/RPTEDI_CMDCLI/Listing/Message/IdentifiantMessage</value>
+        </child>
+        <child t='200' id='16' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' maxSize='255' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Libelle'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/RPTEDI_CMDCLI/Listing/Message/Libelle</value>
+        </child>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='692' id='31' V692='1' V690='1'>
+  </inputRepRuntime>
+  <outputRepRuntime t='692' idref='31'/>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' idref='31'/>
+  <outputXmlRepRuntime t='692' idref='31'/>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='18' V166='5' docType='1' docReposPath='/UPLOG_VIAPOST/Sample Data/Maps/Jobs/BRM_TO_RPTEDI_CMDE/RPTEDI_To_RPTEDI_sansNonBloq_input/RPTEDI_CMDCLI202106050138122_VIAPOST_CMDCLI_VAD_20210605_153229.xml' V1='4' name='in$/RPTEDI_CMDCLI'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='19' V166='5' docType='2' V1='4' name='out$/RPTEDI_CMDCLI'>
+      <elemNode t='200' idref='5'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>
