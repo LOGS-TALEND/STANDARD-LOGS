@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/InputWrapper.xml' outStruct='Structures/CREXPED/CREXPED_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CREXPED_VIAPOST' V1='4' name='tHMap_1' incarnation='100045'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/InputWrapper.xml' outStruct='Structures/CREXPED/CREXPED_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CREXPED_VIAPOST' V1='4' name='tHMap_1' incarnation='100089'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3951' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='3468' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/row1.xml' V281='13' V1='4' name='row1'>
       <mapNode t='190' idref='1'/>
       <child t='200' id='4' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='3468' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/CLOG/CLOG_PIVOT.xml' V281='13' modifiedFromParent_io='true' V1='4' name='CLOG'>
         <mapNode t='190' idref='1'/>
-        <repRuntime t='692' id='1494' V692='1' unnamedElemsNamespace='1' V690='1'>
+        <repRuntime t='692' id='1492' V692='1' unnamedElemsNamespace='1' V690='1'>
           <namespaceContainers t='220' ref='Namespace Containers/CLOG.xml'/>
         </repRuntime>
         <io>ReadURL([repName="XML"],{Start Offset},{Length})</io>
@@ -491,7 +491,7 @@
     </child>
     <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='368' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/row2.xml' V281='13' modifiedFromParent_io='true' V1='4' name='row2'>
       <mapNode t='190' idref='1'/>
-      <repRuntime t='698' id='1492' V698='1' V690='1' padOutput='true'>
+      <repRuntime t='698' id='1493' V698='1' V690='1' padOutput='true'>
       </repRuntime>
       <io>ReadURL([repName="Map"],{Start Offset},{Length})</io>
       <child t='200' id='1216' V200='8' input='true' structElemExists='true' usedCount='287' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/PIVOT_CLOG_WEB_TO_CREXPED/tHMap_1/row2Record.xml' V281='13' V1='4' name='row2Record'>
@@ -663,7 +663,7 @@
           </child>
           <child t='200' id='208' V200='8' structElemExists='true' usedCount='216' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Series'>
             <mapNode t='190' idref='1'/>
-            <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE,And(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/Article,GetVariable([variableName="REF_ARTICLE_COURANT"],)),Equal(GetVariable([variableName="REF_DO_COURANTE"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre)),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS,Equal(GetVariable([variableName="REF_COLIS_COURANT"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/NUMERO_SERIE,{Filter},{Sort Keys},{Contexts})))))))</loop>
+            <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE,And(Equal(Concat(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre,in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/Article),GetVariable([variableName="REF_ARTICLE_COURANT"],)),Equal(GetVariable([variableName="REF_DO_COURANTE"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre)),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS,Equal(GetVariable([variableName="REF_COLIS_COURANT"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/NUMERO_SERIE,{Filter},{Sort Keys},{Contexts})))))))</loop>
             <child t='200' id='1224' V200='8' structElemExists='true' usedCount='72' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='SerieDebut'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/NUMERO_SERIE/NumSerieDeb</value>
@@ -675,7 +675,7 @@
           </child>
           <child t='200' id='209' V200='8' structElemExists='true' usedCount='216' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Commentaire'>
             <mapNode t='190' idref='1'/>
-            <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE,And(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/Article,GetVariable([variableName="REF_ARTICLE_COURANT"],)),Equal(GetVariable([variableName="REF_DO_COURANTE"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre)),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE,And(Not(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE/Famillecommentaire,Constant([value="SRV",dataType="2"],))),Not(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE/Famillecommentaire,Constant([value="BTR",dataType="2"],)))),{Sort Keys},{Contexts})))))</loop>
+            <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE,And(Equal(Concat(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre,in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/Article),GetVariable([variableName="REF_ARTICLE_COURANT"],)),Equal(GetVariable([variableName="REF_DO_COURANTE"],),in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/RefDonneurOrdre)),{Sort Keys},NestedContext(SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE,And(Not(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE/Famillecommentaire,Constant([value="SRV",dataType="2"],))),Not(Equal(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE/Famillecommentaire,Constant([value="BTR",dataType="2"],)))),{Sort Keys},{Contexts})))))</loop>
             <child t='200' id='1226' V200='8' structElemExists='true' usedCount='72' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Famille'>
               <mapNode t='190' idref='1'/>
               <value>in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/COMMENTAIRE/Famillecommentaire</value>
@@ -689,11 +689,11 @@
       </child>
     </child>
   </outputMapElem>
-  <outputRepRuntime t='692' id='1493' V692='1' unnamedElemsNamespace='1' V690='1'>
+  <outputRepRuntime t='692' id='1494' V692='1' unnamedElemsNamespace='1' V690='1'>
     <namespaceContainers t='220' ref='Namespace Containers/CREXPED.xml'/>
   </outputRepRuntime>
   <valueSets></valueSets>
-  <outputXmlRepRuntime t='692' idref='1493'/>
+  <outputXmlRepRuntime t='692' idref='1494'/>
   <child t='165' id='10' V1='4' name='Document Bindings'>
     <child t='166' id='12' V166='5' docType='1' V1='4' name='in$/root/row2'>
       <elemNode t='200' idref='6'/>
