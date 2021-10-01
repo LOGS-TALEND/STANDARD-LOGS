@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CRPCMD/tHMap_1/InputWrapper.xml' outStruct='Structures/CRPCMD/CRPCMD_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CRPCMD_VIAPOST' V1='4' name='tHMap_1' incarnation='118395'>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/PIVOT_CLOG_WEB_TO_CRPCMD/tHMap_1/InputWrapper.xml' outStruct='Structures/CRPCMD/CRPCMD_VIAPOST.xml' outputRep='172' nextMap='' inputStructUserName='InputWrapper' outputStructUserName='CRPCMD_VIAPOST' V1='4' name='tHMap_1' incarnation='118403'>
   <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3955' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' differentFromInherited='true' structElemExists='true' usedCount='3587' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/PIVOT_CLOG_WEB_TO_CRPCMD/tHMap_1/row1.xml' V281='13' V1='4' name='row1'>
@@ -677,7 +677,7 @@
       </child>
       <child t='200' id='149' V200='8' structElemExists='true' usedCount='1228' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_util='true' V1='4' name='Colis'>
         <mapNode t='190' idref='1'/>
-        <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE,{Filter},{Sort Keys},{Contexts})</loop>
+        <loop>SimpleLoop(in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS,{Filter},{Sort Keys},{Contexts})</loop>
         <util>SetVariable([variableName="REF_COLIS_COURANT"],in$/root/row1/CLOG/PREPARATION_STOCK/LIGNE/DETAIL_GEI_SORTIS/Colis)</util>
         <child t='200' id='1402' V200='8' structElemExists='true' usedCount='122' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' modifiedFromParent_util='true' V1='4' name='RangColis'>
           <mapNode t='190' idref='1'/>
